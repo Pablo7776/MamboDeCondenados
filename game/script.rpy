@@ -7,8 +7,7 @@ label start:
     scene fondo
     with fade
     
-    stop music fadeout 1.0
-    play music "audio/galope.ogg" loop
+
     
     ######pruebas
     #show logo at left
