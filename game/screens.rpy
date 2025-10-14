@@ -1628,3 +1628,20 @@ style slider_vbox:
 style slider_slider:
     variant "small"
     xsize 900
+
+
+
+#screen clickeable():
+    # Contenedor que ocupa solo el tamaño de la imagen
+#    frame:
+#        xpos 100
+#        ypos 200
+#        xsize 200
+#        ysize 200
+#        background "#FF000080"  # rojo semi-transparente (80 es alfa)
+
+        # Botón dentro del frame
+#        imagebutton:
+#            idle "images/un_tipo_que_parece_demonio.png"
+#            hover "images/un_tipo_que_parece_demonio.png"
+#            action [Hide("clickeable"), Jump("start")]

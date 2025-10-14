@@ -1,8 +1,10 @@
 label capitulo1:    
 
     stop music fadeout 1.0
-    play music "audio/capitulo1/galopeSonidosMambo.ogg" loop
+    play sound sfx_galope
 
+    # Mostramos una imagen de fondo
+    scene gauchoACaballo with fade
 
     show gaucho_a_caballo:
         xoffset 0
@@ -11,12 +13,12 @@ label capitulo1:
     "Bienvenid@ al Mambo de los Condenados"
     "Nuestro protagonista va al galope por la pampa, sube un cerro por un camino empinado,"
     "los pájaros que hasta hace poco cantaban alegremente ahora suenan como gritos de dolor"
+
+    scene salamanca with fade
+    play music sfx_SonidoAmbienteTerror loop
+
     "y de repente aparece frente a él, la piedra roja que el viejo de la pulpería le había dicho."
     "Ese viejo le dió todos los detalles sobre cómo llegar, como pasar las primeras pruebas que tendrá que enfrentar"
-
-    
-
-    stop music fadeout 5.0
     "Ata y asegura su guitarra a la silla de su fiel caballo y luego pronuncia ESA palabra"
     "se abre una cueva en la roca, da un paso dentro y su caballo relincha y sale corriendo hacia el lado contrario."
 
@@ -26,7 +28,7 @@ label capitulo1:
 
     label Las_primeras_pruebas:
 
-        play music "audio/capitulo1/SonidoAmbienteTerror.ogg" loop
+
         "En el primer pasillo de este laberinto se quita los zapatos, el sombrero y el pañuelo, debe ser así"
         "ya sumido en la oscuridad comienza a escuchar el arpa y pronto siente la presencia del basilisco"
         "menos mal que no se ve, sino lo petrificaría, comienza a caminar siguiendo su siseo"
