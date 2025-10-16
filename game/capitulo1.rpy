@@ -11,16 +11,16 @@ label capitulo1:
         yoffset 700
 
     "Bienvenid@ al Mambo de los Condenados"
-    "Nuestro protagonista va al galope por la pampa, sube un cerro por un camino empinado,"
-    "los pájaros que hasta hace poco cantaban alegremente ahora suenan como gritos de dolor"
+    "Nuestro protagonista va al galope por la pampa, sube un cerro por un camino empinado."
+    "Los pájaros que hasta hace poco cantaban alegremente ahora suenan como gritos de dolor."
 
     scene salamanca with fade
     play music sfx_SonidoAmbienteTerror loop
 
-    "y de repente aparece frente a él, la piedra roja que el viejo de la pulpería le había dicho."
-    "Ese viejo le dió todos los detalles sobre cómo llegar, como pasar las primeras pruebas que tendrá que enfrentar"
-    "Ata y asegura su guitarra a la silla de su fiel caballo y luego pronuncia ESA palabra"
-    "se abre una cueva en la roca, da un paso dentro y su caballo relincha y sale corriendo hacia el lado contrario."
+    "Y de repente aparece frente a él, la piedra roja que el viejo de la pulpería le había dicho."
+    "Ese viejo le dió todos los detalles sobre cómo llegar, como pasar las primeras pruebas que tendrá que enfrentar."
+    "Ata y asegura su guitarra a la silla de su fiel caballo y luego pronuncia ESA palabra."
+    "Se abre una cueva en la roca, da un paso dentro y su caballo relincha y sale corriendo hacia el lado contrario."
 
     
 
@@ -29,31 +29,31 @@ label capitulo1:
     label Las_primeras_pruebas:
         scene placeholder with fade
 
-        "En el primer pasillo de este laberinto se quita los zapatos, el sombrero y el pañuelo, debe ser así"
-        "ya sumido en la oscuridad comienza a escuchar el arpa y pronto siente la presencia del basilisco"
-        "menos mal que no se ve, sino lo petrificaría, comienza a caminar siguiendo su siseo"
-        "el basilisco lo guía para atravesar este laberinto."
-        "Ya en el pasillo recto y angosto comienza a caminar, de repente siente las primeras alimañas"
-        "serpientes, iguanas y tarántulas comienzan a trepar por su cuerpo y se queda completamente quieto"
-        "de a una van pasando por sus piernas, su pecho, su cabeza, sus hombros y bajan por su espalda"
-        "siguen su camino sin hacerle daño. Todas terminan de pasar y ahora sí, puede avanzar."
+        "En el primer pasillo de este laberinto se quita los zapatos, el sombrero y el pañuelo, debe ser así."
+        "Ya sumido en la oscuridad comienza a escuchar el arpa y pronto siente la presencia del basilisco."
+        "Menos mal que no se ve, sino lo petrificaría, comienza a caminar siguiendo su siseo."
+        "El basilisco lo guía para atravesar este laberinto."
+        "Ya en el pasillo recto y angosto comienza a caminar, de repente siente las primeras alimañas."
+        "Serpientes, iguanas y tarántulas comienzan a trepar por su cuerpo y se queda completamente quieto."
+        "De a una van pasando por sus piernas, su pecho, su cabeza, sus hombros y bajan por su espalda."
+        "Siguen su camino sin hacerle daño. Todas terminan de pasar y ahora sí, puede avanzar."
 
         scene placeholder6 with fade
-        "Entonces aparece ese animal grotezco, un chivo de pelo negro, ojos endemoniados, cuernos tan curvados como un espiral"
-        "bufea en dirección hacía nuestro protagonista, que lo rodea sin que se mosquee, pero cuando por fin llega al otro lado"
-        "el animal se da vuelta y corre, lo topea y lo arroja a un hoyo."
+        "Entonces aparece ese animal grotezco, un chivo de pelo negro, ojos endemoniados, cuernos tan curvados como una espiral."
+        "Bufea en dirección hacía nuestro protagonista, que lo rodea sin que se mosquee, pero cuando por fin llega al otro lado."
+        "El animal se da vuelta y corre, lo topea y lo arroja a un hoyo."
 
 
     jump La_caida
 
     label La_caida:
         scene caida with fade
-        "El hueco es profundo, más que profundo, está cayendo al abismo, ve pasar murciélagos a su lado y sigue cayendo"
-        "de repente choca contra el suelo y se desmaya."
-        "Despiertas y estás en el fondo, ves sobre ti el abismo que sube en espirales de roca viva"
+        "El hueco es profundo, más que profundo, está cayendo al abismo, ve pasar murciélagos a su lado y sigue cayendo."
+        "De repente choca contra el suelo y se desmaya."
+        "Despiertas y estás en el fondo, ves sobre ti el abismo que sube en espirales de roca viva."
 
         scene placeholder with fade
-        "te levantas y no puedes ver más allá delante tuyo, hay una profunda oscuridad."
+        "Te levantas y no puedes ver más allá delante tuyo, hay una profunda oscuridad."
         "¿Qué decidís?"
 
 
