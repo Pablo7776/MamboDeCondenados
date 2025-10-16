@@ -1,6 +1,6 @@
 label capitulo1:    
 
-    stop music fadeout 1.0
+
     play sound sfx_galope
 
     # Mostramos una imagen de fondo
@@ -27,7 +27,7 @@ label capitulo1:
     jump Las_primeras_pruebas
 
     label Las_primeras_pruebas:
-
+        scene placeholder with fade
 
         "En el primer pasillo de este laberinto se quita los zapatos, el sombrero y el pañuelo, debe ser así"
         "ya sumido en la oscuridad comienza a escuchar el arpa y pronto siente la presencia del basilisco"
@@ -37,6 +37,8 @@ label capitulo1:
         "serpientes, iguanas y tarántulas comienzan a trepar por su cuerpo y se queda completamente quieto"
         "de a una van pasando por sus piernas, su pecho, su cabeza, sus hombros y bajan por su espalda"
         "siguen su camino sin hacerle daño. Todas terminan de pasar y ahora sí, puede avanzar."
+
+        scene placeholder6 with fade
         "Entonces aparece ese animal grotezco, un chivo de pelo negro, ojos endemoniados, cuernos tan curvados como un espiral"
         "bufea en dirección hacía nuestro protagonista, que lo rodea sin que se mosquee, pero cuando por fin llega al otro lado"
         "el animal se da vuelta y corre, lo topea y lo arroja a un hoyo."
@@ -45,10 +47,12 @@ label capitulo1:
     jump La_caida
 
     label La_caida:
-
+        scene caida with fade
         "El hueco es profundo, más que profundo, está cayendo al abismo, ve pasar murciélagos a su lado y sigue cayendo"
         "de repente choca contra el suelo y se desmaya."
         "Despiertas y estás en el fondo, ves sobre ti el abismo que sube en espirales de roca viva"
+
+        scene placeholder with fade
         "te levantas y no puedes ver más allá delante tuyo, hay una profunda oscuridad."
         "¿Qué decidís?"
 
@@ -61,6 +65,7 @@ label capitulo1:
             
     
     label Trepar_por_el_abismo_para_salir:
+        scene placeholder3 with fade
         "Luego de mucho esfuerzo y luchar contra murciélagos que te atacaban débilmente"
         "llegás hasta el borde del hoyo, estás de vuelta frente a aquel chivo endemoniado que te mira colérico."
         menu:
@@ -71,11 +76,12 @@ label capitulo1:
 
 
         label Te_enfrentas_al_chivo:
+            scene placeholder6 with fade
             "El chivo corre hacia vos, lográs evitar el primer golpe y le pegás una patada."
             "Se da vuelta y vuelve a intentar embestirte, de este no pudiste zafar, caes al suelo"
             "te defendes a patadas y trompadas, pero el chivo es pesado y sus pezuñas son como hachas contra tu cuerpo"
             "tras unos cuantos minutos de pisotones tu cuerpo yace inerte en la oscuridad de la cueva."
-            
+            scene placeholder with fade
             "Moriste, el juego ha terminado junto a tu vida."
 
             play sound "audio/capitulo1/GritoDeMiedo.ogg"
@@ -88,8 +94,10 @@ label capitulo1:
                 
 
         label Intentas_esquivar_al_chivo:
+            scene placeholder6 with fade
             "Si antes pudiste pasar por al lado de él sin que se de cuenta ¿por qué no intentarlo nuevamente?."
             "Das un paso y el chivo corre tan rápidamente hacia tí que no logras evitarlo" 
+            scene caida with fade
             "te tira nuevamente por el hueco del que acabas de salir."
             menu:
                 "Caes y caes a lo profundo del abismo nuevamene ":
@@ -99,6 +107,8 @@ label capitulo1:
 
 
     label Dar_un_paso_hacia_la_oscuridad:
+        scene placeholder7 with fade
+
         "Escuchas una pequeña explosión y se comienzan a prender, a cada lado, cien antorchas"
         "lográs ver una sala con cortinas magníficas que cubren paredes de roca negra"
         "piso y columnas de mármol que sostienen un techo de tierra y rocas."
@@ -128,6 +138,7 @@ label capitulo1:
                     jump Quiero_hechizar
 
         label DÓNDE_ESTÁ_EL_MANDINGA:
+            scene placeholder6 with fade
             "De repente escuchas una explosión mucho mayor que la de antes"
             "se abre un agujero en una de las paredes y él atraviesa las cortinas"
             "un enorme ser, mitad serpiente, mitad humano, ES EL MANDINGA."
@@ -144,6 +155,7 @@ label capitulo1:
 
 
             label Recular:
+                scene placeholder5 with fade
                 "Te arrepientes, empiezas a balbucear y… "
                 "despiertas..."
                 "parece todo haber sido un mal sueño, estás completamente borracho con la cabeza sobre una mesa de la pulpería del Tarta."
@@ -174,6 +186,7 @@ label Quiero_hechizar:
 
 
 label A_dónde_hay_que_firmar:
+    scene placeholder with fade
     "Aceptás vender tu alma y el Mandinga te dice que aún hay unas pruebas más que debés superar"
     "hace un gesto con la mano y ante ti se abre el suelo, una gran grieta separa la sala por la mitad"
     "de un lado estás vos, del otro el Mandinga, su trono y sus seguidores."
@@ -204,6 +217,7 @@ label A_dónde_hay_que_firmar:
                 jump Pasar_cautelosamente
 
         label Pasar_cautelosamente:
+            scene placeholder3 with fade
             "Das un paso sobre el cuchillo y dudas, el filo del cuchillo se hunde en tu pie y no podés frenar la fuerza de la gravedad"
             "empezás a caer sobre ese último paso, tu cuerpo se desbalancea y cae."
             "Yacés en dos mitades en lo profundo de la grieta del infierno."
@@ -215,6 +229,7 @@ label A_dónde_hay_que_firmar:
                     return
 
     label Escupir_el_crucifijo:
+        scene placeholder7 with fade
         "Escupís el crucifijo y seguís por el filo del cuchillo, lográs llegar al otro lado."
         "Una bruja te recibe con un pergamino abierto, un diablillo moja una pluma en la sangre de tus pies y te la da."
     
@@ -236,7 +251,7 @@ label A_dónde_hay_que_firmar:
                 jump Lo_lograste
             
     label Lo_lograste:
-
+        scene placeholder with fade
         Mandinga "-¡BIENVENIDO A MIS HUESTE CONDENADO"
 
         "Resuena una vez más la voz del Mandinga, mucho más fuerte, mucho más demoniaca."
@@ -247,6 +262,7 @@ label A_dónde_hay_que_firmar:
                 jump En_un_rancho_cercano
 
     label En_un_rancho_cercano:
+        scene placeholder4 with fade
         "a pocos kilómetros una señora se despierta asustada por el alboroto, comienza a rezar..."
         "- ¡Dios nos salve, que hoy hay baile en La Salamanca!"
 

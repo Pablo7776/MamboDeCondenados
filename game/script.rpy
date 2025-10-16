@@ -3,7 +3,7 @@ define Mandinga = Character("Mandinga", color="#FF0000")
 image logo = "images/y.png"
 
 label start:
-
+    stop music fadeout 1.0
     scene fondo
     with fade
 

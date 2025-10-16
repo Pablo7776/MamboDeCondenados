@@ -1,3 +1,13 @@
+################### PLACEHOLDERS ###########################
+
+image placeholder = "placeholders/Unnamed.jpg"
+image placeholder2 = "placeholders/Unnamed2.jpg"
+image placeholder3 = "placeholders/Unnamed3.jpg"
+image placeholder4 = "placeholders/Unnamed4.jpg"
+image placeholder5 = "placeholders/Unnamed5.jpg"
+image placeholder6 = "placeholders/Unnamed6.jpg"
+image placeholder7 = "placeholders/Unnamed7.jpg"
+
 ############################################################
 #################  CAPITULO 1 ##############################
 ############################################################
@@ -8,6 +18,7 @@ image gaucho_a_caballo = "images/personajes/gaucho.png"
 
 image gauchoACaballo = "images/capitulo1/gauchoACaballo.jpg"
 image salamanca = "images/capitulo1/salamanca.png"
+image caida = "images/capitulo1/caida.jpeg"
 
 
 ################  EFECTOS DE SONIDO #########################
