@@ -13,7 +13,7 @@ screen dev_label():
             padding (6, 6)
 
             # Muestra lo que tenga current_label
-            text "[current_label if current_label else '…']":
+            text "[current_label if current_label else '…'] \nreputación con el mandinga: [reputacion_con_el_mandinga] \nhumanidad: [humanidad]":
                 style "dev_label_text"
 
 style dev_label_text:
