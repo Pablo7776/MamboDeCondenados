@@ -12,7 +12,7 @@ label capitulo1:
 
     "Bienvenid@ al Mambo de los Condenados"
     "Vos guitarrista y cantor venido a menos que ahora va al galope por la pampa."
-    "Subis por un cerro con un camino empinado."
+    "Subís por un cerro con un camino empinado."
     "Los pájaros que hasta hace poco cantaban alegremente ahora suenan como gritos de dolor."
 
     scene salamanca with fade
