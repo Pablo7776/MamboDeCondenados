@@ -18,9 +18,9 @@ label capitulo1:
     scene salamanca with fade
     play music sfx_SonidoAmbienteTerror loop
 
-    "De repente aparece frente a vos, la piedra roja que el viejo de la pulpería te había dicho." 
-    "Atas y aseguras tu guitarra a la silla de tu fiel caballo y luego pronuncias La Palabra, esa que aquel viejo te confesó."
-    "Entonces se abre una cueva en la roca, das un paso dentro, el caballo relincha y sale corriendo hacia el lado contrario."
+    "De repente, aparece frente tuyo la piedra roja que el viejo de la pulpería te había dicho." 
+    "Atás y asegurás tu guitarra a la silla de tu fiel caballo y luego pronunciás La Palabra, esa que aquel viejo te confesó."
+    "Entonces, se abre una cueva en la roca. Das un paso dentro y el caballo relincha y sale corriendo hacia el campo."
 
     
 
@@ -29,7 +29,7 @@ label capitulo1:
     label Las_primeras_pruebas:
         scene placeholder with fade
 
-        "En el primer pasillo de este laberinto te sacás los zapatos, el sombrero y el pañuelo, debe ser así."
+        "En el primer pasillo de este laberinto te sacás los zapatos, el sombrero y el pañuelo, así debe ser."
         "Ya sumido en la oscuridad comenzás a escuchar el arpa tenebrosa y pronto sentís la presencia del basilisco."
         "Menos mal que no se ve, sino te petrificaría, seguís su siseo, el basilisco te guía para atravesar este laberinto."
         
