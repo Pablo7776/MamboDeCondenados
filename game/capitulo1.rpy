@@ -11,16 +11,16 @@ label capitulo1:
         yoffset 700
 
     "Bienvenid@ al Mambo de los Condenados"
-    "Vos guitarrista y cantor venido a menos que ahora va al galope por la pampa."
+    "Vos, guitarrista y cantor venido a menos, que ahora va al galope por la pampa."
     "Subís por un cerro con un camino empinado."
-    "Los pájaros que hasta hace poco cantaban alegremente ahora suenan como gritos de dolor."
+    "Los pájaros, que hasta hace poco cantaban alegremente, ahora suenan como gritos de dolor."
 
     scene salamanca with fade
     play music sfx_SonidoAmbienteTerror loop
 
-    "De repente, aparece frente tuyo la piedra roja que el viejo de la pulpería te había dicho." 
-    "Atás y asegurás tu guitarra a la silla de tu fiel caballo y luego pronunciás La Palabra, esa que aquel viejo te confesó."
-    "Entonces, se abre una cueva en la roca. Das un paso dentro y el caballo relincha y sale corriendo hacia el campo."
+    "De repente, aparece frente tuyo la piedra roja de la que te había hablado el viejo, que siempre está en la pulpería de tu pueblo." 
+    "Atás y asegurás tu guitarra a la silla de tu fiel caballo, y luego pronunciás {i}La Palabra{/i}, esa que aquel viejo te confesó."
+    "Entonces, se abre una cueva en la roca; das un paso dentro, el caballo relincha y sale corriendo hacia el campo."
 
     
 
@@ -29,20 +29,20 @@ label capitulo1:
     label Las_primeras_pruebas:
         scene placeholder with fade
 
-        "En el primer pasillo de este laberinto te sacás los zapatos, el sombrero y el pañuelo, así debe ser."
-        "Ya sumido en la oscuridad comenzás a escuchar el arpa tenebrosa y pronto sentís la presencia del basilisco."
-        "Menos mal que no se ve, sino te petrificaría, seguís su siseo, el basilisco te guía para atravesar este laberinto."
+        "En el primer pasillo de este laberinto te sacás los zapatos, el sombrero y el pañuelo. Así debe ser."
+        "Ya sumido en la oscuridad, comenzás a escuchar el arpa tenebrosa y pronto sentís la presencia del basilisco."
+        "Menos mal que no se ve; si no te petrificaría. Con su siseo, el basilisco te guía para atravesar este laberinto, seguís ese ruido senpertino y lo lográs superar."
         
-        "Ya en el pasillo recto y angosto empezás a caminar, después de unos pasos sentís las primeras alimañas: serpientes, iguanas y tarántulas comienzan a trepar por tu cuerpo."
+        "Ya en el pasillo recto y angosto empezás a caminar sin guía. Después de unos pasos, sentís las primeras alimañas: serpientes, iguanas y tarántulas comienzan a trepar por tu cuerpo."
 
-        "Tenés que quedarte completamente quieto, inmovil aguantando la respiración."
-        "De a una van trepando por tus piernas, tu pecho, tu cabeza, tus hombros y bajan por tu espalda siguiendo el camino sin hacerte daño."
-        "Todas esas criaturas pasan por tu cuerpo hasta dejarte atrás y ahora sí, podés avanzar."
+        "Tenés que quedarte completamente quieto, inmóvil, aguantando la respiración."
+        "De a una van trepando por tus piernas, tu pecho, tu cabeza, tus hombros... y bajan por tu espalda, siguiendo su camino sin hacerte daño."
+        "Todas esas criaturas pasan por tu cuerpo hasta dejarte atrás, y ahora sí, podés avanzar."
 
         
         scene placeholder6 with fade
-        "Entonces aparece ese animal grotezco que te había contado el viejo, un chivo de pelo negro, ojos endemoniados, cuernos tan curvados como un espiral."
-        "El animal bufea en tu dirección, lo rodeás facilmente sin que se mosquee, pero cuando por fin llegás al otro lado, el animal se da vuelta y corre, te topea y te arroja a un profundo hoyo."
+        "Entonces aparece ese animal grotezco del que te había contado el viejo: un chivo de pelo negro, ojos endemoniados, cuernos tan curvados como un espiral."
+        "El animal bufa en tu dirección. Lo rodeás fácilmente sin que se mosquee, pero cuando por fin llegás al otro lado, el chivo se da vuelta, corre, te topea y te arroja a un profundo hoyo."
 
 
     jump La_caida
