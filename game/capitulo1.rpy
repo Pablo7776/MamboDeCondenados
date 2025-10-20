@@ -47,6 +47,8 @@ label capitulo1:
 
         
         scene placeholder6 with fade
+        play fx sfx_respiracion_chivo 
+
         "Entonces aparece ese animal grotezco que te había contado el viejo, un chivo de pelo negro, ojos endemoniados, cuernos tan curvados como un espiral."
         "El animal bufea en tu dirección, lo rodeás facilmente sin que se mosquee, pero..."
         "Cuando por fin llegás al otro lado, el animal se da vuelta y corre, te topea y te arroja a un profundo hoyo."
@@ -240,6 +242,9 @@ label A_dónde_hay_que_firmar:
 
     label Escupir_el_crucifijo:
         scene placeholder6 with fade
+        stop ambiente fadeout 1.0
+        play fx crucifijo
+         
         "Escupís el crucifijo y seguís por el filo del facón, lográs llegar al otro lado."
         "Una bruja te recibe con un pergamino abierto, un diablillo moja una pluma en la sangre de tus pies y te la da."
     
