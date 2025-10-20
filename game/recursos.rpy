@@ -18,7 +18,7 @@ image gaucho_a_caballo = "images/personajes/gaucho.png"
 
 image gauchoACaballo = "images/capitulo1/gauchoACaballo.jpg"
 image salamanca = "images/capitulo1/salamanca.png"
-image caida = "images/capitulo1/caida.jpeg"
+image caida = "images/capitulo1/caida.jpg"
 
 
 ################  EFECTOS DE SONIDO #########################
