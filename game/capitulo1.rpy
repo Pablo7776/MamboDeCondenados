@@ -13,10 +13,11 @@ label capitulo1:
     "Bienvenid@ al Mambo de los Condenados"
     "Vos guitarrista y cantor venido a menos que ahora va al galope por la pampa."
     "Subís por un cerro con un camino empinado."
+    play music sfx_SonidoAmbienteTerror loop fadein 1.0
+
     "Los pájaros que hasta hace poco cantaban alegremente ahora suenan como gritos de dolor."
 
     scene salamanca with fade
-    play music sfx_SonidoAmbienteTerror loop
 
     "De repente, aparece frente tuyo la piedra roja que el viejo de la pulpería te había dicho." 
     "Atás y asegurás tu guitarra a la silla de tu fiel caballo y luego pronunciás La Palabra, esa que aquel viejo te confesó."
