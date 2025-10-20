@@ -23,6 +23,8 @@ image caida = "images/capitulo1/caida.jpg"
 
 ################  EFECTOS DE SONIDO #########################
 
+define sfx_viento1 = "audio/capitulo1/viento1.ogg"
+
 
 define sfx_galope = "audio/capitulo1/sfx_galope.ogg"
 define sfx_SonidoAmbienteTerror = "audio/capitulo1/sfx_SonidoAmbienteTerror.ogg"
