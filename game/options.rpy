@@ -25,7 +25,7 @@ define gui.show_name = False
 
 ## Versión del juego.
 
-define config.version = "0.2"
+define config.version = "0.3"
 
 
 ## Texto situado en la pantalla 'Acerca de' del juego. Sitúa el texto entre
@@ -122,7 +122,7 @@ define config.window_hide_transition = Dissolve(.2)
 ## infinito; cualquier otro número indica el número de caracteres por segundo
 ## que se mostrarán.
 
-default preferences.text_cps = 0
+default preferences.text_cps = 35
 
 
 ## El retraso por defecto del auto-avance. Números más grandes indican esperas
