@@ -8,6 +8,7 @@ label capitulo1:
     play pisadas sfx_galope loop
 
 
+    #scene gauchoACaballo with Dissolve(3.0)
     scene gauchoACaballo with burn_transition
 
     show gaucho_a_caballo:

@@ -1,4 +1,4 @@
-define DEV_LABELS = True
+define DEV_LABELS = False
 
 default current_label = ""
 
