@@ -1,10 +1,14 @@
+# nota #
+#dos tipor de faders:
+#burn_transition y Dissolve()
+
 label capitulo1:    
 
 
     play pisadas sfx_galope loop
 
-    # Mostramos una imagen de fondo
-    scene gauchoACaballo with fade
+
+    scene gauchoACaballo with burn_transition
 
     show gaucho_a_caballo:
         xoffset 0
@@ -18,7 +22,8 @@ label capitulo1:
     play fx sfx_viento1 loop fadein 1.0
     "El canto de Los pájaros, que hasta hace poco era alegre y armonioso, ahora suena como gritos de dolor."
 
-    scene salamanca with fade
+    scene salamanca with Dissolve(3.0)
+    
 
     "De repente, aparece frente tuyo la piedra roja de la que te había hablado el viejo, que siempre está en la pulpería de tu pueblo." 
 
@@ -26,12 +31,12 @@ label capitulo1:
     "Atás y asegurás tu guitarra a la silla de tu fiel caballo, y luego pronunciás {i}La Palabra{/i}, esa que aquel viejo te confesó."
     "Entonces, se abre una cueva en la roca; das un paso dentro, el caballo relincha y sale corriendo hacia el campo."
 
-    
 
     jump Las_primeras_pruebas
 
     label Las_primeras_pruebas:
-        scene placeholder with fade
+
+        scene placeholder with Dissolve(3.0)
 
         
         stop fx fadeout 1.0
