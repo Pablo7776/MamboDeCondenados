@@ -1,7 +1,8 @@
-default nombre_jugador = "Protagonista"
+#default nombre_jugador = "Protagonista"
 
 
 label capitulo3:
+    
     "Llegás a tu pueblo por la tarde, ya podés ver la pulpería de El Tarta."
 
     "De acá saliste la última vez camino a La Salamanca."
@@ -10,7 +11,7 @@ label capitulo3:
     
     "Atás tu caballo afuera en el grueso aro de hierro incrustado en el suelo de la ochava."
 
-    jump La_pulperia:    
+    jump La_pulperia   
 
     label La_pulperia:
         "Al entrar te sorprende el sonido de una guitarra."

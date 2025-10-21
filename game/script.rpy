@@ -1,6 +1,8 @@
 ﻿define p = Character("Protagonista")
 define Mandinga = Character("Mandinga", color="#FF0000")
 #default reputacion_con_el_mandinga = 100
+define config.default_text_cps = 20
+
 
 
 image logo = "images/y.png"
@@ -21,7 +23,7 @@ label start:
     stop music fadeout 1.0
     scene fondo
     with fade
-
+    "{cps=20}Texto apareciendo lentamente...{/cps}"
 
     
     ######pruebas

@@ -1,7 +1,7 @@
 label capitulo1:    
 
 
-    play sound sfx_galope
+    play pisadas sfx_galope loop
 
     # Mostramos una imagen de fondo
     scene gauchoACaballo with fade
@@ -13,12 +13,16 @@ label capitulo1:
     "Bienvenid@ al Mambo de los Condenados"
     "Vos, guitarrista y cantor venido a menos, que ahora va al galope por la pampa."
     "Subís por un cerro con un camino empinado."
-    "Los pájaros, que hasta hace poco cantaban alegremente, ahora suenan como gritos de dolor."
+    play ambiente sfx_SonidoAmbienteTerror loop fadein 1.0
+
+    play fx sfx_viento1 loop fadein 1.0
+    "El canto de Los pájaros, que hasta hace poco era alegre y armonioso, ahora suena como gritos de dolor."
 
     scene salamanca with fade
-    play music sfx_SonidoAmbienteTerror loop
 
     "De repente, aparece frente tuyo la piedra roja de la que te había hablado el viejo, que siempre está en la pulpería de tu pueblo." 
+
+    stop pisadas fadeout 1.0
     "Atás y asegurás tu guitarra a la silla de tu fiel caballo, y luego pronunciás {i}La Palabra{/i}, esa que aquel viejo te confesó."
     "Entonces, se abre una cueva en la roca; das un paso dentro, el caballo relincha y sale corriendo hacia el campo."
 
@@ -29,11 +33,15 @@ label capitulo1:
     label Las_primeras_pruebas:
         scene placeholder with fade
 
+        
+        stop fx fadeout 1.0
         "En el primer pasillo de este laberinto te sacás los zapatos, el sombrero y el pañuelo. Así debe ser."
         "Ya sumido en la oscuridad, comenzás a escuchar el arpa tenebrosa y pronto sentís la presencia del basilisco."
         "Menos mal que no se ve; si no te petrificaría. Con su siseo, el basilisco te guía para atravesar este laberinto, seguís ese ruido senpertino y lo lográs superar."
         
-        "Ya en el pasillo recto y angosto empezás a caminar sin guía. Después de unos pasos, sentís las primeras alimañas: serpientes, iguanas y tarántulas comienzan a trepar por tu cuerpo."
+        "Ya en el pasillo recto y angosto empezás a caminar sin guía. Después de unos pasos, sentís las primeras alimañas:"
+        
+        "serpientes, iguanas y tarántulas comienzan a trepar por tu cuerpo."
 
         "Tenés que quedarte completamente quieto, inmóvil, aguantando la respiración."
         "De a una van trepando por tus piernas, tu pecho, tu cabeza, tus hombros... y bajan por tu espalda, siguiendo su camino sin hacerte daño."
@@ -41,9 +49,11 @@ label capitulo1:
 
         
         scene placeholder6 with fade
-        "Entonces aparece ese animal grotezco del que te había contado el viejo: un chivo de pelo negro, ojos endemoniados, cuernos tan curvados como un espiral."
-        "El animal bufa en tu dirección. Lo rodeás fácilmente sin que se mosquee, pero cuando por fin llegás al otro lado, el chivo se da vuelta, corre, te topea y te arroja a un profundo hoyo."
 
+        play fx sfx_respiracion_chivo 
+        "Entonces aparece ese animal grotezco del que te había contado el viejo: un chivo de pelo negro, ojos endemoniados, cuernos tan curvados como un espiral."
+        "El animal bufa en tu dirección. Lo rodeás fácilmente sin que se mosquee, pero..."
+        "cuando por fin llegás al otro lado, el chivo se da vuelta, corre, te topea y te arroja a un profundo hoyo."
 
     jump La_caida
 
@@ -51,9 +61,9 @@ label capitulo1:
         scene caida with fade
         "El hueco es profundo, más que profundo, estás cayendo al abismo."
         "Ves pasar murciélagos a tu lado, seguís cayendo y repentinamente te desmayás."
+        scene placeholder with fade
         "Despertás y estás en el fondo, ves sobre vos el abismo que sube en espirales de roca viva."
 
-        scene placeholder with fade
         "Te levantás y delante tuyo no podés ver más allá, es una profunda oscuridad."
         "¿Qué decidís?"
 
@@ -108,7 +118,7 @@ label capitulo1:
 
 
     label Dar_un_paso_hacia_la_oscuridad:
-        scene placeholder7 with fade
+        scene placeholder2 with fade
 
         "Escuchas una pequeña explosión y se comienzan a prender, a cada lado, cien antorchas"
         "Lográs ver una sala con cortinas magníficas que cubren paredes de roca negra con piso y columnas de mármol que sostienen un techo de tierra y rocas."
@@ -189,7 +199,8 @@ label Quiero_hechizar:
 label A_dónde_hay_que_firmar:
     scene placeholder with fade
     "Aceptás vender tu alma y el Mandinga te dice que aún hay unas pruebas más que debés superar."
-    "Hace un gesto con su mano y ante vos se abre el suelo, una gran grieta separa la sala al medio, de un lado estás vos, del otro el Mandinga, su trono y sus seguidores."
+    "Hace un gesto con su mano y ante vos se abre el suelo"
+    "Una gran grieta separa la sala al medio, de un lado estás vos, del otro el Mandinga, su trono y sus seguidores."
     "Él saca un enorme facón de su costado y lo revolea, queda sobre la raja que se abrió en la tierra, formando un puente con el filo hacia arriba."
 
     Mandinga "- Vení conmigo"
@@ -231,7 +242,10 @@ label A_dónde_hay_que_firmar:
             #        return
 
     label Escupir_el_crucifijo:
-        scene placeholder7 with fade
+        scene placeholder6 with fade
+        stop ambiente fadeout 1.0
+        play fx crucifijo
+         
         "Escupís el crucifijo y seguís por el filo del facón, lográs llegar al otro lado."
         "Una bruja te recibe con un pergamino abierto, un diablillo moja una pluma en la sangre de tus pies y te la da."
     
@@ -254,12 +268,13 @@ label A_dónde_hay_que_firmar:
                 jump Lo_lograste
             
     label Lo_lograste:
-        scene placeholder with fade
+
         Mandinga "-¡BIENVENIDO A MIS HUESTES, CONDENADO!"
 
         "Resuena una vez más la voz del Mandinga, mucho más fuerte, mucho más demoníaca."
         "Las brujas, los brujos y los diablillos arrancan la fiesta a tu alrededor, sentís como tu garganta arde y luego se calma y empezás a cantar junto a los demás."
         "Las alimañas te levantan sobre sus lomos y te pasean por toda la sala, tu voz y tu canto ahora suena como nunca antes sonó."
+        scene placeholder3 with fade
         menu:
             "En un rancho cercano...":
                 jump En_un_rancho_cercano
@@ -267,7 +282,7 @@ label A_dónde_hay_que_firmar:
     label En_un_rancho_cercano:
         stop music fadeout 1.0
 
-        scene placeholder4 with fade
+
         "A pocos kilómetros una señora se despierta asustada por el alboroto, empieza a rezar..."
         "- ¡Dios nos salve, que hoy hay baile en La Salamanca!"
 

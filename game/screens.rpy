@@ -172,7 +172,9 @@ style say_dialogue:
 ## https://www.renpy.org/doc/html/screen_special.html#input
 
 screen input(prompt):
+
     style_prefix "input"
+    
 
     window:
 

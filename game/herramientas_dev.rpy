@@ -32,3 +32,11 @@ init python:
 
     if DEV_LABELS:
         config.label_callback = on_label_jump
+
+
+
+################  CANALES DE AUDIO PERSONALIZADO #########################
+
+    renpy.music.register_channel("ambiente", "sfx", True)
+    renpy.music.register_channel("fx", "sfx", False)
+    renpy.music.register_channel("pisadas", "sfx", True)
