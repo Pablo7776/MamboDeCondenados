@@ -12,7 +12,7 @@ label capitulo1:
 
     "Bienvenid@ al Mambo de los Condenados"
     "Vos, guitarrista y cantor venido a menos, que ahora va al galope por la pampa."
-    "Subís por un cerro con un camino empinado."
+    "Subís por el camino empinado de un pequeño cerro."
     play ambiente sfx_SonidoAmbienteTerror loop fadein 1.0
 
     play fx sfx_viento1 loop fadein 1.0
@@ -51,9 +51,9 @@ label capitulo1:
         scene placeholder6 with fade
 
         play fx sfx_respiracion_chivo 
-        "Entonces aparece ese animal grotezco del que te había contado el viejo: un chivo de pelo negro, ojos endemoniados, cuernos tan curvados como un espiral."
+        "Entonces aparece ese animal grotesco del que te había contado el viejo: un chivo de pelo negro, ojos endemoniados, cuernos tan curvados como un espiral."
         "El animal bufa en tu dirección. Lo rodeás fácilmente sin que se mosquee, pero..."
-        "cuando por fin llegás al otro lado, el chivo se da vuelta, corre, te topea y te arroja a un profundo hoyo."
+        "cuando por fin llegás al otro lado, el chivo se da vuelta, corre, te topeta y te arroja a un profundo hoyo."
 
     jump La_caida
 
