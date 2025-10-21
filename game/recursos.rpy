@@ -20,6 +20,8 @@ image gauchoACaballo = "images/capitulo1/gauchoACaballo.jpg"
 image salamanca = "images/capitulo1/salamanca.png"
 image caida = "images/capitulo1/caida.jpg"
 
+image pergamino = "images/capitulo1/old_paper.png"
+
 
 ################  EFECTOS DE SONIDO #########################
 

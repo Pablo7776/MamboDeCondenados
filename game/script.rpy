@@ -42,4 +42,9 @@ label start:
             jump ejemplosTexto
         "ir a ejemplo clickeable":
             jump ejemplosClickeables
+        "ir a firmar":
+            jump Escupir_el_crucifijo
+
+
+
 

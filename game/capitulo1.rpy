@@ -253,11 +253,22 @@ label A_dónde_hay_que_firmar:
         play fx crucifijo
          
         "Escupís el crucifijo y seguís por el filo del facón, lográs llegar al otro lado."
+        show pergamino with dissolve  # ← muestra la imagen del pergamino
         "Una bruja te recibe con un pergamino abierto, un diablillo moja una pluma en la sangre de tus pies y te la da."
     
 
-        $ nombre_jugador = renpy.input("¿Con qué nombre vas a firmar el contrato?") 
-        $ nombre_jugador = nombre_jugador.strip()
+        #$ nombre_jugador = renpy.input("¿Con qué nombre vas a firmar el contrato?") 
+        #$ nombre_jugador = nombre_jugador.strip()
+        # Mostrar la pantalla personalizada
+
+        
+        call screen pergamino_input_simple("¿Con qué nombre vas a firmar el contrato?")
+        $ nombre_jugador = _return.strip() if _return else "Protagonista"
+
+        "Hola [nombre_jugador], bienvenido al juego."
+
+
+
 
         if nombre_jugador == "":
             $ nombre_jugador = "Protagonista"
@@ -266,6 +277,8 @@ label A_dónde_hay_que_firmar:
         $ p = Character(nombre_jugador)
         play sound "audio/capitulo1/risaDiabolica.wav"
         $ humanidad -= 10
+
+        hide pergamino with fade  # ← oculta el pergamino lentamente
         p "- Mi nombre es [nombre_jugador] y te vendo mi alma Mandinga."
 
 
