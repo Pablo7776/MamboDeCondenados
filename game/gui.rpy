@@ -50,8 +50,10 @@ define gui.muted_color = '#510000'
 define gui.hover_muted_color = '#7a0000'
 
 ## Colores del texto del diálogo y menú.
-define gui.text_color = '#ffffff'
-define gui.interface_text_color = '#ffffff'
+define gui.text_color = '#880000'
+#define gui.interface_text_color = '#D4AF37'
+define gui.interface_text_color = '#880000'
+#define gui.interface_text_color = '#ffffff'
 
 
 ## Tipos y tamaños de letra ####################################################
@@ -67,7 +69,7 @@ define gui.name_text_font = "fonts/tarotheque.ttf"
 define gui.interface_text_font = "fonts/tarotheque.ttf"
 
 ## El tamaño normal del texto del diálogo.
-define gui.text_size = 50
+define gui.text_size = 45
 
 ## El tamaño de los nombres de los personajes
 define gui.name_text_size = 50
@@ -98,7 +100,7 @@ define gui.game_menu_background = "gui/game_menu.png"
 ## línea cada vez.
 
 ## Altura de la caja de texto que contiene el diálogo.
-define gui.textbox_height = 278
+define gui.textbox_height = 320
 
 ## Colocación vertical de la caja de texto en la pantalla. 0.0 para la parte
 ## superior, 0.5 para el centro y 1.0 para la parte inferior.

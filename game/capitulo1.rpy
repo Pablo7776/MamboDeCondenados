@@ -1,10 +1,15 @@
+# nota #
+#dos tipor de faders:
+#burn_transition y Dissolve()
+
 label capitulo1:    
 
 
     play pisadas sfx_galope loop
 
-    # Mostramos una imagen de fondo
-    scene gauchoACaballo with fade
+
+    #scene gauchoACaballo with Dissolve(3.0)
+    scene gauchoACaballo with burn_transition
 
     show gaucho_a_caballo:
         xoffset 0
@@ -18,7 +23,8 @@ label capitulo1:
     play fx sfx_viento1 loop fadein 1.0
     "El canto de Los pájaros, que hasta hace poco era alegre y armonioso, ahora suena como gritos de dolor."
 
-    scene salamanca with fade
+    scene salamanca with Dissolve(3.0)
+    
 
     "De repente, aparece frente tuyo la piedra roja de la que te había hablado el viejo, que siempre está en la pulpería de tu pueblo." 
 
@@ -26,12 +32,12 @@ label capitulo1:
     "Atás y asegurás tu guitarra a la silla de tu fiel caballo, y luego pronunciás {i}La Palabra{/i}, esa que aquel viejo te confesó."
     "Entonces, se abre una cueva en la roca; das un paso dentro, el caballo relincha y sale corriendo hacia el campo."
 
-    
 
     jump Las_primeras_pruebas
 
     label Las_primeras_pruebas:
-        scene placeholder with fade
+
+        scene placeholder with Dissolve(3.0)
 
         
         stop fx fadeout 1.0
@@ -247,11 +253,22 @@ label A_dónde_hay_que_firmar:
         play fx crucifijo
          
         "Escupís el crucifijo y seguís por el filo del facón, lográs llegar al otro lado."
+        show pergamino with dissolve  # ← muestra la imagen del pergamino
         "Una bruja te recibe con un pergamino abierto, un diablillo moja una pluma en la sangre de tus pies y te la da."
     
 
-        $ nombre_jugador = renpy.input("¿Con qué nombre vas a firmar el contrato?") 
-        $ nombre_jugador = nombre_jugador.strip()
+        #$ nombre_jugador = renpy.input("¿Con qué nombre vas a firmar el contrato?") 
+        #$ nombre_jugador = nombre_jugador.strip()
+        # Mostrar la pantalla personalizada
+
+        
+        call screen pergamino_input_simple("¿Con qué nombre vas a firmar el contrato?")
+        $ nombre_jugador = _return.strip() if _return else "Protagonista"
+
+        "Hola [nombre_jugador], bienvenido al juego."
+
+
+
 
         if nombre_jugador == "":
             $ nombre_jugador = "Protagonista"
@@ -260,6 +277,8 @@ label A_dónde_hay_que_firmar:
         $ p = Character(nombre_jugador)
         play sound "audio/capitulo1/risaDiabolica.wav"
         $ humanidad -= 10
+
+        hide pergamino with fade  # ← oculta el pergamino lentamente
         p "- Mi nombre es [nombre_jugador] y te vendo mi alma Mandinga."
 
 
