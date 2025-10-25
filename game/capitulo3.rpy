@@ -13,7 +13,7 @@ label capitulo3:
 
     jump La_pulperia
 
-    $
+    #$
 
     label La_pulperia:
         "Al entrar te sorprende el sonido de una guitarra."
@@ -65,7 +65,7 @@ label capitulo3:
         
         "- Apareció muerto de un día para el otro. Viviá en el talar por el lado de los Lopez."
 
-        menu:
-            (if:$pregunta_pibe is false)[[[Preguntarle al Tarta “¿Ese quién es?” | El Pibe]]](else:)[[[Acercarse al Pibe Farías y pedirle que pare, para tocar vos -> Vos lo harías mejor]]]
-            (if:$pregunta_colo is false)[[[Preguntarle al Tarta por la señora colorada -> La señora del whisky caro]]] (else:)[[[Acercarse a la colorada Dowley -> La señora Dowley]]] 
-            [[Ir al rancho de El Viejo a investigar.| ¿Qué pasó?]]
+        #menu:
+        #    (if:$pregunta_pibe is false)[[[Preguntarle al Tarta “¿Ese quién es?” | El Pibe]]](else:)[[[Acercarse al Pibe Farías y pedirle que pare, para tocar vos -> Vos lo harías mejor]]]
+        #    (if:$pregunta_colo is false)[[[Preguntarle al Tarta por la señora colorada -> La señora del whisky caro]]] (else:)[[[Acercarse a la colorada Dowley -> La señora Dowley]]] 
+        #    [[Ir al rancho de El Viejo a investigar.| ¿Qué pasó?]]
