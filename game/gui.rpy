@@ -133,11 +133,12 @@ define gui.namebox_tile = False
 
 ## Colocación del diálogo relativa a la caja de texto. Puede ser el número de
 ## píxels relativos a la esquina superor izquierda o 0.5 para centrar.
-define gui.dialogue_xpos = 402
-define gui.dialogue_ypos = 75
+#define gui.dialogue_xpos = 402
+define gui.dialogue_xpos = 320
+define gui.dialogue_ypos = 35
 
 ## La anchura máxima del texto del diálogo, en píxels.
-define gui.dialogue_width = 1116
+define gui.dialogue_width = 1280
 
 ## La alineación horizontal del texto del diálogo. (0.0 es izquierda, 0.5 es
 ## centro, 1.0 es derecha).

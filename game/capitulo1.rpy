@@ -9,11 +9,20 @@ label capitulo1:
 
 
     #scene gauchoACaballo with Dissolve(3.0)
-    scene gauchoACaballo with burn_transition
+    #scene gauchoACaballo with burn_transition
+    scene placeholder8
+
+    #transform para posicionar la imagen
+    transform subir_centrada:
+        xalign 0.5      # centra horizontalmente
+        yalign 0.1      # mueve hacia arriba (0.0 es arriba, 1.0 es abajo)
+        linear 1.0 alpha 1.0  # opcional, para un fade-in suave
+
+    show gauchoACaballo at subir_centrada with burn_transition
 
     show gaucho_a_caballo:
         xoffset 0
-        yoffset 700
+        yoffset 36
 
     "Bienvenid@ al Mambo de los Condenados"
     "Vos, guitarrista y cantor venido a menos, que ahora va al galope por la pampa."
@@ -23,7 +32,7 @@ label capitulo1:
     play fx sfx_viento1 loop fadein 1.0
     "El canto de Los pájaros, que hasta hace poco era alegre y armonioso, ahora suena como gritos de dolor."
 
-    scene salamanca with Dissolve(3.0)
+    show salamanca at subir_centrada with Dissolve(1.0)
     
 
     "De repente, aparece frente tuyo la piedra roja de la que te había hablado el viejo, que siempre está en la pulpería de tu pueblo." 
@@ -37,7 +46,9 @@ label capitulo1:
 
     label Las_primeras_pruebas:
 
-        scene placeholder with Dissolve(3.0)
+        #scene placeholder with Dissolve(3.0)
+        hide placeholderm
+        show placeholderm at subir_centrada with Dissolve(1.0)
 
         
         stop fx fadeout 1.0
@@ -54,7 +65,9 @@ label capitulo1:
         "Todas esas criaturas pasan por tu cuerpo hasta dejarte atrás, y ahora sí, podés avanzar."
 
         
-        scene placeholder6 with fade
+        #scene placeholder6 with fade
+        hide placeholder2m
+        show placeholder2m at subir_centrada with Dissolve(1.0)
 
         play fx sfx_respiracion_chivo 
         "Entonces aparece ese animal grotesco del que te había contado el viejo: un chivo de pelo negro, ojos endemoniados, cuernos tan curvados como un espiral."
@@ -64,10 +77,12 @@ label capitulo1:
     jump La_caida
 
     label La_caida:
-        scene caida with fade
+        #scene caida with fade
+        hide placeholderm
+        show placeholderm at subir_centrada with Dissolve(1.0)
         "El hueco es profundo, más que profundo, estás cayendo al abismo."
         "Ves pasar murciélagos a tu lado, seguís cayendo y repentinamente te desmayás."
-        scene placeholder with fade
+        #scene placeholder with fade
         "Despertás y estás en el fondo, ves sobre vos el abismo que sube en espirales de roca viva."
 
         "Te levantás y delante tuyo no podés ver más allá, es una profunda oscuridad."
@@ -82,7 +97,10 @@ label capitulo1:
             
     
     label Trepar_por_el_abismo_para_salir:
-        scene placeholder3 with fade
+        #scene placeholder3 with fade
+        hide placeholder2m
+        show placeholder2m at subir_centrada with Dissolve(1.0)
+
         "Luego de mucho esfuerzo y luchar contra murciélagos que te atacaban débilmente lográs llegar hasta el borde del hoyo."
         "Estás de vuelta frente a aquel chivo endemoniado que te mira colérico."
         menu:
@@ -93,7 +111,9 @@ label capitulo1:
 
 
         label Te_enfrentas_al_chivo:
-            scene placeholder6 with fade
+            #scene placeholder6 with fade
+            hide placeholderm
+            show placeholderm at subir_centrada with Dissolve(1.0)
             "El chivo corre hacia vos, lográs evitar el primer golpe y le pegás una patada."
             "Se da vuelta y vuelve a intentar embestirte, de éste no pudiste zafar, caés al suelo, , te defendes con patadas y trompadas."
             "Pero el chivo es pesado y sus pezuñas son como hachas contra tu cuerpo, tras unos cuantos minutos de pisotones tu cuerpo yace inerte en la oscuridad de la cueva."
