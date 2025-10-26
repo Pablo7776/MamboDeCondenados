@@ -95,6 +95,7 @@ style frame:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#say
 
+
 screen say(who, what):
 
     window:
@@ -110,10 +111,14 @@ screen say(who, what):
         text what id "what"
 
 
+
+
     ## Si hay una imagen lateral, la muestra encima del texto. No la muestra en
     ## la variante de teléfono - no hay lugar.
     if not renpy.variant("small"):
         add SideImage() xalign 0.0 yalign 1.0
+
+
 
 
 ## Permite que el 'namebox' pueda ser estilizado en el objeto 'Character'.
@@ -360,14 +365,14 @@ screen main_menu():
     add gui.main_menu_background  xalign 1.5 yalign 0.0
 
         # Imagen del título sobre el fondo
-    add "images/facon2.png":
-        xalign 0.5   # centro horizontal
-        yalign 1.5   # un poco arriba
+    #add # "images/facon2.png":
+        #xalign 0.5   # centro horizontal
+        #yalign 1.5   # un poco arriba
         # podés usar xpos/ypos si preferís coordenadas exactas
-        zoom 2.0 
+        #zoom 2.0 
     ## Este marco vacío oscurece el menu principal.
-    frame:
-        style "main_menu_frame"
+    #frame:
+        #style "main_menu_frame"
 
     ## La sentencia 'use' incluye otra pantalla dentro de esta. El contenido
     ## real del menú principal está en la pantalla de navegación.
@@ -1456,6 +1461,8 @@ screen bubble(who, what):
         default ctc = None
         showif ctc:
             add ctc
+
+
 
 style bubble_window is empty
 style bubble_namebox is empty

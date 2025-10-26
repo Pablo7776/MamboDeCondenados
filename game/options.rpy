@@ -25,7 +25,7 @@ define gui.show_name = False
 
 ## Versión del juego.
 
-define config.version = "0.3"
+define config.version = "0.4"
 
 
 ## Texto situado en la pantalla 'Acerca de' del juego. Sitúa el texto entre
@@ -63,7 +63,8 @@ define config.has_voice = True
 ## en el menú principal. Este archivo seguirá sonando en el juego hasta que sea
 ## detenido o se reproduzca otro archivo.
 
-define config.main_menu_music = "audio/musica.mp3"
+#define config.main_menu_music = "audio/musica.mp3"
+define config.main_menu_music = "musica/zamba.mpeg"
 
 
 ## Transiciones ################################################################
@@ -213,3 +214,4 @@ init python:
 ## separados por una barra.
 
 # define build.itch_project = "renpytom/test-project"
+

@@ -7,7 +7,7 @@ define burn_transition = Fade(0.5, 0.2, 0.5, color="#1a1d1f")  # naranja tipo fu
 
 
 
-image logo = "images/y.png"
+#image logo = "images/y.png"
 
 label start:
     # Cargar la reputación persistente o usar 100 si no existe

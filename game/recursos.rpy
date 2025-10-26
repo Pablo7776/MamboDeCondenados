@@ -16,7 +16,8 @@ image placeholder2m = "placeholders/m/Unnamed2.png"
 image placeholder3m = "placeholders/m/Unnamed6.png"
 
 ################### PLACEHOLDERS personajes ###########################
-image gaucho_a_caballo = "placeholders/personajes/ppp.jpg"
+image personaje_placeholder = "placeholders/personajes/ppp.jpg"
+image protagonista_placeholder = "placeholders/personajes/prota.jpg"
 
 
 ############################################################
