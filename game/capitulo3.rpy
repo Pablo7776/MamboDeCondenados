@@ -1,8 +1,11 @@
 #default nombre_jugador = "Protagonista"
-
+default pregunta_colo = False
+default pregunta_pibe = False
+default pregunta_viejo = False
 
 label capitulo3:
-    
+
+
     "Llegás a tu pueblo por la tarde, ya podés ver la pulpería de El Tarta."
 
     "De acá saliste la última vez camino a La Salamanca."
@@ -32,9 +35,7 @@ label capitulo3:
                     jump El_Tarta
                 "Acercarse al joven guitarrista":
                     jump Lo_harias_mejor
-    $ pregunta_colo = False
-    $ pregunta_pibe = False
-    $ pregunta_viejo = False
+
 
     label El_Tarta:
         "Te acercás a la barra y te hacés un hueco entre los muchachos que le piben más de un vaso cada uno al Tarta."
@@ -65,17 +66,13 @@ label capitulo3:
         "- Apareció muerto de un día para el otro. Viviá en el talar por el lado de los Lopez."
 
         menu:
-            if pregunta_pibe:
-                "Acercarse al Pibe Farías y pedirle que pare, para tocar vos":
+            "Acercarse al Pibe Farías y pedirle que pare, para tocar vos" if pregunta_pibe:
                     jump Lo_harias_mejor
-            else:
-                "Preguntarle al Tarta “¿Ese quién es?”":
+            "Preguntarle al Tarta “¿Ese quién es?”" if not pregunta_pibe:
                     jump El_Pibe
-            if pregunta_colo:
-                "Acercarse a la colorada Dowley":
+            "Acercarse a la colorada Dowley" if pregunta_colo:
                     jump La_señora_Dowley
-            else:
-                "Preguntarle al Tarta por la señora colorada":
+            "Preguntarle al Tarta por la señora colorada" if not pregunta_colo:
                     jump La_del_whisky_caro
             "Ir al rancho de El Viejo a investigar.":
                 jump Que_paso
@@ -87,17 +84,13 @@ label capitulo3:
         "“Ciertamente el Pibe Farías no toca mal, pero tiene las manías de los chicos de ciudad. Además obviamente ahora no hay nadie que se compare con vos” pensás."
 
         menu:
-            if pregunta_colo:
-                "Acercarse a la colorada Dowley":
+            "Acercarse a la colorada Dowley" if pregunta_colo:
                     jump La_señora_Dowley
-            else:
-                "Preguntarle al Tarta por la señora colorada":
+            "Preguntarle al Tarta por la señora colorada" if not pregunta_colo:
                     jump La_del_whisky_caro
-            if pregunta_viejo:
-                "Ir al rancho de El Viejo a investigar.":
+            "Ir al rancho de El Viejo a investigar." if pregunta_viejo:
                     jump Que_paso
-            else:
-                "Preguntarle al Tarta por El Viejo":
+            "Preguntarle al Tarta por El Viejo" if not pregunta_viejo:
                     jump Malas_noticias
             "Acercarse al Pibe Farías y pedirle que pare, para tocar vos":
                 jump Lo_harias_mejor
@@ -111,17 +104,13 @@ label capitulo3:
         "- Ayer y hoy me pidió el mejor whisky que tuviera."
 
         menu:
-            if pregunta_pibe:
-                "Acercarse al Pibe Farías y pedirle que pare, para tocar vos":
+            "Acercarse al Pibe Farías y pedirle que pare, para tocar vos" if pregunta_pibe:
                     jump Lo_harias_mejor
-            else:
-                "Preguntarle al Tarta “¿Ese quién es?”":
+            "Preguntarle al Tarta “¿Ese quién es?”" if not pregunta_pibe:
                     jump El_Pibe
-            if pregunta_viejo:
-                "Ir al rancho de El Viejo a investigar.":
+            "Ir al rancho de El Viejo a investigar." if pregunta_viejo:
                     jump Que_paso
-            else:
-                "Preguntarle al Tarta por El Viejo":
+            "Preguntarle al Tarta por El Viejo" if not pregunta_viejo:
                     jump Malas_noticias
             "Acercarse a la colorada Dowley":
                 jump La_señora_Dowley
@@ -137,10 +126,10 @@ label capitulo3:
         
         "- Muy buena voz la de aquel joven, El Farías, ¿no?"
 
-        menu "¿Qué le respondés?":
-            "Yo lo haría mucho mejor":
+        menu:
+            "Respondés: Yo lo haría mucho mejor":
                 jump La_colorada_curiosa
-            "No lo hace mal, pero seguramente usté escuchó mejores alguna vez, en la ciudad seguro hay muchos buenos músicos.":
+            "Respondés: No lo hace mal, pero seguramente usté escuchó mejores alguna vez, en la ciudad seguro hay muchos buenos músicos.":
                 jump Admitiendo_la_torpeza_del_Farias
 
     label Admitiendo_la_torpeza_del_Farias:
