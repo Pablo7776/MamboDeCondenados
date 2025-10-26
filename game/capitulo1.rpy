@@ -1,7 +1,7 @@
 # nota #
 #dos tipor de faders:
 #burn_transition y Dissolve()
-
+#hola
 label capitulo1:    
 
 
