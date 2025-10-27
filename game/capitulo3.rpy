@@ -207,3 +207,154 @@ label capitulo3:
         menu:
             "[nombre_jugador] me llamo, respondés y vas al rincón de los cantores y payadores":
                 jump Hechizando_a_toda_la_pulpería
+
+    label Hechizando_a_toda_la_pulpería:
+        $ reputacion_con_el_mandinga += 20
+        "Con el primer rasgueo de tu guitarra todas las miradas se clavan en vos."
+        
+        "Luego de la primera estrofa ya todos están mirandote embelesados."
+
+        "Todos menos la Colorada Dowley que te mira con curiosidad."
+        
+        "Luego de la segunda canción ves como ella le dice algo al Pibe Farías"
+
+        "Él cambia repentinamente su expresión, sale de la pulpería casi arrastrando su guitarra con una cara de pánico y terror."
+        
+        "Terminás de tocar y se produce una ovación inmensa."
+        
+        "Todos aplauden, silban y gritan por vos y tu canto."
+        
+        "Te vas acercando nuevamente a la mesa de la colorada y todos van tocandote la espalda, los hombros y felicitándote."
+
+        if Vida_china:
+            "Tu china que se había quedado tomando algo en la barra se acerca, interrumpe tu paso y te llena de besos, te pregunta si ya pueden ir a tu casa."
+
+        menu:
+            "Hacerle caso a tu china e ir a tu casa con ella." if Vida_china:
+                jump La_calle_fría
+            "Te vas a tu casa satisfecho " if not Vida_china:
+                jump Una_noche_fría
+            "Vas decidido a la mesa de la Colorada":
+                jump Colony_Records_y_otro_contrato
+
+    label Colony_Records_y_otro_contrato:
+        $ reputacion_con_el_mandinga += 5
+        if not presentacion_colorada:
+            $ presentacion_colorada = True
+        "- Me presento correctamente, soy Diana Dowley."
+
+        "- Vine a buscar talentos al interior."
+
+        "- Represento a la discográfica Colony Records."
+
+        "- Supongo que no la conocés, se instaló hace poco en el país pero afuera es muy conocida."
+
+        "-Me parece que tenés mucho potencial para ser parte de nuestros artistas."
+
+        "-Podrías conseguir mucho dinero, mucha fama y mucho más. Te llevaríamos por todo el país. Incluso puede que hasta al extranjero."
+
+        "-Te propongo algo: nos podemos encontrar mañana por la mañan, me estoy quedando en una estancia a unos kilómetros."
+
+        "-Paso por vos a la mañana, si no salís asumiré que no querés ser parte de esta gran aventura que te propongo."
+        
+        "-Obviamente tendrías que mudarte al menos un tiempo a la capital, yo puedo organizar sin problemas esa mudanza."
+
+        menu:
+            "Ya estás seguro de que no querés aceptar este trato" if Vida_china:
+                jump La_calle_fría
+            "Ya estás seguro de que no querés aceptar este trato " if not Vida_china:
+                jump Una_noche_fría
+            "Lo vas a pensar, pero casi seguro que sí, que te vas a sumar a la discográfica":
+                jump Capítulo_4_Colony_Records
+    
+    label Una_noche_fría:
+        $ reputacion_con_el_mandinga -= 10
+        "Salís de la pulpería agradecido de tu nuevo don."
+
+        "Vas zigzagueando por culpa del alcohol por las calles de tierra hacia tu casa."
+
+        "Cuando están a unas cuadras de tu casa..."
+        
+        "... ves al pibe Farías, cuelga con una soga al cuello de una rama gruesa de un viejo caldén."
+
+        "¿Habrá sido lo que le dijo la colorada? te preguntás recordando la situación de la pulpería."
+
+        menu:
+            "Ya alguien se hará cargo de ese pobre desgraciado, vos a lo tuyo, te vas para tu casa":
+                jump Un_paso_atrás
+            "Investigás qué pasó con el pibe":
+                jump Capítulo_4_El_pobre_Pibe_Farías
+
+    label Un_paso_atrás:
+        "Llegás a tu casa y sentís un profundo pesar en el pecho."
+
+        "Tocas la guitarra para tranquilizarte después de lo que viste."
+
+        "Pero cuando lo pensas, creés que tiene que haber algo más."
+
+        menu:
+            "Volvés a la pulpería":
+                jump La_joda_terminó
+            "Volvés a ver que pasó con el pibe":
+                jump Capítulo_4_El_pobre_Pibe_Farías
+
+    label La_calle_fría:
+        $ reputacion_con_el_mandinga -= 10
+
+        "Salís de la pulpería con tu china, van zigzagueando por las calles, hace frío."
+
+        "Se abrazan para no tener frío, para sentir el calor del otro y para no caerse."
+
+        "Cuando están a unas cuadras de tu casa..."
+
+        "... ves al pibe Farías, cuelga con una soga al cuello de una rama gruesa de un viejo caldén."
+
+        "La china pega un grito de espanto y te das vuelta a consolarla. Van despacio, ella aún llorando por la terrible imagen, hasta que llegan a tu casa."
+
+        "¿Habrá sido lo que le dijo la colorada? te preguntás recordando la situación de la pulpería."
+
+        menu:
+            "Ya alguien se hará cargo de ese pobre desgraciado, vos a lo tuyo, te quedás en tu casa con tu china":
+                jump La_noche_en_tu_casa
+            "La llevas a la china a tu casa y volvés a ver qué pasó con el pibe":
+                jump Capítulo_4_El_pobre_Pibe_Farías
+
+    label La_noche_en_tu_casa:
+        "Llegan a tu casa y la china se deshace en llanto sobre tu pecho ni bien entrar."
+        
+        "La consolás y le decís que no se preocupe, que el pibe debería tener sus motivos, no era tema suyo ni tuyo."
+
+        "Tocas la guitarra para tranquilizarla."
+
+        "Pero igual cuando lo pensas, creés que tiene que haber algo más."
+
+        menu:
+            "Volvés a la pulpería":
+                jump La_joda_terminó
+            "Volvés a ver que pasó con el pibe":
+                jump Capítulo_4_El_pobre_Pibe_Farías
+
+    label La_joda_terminó:
+        "La colorada Dowley ya no está."
+
+        "Los borrachos aún están en la pulpería y algunos están cantando a coro una vieja vidala."
+
+        if not pregunta_viejo:
+            
+            "El Tarta te ve entrar y ni bien llegás a la barra te cuenta sobre el viejo."
+
+            "- El viejo falleció, lo encontramos sin vida en la calle, a unas cuadras."
+
+            "- Le hicimos el velorio y no fue nadie. No sabemos que carajos le pasó."
+
+            "- Apareció muerto de un día para el otro. Viviá en el talar por el lado de los Lopez."
+        
+        "Preguntás un poco por ahí pero nadie vió salir a la Colorada ni nadie te comenta nada del Pibe Farías."
+
+        "Con cada persona que hablás, y que te escuchó tocar, te alaba nuevamente, de una manera muy lisonjera."
+
+        menu:
+            "Ir a ver el cadaver del Farías":
+                jump Capítulo_4_El_pobre_Pibe_Farías
+            "Ir al rancho del viejo":
+                jump Que_paso
