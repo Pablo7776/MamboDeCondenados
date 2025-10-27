@@ -361,6 +361,18 @@ screen main_menu():
 
     ## Esto asegura que cualquier otra pantalla de menu es remplazada.
     tag menu
+#######################################################################
+    # Fondo del menú
+    #add "images/facon2.png"
+
+    # Muestra la imagen del título solo cuando hoverea
+    imagebutton:
+        idle "images/facon3.png"  # puede ser transparente
+        hover "images/facon2.png"
+        action Start()  # si querés que se pueda hacer click para empezar
+        xalign 0.9
+        yalign 0.9
+###########################################################
 
     add gui.main_menu_background  xalign 1.5 yalign 0.0
 
@@ -1654,3 +1666,6 @@ style slider_slider:
 #            idle "images/un_tipo_que_parece_demonio.png"
 #            hover "images/un_tipo_que_parece_demonio.png"
 #            action [Hide("clickeable"), Jump("start")]
+
+
+########################################################
