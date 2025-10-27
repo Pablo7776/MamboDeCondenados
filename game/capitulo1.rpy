@@ -149,7 +149,7 @@ label capitulo1:
             show placeholder2m at subir_centrada with Dissolve(1.0)
             "Si antes pudiste pasar por al lado de él sin que se de cuenta ¿por qué no intentarlo nuevamente?."
             "Das un paso y el chivo corre tan rápidamente hacia vos que no lográs evitarlo, te tira nuevamente por el hueco del que acabás de salir." 
-            scene caida with fade
+            #scene caida with fade
             menu:
                 "Caes y caes a lo profundo del abismo nuevamene":
                     jump La_caida
