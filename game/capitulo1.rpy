@@ -42,7 +42,7 @@ label capitulo1:
 
     ###play fx sfx_viento1 loop fadein 1.0
     "El canto de los pájaros, que hasta hace poco era alegre y armonioso, ahora suena como gritos de dolor."
-
+    hide gauchoACaballo
     show salamanca at subir_centrada with Dissolve(1.0)
     
 
@@ -58,7 +58,7 @@ label capitulo1:
     label Las_primeras_pruebas:
 
         #scene placeholder with Dissolve(3.0)
-        hide placeholderm
+        hide salamanca
         show placeholderm at subir_centrada with Dissolve(1.0)
 
         
