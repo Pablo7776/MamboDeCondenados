@@ -45,6 +45,8 @@ label start:
             jump capitulo1
         "ir a cap 2":
             jump capitulo2
+        "ir a cap 3":
+            jump capitulo3
         "ejemplos de texto con efectos":
             jump ejemplosTexto
         "ir a ejemplo clickeable":

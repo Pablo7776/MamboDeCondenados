@@ -314,7 +314,7 @@ screen navigation():
 
             textbutton _("Guardar") action ShowMenu("save")
 
-        textbutton _("Cargar") action ShowMenu("load")
+        #textbutton _("Cargar") action ShowMenu("load")
 
         textbutton _("Opciones") action ShowMenu("preferences")
 
@@ -328,11 +328,11 @@ screen navigation():
 
         textbutton _("Acerca de") action ShowMenu("about")
 
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+        #if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## La ayuda no es necesaria ni relevante en dispositivos móviles.
-            textbutton _("Ayuda") action ShowMenu("help")
-
+        #    textbutton _("Ayuda") action ShowMenu("help")
+        
         if renpy.variant("pc"):
 
             ## El botón de salida está prohibido en iOS y no es necesario en
@@ -593,7 +593,16 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Hecho con {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            #text _("Hecho con {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _("Proyecto educativo desarrollado como trabajo integrador de la tecnicatura universitaria en  DISEÑO Y PROGRAMACIÓN DE VIDEOJUEGOS.")
+            text _("   ")
+            text _("Equipo Ctapó:")
+            text _("   ")
+            text _("Producción: M. Luz Opazo")
+            text _("Arte Conceptual: Lucas Arancibia")
+            text _("Diseño y Guión: Lucas Traverso")
+            text _("Arte y Sonido: Gonzalo Ríos")
+            text _("Programación: Pablo Durán")
 
 
 style about_label is gui_label
