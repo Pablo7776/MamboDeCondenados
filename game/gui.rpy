@@ -91,7 +91,7 @@ define gui.title_text_size = 75
 
 ## Imágenes del menú principal y menús del juego.
 define gui.main_menu_background = "gui/faconMenu.png"
-define gui.game_menu_background = "gui/game_menu.png"
+#define gui.game_menu_background = "gui/game_menu.png"
 
 
 ## Diálogo #####################################################################
@@ -255,6 +255,7 @@ define gui.file_slot_rows = 2
 ## izquierdo de la pantalla.
 define gui.navigation_xpos = 60
 
+
 ## Posición vertical del indicador de salto.
 define gui.skip_ypos = 15
 
@@ -265,7 +266,7 @@ define gui.notify_ypos = 68
 define gui.choice_spacing = 33
 
 ## Botones en la sección de navegación del menú principal y el menú del juego.
-define gui.navigation_spacing = 6
+define gui.navigation_spacing = 60
 
 ## Controla el espacio entre preferencias.
 define gui.pref_spacing = 15

@@ -356,21 +356,24 @@ style navigation_button_text:
 ## Usado para mostrar el menú principal cuando Ren'Py arranca.
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
-
+transform fade_in_background:
+    alpha 0.0
+    linear 2.5 alpha 1.0  # tarda 2.5 segundos en aparecer
 screen main_menu():
 
     ## Esto asegura que cualquier otra pantalla de menu es remplazada.
     tag menu
 
-    
+        # Fondo con aparición suave
+    add "gui/faconMenu.png" at fade_in_background
 #######################################################################
     # Fondo del menú
     #add "images/facon2.png"
 
     # Muestra la imagen del título solo cuando hoverea
     imagebutton:
-        idle "images/facon3.png"  # puede ser transparente
-        hover "images/facon2.png"
+        idle "images/facon4.png"  # puede ser transparente
+        hover "images/facon4.png"
         action Start()  # si querés que se pueda hacer click para empezar
         xalign 0.9
         yalign 0.9
