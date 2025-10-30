@@ -13,7 +13,8 @@ image placeholder8 = "placeholders/negro.jpg"
 ################### PLACEHOLDERS pequeños ###########################
 image placeholderm = "placeholders/m/Unnamed.png"
 image placeholder2m = "placeholders/m/Unnamed2.png"
-image placeholder3m = "placeholders/m/Unnamed6.png"
+image placeholder3m = "placeholders/m/Unnamed3.png"
+image placeholder6m = "placeholders/m/Unnamed6.png"
 
 ################### PLACEHOLDERS personajes ###########################
 image personaje_placeholder = "placeholders/personajes/ppp.jpg"

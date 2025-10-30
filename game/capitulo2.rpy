@@ -2,6 +2,9 @@ default nombre_jugador = "Vos!"
 
 
 label capitulo2:
+    hide placeholderm
+    show placeholder2m at subir_centrada with Dissolve(1.0)
+
     "[nombre_jugador], trepás nuevamente por el abismo en espiral por el que caiste."
 
     "Te encontrás cara a cara con el chivo negro, pero esta vez no te ataca. Se acerca lentamente y te lame los pies; con su saliva sana tus heridas."
@@ -11,6 +14,9 @@ label capitulo2:
     "En la última curva te esperan tus botas, tu sombrero y tu pañuelo, que te los volvés a poner."
 
     "Das un paso afuera y la piedra que se había abierto antes ahora se cierra crujiendo suavemente."
+
+    hide placeholder2m
+    show placeholder3m at subir_centrada with Dissolve(1.0)
     
     "Escuchás un galope y ves llegar a tu caballo, con tu guitarra aún bien atada a su silla."
 
@@ -28,13 +34,16 @@ label capitulo2:
 
 label noche_ante_las_estrellas:
     $ reputacion_con_el_mandinga -= 10
+
+    hide placeholder3m
+    show placeholderm at subir_centrada with Dissolve(1.0)
     "Encontrás una gran higuera a un costado del camino, atás tu caballo y te recostás debajo de aquél custodio de la pampa."
 
-    "Por la noche en tus sueños se repite la frase que dijo El Mandinga: ¡Bienvenido a mis huestes CONDENADO!]" # efecto de texto
+    "Por la noche en tus sueños se repite la frase que dijo El Mandinga: \"¡Bienvenido a mis huestes CONDENADO!\"" # efecto de texto
 
     "Ves como las alimañas de La Salamanca salen de la cueva y se dirigen al camino que andaste para llegar hasta acá."
 
-    "Queda retumbando la última palabra, "CONDENADO" te levantás agitado."
+    "Queda retumbando la última palabra, \"CONDENADO\" te levantás agitado." 
 
     "Tenés una deuda importante que saldar con ese poderoso ser de las profundidades."
 
@@ -43,9 +52,17 @@ label noche_ante_las_estrellas:
             jump capitulo3
 
 label puerta_del_rancho:
-    "Una china joven te abre la puerta, un poco asustada, te pregunta con voz temblorosa"
+    hide placeholder3m
+    show placeholderm at subir_centrada with Dissolve(1.0)
+    "Una china joven te abre la puerta, un poco asustada, te pregunta con voz temblorosa:"
+    ### personaje ##########################
+    pause 0.01
+    show personaje_placeholder:
+        xoffset 0
+        yoffset 36
 
     "- ¿Quién es? ¿Qué necesita?"
+    hide personaje_placeholder
 
     menu:
         "- Soy [nombre_jugador] vengo viajando hace medio día, se me hizo de noche en el camino, quería saber si me podían dar techo esta noche, a cambio puedo ofrecer mi música. - Y mostrás tu guitarra.":
@@ -59,6 +76,9 @@ label puerta_del_rancho:
 
 label Tus_primeros_hechizados:
     $ reputacion_con_el_mandinga += 10
+
+    hide placeholderm
+    show placeholder3m at subir_centrada with Dissolve(1.0)
     "Empezás a rasguear la guitarra y cuando te das cuenta ya estás improvisando versos junto a toda la familia."
 
     "Los padres de la joven lloran y sus hermanos miran sin poder quitar la vista de tus cuerdas."
@@ -71,11 +91,15 @@ label Tus_primeros_hechizados:
 
     "Te dormís y empezás a soñar"
 
-    "Es la voz de El Mandinga ... CONDENA.. !" # efecto texto
+    "Es la voz de El Mandinga ... \"CONDENA...\" !" # efecto texto
 
     "Te despierta una voz dulce y alguien que te sacude suavemente, es la china que te abrió la puerta"
 
+    show personaje_placeholder:
+        xoffset 0
+        yoffset 36
     "- Disculpe, ¿puedo.... estar con usted esta noche?" #efecto
+    hide personaje_placeholder
 
     menu:
         "Aceptar":
@@ -108,12 +132,16 @@ label Una_mañana_incómoda:
 
     "Las huestes de El Mandinga, parecen recorrer el camino que vos hiciste."
 
-    "Te despertás abruptamente exsaltado cuando algo te está tocando los piés, te sacás rapidamente la colcha de encima"
+    "Te despertás abruptamente exsaltado cuando algo te está tocando los piés, te sacás rapidamente la colcha de encima."
+    
+    hide placeholder3m
+    show placeholder6m at subir_centrada with Dissolve(1.0)
 
     "Son unas cinco serpientes que estaban dentro de la cama."
 
     "Salís corriendo al salón pero esa mañana todos te miran mal y practicamente te hechan de su rancho casi sin hablarte."
-
+    hide placeholder6m
+    show placeholder3m at subir_centrada with Dissolve(1.0)
     menu:
         "Te subís a tu caballo y galopás hacia tu pueblo y hacia la Pulpería del Tarta":
             jump capitulo3
@@ -141,9 +169,15 @@ label Fuiste_cordíal_y_se_te_agradece_por_ello:
 
     "Te despertás abruptamente en medio de la noche exsaltado cuando algo te está tocando los piés."
 
+    hide placeholder3m
+    show placeholder6m at subir_centrada with Dissolve(1.0)
+
     "Te sacás rápidamente la colcha de encima y son unas cinco cucarachas que estaban debajo de la frazada."
 
     "Viene corriendo la china a preguntarte si estás bien, le señalás a donde estaban esos bichos y cuando volvés a mirar ya no están."
+
+    hide placeholder6m
+    show placeholder3m at subir_centrada with Dissolve(1.0)
 
     "Ella te acaricia tiernamente la espalda y empieza a cantarte una nana."
 
@@ -166,14 +200,14 @@ label No_fuiste_muy_cordial:
 
     "En tus sueños se repite la frase que dijo El Mandinga:"
 
-    "- ¡Bienvenido a mis huestes CONDENADO!]" # efecto texto
+    "\"-¡Bienvenido a mis huestes CONDENADO!\"" # efecto texto
 
     "Ves como las alimañas de La Salamanca salen de la cueva y se dirigen al camino que andaste para llegar hasta acá."
 
-    "Queda retumbando la última palabra, CONDENADO te levantás agitado."
+    "Queda retumbando la última palabra, \"CONDENADO\". Te levantás agitado."
 
     "Tenés una deuda importante que saldar con ese poderoso ser de las profundidades."
 
     menu:
-        "Tomás las riendas y seguís cabalgando pensativo rumbo a la pulpería del Tarta, en tu pueblo.":
-            jump capitulo1
+        "Tomás las riendas y seguís cabalgando pensativo rumbo a la pulpería del Tarta.":
+            jump capitulo3
