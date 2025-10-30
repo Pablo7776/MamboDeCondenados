@@ -5,7 +5,7 @@
 label capitulo1:    
 
 
-    #play pisadas sfx_galope loop
+    play pisadas sfx_galope 
 
 
     #scene gauchoACaballo with Dissolve(3.0)
@@ -38,7 +38,7 @@ label capitulo1:
 
     "Vos, guitarrista y cantor venido a menos, que ahora va al galope por la pampa."
     "Subís por el camino empinado de un pequeño cerro."
-    ###play ambiente sfx_SonidoAmbienteTerror loop fadein 1.0
+    play ambiente sfx_SonidoAmbienteTerror loop fadein 1.0
 
     ###play fx sfx_viento1 loop fadein 1.0
     "El canto de los pájaros, que hasta hace poco era alegre y armonioso, ahora suena como gritos de dolor."
@@ -48,7 +48,7 @@ label capitulo1:
 
     "De repente, aparece frente tuyo la piedra roja de la que te había hablado el viejo, que siempre está en la pulpería de tu pueblo." 
 
-    ###stop pisadas fadeout 1.0
+    stop pisadas fadeout 1.0
     "Atás y asegurás tu guitarra a la silla de tu fiel caballo, y luego pronunciás {i}La Palabra{/i}, esa que aquel viejo te confesó."
     "Entonces, se abre una cueva en la roca; das un paso dentro, el caballo relincha y sale corriendo hacia el campo."
 
@@ -65,7 +65,7 @@ label capitulo1:
         ###stop fx fadeout 1.0
         $ renpy.music.set_audio_filter("viento", lowpass_filtro_viento, replace=True)
         "En el primer pasillo de este laberinto te sacás los zapatos, el sombrero y el pañuelo. Así debe ser."
-        $ renpy.music.set_audio_filter("estatica", lowpass_filtro_viento, replace=True)
+        
         "Ya sumido en la oscuridad, comenzás a escuchar el arpa tenebrosa y pronto sentís la presencia del basilisco."
         "Menos mal que no se ve; si no te petrificaría. Con su siseo, el basilisco te guía para atravesar este laberinto, seguís ese ruido senpertino y lo lográs superar."
         
@@ -85,7 +85,7 @@ label capitulo1:
         play fx sfx_respiracion_chivo 
         "Entonces aparece ese animal grotesco del que te había contado el viejo: un chivo de pelo negro, ojos endemoniados, cuernos tan curvados como un espiral."
         "El animal bufa en tu dirección. Lo rodeás fácilmente sin que se mosquee, pero..."
-        "cuando por fin llegás al otro lado, el chivo se da vuelta, corre, te topeta y te arroja a un profundo hoyo."
+        "Cuando por fin llegás al otro lado, el chivo se da vuelta, corre, te topeta y te arroja a un profundo hoyo."
 
     jump La_caida
 
@@ -321,7 +321,7 @@ label A_dónde_hay_que_firmar:
 
     label Escupir_el_crucifijo:
         hide placeholder3m
-        show placeholder3m at subir_centrada with Dissolve(1.0)
+        show placeholder6m at subir_centrada with Dissolve(1.0)
         stop ambiente fadeout 1.0
         play fx crucifijo
          
@@ -371,7 +371,7 @@ label A_dónde_hay_que_firmar:
         "Resuena una vez más la voz del Mandinga, mucho más fuerte, mucho más demoníaca."
         "Las brujas, los brujos y los diablillos arrancan la fiesta a tu alrededor, sentís como tu garganta arde y luego se calma y empezás a cantar junto a los demás."
         "Las alimañas te levantan sobre sus lomos y te pasean por toda la sala, tu voz y tu canto ahora suena como nunca antes sonó."
-        hide placeholderm
+        hide placeholder6m
         show placeholderm at subir_centrada with Dissolve(1.0)
         menu:
             "En un rancho cercano...":
@@ -379,7 +379,7 @@ label A_dónde_hay_que_firmar:
 
     label En_un_rancho_cercano:
         stop music fadeout 1.0
-
+        stop ambiente fadeout 1.0
 
         "A pocos kilómetros una señora se despierta asustada por el alboroto, empieza a rezar..."
         "- ¡Dios nos salve, que hoy hay baile en La Salamanca!"

@@ -5,6 +5,8 @@ default pregunta_viejo = False
 
 label capitulo3:
 
+    hide placeholder6m
+    show placeholder2m at subir_centrada with Dissolve(1.0)
 
     "Llegás a tu pueblo por la tarde, ya podés ver la pulpería de El Tarta."
 
