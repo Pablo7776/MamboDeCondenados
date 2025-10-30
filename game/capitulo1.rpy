@@ -352,7 +352,7 @@ label A_dónde_hay_que_firmar:
         show protagonista_placeholder:
             xoffset 1636
             yoffset 36
-        p "- Mi nombre es [nombre_jugador] y te vendo mi alma al Mandinga."
+        p "- Mi nombre es [nombre_jugador] y te vendo mi alma, Mandinga."
         hide protagonista_placeholder
 
         menu:
