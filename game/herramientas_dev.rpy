@@ -39,9 +39,10 @@ init python:
         config.label_callback = on_label_jump
 
     # Canales de audio
-    renpy.music.register_channel("ambiente", "sfx", True)
-    renpy.music.register_channel("fx", "sfx", False)
-    renpy.music.register_channel("pisadas", "sfx", True)
+    #renpy.music.register_channel("ambiente", "sfx", True)
+    #renpy.music.register_channel("fx", "sfx", False)
+    #renpy.music.register_channel("pisadas", "sfx", True)
+
 
 # ---------------------------------------------------
 # Estilo botón pergamino

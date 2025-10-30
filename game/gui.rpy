@@ -29,13 +29,13 @@ define config.check_conflicting_properties = True
 define gui.accent_color = '#cc0000'
 
 ## El color del botón de texto cuando no está seleccionado ni enfocado.
-define gui.idle_color = '#000000'
+define gui.idle_color = '#880000'
 
 ## El color 'small' se usa para el texto pequeño, que necesita destacar más.
 define gui.idle_small_color = '#aaaaaa'
 
 ## El color usado en botones y barras que ganan foco.
-define gui.hover_color = '#880000'
+define gui.hover_color = '#D4AF37'
 
 ## El color del botón de texto seleccionado pero no enfocado. Un botón está
 ## seleccionado si indica el valor actual de la pantalla o preferencia.

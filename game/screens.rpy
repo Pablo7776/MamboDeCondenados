@@ -361,6 +361,8 @@ screen main_menu():
 
     ## Esto asegura que cualquier otra pantalla de menu es remplazada.
     tag menu
+
+    
 #######################################################################
     # Fondo del menú
     #add "images/facon2.png"

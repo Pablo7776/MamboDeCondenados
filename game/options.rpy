@@ -63,8 +63,8 @@ define config.has_voice = True
 ## en el menú principal. Este archivo seguirá sonando en el juego hasta que sea
 ## detenido o se reproduzca otro archivo.
 
-#define config.main_menu_music = "audio/musica.mp3"
-define config.main_menu_music = "musica/zamba.mpeg"
+#define config.main_menu_music = "audio/viento.mp3"
+define config.main_menu_music = "musica/zamba.mp3" ##### agrregar sonido de viento al mp3
 
 
 ## Transiciones ################################################################

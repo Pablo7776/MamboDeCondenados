@@ -5,7 +5,7 @@
 label capitulo1:    
 
 
-    play pisadas sfx_galope loop
+    #play pisadas sfx_galope loop
 
 
     #scene gauchoACaballo with Dissolve(3.0)
@@ -35,11 +35,12 @@ label capitulo1:
 #############################################
 
     "Bienvenid@ al Mambo de los Condenados"
+
     "Vos, guitarrista y cantor venido a menos, que ahora va al galope por la pampa."
     "Subís por el camino empinado de un pequeño cerro."
-    play ambiente sfx_SonidoAmbienteTerror loop fadein 1.0
+    ###play ambiente sfx_SonidoAmbienteTerror loop fadein 1.0
 
-    play fx sfx_viento1 loop fadein 1.0
+    ###play fx sfx_viento1 loop fadein 1.0
     "El canto de los pájaros, que hasta hace poco era alegre y armonioso, ahora suena como gritos de dolor."
 
     show salamanca at subir_centrada with Dissolve(1.0)
@@ -47,7 +48,7 @@ label capitulo1:
 
     "De repente, aparece frente tuyo la piedra roja de la que te había hablado el viejo, que siempre está en la pulpería de tu pueblo." 
 
-    stop pisadas fadeout 1.0
+    ###stop pisadas fadeout 1.0
     "Atás y asegurás tu guitarra a la silla de tu fiel caballo, y luego pronunciás {i}La Palabra{/i}, esa que aquel viejo te confesó."
     "Entonces, se abre una cueva en la roca; das un paso dentro, el caballo relincha y sale corriendo hacia el campo."
 
@@ -61,8 +62,10 @@ label capitulo1:
         show placeholderm at subir_centrada with Dissolve(1.0)
 
         
-        stop fx fadeout 1.0
+        ###stop fx fadeout 1.0
+        $ renpy.music.set_audio_filter("viento", lowpass_filtro_viento, replace=True)
         "En el primer pasillo de este laberinto te sacás los zapatos, el sombrero y el pañuelo. Así debe ser."
+        $ renpy.music.set_audio_filter("estatica", lowpass_filtro_viento, replace=True)
         "Ya sumido en la oscuridad, comenzás a escuchar el arpa tenebrosa y pronto sentís la presencia del basilisco."
         "Menos mal que no se ve; si no te petrificaría. Con su siseo, el basilisco te guía para atravesar este laberinto, seguís ese ruido senpertino y lo lográs superar."
         

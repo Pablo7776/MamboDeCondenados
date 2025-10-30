@@ -24,6 +24,13 @@ label start:
 
     stop music fadeout 1.0
 
+    play viento "audio/viento.mp3" loop
+    play estatica "audio/ruidoRosa.mp3" loop
+    #$ renpy.music.set_audio_filter("viento", lowpass_filtro_viento, replace=True)
+
+
+
+    #play acufeno "audio/acufeno.mp3"
     
     ######pruebas
     #show logo at left
