@@ -46,7 +46,7 @@ label capitulo1:
     show salamanca at subir_centrada with Dissolve(1.0)
     
 
-    "De repente, aparece frente tuyo la piedra roja de la que te había hablado el viejo, que siempre está en la pulpería de tu pueblo." 
+    "De repente, aparece frente tuyo la piedra roja de la que te había hablado el viejo, ese que siempre está en la pulpería de tu pueblo." 
 
     stop pisadas fadeout 1.0
     "Atás y asegurás tu guitarra a la silla de tu fiel caballo, y luego pronunciás {i}La Palabra{/i}, esa que aquel viejo te confesó."
@@ -67,11 +67,11 @@ label capitulo1:
         "En el primer pasillo de este laberinto te sacás los zapatos, el sombrero y el pañuelo. Así debe ser."
         
         "Ya sumido en la oscuridad, comenzás a escuchar el arpa tenebrosa y pronto sentís la presencia del basilisco."
-        "Menos mal que no se ve; si no te petrificaría. Con su siseo, el basilisco te guía para atravesar este laberinto, seguís ese ruido senpertino y lo lográs superar."
+        "Menos mal que no se ve; si no te petrificaría. Con su siseo, el basilisco te guía para atravesar este laberinto, seguís ese ruido serpentino y lo lográs superar."
         
         "Ya en el pasillo recto y angosto empezás a caminar sin guía. Después de unos pasos, sentís las primeras alimañas:"
         
-        "Serpientes, iguanas y tarántulas comienzan a trepar por tu cuerpo."
+        "Vívoras, lagartos y alacranes comienzan a trepar por tu cuerpo."
 
         "Tenés que quedarte completamente quieto, inmóvil, aguantando la respiración."
         "De a una van trepando por tus piernas, tu pecho, tu cabeza, tus hombros... y bajan por tu espalda, siguiendo su camino sin hacerte daño."
