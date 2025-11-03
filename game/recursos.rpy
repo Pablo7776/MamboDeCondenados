@@ -32,6 +32,8 @@ image fondo = "images/fondos/fondo.jpg"
 image gauchoACaballo = "images/capitulo1/gauchoACaballo.jpeg"
 image salamanca = "images/capitulo1/salamanca1280.jpg"
 image caida = "images/capitulo1/caida.jpg"
+image cueva = "images/capitulo1/cueva.png"
+
 
 image pergamino = "images/capitulo1/old_paper.png"
 

@@ -59,11 +59,12 @@ label capitulo1:
 
         #scene placeholder with Dissolve(3.0)
         hide salamanca
-        show placeholderm at subir_centrada with Dissolve(1.0)
+        show cueva at subir_centrada with Dissolve(1.0)
 
         
         ###stop fx fadeout 1.0
         $ renpy.music.set_audio_filter("viento", lowpass_filtro_viento, replace=True)
+        $ renpy.music.set_audio_filter("estatica", lowpass_filtro_estatica, replace=True)
         "En el primer pasillo de este laberinto te sacás los zapatos, el sombrero y el pañuelo. Así debe ser."
         
         "Ya sumido en la oscuridad, comenzás a escuchar el arpa tenebrosa y pronto sentís la presencia del basilisco."
