@@ -53,6 +53,8 @@ label start:
             jump ejemplosClickeables
         "ir a firmar":
             jump Escupir_el_crucifijo
+        "continuará...":
+            jump continuará
 
 
 
