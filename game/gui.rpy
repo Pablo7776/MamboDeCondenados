@@ -91,6 +91,8 @@ define gui.title_text_size = 75
 
 ## Imágenes del menú principal y menús del juego.
 define gui.main_menu_background = "gui/faconMenu.png"
+define gui.game_menu_background = gui.main_menu_background
+
 #define gui.game_menu_background = "gui/game_menu.png"
 
 
