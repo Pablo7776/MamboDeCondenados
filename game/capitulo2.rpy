@@ -35,6 +35,8 @@ label capitulo2:
 label noche_ante_las_estrellas:
     $ reputacion_con_el_mandinga -= 10
 
+    show reputacion2 at Position(xalign=0.9, yalign=0.9)
+
     hide placeholder3m
     show placeholderm at subir_centrada with Dissolve(1.0)
     "Encontrás una gran higuera a un costado del camino, atás tu caballo y te recostás debajo de aquél custodio de la pampa."
@@ -124,6 +126,8 @@ label La_noche_de_pasión:
 label Una_mañana_incómoda:
     $ reputacion_con_el_mandinga -= 15
 
+    show reputacion1 at Position(xalign=0.9, yalign=0.9)
+
     "Esa noche la rechazás, ella sale llorando de la habitación a viva voz."
 
     "Te volvés a dormir y volvés a soñar:"
@@ -148,6 +152,7 @@ label Una_mañana_incómoda:
 
 label Fuiste_cordíal_y_se_te_agradece_por_ello:
     $ reputacion_con_el_mandinga -= 5
+    show reputacion1 at Position(xalign=0.9, yalign=0.9)
 
     "Te abre la puerta, aún un poco temerosa, pero viene su padre del fondo del salón y te recibe con un apretón de manos."
 
@@ -190,6 +195,8 @@ label Fuiste_cordíal_y_se_te_agradece_por_ello:
 
 label No_fuiste_muy_cordial:
     $ reputacion_con_el_mandinga -= 5
+    show reputacion1 at Position(xalign=0.9, yalign=0.9)
+
     "Asustás a la joven y cierra la puerta, te quedás ahí frente a la puerta."
 
     "De repente se vuelve a abrir, parece ser el padre de la joven."

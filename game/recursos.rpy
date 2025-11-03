@@ -20,6 +20,16 @@ image placeholder6m = "placeholders/m/Unnamed6.png"
 image personaje_placeholder = "placeholders/personajes/ppp.jpg"
 image protagonista_placeholder = "placeholders/personajes/prota.jpg"
 
+############################################################
+#################  REPUTACION ##############################
+############################################################
+
+image reputacion1 = "images/reputacion/Guitarra24repuomenos.png"
+image reputacion2 = "images/reputacion/Guitarra25a49repu.png"
+image reputacion3 = "images/reputacion/Guitarra50a74repu.png"
+image reputacion4 = "images/reputacion/Guitarra75a99repu.png"
+image reputacion5 = "images/reputacion/Guitarra100repuomas.png"
+
 
 ############################################################
 #################  CAPITULO 1 ##############################

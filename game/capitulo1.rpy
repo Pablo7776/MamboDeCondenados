@@ -2,6 +2,9 @@
 #dos tipor de faders:
 #burn_transition y Dissolve()
 #hola
+
+
+
 label capitulo1:    
 
 
@@ -35,6 +38,8 @@ label capitulo1:
 #############################################
 
     "Bienvenid@ al Mambo de los Condenados"
+
+    show reputacion5 at Position(xalign=0.9, yalign=0.9)
 
     "Vos, guitarrista y cantor venido a menos, que ahora va al galope por la pampa."
     "Subís por el camino empinado de un pequeño cerro."
@@ -80,7 +85,7 @@ label capitulo1:
 
         
         #scene placeholder6 with fade
-        hide placeholder2m
+        hide cueva
         show placeholder2m at subir_centrada with Dissolve(1.0)
 
         play fx sfx_respiracion_chivo 
@@ -201,6 +206,9 @@ label capitulo1:
             hide placeholderm
             show placeholderm at subir_centrada with Dissolve(1.0)
             $ reputacion_con_el_mandinga -= 10
+            show reputacion3 at Position(xalign=0.9, yalign=0.9)
+
+
             "De repente escuchás una explosión mucho mayor que la de antes."
             "Se abre un agujero en una de las paredes y Él atraviesa las cortinas, un enorme ser, mitad serpiente, mitad humano, ES EL MANDINGA."
             "Se sienta en su trono y te mira con un gesto entre curioso y vehemente."
