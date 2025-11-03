@@ -601,11 +601,11 @@ screen about():
             text _("   ")
             text _("Equipo Ctapó:")
             text _("   ")
-            text _("Producción: M. Luz Opazo")
-            text _("Arte Conceptual: Lucas Arancibia")
-            text _("Diseño y Guión: Lucas Traverso")
-            text _("Arte y Sonido: Gonzalo Ríos")
-            text _("Programación: Pablo Durán")
+            text _("M. Luz Opazo: Producción, marketing, co-diseño de juego y co-guionista.")
+            text _("Lucas Arancibia: Arte conceptual y arte 2D.")
+            text _("Lucas Traverso: Guión, música y diseño de juego.")
+            text _("Gonzalo Ríos: Arte conceptual y arte 2D.")
+            text _("Pablo Durán: Programación, sfx y co-diseño de juego.")
 
 
 style about_label is gui_label
