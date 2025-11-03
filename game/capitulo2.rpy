@@ -210,4 +210,4 @@ label No_fuiste_muy_cordial:
 
     menu:
         "Tomás las riendas y seguís cabalgando pensativo rumbo a la pulpería del Tarta.":
-            jump capitulo3
+            jump continuara
