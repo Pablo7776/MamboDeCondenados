@@ -51,7 +51,8 @@ label noche_ante_las_estrellas:
 
     menu:
         "Cabalgás pensativo rumbo a la pulpería del Tarta, en tu pueblo.":
-            jump capitulo3
+            #jump capitulo3
+            jump continuara
 
 label puerta_del_rancho:
     hide placeholder3m
@@ -121,7 +122,8 @@ label La_noche_de_pasión:
 
     menu:
         "Te vas con la china, camino a la pulpería del Tarta y a tu pueblo":
-            jump capitulo3
+            #jump capitulo3
+            jump continuara
 
 label Una_mañana_incómoda:
     $ reputacion_con_el_mandinga -= 15
@@ -148,7 +150,8 @@ label Una_mañana_incómoda:
     show placeholder3m at subir_centrada with Dissolve(1.0)
     menu:
         "Te subís a tu caballo y galopás hacia tu pueblo y hacia la Pulpería del Tarta":
-            jump capitulo3
+            #jump capitulo3
+            jump continuara
 
 label Fuiste_cordíal_y_se_te_agradece_por_ello:
     $ reputacion_con_el_mandinga -= 5
