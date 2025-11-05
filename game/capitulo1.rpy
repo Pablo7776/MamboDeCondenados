@@ -39,7 +39,7 @@ label capitulo1:
 
     "Bienvenid@ al Mambo de los Condenados"
 
-    show reputacion5 at Position(xalign=0.9, yalign=0.9)
+    $ mostrar_repu()
 
     "Vos, guitarrista y cantor venido a menos, que ahora va al galope por la pampa."
     "Subís por el camino empinado de un pequeño cerro."
@@ -206,7 +206,7 @@ label capitulo1:
             hide placeholderm
             show placeholderm at subir_centrada with Dissolve(1.0)
             $ reputacion_con_el_mandinga -= 10
-            show reputacion3 at Position(xalign=0.9, yalign=0.9)
+            $ mostrar_repu()
 
 
             "De repente escuchás una explosión mucho mayor que la de antes."

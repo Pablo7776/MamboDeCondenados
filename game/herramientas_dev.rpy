@@ -81,3 +81,18 @@ screen pergamino_input_simple(prompt):
                 size 40
 
             textbutton "Firmar" style "pergamino_boton" action Return(input_text)
+
+
+
+init python:
+    def mostrar_repu():
+        if reputacion_con_el_mandinga > 99:
+            renpy.show("reputacion5", at_list=[Position(xalign=0.9, yalign=0.9)])
+        elif reputacion_con_el_mandinga > 74:
+            renpy.show("reputacion4", at_list=[Position(xalign=0.9, yalign=0.9)])
+        elif reputacion_con_el_mandinga > 49:
+            renpy.show("reputacion3", at_list=[Position(xalign=0.9, yalign=0.9)])
+        elif reputacion_con_el_mandinga > 24:
+            renpy.show("reputacion2", at_list=[Position(xalign=0.9, yalign=0.9)])
+        else:
+            renpy.show("reputacion1", at_list=[Position(xalign=0.9, yalign=0.9)])
