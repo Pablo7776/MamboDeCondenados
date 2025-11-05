@@ -16,8 +16,19 @@ label Que_paso:
 
     menu:
         "Das la vuelta y volvés al pueblo":
-            jump capitulo4_Un_camino_de_alimanas
+            jump Un_camino_de_alimanas
         "Te ocultás entre los pastos y esperas":
             jump La_luz_mala
         "Empezás a tocar la guitarra, seguro El Mandinga te proteje":
-            jump El_canto_de_la_luz   
+            jump El_canto_de_la_luz
+
+    label Un_camino_de_alimanas:
+        "Cuando estás volviendo en la oscura noche ves como el camino que entra a tu pueblo está alfombrado de alacranes."
+
+        menu:
+            "Corrés por el costado del camino para ver qué es lo que está pasando." if reputacion_con_el_mandinga < 60:
+                jump Las_huestes_llegaron
+            "Corrés por el costado del camino para ver qué es lo que está pasando." if reputacion_con_el_mandinga > 59:
+                jump Un walicho de La Salamanca
+
+    
