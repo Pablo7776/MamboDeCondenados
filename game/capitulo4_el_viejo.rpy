@@ -190,4 +190,26 @@ label Que_paso:
             "Tocás esta melodía": ##Parte de la canción del menú
                 jump Un_profundo_silencio
     
-    
+    label Un_profundo_silencio:
+        "Terminas la canción y queda todo en un profundo silencio, un silencio casi aplastante."
+
+        "Y de repente un estruendo muy fuerte, se rompe todo el rancho en pedazos, cayendo partes del techo a tu alrededor."
+        
+        "Frente a vos aparece El Mandinga"
+
+        "Te quedás congelado ante su monstruosa presencia"
+
+        jump Condenado_desgraciado
+
+    label Los_animales_del_bosque:
+        "De repente aparecen cientos de animales que brillan de un naranja fuerte entran al rancho y empiezan a correr alrededor tuyo mientras das los últimos rasgueos"
+
+        "Se escucha de repente un terrible estruendo y aparece El Mandinga delante tuyo, lo ves entre el brillo anaranjado de los animales de este bosque."
+
+        "Seguís tocando, repitiendo esa última melodía, él intenta llegar a vos pero los animales no lo dejan."
+
+        "Las criaturas del talar lo empiezan a rodear a él y así como llegó desaparece a través de una grieta en el suelo."
+
+        "Suspirás aliviado y dejás de tocar tu guitarra"
+        
+        jump Sos_libre

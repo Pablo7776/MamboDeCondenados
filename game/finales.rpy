@@ -36,3 +36,47 @@ label finales:
         menu:
             "Volver al menú principal":
                 return
+
+    label Condenado_desgraciado:
+        "El Mandinga dice con la voz más tenebrosa que jamás escuchaste:"
+
+        "- Me traicionaste basura humana, despreciable mortal!"
+
+        "- Ya no sos digno del don que te dí, es hora de cobrar tu deuda"
+
+        "Se transforma en un ser mostruoso con una boca gigante con miles de dientes."
+
+        "Sin que puedas defenderte ni articular palabra alguna te atrapa por el cuello, te levanta por sobre sus tremendas fauses y te traga de un solo bocado."
+
+        menu:
+            "Volver al menú principal":
+                return
+    
+    label Sos_libre:
+        "Los animales te rodean y escuchás denuevo esa melodía, entonces te sentís muy mareado y te desmallás."
+
+        "Soñás pero en tus sueños ya no te persigue El Mandinga, aparece por un momento en tu sueño el viejo que sonríe satisfecho."
+
+        if Vida_china:
+            "Cuando despertás estás en una carreta junto al Tarta y a tu china."
+
+            "Cuando por la mañana no estabas en tu casa ella fue a buscarte a la pulpería."
+            
+            "El Tarta le dijo que lo último que te había contado era sobre el viejo y fueron juntos a buscarte."
+        else:
+            "Cuando despertás estás en una carreta junto al Tarta."
+            
+            "Cuando no apareciste por la pulpería al día siguiente, El Tarta supuso que habías ido a ver que había pasado con el viejo y te encontró tirado en el medio del talar inconsciente."
+
+        "Volvés a tu casa y tu vida sigue prácticamente como si nada hubiera pasado."
+        
+        if Vida_china:
+            "La china se quedó junto a vos y lograron vivir una vida plena juntos"
+
+        "Tu don ya no existe, pero tu deuda de alguna manera tampoco, ahora sos libre de las ataduras de El Mandinga."
+
+        "Bien hecho, ya no eres un condenado."
+
+        menu:
+            "Volver al menú principal":
+                return
