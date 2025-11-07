@@ -55,6 +55,8 @@ label start:
             jump Escupir_el_crucifijo
         "continuará...":
             jump continuará
+        "munú sonoro":
+            jump menuSonoro
 
 
 
