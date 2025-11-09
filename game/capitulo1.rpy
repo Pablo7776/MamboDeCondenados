@@ -86,7 +86,8 @@ label capitulo1:
         
         #scene placeholder6 with fade
         hide cueva
-        show placeholder2m at subir_centrada with Dissolve(1.0)
+        #show placeholder2m at subir_centrada with Dissolve(1.0)
+        show chivo at subir_centrada with Dissolve(1.0)
 
         play fx sfx_respiracion_chivo 
         "Entonces aparece ese animal grotesco del que te había contado el viejo: un chivo de pelo negro, ojos endemoniados, cuernos tan curvados como un espiral."
@@ -97,8 +98,8 @@ label capitulo1:
 
     label La_caida:
         #scene caida with fade
-        hide placeholderm
-        show placeholderm at subir_centrada with Dissolve(1.0)
+        hide chivo
+        show caida at subir_centrada with Dissolve(1.0)
         "El hueco es profundo, más que profundo, estás cayendo al abismo."
         "Ves pasar murciélagos a tu lado, seguís cayendo y repentinamente te desmayás."
         #scene placeholder with fade
@@ -167,8 +168,8 @@ label capitulo1:
 
 
     label Dar_un_paso_hacia_la_oscuridad:
-        hide placeholderm
-        show placeholderm at subir_centrada with Dissolve(1.0)
+        hide caida
+        show trono at subir_centrada with Dissolve(1.0)
 
         "Escuchas una pequeña explosión y se comienzan a prender, a cada lado, cien antorchas"
         "Lográs ver una sala con cortinas magníficas que cubren paredes de roca negra con piso y columnas de mármol que sostienen un techo de tierra y rocas."
@@ -203,8 +204,8 @@ label capitulo1:
                     jump Quiero_hechizar
 
         label DÓNDE_ESTÁ_EL_MANDINGA:
-            hide placeholderm
-            show placeholderm at subir_centrada with Dissolve(1.0)
+            hide trono
+            show mandi at subir_centrada with Dissolve(1.0)
             $ reputacion_con_el_mandinga -= 10
             $ mostrar_repu()
 
@@ -271,12 +272,14 @@ label Quiero_hechizar:
 
 
 label A_dónde_hay_que_firmar:
-    hide placeholder2m
-    show placeholder2m at subir_centrada with Dissolve(1.0)
+    #hide placeholder2m
+    #show placeholder2m at subir_centrada with Dissolve(1.0)
 
     "Aceptás vender tu alma y el Mandinga te dice que aún hay unas pruebas más que debés superar."
     "Hace un gesto con su mano y ante vos se abre el suelo"
     "Una gran grieta separa la sala al medio, de un lado estás vos, del otro el Mandinga, su trono y sus seguidores."
+    hide mandi
+    show cuchillo at subir_centrada with Dissolve(1.0)
     "Él saca un enorme facón de su costado y lo revolea, queda sobre la raja que se abrió en la tierra, formando un puente con el filo hacia arriba."
 
     pause 0.01
@@ -329,8 +332,8 @@ label A_dónde_hay_que_firmar:
             #        return
 
     label Escupir_el_crucifijo:
-        hide placeholder3m
-        show placeholder6m at subir_centrada with Dissolve(1.0)
+        hide cuchillo
+        show demoonios at subir_centrada with Dissolve(1.0)
         stop ambiente fadeout 1.0
         play fx crucifijo
          
@@ -380,8 +383,8 @@ label A_dónde_hay_que_firmar:
         "Resuena una vez más la voz del Mandinga, mucho más fuerte, mucho más demoníaca."
         "Las brujas, los brujos y los diablillos arrancan la fiesta a tu alrededor, sentís como tu garganta arde y luego se calma y empezás a cantar junto a los demás."
         "Las alimañas te levantan sobre sus lomos y te pasean por toda la sala, tu voz y tu canto ahora suena como nunca antes sonó."
-        hide placeholder6m
-        show placeholderm at subir_centrada with Dissolve(1.0)
+        hide demoonios
+        show rancho at subir_centrada with Dissolve(1.0)
         menu:
             "En un rancho cercano...":
                 jump En_un_rancho_cercano

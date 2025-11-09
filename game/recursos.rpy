@@ -47,6 +47,18 @@ image cueva = "images/capitulo1/cueva.png"
 
 image pergamino = "images/capitulo1/old_paper.png"
 
+#################  PLACEHOLDERS IA CAP1 ####################
+############################################################
+
+image chivo = "images/capitulo1/ia/chivoEscalado.png"
+image caida = "images/capitulo1/ia/caidaEscalado.png"
+image trono = "images/capitulo1/ia/tronoEscalado.png"
+image mandi = "images/capitulo1/ia/mandingaEScalado.png"
+image cuchillo = "images/capitulo1/ia/cuchilloEscalado.png"
+image demoonios = "images/capitulo1/ia/risasDemoniosEscalado.png"
+image rancho = "images/capitulo1/ia/ranchoEscalado.png"
+
+
 
 ################  EFECTOS DE SONIDO #########################
 
