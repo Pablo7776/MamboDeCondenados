@@ -80,3 +80,80 @@ label finales:
         menu:
             "Volver al menú principal":
                 return
+
+    label Se_cobró_tu_deuda:
+        "El Mandinga golpea el suelo con su pesado píe."
+
+        if Vida_china:
+            "Suelta la cabeza de la china, ella cae como desmayada en la cama."
+
+        "Se abre una grieta en el suelo de tu casa, y él te hace un gesto como para que le des la mano."
+
+        "En cuanto lo tocas ambos arden en llamas que no queman, sentís como algo se va de vos."
+
+        "Es tu alma que es arrastrada por El Mandinga por las profundidades de los túneles que llevan a La Salamanca."
+
+        "Has saldado tu deuda, El Mandinga te cobró al fin el alma."
+
+        menu:
+            "Volver al menú principal":
+                return
+
+    label Mantuviste_lejos_al_Mandinga:
+        "No tenés más sueños con El Mandinga, pero la gente a tu alrededor cada vez se pone más agresiva cuando no tocás por un tiempo."
+
+        "Hasta que un día te quedás dormido, un resfrío te dejo en cama y no tenés energías para ir a tocar, esa noche no vas a la pulpería."
+
+        "Te despertás en medio de un incendio y escuchás a la muchedumbre abucheandote afuera."
+
+        if Vida_china:
+            "Ves a tu china acostada a tu lado, no se mueve, debió morir recién sin siquiera poder despertar, su cuerpo aún está caliente."
+
+        "Lo último que llegás a oir antes de morir, por la asfixia del humo, son las cuerdas de tu guitarra saltar por el calor de la llamas y resonar una última vez."
+
+        menu:
+            "Volver al menú principal":
+                return
+
+    label Qué_cambiado_que_está_todo:
+        "Volvés a tu pueblo, y la pulpería de El Tarta ya no existe, en su lugar hay un galpón de una firma extrangera."
+
+        "Preguntás, por ahí y te dicen que ni bien te fuiste unos hombres de traje aparecieron y le pagaron mucha plata al Tarta para comprarle la pulpería."
+
+        "Pero una semana después aparecieron los cuerpos sin vida de El Tarta y del Pibe que había estado tocando esa noche y su madre, La Flavia."
+
+        "Algunas personas más también aparecieron muertos por esa época, toda gente que conocías."
+
+        "Luego de eso volvés a la capital desanimado, pero no demasiado."
+
+        "Tu vida sigue viviste unas décadas más sin sobresaltos hasta que tu cuerpo mortal no soportó más..."
+
+        "... pero tu voz, esa voz por la que tanto hiciste, siguió siendo usada por la discográfica por muchos años más."
+
+        menu:
+            "Volver al menú principal":
+                return
+
+    label Ya_no_queda_nada:
+        "Volvés a tu pueblo, pero ya no existe, en las calles hay algunos huesos humanos."
+
+        "Solo queda la pulpería de El Tarta, medio destartalada, entrás y te encontrás con El Mandinga en persona."
+
+        "Te cuenta que cuando te fuiste, llegaron hasta las profundidades de La Salamanca unos señores de traje, a hacer un trato con él para liberarte a vos de su control."
+
+        "A cambio de tu libertad acribillaron a todos en el pueblo."
+
+        "A todos, al Tarta, a la madre del Farías, a los borrachos de la pulpería todos y cada uno de tus vecinos, todo para saldar para siempre la deuda que vos habías asumido."
+
+        if Vida_china:
+            "Por último te cuenta que cuando la china volvió al pueblo cayó en la desesperación en cuanto vió la matanza en el pueblo."
+
+            "En ese momento aún los cadáveres estaban casi completos en las calles del pueblo."
+
+            "Ella desesperada corrió hasta el rancho de su familia y encontró también sus restos pudriendose, terminó quitandose la vida en la casa que la vió crecer."
+
+        "La noticia te vuelve loco, perdiste completamente la humanidad, el propio Mandinga te extiende una soga y te señala una viga de la pulpería."
+
+        menu:
+            "Volver al menú principal":
+                return
