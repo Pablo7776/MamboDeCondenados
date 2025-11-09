@@ -15,8 +15,8 @@ label capitulo2:
 
     "Das un paso afuera y la piedra que se había abierto antes ahora se cierra crujiendo suavemente."
 
-    hide placeholder2m
-    show placeholder3m at subir_centrada with Dissolve(1.0)
+    hide caida
+    show ranchoHigera at subir_centrada with Dissolve(1.0)
     
     "Escuchás un galope y ves llegar a tu caballo, con tu guitarra aún bien atada a su silla."
 
