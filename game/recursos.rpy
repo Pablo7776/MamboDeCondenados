@@ -31,6 +31,7 @@ image reputacion4 = "images/reputacion/Guitarra75a99repu.png"
 image reputacion5 = "images/reputacion/Guitarra100repuomas.png"
 
 
+
 ############################################################
 #################  CAPITULO 1 ##############################
 ############################################################
