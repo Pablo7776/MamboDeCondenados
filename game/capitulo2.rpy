@@ -1,9 +1,9 @@
-default nombre_jugador = "Vos!"
+default nombre_jugador = "Ramón"
 
 
 label capitulo2:
-    hide placeholderm
-    show placeholder2m at subir_centrada with Dissolve(1.0)
+    hide rancho
+    show caida at subir_centrada with Dissolve(1.0)
 
     "[nombre_jugador], trepás nuevamente por el abismo en espiral por el que caiste."
 
