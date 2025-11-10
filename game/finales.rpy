@@ -2,13 +2,13 @@ label finales:
     label Sucumbis_a_la_locura:
         "Lo perdiste todo, incluso perdiste completamente tu humanidad."
         
-        "Luego de precensiar toda la matanza te unís a las huestes de La Salamanca."
+        "Luego de presenciar toda la matanza te unís a las huestes de La Salamanca."
 
         "Volvés junto a todas las alimañas a la cueva."
 
         "Ahí vivís por la eternidad."
 
-        "Participando de cada baile que se hace en honor a todos los incautos que, como vos, hacen un pacto, teñido de sangre, con El Mandinga."
+        "Participando de cada baile que se hace en honor a todos los incautos que, como vos, hacen un pacto teñido de sangre con El Mandinga."
 
         menu:
             "Volver al menú principal":
@@ -17,7 +17,7 @@ label finales:
     label El_viaje_eterno:
         "Muchos años estuviste recorriendo toda la provincia tocando en cada pulpería que podías."
 
-        "Te ibas dando cuenta como cada vez que tocabas para un público nuevo tu mente y tu corazón iban volviéndose más y más fríos."
+        "Te ibas dando cuenta de cómo cada vez que tocabas para un público nuevo tu mente y tu corazón iban volviéndose más y más fríos."
 
         "Hasta que una noche llegaste a un punto de no retorno, a no sentir nada."
 
@@ -25,11 +25,11 @@ label finales:
 
         "Y así siguieron tus días sin sobresaltos, por años y años."
 
-        "Algunos ancianos dicen que hace 40 años cuando eran jóvenes te vieron tocar."
+        "Algunos ancianos dicen que, hace 40 años, cuando eran jóvenes, te vieron tocar."
 
-        "Pero enseguida dicen que es imposible, si así fuera tendrías que estar tan viejo como ellos. Pero si aquel fueras vos, no envejeciste ni una pizca."
+        "Pero enseguida dicen que es imposible, si así fuera, tendrías que estar tan viejo como ellos. Pero si aquel fueras vos, no envejeciste ni una pizca."
 
-        "Vos hace rato dejaste de contar los años."
+        "Vos hace rato que dejaste de contar los años."
 
         "Bien hecho CONDENADO, superaste algunos de los mambos que se te presentaron."
         
@@ -40,42 +40,119 @@ label finales:
     label Condenado_desgraciado:
         "El Mandinga dice con la voz más tenebrosa que jamás escuchaste:"
 
-        "- Me traicionaste basura humana, despreciable mortal!"
+        "— ¡Me traicionaste basura humana, despreciable mortal!"
 
-        "- Ya no sos digno del don que te dí, es hora de cobrar tu deuda"
+        "— Ya no sos digno del don que te di; es hora de cobrar tu deuda"
 
-        "Se transforma en un ser mostruoso con una boca gigante con miles de dientes."
+        "Se transforma en un ser monstruoso con una boca gigante con miles de dientes."
 
-        "Sin que puedas defenderte ni articular palabra alguna te atrapa por el cuello, te levanta por sobre sus tremendas fauses y te traga de un solo bocado."
+        "Sin que puedas defenderte ni articular palabra alguna te atrapa por el cuello, te levanta por sobre sus tremendas fauces y te traga de un solo bocado."
 
         menu:
             "Volver al menú principal":
                 return
     
     label Sos_libre:
-        "Los animales te rodean y escuchás denuevo esa melodía, entonces te sentís muy mareado y te desmallás."
+        "Los animales te rodean y escuchás de nuevo esa melodía, entonces te sentís muy mareado y te desmayás."
 
-        "Soñás pero en tus sueños ya no te persigue El Mandinga, aparece por un momento en tu sueño el viejo que sonríe satisfecho."
+        "Soñás, pero en tus sueños ya no te persigue El Mandinga, aparece por un momento en tu sueño el viejo que sonríe satisfecho."
 
         if Vida_china:
             "Cuando despertás estás en una carreta junto al Tarta y a tu china."
 
-            "Cuando por la mañana no estabas en tu casa ella fue a buscarte a la pulpería."
+            "Cuando, por la mañana no estabas, en tu casa ella fue a buscarte a la pulpería."
             
             "El Tarta le dijo que lo último que te había contado era sobre el viejo y fueron juntos a buscarte."
         else:
             "Cuando despertás estás en una carreta junto al Tarta."
             
-            "Cuando no apareciste por la pulpería al día siguiente, El Tarta supuso que habías ido a ver que había pasado con el viejo y te encontró tirado en el medio del talar inconsciente."
+            "Cuando no apareciste por la pulpería al día siguiente, El Tarta supuso que habías ido a ver qué había pasado con el viejo y te encontró tirado en el medio del talar inconsciente."
 
         "Volvés a tu casa y tu vida sigue prácticamente como si nada hubiera pasado."
         
         if Vida_china:
-            "La china se quedó junto a vos y lograron vivir una vida plena juntos"
+            "La china se quedó junto a vos, y lograron vivir una vida plena juntos"
 
         "Tu don ya no existe, pero tu deuda de alguna manera tampoco, ahora sos libre de las ataduras de El Mandinga."
 
         "Bien hecho, ya no eres un condenado."
+
+        menu:
+            "Volver al menú principal":
+                return
+
+    label Se_cobró_tu_deuda:
+        "El Mandinga golpea el suelo con su pesado píe."
+
+        if Vida_china:
+            "Suelta la cabeza de la china, ella cae como desmayada en la cama."
+
+        "Se abre una grieta en el suelo de tu casa, y él te hace un gesto como para que le des la mano."
+
+        "En cuanto lo tocas ambos arden en llamas que no queman, sentís como algo se va de vos."
+
+        "Es tu alma que es arrastrada por El Mandinga por las profundidades de los túneles que llevan a La Salamanca."
+
+        "Has saldado tu deuda, El Mandinga te cobró al fin el alma."
+
+        menu:
+            "Volver al menú principal":
+                return
+
+    label Mantuviste_lejos_al_Mandinga:
+        "No tenés más sueños con El Mandinga, pero la gente a tu alrededor cada vez se pone más agresiva cuando no tocás por un tiempo."
+
+        "Hasta que un día te quedás dormido, un resfrío te dejo en cama y no tenés energías para ir a tocar, esa noche no vas a la pulpería."
+
+        "Te despertás en medio de un incendio y escuchás a la muchedumbre abucheandote afuera."
+
+        if Vida_china:
+            "Ves a tu china acostada a tu lado, no se mueve, debió morir recién sin siquiera poder despertar, su cuerpo aún está caliente."
+
+        "Lo último que llegás a oir antes de morir, por la asfixia del humo, son las cuerdas de tu guitarra saltar por el calor de la llamas y resonar una última vez."
+
+        menu:
+            "Volver al menú principal":
+                return
+
+    label Qué_cambiado_que_está_todo:
+        "Volvés a tu pueblo, y la pulpería de El Tarta ya no existe, en su lugar hay un galpón de una firma extrangera."
+
+        "Preguntás, por ahí y te dicen que ni bien te fuiste unos hombres de traje aparecieron y le pagaron mucha plata al Tarta para comprarle la pulpería."
+
+        "Pero una semana después aparecieron los cuerpos sin vida de El Tarta y del Pibe que había estado tocando esa noche y su madre, La Flavia."
+
+        "Algunas personas más también aparecieron muertos por esa época, toda gente que conocías."
+
+        "Luego de eso volvés a la capital desanimado, pero no demasiado."
+
+        "Tu vida sigue viviste unas décadas más sin sobresaltos hasta que tu cuerpo mortal no soportó más..."
+
+        "... pero tu voz, esa voz por la que tanto hiciste, siguió siendo usada por la discográfica por muchos años más."
+
+        menu:
+            "Volver al menú principal":
+                return
+
+    label Ya_no_queda_nada:
+        "Volvés a tu pueblo, pero ya no existe, en las calles hay algunos huesos humanos."
+
+        "Solo queda la pulpería de El Tarta, medio destartalada, entrás y te encontrás con El Mandinga en persona."
+
+        "Te cuenta que cuando te fuiste, llegaron hasta las profundidades de La Salamanca unos señores de traje, a hacer un trato con él para liberarte a vos de su control."
+
+        "A cambio de tu libertad acribillaron a todos en el pueblo."
+
+        "A todos, al Tarta, a la madre del Farías, a los borrachos de la pulpería todos y cada uno de tus vecinos, todo para saldar para siempre la deuda que vos habías asumido."
+
+        if Vida_china:
+            "Por último te cuenta que cuando la china volvió al pueblo cayó en la desesperación en cuanto vió la matanza en el pueblo."
+
+            "En ese momento aún los cadáveres estaban casi completos en las calles del pueblo."
+
+            "Ella desesperada corrió hasta el rancho de su familia y encontró también sus restos pudriendose, terminó quitandose la vida en la casa que la vió crecer."
+
+        "La noticia te vuelve loco, perdiste completamente la humanidad, el propio Mandinga te extiende una soga y te señala una viga de la pulpería."
 
         menu:
             "Volver al menú principal":
