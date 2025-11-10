@@ -19,7 +19,7 @@ image placeholder6m = "placeholders/m/Unnamed6.png"
 ################### PLACEHOLDERS personajes ###########################
 
 #image personaje_placeholder = "placeholders/personajes/ppp.jpg"
-image personaje_placeholder = Animation(
+image mandinga_placeholder = Animation(
     "images/personajes/frameMandinga/frame1.png", 0.2,
     "images/personajes/frameMandinga/frame2.png", 0.2,
     "images/personajes/frameMandinga/frame3.png", 0.2,
@@ -82,8 +82,9 @@ image caida = "images/capitulo1/ia/caida2.png"
 image trono = "images/capitulo1/ia/trono2.png"
 image mandi = "images/capitulo1/ia/mandinga2.png"
 image cuchillo = "images/capitulo1/ia/cuchilloEscalado.png"
-image demoonios = "images/capitulo1/ia/risasDemonios2.png"
+image demonios = "images/capitulo1/ia/risasDemonios2.png"
 image rancho = "images/capitulo1/ia/rancho2.png"
+image muerte = "images/capitulo1/ia/muerteDifusa.png"
 
 #################  PLACEHOLDERS IA CAP2 ####################
 ############################################################

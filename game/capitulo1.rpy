@@ -118,8 +118,8 @@ label capitulo1:
     
     label Trepar_por_el_abismo_para_salir:
         #scene placeholder3 with fade
-        hide placeholder2m
-        show placeholder2m at subir_centrada with Dissolve(1.0)
+        hide caida
+        show chivo at subir_centrada with Dissolve(1.0)
 
         "Luego de mucho esfuerzo y luchar contra murciélagos que te atacaban débilmente lográs llegar hasta el borde del hoyo."
         "Estás de vuelta frente a aquel chivo endemoniado que te mira colérico."
@@ -131,16 +131,14 @@ label capitulo1:
 
 
         label Te_enfrentas_al_chivo:
-            #scene placeholder6 with fade
-            hide placeholderm
-            show placeholderm at subir_centrada with Dissolve(1.0)
+
             "El chivo corre hacia vos, lográs evitar el primer golpe y le pegás una patada."
             "Se da vuelta y vuelve a intentar embestirte, de éste no pudiste zafar, caés al suelo, , te defendes con patadas y trompadas."
             "Pero el chivo es pesado y sus pezuñas son como hachas contra tu cuerpo, tras unos cuantos minutos de pisotones tu cuerpo yace inerte en la oscuridad de la cueva."
             "tras unos cuantos minutos de pisotones tu cuerpo yace inerte en la oscuridad de la cueva."
 
-            hide placeholder3m
-            show placeholder3m at subir_centrada with Dissolve(1.0)
+            hide chivo
+            show muerte at subir_centrada with Dissolve(1.0)
 
             "Moriste, el juego ha terminado junto a tu vida."
 
@@ -155,8 +153,7 @@ label capitulo1:
                 
 
         label Intentas_esquivar_al_chivo:
-            hide placeholder2m
-            show placeholder2m at subir_centrada with Dissolve(1.0)
+
             "Si antes pudiste pasar por al lado de él sin que se de cuenta ¿por qué no intentarlo nuevamente?."
             "Das un paso y el chivo corre tan rápidamente hacia vos que no lográs evitarlo, te tira nuevamente por el hueco del que acabás de salir." 
             #scene caida with fade
@@ -188,12 +185,13 @@ label capitulo1:
             "Él atraviesa las cortinas, un enorme ser, mitad serpiente, mitad humano, ES EL MANDINGA."
             "Se sienta en su trono y te mira con un gesto entre curioso y vehemente."
             
-            hide personaje_placeholder 
-            show personaje_placeholder:
+
+            show mandinga_placeholder:
                 xoffset 0
                 yoffset 36
 
             Mandinga "- ¿Qué desea el que me busca?"
+            hide mandinga_placeholder
 
             "Su voz retumba como un trueno en toda la habitación y una vez termina su frase queda resonando un zumbido siseante en el ambiente."
 
@@ -216,13 +214,13 @@ label capitulo1:
             
             ### personaje ##########################
             pause 0.01
-            show personaje_placeholder:
+            show mandinga_placeholder:
                 xoffset 0
                 yoffset 36
 
 
             Mandinga "- ¿Qué desea el que me busca?"
-            hide personaje_placeholder
+            hide mandinga_placeholder
 
             "Su voz retumba como un trueno en toda la habitación y una vez termina su frase queda resonando un zumbido siseante en el ambiente."
 
@@ -235,8 +233,8 @@ label capitulo1:
 
 
             label Recular:
-                hide placeholder2m
-                show placeholder2m at subir_centrada with Dissolve(1.0)
+                hide muerte
+                show muerte at subir_centrada with Dissolve(1.0)
                 "Te arrepientes, empiezas a balbucear y… "
                 "despertás, parece todo haber sido un mal sueño, estás completamente borracho con la cabeza sobre una mesa de la pulpería del Tarta."
                 "Una guitarra suena, parece que eso te despertó, el payador empieza a contar una vieja leyenda de estas tierras, la leyenda de La Salamanca."
@@ -262,11 +260,11 @@ label Quiero_hechizar:
     "Le decís a aquel ser del inframundo"
 
     pause 0.01
-    show personaje_placeholder:
+    show mandinga_placeholder:
         xoffset 0
         yoffset 36
     Mandinga "- Me gusta tu pasión, pero no tan rápido, eso va a costarte el alma."
-    hide personaje_placeholder
+    hide mandinga_placeholder
 
     "Su voz vuelve a hacer temblar las paredes y termina en siseo."
 
@@ -289,11 +287,11 @@ label A_dónde_hay_que_firmar:
     "Él saca un enorme facón de su costado y lo revolea, queda sobre la raja que se abrió en la tierra, formando un puente con el filo hacia arriba."
 
     pause 0.01
-    show personaje_placeholder:
+    show mandinga_placeholder:
         xoffset 0
         yoffset 36
     Mandinga "- Vení conmigo"
-    hide personaje_placeholder
+    hide mandinga_placeholder
 
     "Dice el Mandinga abriendo los brazos como invitándote a su regazo serpentino y luego señala el filo del cuchillo que acaba de lanzar."
 
@@ -310,11 +308,11 @@ label A_dónde_hay_que_firmar:
         "Cuando llegás a la mitad ves una luz dorada bajo tus pies, mirás hacia abajo y hay un crucifijo del que emana la luz."
         
         pause 0.01
-        show personaje_placeholder:
+        show mandinga_placeholder:
             xoffset 0
             yoffset 36
         Mandinga "-¡ESCUPILO!"
-        hide personaje_placeholder
+        hide mandinga_placeholder
 
         "La voz del Mandinga suena más fuerte que nunca, hace temblar todo y casi estás a punto de caerte, pero recuperás el equilibrio."
         menu:
@@ -324,8 +322,8 @@ label A_dónde_hay_que_firmar:
                 jump Pasar_cautelosamente
 
         label Pasar_cautelosamente:
-            hide placeholderm
-            show placeholderm at subir_centrada with Dissolve(1.0)
+            hide muerte
+            show muerte at subir_centrada with Dissolve(1.0)
             "Das un paso sobre el cuchillo y dudás, el filo del facón se hunde en tu pie y no podés frenar la fuerza de la gravedad."
             "Empezás a caer sobre ese último paso, tu cuerpo se desbalancea y cae."
             "Yacés en dos mitades en lo profundo de la grieta del infierno."
@@ -339,7 +337,7 @@ label A_dónde_hay_que_firmar:
 
     label Escupir_el_crucifijo:
         hide cuchillo
-        show demoonios at subir_centrada with Dissolve(1.0)
+        show demonios at subir_centrada with Dissolve(1.0)
         stop ambiente fadeout 1.0
         play fx crucifijo
          
@@ -380,16 +378,16 @@ label A_dónde_hay_que_firmar:
     label Lo_lograste:
 
         pause 0.01
-        show personaje_placeholder:
+        show mandinga_placeholder:
             xoffset 0
             yoffset 36
         Mandinga "-¡BIENVENIDO A MIS HUESTES, CONDENADO!"
-        hide personaje_placeholder
+        hide mandinga_placeholder
 
         "Resuena una vez más la voz del Mandinga, mucho más fuerte, mucho más demoníaca."
         "Las brujas, los brujos y los diablillos arrancan la fiesta a tu alrededor, sentís como tu garganta arde y luego se calma y empezás a cantar junto a los demás."
         "Las alimañas te levantan sobre sus lomos y te pasean por toda la sala, tu voz y tu canto ahora suena como nunca antes sonó."
-        hide demoonios
+        hide demonios
         show rancho at subir_centrada with Dissolve(1.0)
         menu:
             "En un rancho cercano...":
