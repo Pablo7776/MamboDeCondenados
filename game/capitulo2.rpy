@@ -16,7 +16,7 @@ label capitulo2:
     "Das un paso afuera y la piedra que se había abierto antes ahora se cierra crujiendo suavemente."
 
     hide caida
-    show ranchoHigera at subir_centrada with Dissolve(1.0)
+    show ranchoHiguera at subir_centrada with Dissolve(1.0)
     
     "Escuchás un galope y ves llegar a tu caballo, con tu guitarra aún bien atada a su silla."
 
@@ -37,15 +37,17 @@ label noche_ante_las_estrellas:
 
     show reputacion2 at Position(xalign=0.9, yalign=0.9)
 
-    hide placeholder3m
-    show placeholderm at subir_centrada with Dissolve(1.0)
+    hide ranchoHiguera
+    show higuera at subir_centrada with Dissolve(1.0)
     "Encontrás una gran higuera a un costado del camino, atás tu caballo y te recostás debajo de aquél custodio de la pampa."
 
     "Por la noche en tus sueños se repite la frase que dijo El Mandinga: \"¡Bienvenido a mis huestes CONDENADO!\"" # efecto de texto
 
     "Ves como las alimañas de La Salamanca salen de la cueva y se dirigen al camino que andaste para llegar hasta acá."
 
-    "Queda retumbando la última palabra, \"CONDENADO\" te levantás agitado." 
+    "Queda retumbando la última palabra \"CONDENADO\""
+
+    "Te levantás agitado." 
 
     "Tenés una deuda importante que saldar con ese poderoso ser de las profundidades."
 
@@ -55,17 +57,17 @@ label noche_ante_las_estrellas:
             jump continuara
 
 label puerta_del_rancho:
-    hide placeholder3m
-    show placeholderm at subir_centrada with Dissolve(1.0)
+    hide ranchoHiguera
+    show casa at subir_centrada with Dissolve(1.0)
     "Una china joven te abre la puerta, un poco asustada, te pregunta con voz temblorosa:"
     ### personaje ##########################
     pause 0.01
-    show personaje_placeholder:
-        xoffset 0
+    show china_placeholder:
+        xoffset 1636
         yoffset 36
 
-    "- ¿Quién es? ¿Qué necesita?"
-    hide personaje_placeholder
+    china "- ¿Quién es? ¿Qué necesita?"
+    hide china_placeholder
 
     menu:
         "- Soy [nombre_jugador] vengo viajando hace medio día, se me hizo de noche en el camino, quería saber si me podían dar techo esta noche, a cambio puedo ofrecer mi música. - Y mostrás tu guitarra.":
