@@ -90,7 +90,7 @@ label capitulo1:
         show chivo at subir_centrada with Dissolve(1.0)
 
         play fx sfx_respiracion_chivo 
-        "Entonces aparece ese animal grotesco del que te había contado el viejo: un chivo de pelo negro, ojos endemoniados, cuernos tan curvados como un espiral."
+        "Entonces aparece ese animal grotesco del que te había contado el viejo: un chivo de pelo negro, ojos endemoniados, cuernos tan curvados como una espiral."
         "El animal bufa en tu dirección. Lo rodeás fácilmente sin que se mosquee, pero..."
         "Cuando por fin llegás al otro lado, el chivo se da vuelta, corre, te topeta y te arroja a un profundo hoyo."
 
@@ -133,8 +133,8 @@ label capitulo1:
         label Te_enfrentas_al_chivo:
 
             "El chivo corre hacia vos, lográs evitar el primer golpe y le pegás una patada."
-            "Se da vuelta y vuelve a intentar embestirte, de éste no pudiste zafar, caés al suelo, , te defendes con patadas y trompadas."
-            "Pero el chivo es pesado y sus pezuñas son como hachas contra tu cuerpo, tras unos cuantos minutos de pisotones tu cuerpo yace inerte en la oscuridad de la cueva."
+            "Se da vuelta y vuelve a intentar embestirte, de éste no pudiste zafar, caés al suelo, te defendes con patadas y trompadas."
+            "Pero el chivo es pesado y sus pezuñas son como hachas contra tu cuerpo."
             "tras unos cuantos minutos de pisotones tu cuerpo yace inerte en la oscuridad de la cueva."
 
             hide chivo
@@ -154,7 +154,7 @@ label capitulo1:
 
         label Intentas_esquivar_al_chivo:
 
-            "Si antes pudiste pasar por al lado de él sin que se de cuenta ¿por qué no intentarlo nuevamente?."
+            "Si antes pudiste pasar por al lado de él sin que se de cuenta ¿por qué no intentarlo nuevamente?"
             "Das un paso y el chivo corre tan rápidamente hacia vos que no lográs evitarlo, te tira nuevamente por el hueco del que acabás de salir." 
             #scene caida with fade
             menu:
@@ -168,7 +168,7 @@ label capitulo1:
         hide caida
         show trono at subir_centrada with Dissolve(1.0)
 
-        "Escuchas una pequeña explosión y se comienzan a prender, a cada lado, cien antorchas"
+        "Escuchas una pequeña explosión y se comienzan a prender, a cada lado, cien antorchas."
         "Lográs ver una sala con cortinas magníficas que cubren paredes de roca negra con piso y columnas de mármol que sostienen un techo de tierra y rocas."
         "En el fondo de la sala un enorme trono rodeado de lechuzas, quirquinchos, perros, chanchos, culebras y sapos, frente a él, hechiceros, brujas y diablillos."
         "Viniste para esto"
@@ -255,7 +255,6 @@ label Quiero_hechizar:
     p "- ¡Quiero hechizar a todos con mi canto!"
     hide protagonista_placeholder
 
-    "- ¡Quiero hechizar a todos con mi canto!"
 
     "Le decís a aquel ser del inframundo"
 
