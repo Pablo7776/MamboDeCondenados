@@ -135,7 +135,7 @@ label capitulo1:
             "El chivo corre hacia vos, lográs evitar el primer golpe y le pegás una patada."
             "Se da vuelta y vuelve a intentar embestirte, de éste no pudiste zafar, caés al suelo, te defendes con patadas y trompadas."
             "Pero el chivo es pesado y sus pezuñas son como hachas contra tu cuerpo."
-            "tras unos cuantos minutos de pisotones tu cuerpo yace inerte en la oscuridad de la cueva."
+            "Tras unos cuantos minutos de pisotones tu cuerpo yace inerte en la oscuridad de la cueva."
 
             hide chivo
             show muerte at subir_centrada with Dissolve(1.0)
@@ -171,7 +171,7 @@ label capitulo1:
         "Escuchas una pequeña explosión y se comienzan a prender, a cada lado, cien antorchas."
         "Lográs ver una sala con cortinas magníficas que cubren paredes de roca negra con piso y columnas de mármol que sostienen un techo de tierra y rocas."
         "En el fondo de la sala un enorme trono rodeado de lechuzas, quirquinchos, perros, chanchos, culebras y sapos, frente a él, hechiceros, brujas y diablillos."
-        "Viniste para esto"
+        "Viniste para esto."
         menu:
             "Gritar ¡¿DÓNDE ESTÁ EL MANDINGA?!":
                 jump DÓNDE_ESTÁ_EL_MANDINGA
