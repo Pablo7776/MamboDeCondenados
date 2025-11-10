@@ -46,6 +46,8 @@ image protagonista_placeholder = Animation(
     repeat=True
 )
 
+image china_placeholder = "images/personajes/chinaEscalado.png"
+
 ############################################################
 #################  REPUTACION ##############################
 ############################################################
@@ -89,7 +91,9 @@ image muerte = "images/capitulo1/ia/muerteDifusa.png"
 #################  PLACEHOLDERS IA CAP2 ####################
 ############################################################
 
-image ranchoHigera = "images/capitulo2/ranchoHigeraEscalado.png"
+image ranchoHiguera = "images/capitulo2/ranchoHigueraEscalado.png"
+image higuera = "images/capitulo2/higueraEscalado.png"
+image casa = "images/capitulo2/casaEscalado.png"
 
 
 ################  EFECTOS DE SONIDO #########################
