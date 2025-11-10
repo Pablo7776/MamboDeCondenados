@@ -127,7 +127,7 @@ label Que_paso:
                 jump En_lo_oscuro_del_bosque
     
     label Un_claro_despejado:
-        $ Reputacion_mandinga -=15
+        $ reputacion_con_el_mandinga -=15
 
         "Llegás a un claro en el medio del talar y no hay nada excepto unas luciernagas que brillan con una fuerte luz naranja, nada más."
 
@@ -138,7 +138,7 @@ label Que_paso:
         jump Un_camino_de_alimanas
 
     label Su_propia_melodia:
-        $ Reputacion_mandinga -= 15
+        $ reputacion_con_el_mandinga -= 15
 
         "Seguís tocando, sobre tu música la luz empieza a chillar unas notas muy agudas que suenan por encima de lo que vos estás tocando."
 

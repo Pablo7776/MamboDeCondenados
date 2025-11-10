@@ -1,5 +1,5 @@
 label Capítulo_4_El_pobre_Pibe_Farías:
-    $ Reputacion_mandinga -= 35
+    $ reputacion_con_el_mandinga -= 35
 
     if Vida_china:
         "Llevás a la china a tu casa, se acuesta y la tapás con una gruesa frazada."
@@ -99,7 +99,7 @@ label Capítulo_4_El_pobre_Pibe_Farías:
         "Te dice clara y fríamente tus posibilidades:"
 
         menu:
-            "Entregás la vida de tu joven y atractiva china" if Vida_china and Reputacion_mandinga > 50:
+            "Entregás la vida de tu joven y atractiva china" if Vida_china and reputacion_con_el_mandinga > 50:
                 jump La_muerte_de_la_china
 
             "Estás dispuesto a entregar la vida de los demás":

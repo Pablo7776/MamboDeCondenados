@@ -45,7 +45,7 @@ label Capítulo_4_Colony_Records:
             jump Una_revelación
 
     label Consolando_a_La_China:
-        $ Reputacion_mandinga -=20
+        $ reputacion_con_el_mandinga -=20
 
         "Escuchás como después de un rato el auto arranca denuevo."
 
@@ -82,7 +82,7 @@ label Capítulo_4_Colony_Records:
                 jump Esto_se_vuelve_costumbre
 
     label Otra_noche_terrible:
-        #reputacion_con_el_mandinga -=15
+        $ reputacion_con_el_mandinga -=15
 
         "Nadie te cree, te insultan y te echan de la pulpería."
 
