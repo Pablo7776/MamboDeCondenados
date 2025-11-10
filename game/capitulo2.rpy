@@ -82,8 +82,8 @@ label puerta_del_rancho:
 label Tus_primeros_hechizados:
     $ reputacion_con_el_mandinga += 10
 
-    hide placeholderm
-    show placeholder3m at subir_centrada with Dissolve(1.0)
+    hide casa
+    show casaInterior at subir_centrada with Dissolve(1.0)
     "Empezás a rasguear la guitarra y cuando te das cuenta ya estás improvisando versos junto a toda la familia."
 
     "Los padres de la joven lloran y sus hermanos miran sin poder quitar la vista de tus cuerdas."
@@ -93,18 +93,22 @@ label Tus_primeros_hechizados:
     "Cenan y te rodean de halagos y agradecimientos."
 
     "Te muestran una habitación en la que podés dormir, es la habitación de los padres de la familia, ellos van a dormir en el comedor para dejarte la mejor cama de la casa."
-
+    hide casaInterior
+    show muerte at subir_centrada with Dissolve(1.0)
     "Te dormís y empezás a soñar"
 
     "Es la voz de El Mandinga ... \"CONDENA...\" !" # efecto texto
 
+    hide muerte
+    show casaInterior at subir_centrada with Dissolve(1.0)
+
     "Te despierta una voz dulce y alguien que te sacude suavemente, es la china que te abrió la puerta"
 
-    show personaje_placeholder:
-        xoffset 0
+    show china_placeholder:
+        xoffset 1636
         yoffset 36
-    "- Disculpe, ¿puedo.... estar con usted esta noche?" #efecto
-    hide personaje_placeholder
+    china "- Disculpe, ¿puedo.... estar con usted esta noche?" #efecto
+    hide china_placeholder
 
     menu:
         "Aceptar":
@@ -159,6 +163,10 @@ label Fuiste_cordíal_y_se_te_agradece_por_ello:
     $ reputacion_con_el_mandinga -= 5
     show reputacion1 at Position(xalign=0.9, yalign=0.9)
 
+
+    hide casa
+    show casaInterior at subir_centrada with Dissolve(1.0)
+
     "Te abre la puerta, aún un poco temerosa, pero viene su padre del fondo del salón y te recibe con un apretón de manos."
 
     "Comen en familia: vos, la china que te recibió, su padre, su madre y sus dos hermanos menores."
@@ -173,21 +181,23 @@ label Fuiste_cordíal_y_se_te_agradece_por_ello:
 
     "Dormís calidamente y por la noche soñás:"
 
+    hide casaInterior
+    show muerte at subir_centrada with Dissolve(1.0)
+
     "Ves en tus sueños como las alimañas brotan de aquel cerro en el que encontraste la Salamanca."
 
     "Las huestes de El Mandinga, parecen recorrer el camino que vos hiciste."
 
     "Te despertás abruptamente en medio de la noche exsaltado cuando algo te está tocando los piés."
 
-    hide placeholder3m
-    show placeholder6m at subir_centrada with Dissolve(1.0)
+
 
     "Te sacás rápidamente la colcha de encima y son unas cinco cucarachas que estaban debajo de la frazada."
 
     "Viene corriendo la china a preguntarte si estás bien, le señalás a donde estaban esos bichos y cuando volvés a mirar ya no están."
 
-    hide placeholder6m
-    show placeholder3m at subir_centrada with Dissolve(1.0)
+    hide muerte
+    show casaInterior at subir_centrada with Dissolve(1.0)
 
     "Ella te acaricia tiernamente la espalda y empieza a cantarte una nana."
 
@@ -208,6 +218,8 @@ label No_fuiste_muy_cordial:
 
     "Te hechan a rebencazos de su campo, montás de nuevo tu caballo y seguís cabalgando toda la noche."
 
+    hide casa
+    show muerte at subir_centrada with Dissolve(1.0)
     "Te dormís sobre la silla de montar y empezás a soñar."
 
     "En tus sueños se repite la frase que dijo El Mandinga:"

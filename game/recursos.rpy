@@ -94,6 +94,7 @@ image muerte = "images/capitulo1/ia/muerteDifusa.png"
 image ranchoHiguera = "images/capitulo2/ranchoHigueraEscalado.png"
 image higuera = "images/capitulo2/higueraEscalado.png"
 image casa = "images/capitulo2/casaEscalado.png"
+image casaInterior = "images/capitulo2/interiorCasaEscalado.png"
 
 
 ################  EFECTOS DE SONIDO #########################
