@@ -30,7 +30,21 @@ image personaje_placeholder = Animation(
 )
 
 
-image protagonista_placeholder = "placeholders/personajes/prota.jpg"
+#image protagonista_placeholder = "placeholders/personajes/prota.jpg"
+
+image protagonista_placeholder = Animation(
+    "images/personajes/framesProtagonista/frame1.png", 0.2,
+    "images/personajes/framesProtagonista/frame2.png", 0.2,
+    "images/personajes/framesProtagonista/frame3.png", 0.2,
+    "images/personajes/framesProtagonista/frame4.png", 0.2,
+    "images/personajes/framesProtagonista/frame5.png", 0.2,
+    "images/personajes/framesProtagonista/frame6.png", 0.2,
+    "images/personajes/framesProtagonista/frame7.png", 0.2,
+    "images/personajes/framesProtagonista/frame8.png", 0.2,
+    "images/personajes/framesProtagonista/frame9.png", 0.2,
+
+    repeat=True
+)
 
 ############################################################
 #################  REPUTACION ##############################

@@ -251,7 +251,12 @@ label capitulo1:
 
 
 label Quiero_hechizar:
+    show protagonista_placeholder:
+        xoffset 1636
+        yoffset 36
     p "- ¡Quiero hechizar a todos con mi canto!"
+    hide protagonista_placeholder
+
     "- ¡Quiero hechizar a todos con mi canto!"
 
     "Le decís a aquel ser del inframundo"

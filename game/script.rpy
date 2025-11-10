@@ -1,4 +1,4 @@
-﻿define p = Character("Protagonista", color="#880000")
+﻿define p = Character(" ", color="#880000")
 define Mandinga = Character("Mandinga", color="#880000")
 #default reputacion_con_el_mandinga = 100
 define config.default_text_cps = 80
