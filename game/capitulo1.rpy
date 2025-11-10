@@ -251,6 +251,7 @@ label capitulo1:
 
 
 label Quiero_hechizar:
+    p "- ¡Quiero hechizar a todos con mi canto!"
     "- ¡Quiero hechizar a todos con mi canto!"
 
     "Le decís a aquel ser del inframundo"

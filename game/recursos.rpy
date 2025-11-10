@@ -17,7 +17,19 @@ image placeholder3m = "placeholders/m/Unnamed3.png"
 image placeholder6m = "placeholders/m/Unnamed6.png"
 
 ################### PLACEHOLDERS personajes ###########################
-image personaje_placeholder = "placeholders/personajes/ppp.jpg"
+
+#image personaje_placeholder = "placeholders/personajes/ppp.jpg"
+image personaje_placeholder = Animation(
+    "images/personajes/frameMandinga/frame1.png", 0.2,
+    "images/personajes/frameMandinga/frame2.png", 0.2,
+    "images/personajes/frameMandinga/frame3.png", 0.2,
+    "images/personajes/frameMandinga/frame4.png", 0.2,
+    "images/personajes/frameMandinga/frame5.png", 0.2,
+    "images/personajes/frameMandinga/frame6.png", 0.2,
+    repeat=True
+)
+
+
 image protagonista_placeholder = "placeholders/personajes/prota.jpg"
 
 ############################################################
