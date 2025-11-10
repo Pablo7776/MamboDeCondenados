@@ -236,7 +236,7 @@ label capitulo1:
                 hide muerte
                 show muerte at subir_centrada with Dissolve(1.0)
                 "Te arrepientes, empiezas a balbucear y… "
-                "despertás, parece todo haber sido un mal sueño, estás completamente borracho con la cabeza sobre una mesa de la pulpería del Tarta."
+                "Despertás, parece todo haber sido un mal sueño, estás completamente borracho con la cabeza sobre una mesa de la pulpería del Tarta."
                 "Una guitarra suena, parece que eso te despertó, el payador empieza a contar una vieja leyenda de estas tierras, la leyenda de La Salamanca."
             return
             #menu:
