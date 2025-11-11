@@ -142,7 +142,7 @@ label Capítulo_4_El_pobre_Pibe_Farías:
 
         "Todas esas bestias entran y salen de casas y locales matando a todos a su paso."
 
-        "No se salva nadie: ves el cadáver del Tarta, ves a niños ser estrangulados por vívoras, ves a ancianos ser pisoteados hasta la muerte por el chivo."
+        "No se salva nadie: ves el cadáver del Tarta, ves a niños ser estrangulados por víboras, ves a ancianos ser pisoteados hasta la muerte por el chivo."
 
         if Vida_china:
             "Empezás a llorar y ves como él baja nuevamente y sube con tu china. Le araña la espalda con una de sus filosas garras."

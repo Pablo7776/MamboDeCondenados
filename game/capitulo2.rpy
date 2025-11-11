@@ -5,7 +5,7 @@ label capitulo2:
     hide rancho
     show caida at subir_centrada with Dissolve(1.0)
 
-    "[nombre_jugador], trepás nuevamente por el abismo en espiral por el que caiste."
+    "[nombre_jugador], trepás nuevamente por el abismo en espiral por el que caíste."
 
     "Te encontrás cara a cara con el chivo negro, pero esta vez no te ataca. Se acerca lentamente y te lame los pies; con su saliva sana tus heridas."
 
@@ -18,7 +18,7 @@ label capitulo2:
     hide caida
     show ranchoHiguera at subir_centrada with Dissolve(1.0)
     
-    "Escuchás un galope y ves llegar a tu caballo, con tu guitarra aún bien atada a su silla."
+    "Escuchás un galope y ves llegar a tu caballo, con tu guitarra aún bien atada a la silla."
 
     "Te ponés la guitarra en la espalda y comenzás a cabalgar. Pasan las horas y ya se te está haciendo de noche." 
     
@@ -27,9 +27,9 @@ label capitulo2:
     "Un poco más adelante una frondosa higuera bajo la que podrías refugiarte del rocío."
 
     menu:
-        "Entrar al campo y golpeás la puerta":
+        "Entrás al campo y golpeás la puerta.":
             jump puerta_del_rancho
-        "Pasás la noche bajo la higuera":
+        "Pasás la noche bajo la higuera.":
             jump noche_ante_las_estrellas
 
 label noche_ante_las_estrellas:
@@ -39,13 +39,13 @@ label noche_ante_las_estrellas:
 
     hide ranchoHiguera
     show higuera at subir_centrada with Dissolve(1.0)
-    "Encontrás una gran higuera a un costado del camino, atás tu caballo y te recostás debajo de aquél custodio de la pampa."
+    "Encontrás una gran higuera a un costado del camino, atás tu caballo y te recostás debajo de aquel custodio de la pampa."
 
     "Por la noche en tus sueños se repite la frase que dijo El Mandinga: \"¡Bienvenido a mis huestes CONDENADO!\"" # efecto de texto
 
-    "Ves como las alimañas de La Salamanca salen de la cueva y se dirigen al camino que andaste para llegar hasta acá."
+    "Ves cómo las alimañas de La Salamanca salen de la cueva y se dirigen al camino que andaste para llegar hasta acá."
 
-    "Queda retumbando la última palabra \"CONDENADO\""
+    "Queda retumbando, en tu mente, la palabra \"CONDENADO\""
 
     "Te levantás agitado." 
 
@@ -59,24 +59,24 @@ label noche_ante_las_estrellas:
 label puerta_del_rancho:
     hide ranchoHiguera
     show casa at subir_centrada with Dissolve(1.0)
-    "Una china joven te abre la puerta, un poco asustada, te pregunta con voz temblorosa:"
+    "Una china joven te abre la puerta. Un poco asustada, te pregunta con voz temblorosa:"
     ### personaje ##########################
     pause 0.01
     show china_placeholder:
         xoffset 1636
         yoffset 36
 
-    china "— ¿Quién es? ¿Qué necesita?"
+    china "—¿Quién es? ¿Qué necesitás?"
     hide china_placeholder
 
     menu:
-        "— Soy [nombre_jugador] vengo viajando hace medio día, se me hizo de noche en el camino, quería saber si me podían dar techo esta noche, a cambio puedo ofrecer mi música. Y mostrás tu guitarra.":
+        "—Soy [nombre_jugador]. Vengo viajando hace medio día, se me hizo de noche en el camino, quería saber si me podían dar techo esta noche, a cambio puedo ofrecer mi música —y mostrás tu guitarra.":
             jump Fuiste_cordial_y_se_te_agradece_por_ello
 
-        "— ¿Y qué voy a necesitar? ¡Necesito entrar! ¡Hace frío!":
+        "—¿Y qué voy a necesitar? ¡Necesito entrar! ¡Hace frío!":
             jump No_fuiste_muy_cordial
         
-        "— Soy [nombre_jugador]. — Sacás tu guitarra y tocás un primer acorde":
+        "—Soy [nombre_jugador]. — Sacás tu guitarra y tocás un primer acorde":
             jump Tus_primeros_hechizados
 
 label Tus_primeros_hechizados:
@@ -88,7 +88,7 @@ label Tus_primeros_hechizados:
 
     "Los padres de la joven lloran y sus hermanos miran sin poder quitar la vista de tus cuerdas."
 
-    "Pero La China, ella está absolutamente entregada a tu canto, a tu hechizo."
+    "Pero la joven china, ella está absolutamente entregada a tu canto, a tu hechizo."
 
     "Cenan y te rodean de halagos y agradecimientos."
 
@@ -107,7 +107,7 @@ label Tus_primeros_hechizados:
     show china_placeholder:
         xoffset 1636
         yoffset 36
-    china "— Disculpe, ¿puedo.... estar con usted esta noche?" #efecto
+    china "— Disculpe, ¿puedo... estar con usted esta noche?" #efecto
     hide china_placeholder
 
     menu:
@@ -190,8 +190,6 @@ label Fuiste_cordial_y_se_te_agradece_por_ello:
 
     "Te despertás abruptamente en medio de la noche exaltado cuando algo te está tocando los pies."
 
-
-
     "Te sacás rápidamente la colcha de encima y son unas cinco cucarachas que estaban debajo de la frazada."
 
     "Viene corriendo la china a preguntarte si estás bien, le señalás a donde estaban esos bichos y cuando volvés a mirar ya no están."
@@ -226,7 +224,7 @@ label No_fuiste_muy_cordial:
 
     "\"—¡Bienvenido a mis huestes CONDENADO!\"" # efecto texto
 
-    "Ves como las alimañas de La Salamanca salen de la cueva y se dirigen al camino que andaste para llegar hasta acá."
+    "Ves cómo las alimañas de La Salamanca salen de la cueva y se dirigen al camino que andaste para llegar hasta acá."
 
     "Queda retumbando la última palabra, \"CONDENADO\". Te levantás agitado."
 

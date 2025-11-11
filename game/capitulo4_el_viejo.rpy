@@ -74,7 +74,7 @@ label Que_paso:
         jump Sucumbis_a_la_locura
 
     label Un_gualicho_de_La_Salamanca:
-        "Una caravana de alacranes, vívoras y murciélagos recorren las calles de tu pueblo, vos pasás a su lado como si nada, sos una más de las alimañas."
+        "Una caravana de alacranes, víboras y murciélagos recorren las calles de tu pueblo, vos pasás a su lado como si nada, sos una más de las alimañas."
 
         "Llegás al centro, a la plaza principal y hay un grupo de brujas de La Salamanca haciendo un gualicho."
 

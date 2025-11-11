@@ -41,7 +41,7 @@ label capitulo1:
 
     $ mostrar_repu()
 
-    "Vos, guitarrista y cantor venido a menos, que ahora va al galope por la pampa."
+    "Vos, guitarrista y cantor venido a menos, que ahora vas al galope por la pampa."
     "Subís por el camino empinado de un pequeño cerro."
     play ambiente sfx_SonidoAmbienteTerror loop fadein 1.0
 
@@ -73,11 +73,11 @@ label capitulo1:
         "En el primer pasillo de este laberinto te sacás los zapatos, el sombrero y el pañuelo. Así debe ser."
         
         "Ya sumido en la oscuridad, comenzás a escuchar el arpa tenebrosa y pronto sentís la presencia del basilisco."
-        "Menos mal que no se ve; si no te petrificaría. Con su siseo, el basilisco te guía para atravesar este laberinto, seguís ese ruido serpentino y lo lográs superar."
+        "Menos mal que no se ve; si no, te petrificaría. Con su siseo, el basilisco te guía para atravesar este laberinto, seguís ese ruido serpentino y lo lográs superar."
         
         "Ya en el pasillo recto y angosto empezás a caminar sin guía. Después de unos pasos, sentís las primeras alimañas:"
         
-        "Vívoras, lagartos y alacranes comienzan a trepar por tu cuerpo."
+        "Víboras, lagartos y alacranes comienzan a trepar por tu cuerpo."
 
         "Tenés que quedarte completamente quieto, inmóvil, aguantando la respiración."
         "De a una van trepando por tus piernas, tu pecho, tu cabeza, tus hombros... y bajan por tu espalda, siguiendo su camino sin hacerte daño."
@@ -144,12 +144,6 @@ label capitulo1:
 
             play sound "audio/capitulo1/GritoDeMiedo.ogg"
             return
-            #menu:
-            #    "Volver a empezar":
-            #        jump capitulo1
-            #    "Salir":
-            #        return
-
                 
 
         label Intentas_esquivar_al_chivo:
@@ -158,19 +152,17 @@ label capitulo1:
             "Das un paso y el chivo corre tan rápidamente hacia vos que no lográs evitarlo, te tira nuevamente por el hueco del que acabás de salir." 
             #scene caida with fade
             menu:
-                "Caes y caes a lo profundo del abismo nuevamene":
+                "Caés y caés a lo profundo del abismo nuevamente.":
                     jump La_caida
-
-
 
 
     label Dar_un_paso_hacia_la_oscuridad:
         hide caida
         show trono at subir_centrada with Dissolve(1.0)
 
-        "Escuchas una pequeña explosión y se comienzan a prender, a cada lado, cien antorchas."
+        "Escuchás una pequeña explosión y se comienzan a prender, a cada lado, cien antorchas."
         "Lográs ver una sala con cortinas magníficas que cubren paredes de roca negra con piso y columnas de mármol que sostienen un techo de tierra y rocas."
-        "En el fondo de la sala un enorme trono rodeado de lechuzas, quirquinchos, perros, chanchos, culebras y sapos, frente a él, hechiceros, brujas y diablillos."
+        "En el fondo de la sala un enorme trono rodeado de lechuzas, quirquinchos, perros, chanchos, culebras y sapos; frente a él, hechiceros, brujas y diablillos."
         "Viniste para esto."
         menu:
             "Gritar ¡¿DÓNDE ESTÁ EL MANDINGA?!":
@@ -190,7 +182,7 @@ label capitulo1:
                 xoffset 0
                 yoffset 36
 
-            Mandinga "- ¿Qué desea el que me busca?"
+            Mandinga "—¿Qué desea el que me busca?"
             hide mandinga_placeholder
 
             "Su voz retumba como un trueno en toda la habitación y una vez termina su frase queda resonando un zumbido siseante en el ambiente."
@@ -235,24 +227,17 @@ label capitulo1:
             label Recular:
                 hide muerte
                 show muerte at subir_centrada with Dissolve(1.0)
-                "Te arrepientes, empiezas a balbucear y… "
-                "Despertás, parece todo haber sido un mal sueño, estás completamente borracho con la cabeza sobre una mesa de la pulpería del Tarta."
-                "Una guitarra suena, parece que eso te despertó, el payador empieza a contar una vieja leyenda de estas tierras, la leyenda de La Salamanca."
+                "Te arrepentís, empezás a balbucear y… "
+                "Estás completamente borracho, con la cabeza sobre una mesa de la pulpería del Tarta."
+                "Una guitarra suena; parece que eso te despertó. El payador empieza a contar una vieja leyenda de estas tierras: la leyenda de La Salamanca."
             return
-            #menu:
-            #    "Volver a empezar":
-            #        jump capitulo1
-            #    "Salir":
-            #        return
-
-
 
 
 label Quiero_hechizar:
     show protagonista_placeholder:
         xoffset 1636
         yoffset 36
-    p "- ¡Quiero hechizar a todos con mi canto!"
+    p "—¡Quiero hechizar a todos con mi canto!"
     hide protagonista_placeholder
 
 
@@ -262,7 +247,7 @@ label Quiero_hechizar:
     show mandinga_placeholder:
         xoffset 0
         yoffset 36
-    Mandinga "- Me gusta tu pasión, pero no tan rápido, eso va a costarte el alma."
+    Mandinga "—Me gusta tu pasión, pero no tan rápido, eso va a costarte el alma."
     hide mandinga_placeholder
 
     "Su voz vuelve a hacer temblar las paredes y termina en siseo."
@@ -279,8 +264,8 @@ label A_dónde_hay_que_firmar:
     #show placeholder2m at subir_centrada with Dissolve(1.0)
 
     "Aceptás vender tu alma y el Mandinga te dice que aún hay unas pruebas más que debés superar."
-    "Hace un gesto con su mano y ante vos se abre el suelo"
-    "Una gran grieta separa la sala al medio, de un lado estás vos, del otro el Mandinga, su trono y sus seguidores."
+    "Hace un gesto con su mano y, ante vos, se abre el suelo"
+    "Una gran grieta separa la sala al medio: de un lado estás vos; del otro, el Mandinga, su trono y sus seguidores."
     hide mandi
     show cuchillo at subir_centrada with Dissolve(1.0)
     "Él saca un enorme facón de su costado y lo revolea, queda sobre la raja que se abrió en la tierra, formando un puente con el filo hacia arriba."
@@ -289,7 +274,7 @@ label A_dónde_hay_que_firmar:
     show mandinga_placeholder:
         xoffset 0
         yoffset 36
-    Mandinga "- Vení conmigo"
+    Mandinga "—Vení conmigo."
     hide mandinga_placeholder
 
     "Dice el Mandinga abriendo los brazos como invitándote a su regazo serpentino y luego señala el filo del cuchillo que acaba de lanzar."
@@ -303,21 +288,21 @@ label A_dónde_hay_que_firmar:
 
     label Pasar_decididamente:
         "Comenzás decididamente a caminar sobre el filo del facón."
-        "Paso tras paso tus pies sangran pero no sentís dolor."
+        "Paso tras paso, tus pies sangran, pero no sentís dolor."
         "Cuando llegás a la mitad ves una luz dorada bajo tus pies, mirás hacia abajo y hay un crucifijo del que emana la luz."
         
         pause 0.01
         show mandinga_placeholder:
             xoffset 0
             yoffset 36
-        Mandinga "-¡ESCUPILO!"
+        Mandinga "—¡ESCUPILO!"
         hide mandinga_placeholder
 
         "La voz del Mandinga suena más fuerte que nunca, hace temblar todo y casi estás a punto de caerte, pero recuperás el equilibrio."
         menu:
-            "Escupís el crucifijo":
+            "Escupís el crucifijo.":
                 jump Escupir_el_crucifijo
-            "Decís “eso es una blasfemia“":
+            "Decís “eso es una blasfemia“.":
                 jump Pasar_cautelosamente
 
         label Pasar_cautelosamente:
@@ -328,11 +313,6 @@ label A_dónde_hay_que_firmar:
             "Yacés en dos mitades en lo profundo de la grieta del infierno."
             "Moriste, el juego ha terminado junto a tu vida."
             return
-            #menu:
-            #    "Volver a empezar":
-            #        jump capitulo1
-            #    "Salir":
-            #        return
 
     label Escupir_el_crucifijo:
         hide cuchillo
@@ -367,7 +347,7 @@ label A_dónde_hay_que_firmar:
         show protagonista_placeholder:
             xoffset 1636
             yoffset 36
-        p "- Mi nombre es [nombre_jugador] y te vendo mi alma, Mandinga."
+        p "—Mi nombre es [nombre_jugador] y te vendo mi alma, Mandinga."
         hide protagonista_placeholder
 
         menu:
@@ -380,7 +360,7 @@ label A_dónde_hay_que_firmar:
         show mandinga_placeholder:
             xoffset 0
             yoffset 36
-        Mandinga "-¡BIENVENIDO A MIS HUESTES, CONDENADO!"
+        Mandinga "—BIENVENIDO A MIS HUESTES, CONDENADO!"
         hide mandinga_placeholder
 
         "Resuena una vez más la voz del Mandinga, mucho más fuerte, mucho más demoníaca."
@@ -397,7 +377,7 @@ label A_dónde_hay_que_firmar:
         stop ambiente fadeout 1.0
 
         "A pocos kilómetros una señora se despierta asustada por el alboroto, empieza a rezar..."
-        "- ¡Dios nos salve, que hoy hay baile en La Salamanca!"
+        "—¡Dios nos salve, que hoy hay baile en La Salamanca!"
 
         menu:
             "Al segundo capítulo":
