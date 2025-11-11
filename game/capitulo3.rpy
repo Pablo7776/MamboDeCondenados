@@ -12,7 +12,7 @@ label capitulo3:
 
     "De acá saliste la última vez camino a La Salamanca."
 
-    "El Viejo, que siempre está tomando algo en este lugar, te dió todas las indicaciones de cómo superar esas primeras pruebas en La Salamnca."
+    "El Viejo, que siempre está tomando algo en este lugar, te dio todas las indicaciones de cómo superar esas primeras pruebas en La Salamanca."
     
     "Atás tu caballo afuera en el grueso aro de hierro incrustado en el suelo de la ochava."
 
@@ -24,29 +24,29 @@ label capitulo3:
         
         "A un costado, en el rincón que siempre ocupás vos cuando tocás para todos, hay un chico joven tocando y cantando."
 
-        "Además ves a una mujer mayor, colorada, que desencaja completamente en la humeda pulpería de tu pueblo."
+        "Además ves a una mujer mayor, colorada, que desencaja completamente en la húmeda pulpería de tu pueblo."
         
         "Ella está muy bien arreglada, tiene unos marcados rulos rojos y lleva un collar de perlas, aplaude con entusiasmo cada verso del joven guitarrista."
         
-        "Del otro lado de la barra el Tarta sirviendo vino a cuatro manos."
+        "Del otro lado de la barra, el Tarta sirve vino a cuatro manos."
         
-        "De aquel Viejo ni rastros."
+        "De aquel Viejo, que te explicó todo sobre el Mandinga y el pacto, ni rastros."
 
         menu:
-                "Ir a la barra":
+                "Ir a la barra.":
                     jump El_Tarta
-                "Acercarse al joven guitarrista":
+                "Acercarse al joven guitarrista.":
                     jump Lo_harias_mejor
 
 
     label El_Tarta:
-        "Te acercás a la barra y te hacés un hueco entre los muchachos que le piben más de un vaso cada uno al Tarta."
+        "Te acercás a la barra y te hacés un hueco entre los muchachos que le piden más de un vaso cada uno al Tarta."
 
         "El Tarta te hace una seña con la cabeza como preguntando “¿qué querés?”."
 
-        "Pedís un vino y cuando se acerca para dartelo te dice"
+        "Pedís un vino y, cuando se acerca para dártelo, te dice:"
 
-        "- [nombre_jugador], tanto tiempo."
+        "—[nombre_jugador], tanto tiempo."
         
         "Le respondés el saludo y se queda ahí un rato."
 
@@ -61,11 +61,11 @@ label capitulo3:
     label Malas_noticias:
         $ pregunta_viejo = True
         
-        "- El viejo falleció, lo encontramos sin vida en la calle, a unas cuadras."
+        "—El viejo falleció, lo encontramos sin vida en la calle, a unas cuadras."
 
-        "- Le hicimos el velorio y no fue nadie. No sabemos que carajos le pasó."
+        "—Le hicimos el velorio y no fue nadie. No sabemos qué carajos le pasó."
         
-        "- Apareció muerto de un día para el otro. Viviá en el talar por el lado de los Lopez."
+        "—Apareció muerto de un día para el otro. Viviá en el talar, en el camino donde viven los López, pero más allá."
 
         menu:
             "Acercarse al Pibe Farías y pedirle que pare, para tocar vos" if pregunta_pibe:
@@ -81,9 +81,11 @@ label capitulo3:
 
     label El_Pibe:
         $ pregunta_pibe = True
-        "- ¿Ese? llegó hace dos días, es el Pibe Farías, ¿te acordás de él? el hijo de la Flavia."
-        "- Parece que vino a llevarse a la madre a la ciudad, porque está enferma. ¿Es bueno no?"
-        "“Ciertamente el Pibe Farías no toca mal, pero tiene las manías de los chicos de ciudad. Además obviamente ahora no hay nadie que se compare con vos” pensás."
+        "—¿Ese? Llegó hace dos días; es el Pibe Farías, ¿te acordás de él?, el hijo de la Flavia."
+
+        "—Parece que vino a llevarse a la madre a la ciudad, porque está enferma. ¿Es bueno no?"
+
+        "Ciertamente el Pibe Farías no toca mal, pero tiene las manías de los chicos de ciudad. Además, pensas: 'obviamente, ahora no hay nadie que se compare conmigo'."
 
         menu:
             "Acercarse a la colorada Dowley" if pregunta_colo:
@@ -100,10 +102,10 @@ label capitulo3:
     label La_del_whisky_caro:
         $ pregunta_colo = True
 
-        "- Es la señora Dowley, parece que es de la capital."
-        "- Llegó ayer y me preguntó por “artistas locales”, al día siguiente apareció el Farías."
-        "- Parece encantada con él."
-        "- Ayer y hoy me pidió el mejor whisky que tuviera."
+        "—Es la señora Dowley, parece que es de la capital."
+        "—Llegó ayer y me preguntó por “artistas locales”, al día siguiente apareció el Farías."
+        "—Parece encantada con él."
+        "—Ayer y hoy me pidió el mejor whisky que tuviese."
 
         menu:
             "Acercarse al Pibe Farías y pedirle que pare, para tocar vos" if pregunta_pibe:
@@ -114,22 +116,22 @@ label capitulo3:
                     jump Que_paso
             "Preguntarle al Tarta por El Viejo" if not pregunta_viejo:
                     jump Malas_noticias
-            "Acercarse a la colorada Dowley":
+            "Acercarse a la Colorada Dowley":
                 jump La_señora_Dowley
 
     label La_señora_Dowley:
-        "Te acercas a la mesa de la colorada Dowley."
+        "Te acercás a la mesa de la Colorada Dowley."
 
         "Te parás frente a una de las sillas y la señora te invita a sentarte cuando ve que llevás una guitarra."
         
-        "- ¡Buenas tardes señor!"
+        "—¡Buenas tardes, señor!"
 
-        "Dice ella con una voz agravada pero melodiosa y continúa:"
+        "Dice ella con una voz grave, pero melodiosa y continúa:"
         
-        "- Muy buena voz la de aquel joven, El Farías, ¿no?"
+        "—Muy buena voz la de aquel joven, El Farías, ¿no?"
 
         menu:
-            "Respondés: Yo lo haría mucho mejor":
+            "Respondés: Yo lo haría mucho mejor.":
                 jump La_colorada_curiosa
             "Respondés: No lo hace mal, pero seguramente usté escuchó mejores alguna vez, en la ciudad seguro hay muchos buenos músicos.":
                 jump Admitiendo_la_torpeza_del_Farias
@@ -137,7 +139,7 @@ label capitulo3:
     label Admitiendo_la_torpeza_del_Farias:
         "La señora se acomoda el peinado y se queda mirándote unos segundos."
 
-        "- Bueno, es verdad que por el estudio, pasaron muchos músicos y algunos eran muy buenos, mucho mejores que aquel joven."
+        "—Bueno, es verdad que por el estudio, pasaron muchos músicos y algunos eran muy buenos, mucho mejores que aquel joven."
 
         menu:
             "¿Por el estudio? (preguntás extrañado)":
@@ -146,15 +148,15 @@ label capitulo3:
     label Colony_Records:
         $ presentacion_colorada = True
 
-        "- Me presento correctamente, soy Diana Dowley."
+        "—Me presento correctamente: soy Diana Dowley."
 
-        "- Vine a buscar talentos al interior."
+        "—Vine a buscar talentos al interior."
         
-        "- Represento a la discográfica Colony Records."
+        "—Represento a la discográfica Colony Records."
 
-        "- Supongo que no la conocés, se instaló hace poco en el país pero afuera es muy conocida."
+        "—Supongo que no la conocés, se instaló hace poco en el país pero afuera es muy conocida."
         
-        "- Veo que llevas tu guitarra ¿creés poder hacerlo mejor que el joven Farias?"
+        "—Veo que llevás tu guitarra. ¿Creés poder hacerlo mejor que el joven Farías?"
 
         menu:
             "Obviamente, ya va a ver":
@@ -165,7 +167,7 @@ label capitulo3:
 
         "Él te saluda con la cabeza."
 
-        "Le mostrás tu guitarra como para que te de paso."
+        "Le mostrás tu guitarra, como para que te dé paso."
 
         "Te hace una seña de que esperes un minuto, que él va a tocar una canción más."
 
@@ -176,49 +178,49 @@ label capitulo3:
                 jump El_pibe_deja_de_tocar
 
     label El_Pibe_Farías:
-        $ reputacion_con_el_mandinga -= 15
+        $ reputacion_con_el_mandinga —= 15
 
-        "Esperás a que él termine, y te saluda presentandose como Farías, el Pibe Farías."
+        "Esperás a que él termine, y te saluda presentándose como Farías, el Pibe Farías."
 
-        "Te sede su lugar y se va a sentar junto a la colorada."
+        "Te cede su lugar y se va a sentar junto a la Colorada."
 
         jump Hechizando_a_toda_la_pulpería
 
     label El_pibe_deja_de_tocar:
-        $ reputacion_con_el_mandinga -= 5
+        $ reputacion_con_el_mandinga —= 5
 
-        "El pibe empieza a tocar y enseguida copías sus acordes."
+        "El pibe empieza a tocar y enseguida copiás sus acordes."
 
-        "Después del cuarto acorde él deja de tocar, su cara se transforma ahora está muy triste."
+        "Después del cuarto acorde, él deja de tocar; su cara se transforma: ahora está muy triste."
 
         "Se va cabizbajo a la mesa de la colorada."
 
         jump Hechizando_a_toda_la_pulpería
 
     label La_colorada_curiosa:
-        "- ¿Entonces creés que podés hacerlo mejor que él?"
+        "—¿Entonces creés que podés hacerlo mejor que él?"
         
-        "Te dice ella casi desafiante, entonces le hace una seña al Farías."
+        "Te lo dice casi desafiante; entonces le hace una seña al Farías."
 
         "El pibe corta abruptamente su interpretación y viene rápidamente a la mesa."
 
         "Se sienta y la colorada te habla de nuevo a vos."
 
-        "- Es su turno don... (y hace una seña para que le digas tu nombre)."
+        "—Es su turno, don... —dice, haciéndote una seña para que le digas tu nombre."
 
         menu:
-            "[nombre_jugador] me llamo, respondés y vas al rincón de los cantores y payadores":
+            "[nombre_jugador] me llamo —respondés—, y vas al rincón de los cantores y payadores":
                 jump Hechizando_a_toda_la_pulpería
 
     label Hechizando_a_toda_la_pulpería:
         $ reputacion_con_el_mandinga += 20
         "Con el primer rasgueo de tu guitarra todas las miradas se clavan en vos."
         
-        "Luego de la primera estrofa ya todos están mirandote embelesados."
+        "Luego de la primera estrofa, ya todos están mirándote embelesados."
 
-        "Todos menos la Colorada Dowley que te mira con curiosidad."
+        "Todos, menos la Colorada Dowley, que te mira con curiosidad."
         
-        "Luego de la segunda canción ves como ella le dice algo al Pibe Farías"
+        "Luego de la segunda canción, ella le dice algo al Pibe Farías."
 
         "Él cambia repentinamente su expresión, sale de la pulpería casi arrastrando su guitarra con una cara de pánico y terror."
         
@@ -226,7 +228,7 @@ label capitulo3:
         
         "Todos aplauden, silban y gritan por vos y tu canto."
         
-        "Te vas acercando nuevamente a la mesa de la colorada y todos van tocandote la espalda, los hombros y felicitándote."
+        "Te vas acercando nuevamente a la mesa de la colorada y van tocándote la espalda, los hombros y felicitándote."
 
         if Vida_china:
             "Tu china que se había quedado tomando algo en la barra se acerca, interrumpe tu paso y te llena de besos, te pregunta si ya pueden ir a tu casa."
@@ -234,7 +236,7 @@ label capitulo3:
         menu:
             "Hacerle caso a tu china e ir a tu casa con ella." if Vida_china:
                 jump La_calle_fría
-            "Te vas a tu casa satisfecho " if not Vida_china:
+            "Te vas a tu casa satisfecho" if not Vida_china:
                 jump Una_noche_fría
             "Vas decidido a la mesa de la Colorada":
                 jump Colony_Records_y_otro_contrato
@@ -243,43 +245,43 @@ label capitulo3:
         $ reputacion_con_el_mandinga += 5
         if not presentacion_colorada:
             $ presentacion_colorada = True
-        "- Me presento correctamente, soy Diana Dowley."
+        "—Me presento correctamente, soy Diana Dowley."
 
-        "- Vine a buscar talentos al interior."
+        "—Vine a buscar talentos al interior."
 
-        "- Represento a la discográfica Colony Records."
+        "—Represento a la discográfica Colony Records."
 
-        "- Supongo que no la conocés, se instaló hace poco en el país pero afuera es muy conocida."
+        "—Supongo que no la conocés; se instaló hace poco en el país, pero afuera es muy conocida."
 
-        "-Me parece que tenés mucho potencial para ser parte de nuestros artistas."
+        "—Me parece que tenés mucho potencial para ser parte de nuestros artistas."
 
-        "-Podrías conseguir mucho dinero, mucha fama y mucho más. Te llevaríamos por todo el país. Incluso puede que hasta al extranjero."
+        "—Podrías conseguir mucho dinero, mucha fama y mucho más. Te llevaríamos por todo el país. Incluso puede que hasta al extranjero."
 
-        "-Te propongo algo: nos podemos encontrar mañana por la mañan, me estoy quedando en una estancia a unos kilómetros."
+        "—Te propongo algo: nos podemos encontrar mañana por la mañana, me estoy quedando en una estancia a unos kilómetros."
 
-        "-Paso por vos a la mañana, si no salís asumiré que no querés ser parte de esta gran aventura que te propongo."
+        "—Paso por vos a la mañana; si no salís, supondré que no querés ser parte de esta gran aventura que te propongo."
         
-        "-Obviamente tendrías que mudarte al menos un tiempo a la capital, yo puedo organizar sin problemas esa mudanza."
+        "—Obviamente, tendrías que mudarte, al menos un tiempo, a la capital. Yo puedo organizar sin problemas esa mudanza."
 
         menu:
             "Ya estás seguro de que no querés aceptar este trato" if Vida_china:
                 jump La_calle_fría
-            "Ya estás seguro de que no querés aceptar este trato " if not Vida_china:
+            "Ya estás seguro de que no querés aceptar este trato" if not Vida_china:
                 jump Una_noche_fría
-            "Lo vas a pensar, pero casi seguro que sí, que te vas a sumar a la discográfica":
+            "Lo vas a pensar, pero estás casi seguro de que sí, que te vas a sumar a la discográfica":
                 jump Capítulo_4_Colony_Records
     
     label Una_noche_fría:
-        $ reputacion_con_el_mandinga -= 10
+        $ reputacion_con_el_mandinga —= 10
         "Salís de la pulpería agradecido de tu nuevo don."
 
         "Vas zigzagueando por culpa del alcohol por las calles de tierra hacia tu casa."
 
-        "Cuando están a unas cuadras de tu casa..."
+        "Cuando estás a unas cuadras de tu casa..."
         
         "... ves al pibe Farías, cuelga con una soga al cuello de una rama gruesa de un viejo caldén."
 
-        "¿Habrá sido lo que le dijo la colorada? te preguntás recordando la situación de la pulpería."
+        "¿Habrá sido por lo que le dijo la Colorada?, te preguntás, recordando la situación de la pulpería."
 
         menu:
             "Ya alguien se hará cargo de ese pobre desgraciado, vos a lo tuyo, te vas para tu casa":
@@ -290,9 +292,9 @@ label capitulo3:
     label Un_paso_atrás:
         "Llegás a tu casa y sentís un profundo pesar en el pecho."
 
-        "Tocas la guitarra para tranquilizarte después de lo que viste."
+        "Tocás la guitarra para tranquilizarte después de lo que viste."
 
-        "Pero cuando lo pensas, creés que tiene que haber algo más."
+        "Pero cuando lo pensás, creés que tiene que haber algo más."
 
         menu:
             "Volvés a la pulpería":
@@ -301,7 +303,7 @@ label capitulo3:
                 jump Capítulo_4_El_pobre_Pibe_Farías
 
     label La_calle_fría:
-        $ reputacion_con_el_mandinga -= 10
+        $ reputacion_con_el_mandinga —= 10
 
         "Salís de la pulpería con tu china, van zigzagueando por las calles, hace frío."
 
@@ -318,17 +320,17 @@ label capitulo3:
         menu:
             "Ya alguien se hará cargo de ese pobre desgraciado, vos a lo tuyo, te quedás en tu casa con tu china":
                 jump La_noche_en_tu_casa
-            "La llevas a la china a tu casa y volvés a ver qué pasó con el pibe":
+            "Llevás a la china a tu casa y volvés a ver qué pasó con el pibe":
                 jump Capítulo_4_El_pobre_Pibe_Farías
 
     label La_noche_en_tu_casa:
-        "Llegan a tu casa y la china se deshace en llanto sobre tu pecho ni bien entrar."
+        "Llegan a tu casa y la china se deshace en llanto sobre tu pecho ni bien entran."
         
         "La consolás y le decís que no se preocupe, que el pibe debería tener sus motivos, no era tema suyo ni tuyo."
 
-        "Tocas la guitarra para tranquilizarla."
+        "Tocás la guitarra para tranquilizarla."
 
-        "Pero igual cuando lo pensas, creés que tiene que haber algo más."
+        "Pero igual, cuando lo pensás, creés que tiene que haber algo más."
 
         menu:
             "Volvés a la pulpería":
@@ -343,15 +345,15 @@ label capitulo3:
 
         if not pregunta_viejo:
             
-            "El Tarta te ve entrar y ni bien llegás a la barra te cuenta sobre el viejo."
+            "El Tarta te ve entrar y ni bien llegás a la barra, te cuenta sobre el Viejo."
 
-            "- El viejo falleció, lo encontramos sin vida en la calle, a unas cuadras."
+            "—El viejo falleció, lo encontramos sin vida en la calle, a unas cuadras."
 
-            "- Le hicimos el velorio y no fue nadie. No sabemos que carajos le pasó."
+            "—Le hicimos el velorio y no fue nadie. No sabemos qué carajos le pasó."
 
-            "- Apareció muerto de un día para el otro. Viviá en el talar por el lado de los Lopez."
+            "—Apareció muerto de un día para el otro. Viviá en el talar, en el camino donde viven los López, pero más allá."
         
-        "Preguntás un poco por ahí pero nadie vió salir a la Colorada ni nadie te comenta nada del Pibe Farías."
+        "Preguntás un poco por ahí, pero nadie vio salir a la Colorada ni nadie te comenta nada del Pibe Farías."
 
         "Con cada persona que hablás, y que te escuchó tocar, te alaba nuevamente, de una manera muy lisonjera."
 
