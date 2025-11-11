@@ -64,13 +64,13 @@ label Capítulo_4_Colony_Records:
 
         "Empiezan a abuchearte; al principio no entendés por qué, hasta que logran ponerse de acuerdo y te gritan:"
 
-        "- ¡ASESINO! ¡ASESINO!"
+        "—¡ASESINO! ¡ASESINO!"
 
         "Uno de los viejos grita sobre los demás:"
 
-        "- Encontraron muerto al Pibe Farías el que anoche estaba ocupando tu lugar. ¡Fuiste vos [nombre_jugador]!."
+        "—Encontraron muerto al Pibe Farías el que anoche estaba ocupando tu lugar. ¡Fuiste vos [nombre_jugador]!."
         
-        "- Siempre fuiste un desgraciado sin talento y envidioso."
+        "—Siempre fuiste un desgraciado sin talento y envidioso."
 
         "Te echan la culpa de eso, todos creen que fuiste vos."
 

@@ -1,5 +1,5 @@
 default nombre_jugador = "Ramón"
-
+default Vida_china = False
 
 label capitulo2:
     hide rancho
@@ -66,17 +66,17 @@ label puerta_del_rancho:
         xoffset 1636
         yoffset 36
 
-    china "- ¿Quién es? ¿Qué necesita?"
+    china "— ¿Quién es? ¿Qué necesita?"
     hide china_placeholder
 
     menu:
-        "- Soy [nombre_jugador] vengo viajando hace medio día, se me hizo de noche en el camino, quería saber si me podían dar techo esta noche, a cambio puedo ofrecer mi música. - Y mostrás tu guitarra.":
-            jump Fuiste_cordíal_y_se_te_agradece_por_ello
+        "— Soy [nombre_jugador] vengo viajando hace medio día, se me hizo de noche en el camino, quería saber si me podían dar techo esta noche, a cambio puedo ofrecer mi música. Y mostrás tu guitarra.":
+            jump Fuiste_cordial_y_se_te_agradece_por_ello
 
-        "- ¿Y qué voy a necesitar? ¡Necesito entrar! ¡Hace frío!":
+        "— ¿Y qué voy a necesitar? ¡Necesito entrar! ¡Hace frío!":
             jump No_fuiste_muy_cordial
         
-        "- Soy [nombre_jugador]. - Sacás tu guitarra y tocás un primer acorde":
+        "— Soy [nombre_jugador]. — Sacás tu guitarra y tocás un primer acorde":
             jump Tus_primeros_hechizados
 
 label Tus_primeros_hechizados:
@@ -107,7 +107,7 @@ label Tus_primeros_hechizados:
     show china_placeholder:
         xoffset 1636
         yoffset 36
-    china "- Disculpe, ¿puedo.... estar con usted esta noche?" #efecto
+    china "— Disculpe, ¿puedo.... estar con usted esta noche?" #efecto
     hide china_placeholder
 
     menu:
@@ -144,14 +144,14 @@ label Una_mañana_incómoda:
 
     "Las huestes de El Mandinga, parecen recorrer el camino que vos hiciste."
 
-    "Te despertás abruptamente exsaltado cuando algo te está tocando los piés, te sacás rapidamente la colcha de encima."
+    "Te despertás abruptamente exaltado cuando algo te está tocando los pies, te sacás rápidamente la colcha de encima."
     
     hide placeholder3m
     show placeholder6m at subir_centrada with Dissolve(1.0)
 
     "Son unas cinco serpientes que estaban dentro de la cama."
 
-    "Salís corriendo al salón pero esa mañana todos te miran mal y practicamente te hechan de su rancho casi sin hablarte."
+    "Salís corriendo al salón pero esa mañana todos te miran mal y prácticamente te echan de su rancho casi sin hablarte."
     hide placeholder6m
     show placeholder3m at subir_centrada with Dissolve(1.0)
     menu:
@@ -159,7 +159,7 @@ label Una_mañana_incómoda:
             #jump capitulo3
             jump continuara
 
-label Fuiste_cordíal_y_se_te_agradece_por_ello:
+label Fuiste_cordial_y_se_te_agradece_por_ello:
     $ reputacion_con_el_mandinga -= 5
     show reputacion1 at Position(xalign=0.9, yalign=0.9)
 
@@ -179,7 +179,7 @@ label Fuiste_cordíal_y_se_te_agradece_por_ello:
 
     "Te tiran una manta gruesa sobre el suelo del comedor y te dan otra para taparte."
 
-    "Dormís calidamente y por la noche soñás:"
+    "Dormís cálidamente y por la noche soñás:"
 
     hide casaInterior
     show muerte at subir_centrada with Dissolve(1.0)
@@ -188,7 +188,7 @@ label Fuiste_cordíal_y_se_te_agradece_por_ello:
 
     "Las huestes de El Mandinga, parecen recorrer el camino que vos hiciste."
 
-    "Te despertás abruptamente en medio de la noche exsaltado cuando algo te está tocando los piés."
+    "Te despertás abruptamente en medio de la noche exaltado cuando algo te está tocando los pies."
 
 
 
@@ -216,7 +216,7 @@ label No_fuiste_muy_cordial:
 
     "De repente se vuelve a abrir, parece ser el padre de la joven."
 
-    "Te hechan a rebencazos de su campo, montás de nuevo tu caballo y seguís cabalgando toda la noche."
+    "Te echan a rebencazos de su campo, montás de nuevo tu caballo y seguís cabalgando toda la noche."
 
     hide casa
     show muerte at subir_centrada with Dissolve(1.0)
@@ -224,7 +224,7 @@ label No_fuiste_muy_cordial:
 
     "En tus sueños se repite la frase que dijo El Mandinga:"
 
-    "\"-¡Bienvenido a mis huestes CONDENADO!\"" # efecto texto
+    "\"—¡Bienvenido a mis huestes CONDENADO!\"" # efecto texto
 
     "Ves como las alimañas de La Salamanca salen de la cueva y se dirigen al camino que andaste para llegar hasta acá."
 

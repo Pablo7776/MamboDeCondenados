@@ -178,7 +178,7 @@ label capitulo3:
                 jump El_pibe_deja_de_tocar
 
     label El_Pibe_Farías:
-        $ reputacion_con_el_mandinga —= 15
+        $ reputacion_con_el_mandinga -= 15
 
         "Esperás a que él termine, y te saluda presentándose como Farías, el Pibe Farías."
 
@@ -187,7 +187,7 @@ label capitulo3:
         jump Hechizando_a_toda_la_pulpería
 
     label El_pibe_deja_de_tocar:
-        $ reputacion_con_el_mandinga —= 5
+        $ reputacion_con_el_mandinga -= 5
 
         "El pibe empieza a tocar y enseguida copiás sus acordes."
 
@@ -272,7 +272,7 @@ label capitulo3:
                 jump Capítulo_4_Colony_Records
     
     label Una_noche_fría:
-        $ reputacion_con_el_mandinga —= 10
+        $ reputacion_con_el_mandinga -= 10
         "Salís de la pulpería agradecido de tu nuevo don."
 
         "Vas zigzagueando por culpa del alcohol por las calles de tierra hacia tu casa."
@@ -303,7 +303,7 @@ label capitulo3:
                 jump Capítulo_4_El_pobre_Pibe_Farías
 
     label La_calle_fría:
-        $ reputacion_con_el_mandinga —= 10
+        $ reputacion_con_el_mandinga -= 10
 
         "Salís de la pulpería con tu china, van zigzagueando por las calles, hace frío."
 
