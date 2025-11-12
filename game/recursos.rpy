@@ -79,7 +79,14 @@ image pergamino = "images/capitulo1/old_paper.png"
 #################  PLACEHOLDERS IA CAP1 ####################
 ############################################################
 
-image chivo = "images/capitulo1/ia/chivo2.png"
+#image chivo = "images/capitulo1/ia/chivo2.png"
+image chivo = Animation(
+    "images/capitulo1/ia/chivo2.png", 0.01,
+    "images/capitulo1/ia/chivo3.png", 0.01,
+
+    repeat=True
+)
+
 image caida = "images/capitulo1/ia/caida2.png"
 image trono = "images/capitulo1/ia/trono2.png"
 image mandi = "images/capitulo1/ia/mandinga2.png"

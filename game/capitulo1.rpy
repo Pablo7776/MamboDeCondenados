@@ -2,6 +2,12 @@
 #dos tipor de faders:
 #burn_transition y Dissolve()
 #hola
+transform vibrar:
+    linear 0.05 xoffset 4 yoffset -4
+    linear 0.05 xoffset -4 yoffset 4
+    linear 0.05 xoffset 2 yoffset -4
+    linear 0.05 xoffset -2 yoffset 2
+    repeat
 
 
 
@@ -316,7 +322,8 @@ label A_dónde_hay_que_firmar:
 
     label Escupir_el_crucifijo:
         hide cuchillo
-        show demonios at subir_centrada with Dissolve(1.0)
+        show demonios at subir_centrada, vibrar with Dissolve(1.0)
+
         stop ambiente fadeout 1.0
         play fx crucifijo
          
