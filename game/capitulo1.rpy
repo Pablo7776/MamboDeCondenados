@@ -37,7 +37,7 @@ label capitulo1:
     #    yoffset 36
 #############################################
 
-    "Bienvenid@ al Mambo de los Condenados"
+    "Bienvenid@ al Mambo de los Condenados."
 
     $ mostrar_repu()
 
@@ -241,7 +241,7 @@ label Quiero_hechizar:
     hide protagonista_placeholder
 
 
-    "Le decís a aquel ser del inframundo"
+    "Le decís a aquel ser del inframundo."
 
     pause 0.01
     show mandinga_placeholder:
@@ -264,7 +264,7 @@ label A_dónde_hay_que_firmar:
     #show placeholder2m at subir_centrada with Dissolve(1.0)
 
     "Aceptás vender tu alma y el Mandinga te dice que aún hay unas pruebas más que debés superar."
-    "Hace un gesto con su mano y, ante vos, se abre el suelo"
+    "Hace un gesto con su mano y, ante vos, se abre el suelo."
     "Una gran grieta separa la sala al medio: de un lado estás vos; del otro, el Mandinga, su trono y sus seguidores."
     hide mandi
     show cuchillo at subir_centrada with Dissolve(1.0)

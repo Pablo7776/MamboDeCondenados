@@ -102,7 +102,7 @@ label Tus_primeros_hechizados:
     hide muerte
     show casaInterior at subir_centrada with Dissolve(1.0)
 
-    "Te despierta una voz dulce y alguien que te sacude suavemente, es la china que te abrió la puerta"
+    "Te despierta una voz dulce y alguien que te sacude suavemente, es la china que te abrió la puerta."
 
     show china_placeholder:
         xoffset 1636
