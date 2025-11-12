@@ -59,23 +59,23 @@ define gui.interface_text_color = '#880000'
 ## Tipos y tamaños de letra ####################################################
 
 ## El tipo de letra del texto del juego
-define gui.text_font = "fonts/tarotheque.ttf"
+define gui.text_font = "fonts/Jacquard24-Regular.ttf"
 #define gui.text_font = "fonts/tarotheque/JMH Typewriter.otf"
 
 ## El tipo de letra de los nombres de personajes
-define gui.name_text_font = "fonts/tarotheque.ttf"
+define gui.name_text_font = "fonts/Jacquard24-Regular.ttf"
 
 ## El tipo de letra del texto externo al juego.
-define gui.interface_text_font = "fonts/tarotheque.ttf"
+define gui.interface_text_font = "fonts/Jacquard24-Regular.ttf"
 
 ## El tamaño normal del texto del diálogo.
-define gui.text_size = 45
+define gui.text_size = 50
 
 ## El tamaño de los nombres de los personajes
-define gui.name_text_size = 50
+define gui.name_text_size = 55
 
 ## El tamaño del texto en la interfaz.
-define gui.interface_text_size = 50
+define gui.interface_text_size = 55
 
 ## El tamaño de etiquetas en la interfaz.
 define gui.label_text_size = 40
