@@ -66,7 +66,7 @@ define gui.text_font = "fonts/Jacquard24-Regular.ttf"
 define gui.name_text_font = "fonts/Jacquard24-Regular.ttf"
 
 ## El tipo de letra del texto externo al juego.
-define gui.interface_text_font = "fonts/Jacquard24-Regular.ttf"
+define gui.interface_text_font = "fonts/SOBAD___.ttf"
 
 ## El tamaño normal del texto del diálogo.
 define gui.text_size = 50
