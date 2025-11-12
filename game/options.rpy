@@ -215,3 +215,6 @@ init python:
 
 # define build.itch_project = "renpytom/test-project"
 
+define config.mouse = {
+    "default": [("gui/brown.png", 37, 37)]
+}
