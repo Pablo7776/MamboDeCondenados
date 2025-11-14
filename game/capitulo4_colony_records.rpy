@@ -38,7 +38,7 @@ label Capítulo_4_Colony_Records:
     "Escuchás llegar un moderno auto, con todo su ruido, y un sonido que nunca habías escuchado, parecido a una trompeta o algo así."
 
     menu:
-        "Decidís no salir: te vas a quedar a consolar a tu china" if Vida_china is true:
+        "Decidís no salir: te vas a quedar a consolar a tu china" if Vida_china is True:
             jump Consolando_a_La_China
 
         "Salís a por tu prometedor futuro ":

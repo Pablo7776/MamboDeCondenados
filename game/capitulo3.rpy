@@ -2,6 +2,7 @@
 default pregunta_colo = False
 default pregunta_pibe = False
 default pregunta_viejo = False
+default presentacion_colorada = False
 
 label capitulo3:
 
