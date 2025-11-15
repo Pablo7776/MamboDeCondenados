@@ -115,7 +115,7 @@ label Capítulo_4_El_pobre_Pibe_Farías:
 
     label Es_hora_de_rendir_cuentas:
         hide casaPoseida        
-        show mandinga at subir_centrada with Dissolve(1.0)
+        show mandi at subir_centrada with Dissolve(1.0)
         "... el Mandinga está de pie junto a tu cama."
         
         if Vida_china:
@@ -144,6 +144,9 @@ label Capítulo_4_El_pobre_Pibe_Farías:
 
         "Con la mano que tenía sobre la cabeza de tu china, la levanta de un solo movimiento."
 
+        hide mandi
+        show mandingaPower at subir_centrada with Dissolve(1.0)
+
         "Sus gritos son ahogados por la gran palma de ese ser demoníaco, que cada vez es más grotesco, su cara se transforma y deja de ser la de un humano."
 
         "Su cabeza pasa a ser la de una bestia con un gran hocico y una mandíbula que se desencaja como la de una serpiente."
@@ -169,7 +172,11 @@ label Capítulo_4_El_pobre_Pibe_Farías:
         jump El_viaje_eterno
 
     label La_Masacre_de_El_Mandinga:
-        "El Mandinga te toma por el cuello y de un salto atraviesa, con vos en sus manos, el techo de tu casa."
+        
+        hide mandi
+        show mandingaPower at subir_centrada with Dissolve(1.0)
+
+        "El Mandinga, se transforma en una figura mucho más monstruosa, te toma por el cuello y de un salto atraviesa, con vos en sus manos, el techo de tu casa."
 
         "Desde ahí podés ver cómo sus alimañas invadieron tu pueblo, ves al basilisco, al chivo negro, a cientos de serpientes, arañas y murciélagos."
 

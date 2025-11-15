@@ -131,6 +131,7 @@ image casaProtagonista = "images/capitulo3/casaprota.png"
 image guitarraRota = "images/capitulo4/guitarrarota.png"
 image naturalezaRota = "images/capitulo4/naturalezamandinga.png"
 image casaPoseida = "images/capitulo4/casaprotaposeida.png"
+image mandingaPower = "images/capitulo4/mandinga2.png"
 
 ################  EFECTOS DE SONIDO #########################
 
