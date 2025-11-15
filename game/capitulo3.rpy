@@ -13,6 +13,9 @@ label capitulo3:
 
     "De acá saliste la última vez camino a La Salamanca."
 
+    hide naturaleza
+    show pueblo at subir_centrada with Dissolve(1.0)
+
     "El Viejo, que siempre está tomando algo en este lugar, te dio todas las indicaciones de cómo superar esas primeras pruebas en La Salamanca."
     
     "Atás tu caballo afuera en el grueso aro de hierro incrustado en el suelo de la ochava."
@@ -21,6 +24,10 @@ label capitulo3:
 
 
     label La_pulperia:
+        
+        hide pueblo
+        show pulperia at subir_centrada with Dissolve(1.0)
+
         "Al entrar te sorprende el sonido de una guitarra."
         
         "A un costado, en el rincón que siempre ocupás vos cuando tocás para todos, hay un chico joven tocando y cantando."
@@ -41,6 +48,10 @@ label capitulo3:
 
 
     label El_Tarta:
+        
+        hide pulperia
+        show barraPulperia at subir_centrada with Dissolve(1.0)
+
         "Te acercás a la barra y te hacés un hueco entre los muchachos que le piden más de un vaso cada uno al Tarta."
 
         "El Tarta te hace una seña con la cabeza como preguntando “¿qué querés?”."
