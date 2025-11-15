@@ -178,6 +178,8 @@ label capitulo1:
 
         
         label Esperar_en_silencio:
+            hide trono
+            show mandi at subir_centrada with Dissolve(1.0)
 
             "Se desmorona una de las paredes que deja un gran agujero en uno de los costados de la sala."
             "Él atraviesa las cortinas, un enorme ser, mitad serpiente, mitad humano, ES EL MANDINGA."
