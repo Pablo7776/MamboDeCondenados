@@ -45,7 +45,16 @@ image protagonista_placeholder = Animation(
 
     repeat=True
 )
+image casaposeyendose = Animation(
+    "images/capitulo3/casaprota.png", 0.7,
+    "images/capitulo3/casaprotaposeida.png", 0.2,
+    "images/capitulo3/casaprota.png", 0.5,
+    "images/capitulo3/casaprotaposeida.png", 0.4,
+    "images/capitulo3/casaprota.png", 0.3,
+    "images/capitulo3/casaprotaposeida.png", 0.6,
 
+    repeat=False
+)
 image china_placeholder = "images/personajes/chinaEscalado.png"
 
 ############################################################
@@ -120,6 +129,8 @@ image casaProtagonista = "images/capitulo3/casaprota.png"
 ########################################################################
 
 image guitarraRota = "images/capitulo4/guitarrarota.png"
+image naturalezaRota = "images/capitulo4/naturalezamandinga.png"
+image casaPoseida = "images/capitulo4/casaprotaposeida.png"
 
 ################  EFECTOS DE SONIDO #########################
 

@@ -329,6 +329,7 @@ label capitulo3:
             "Ya alguien se hará cargo de ese pobre desgraciado, vos a lo tuyo, te vas para tu casa":
                 jump Un_paso_atrás
             "Investigás qué pasó con el pibe":
+                hide pibeColgado
                 jump Capítulo_4_El_pobre_Pibe_Farías
 
     label Un_paso_atrás:
@@ -345,6 +346,7 @@ label capitulo3:
             "Volvés a la pulpería":
                 jump La_joda_terminó
             "Volvés a ver que pasó con el pibe":
+                hide casaProtagonista
                 jump Capítulo_4_El_pobre_Pibe_Farías
 
     label La_calle_fría:
@@ -391,6 +393,7 @@ label capitulo3:
             "Volvés a la pulpería":
                 jump La_joda_terminó
             "Volvés a ver que pasó con el pibe":
+                hide casaProtagonista
                 jump Capítulo_4_El_pobre_Pibe_Farías
 
     label La_joda_terminó:
@@ -417,6 +420,7 @@ label capitulo3:
 
         menu:
             "Ir a ver el cadaver del Farías":
+                hide pulperia
                 jump Capítulo_4_El_pobre_Pibe_Farías
             "Ir al rancho del viejo":
                 jump Que_paso
