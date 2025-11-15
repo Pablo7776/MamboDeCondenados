@@ -20,6 +20,7 @@ label Capítulo_4_El_pobre_Pibe_Farías:
 
     "Además dice “Colorada Dowley - Colony Records”, empezás a revisar por alrededor."
 
+    hide pibeColgado
     show guitarraRota at subir_centrada with Dissolve(1.0)
 
     "Tirada un poco más adentro del campo está la guitarra del pibe, rota y destrozada."

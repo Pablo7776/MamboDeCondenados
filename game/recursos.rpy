@@ -47,11 +47,11 @@ image protagonista_placeholder = Animation(
 )
 image casaposeyendose = Animation(
     "images/capitulo 3/casaprota.png", 0.7,
-    "images/capitulo 3/casaprotaposeida.png", 0.2,
+    "images/capitulo4_pibe/casaprotaposeida.png", 0.2,
     "images/capitulo 3/casaprota.png", 0.5,
-    "images/capitulo 3/casaprotaposeida.png", 0.4,
+    "images/capitulo4_pibe/casaprotaposeida.png", 0.4,
     "images/capitulo 3/casaprota.png", 0.3,
-    "images/capitulo 3/casaprotaposeida.png", 0.6,
+    "images/capitulo4_pibe/casaprotaposeida.png", 0.6,
 
     repeat=False
 )
@@ -127,10 +127,10 @@ image casaProtagonista = "images/capitulo 3/casaprota.png"
 #################  PLACEHOLDERS IA CAP4 PIBE FARIAS ####################
 ########################################################################
 
-image guitarraRota = "images/capitulo4/guitarrarota.png"
-image naturalezaRota = "images/capitulo4/naturalezamandinga.png"
-image casaPoseida = "images/capitulo4/casaprotaposeida.png"
-image mandingaPower = "images/capitulo4/mandinga2.png"
+image guitarraRota = "images/capitulo4_pibe/guitarrarota.png"
+image naturalezaRota = "images/capitulo4_pibe/naturalezamandinga.png"
+image casaPoseida = "images/capitulo4_pibe/casaprotaposeida.png"
+image mandingaPower = "images/capitulo4_pibe/mandinga2.png"
 
 ################  EFECTOS DE SONIDO #########################
 

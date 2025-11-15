@@ -182,6 +182,7 @@ label capitulo3:
                 jump Lo_harias_mejor
     
     label Lo_harias_mejor:
+        hide barraPulperia
         show pibeYColorada at subir_centrada with Dissolve(1.0)
 
         "Te acercás al rincón en que el pibe está tocando."
