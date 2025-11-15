@@ -46,12 +46,12 @@ image protagonista_placeholder = Animation(
     repeat=True
 )
 image casaposeyendose = Animation(
-    "images/capitulo3/casaprota.png", 0.7,
-    "images/capitulo3/casaprotaposeida.png", 0.2,
-    "images/capitulo3/casaprota.png", 0.5,
-    "images/capitulo3/casaprotaposeida.png", 0.4,
-    "images/capitulo3/casaprota.png", 0.3,
-    "images/capitulo3/casaprotaposeida.png", 0.6,
+    "images/capitulo 3/casaprota.png", 0.7,
+    "images/capitulo 3/casaprotaposeida.png", 0.2,
+    "images/capitulo 3/casaprota.png", 0.5,
+    "images/capitulo 3/casaprotaposeida.png", 0.4,
+    "images/capitulo 3/casaprota.png", 0.3,
+    "images/capitulo 3/casaprotaposeida.png", 0.6,
 
     repeat=False
 )
@@ -90,7 +90,6 @@ image pergamino = "images/capitulo1/old_paper.png"
 
 #image chivo = "images/capitulo1/ia/chivo2.png"
 image chivo = Animation(
-    "images/capitulo1/ia/chivo2.png", 0.01,
     "images/capitulo1/ia/chivo3.png", 0.01,
 
     repeat=True
@@ -111,19 +110,19 @@ image ranchoHiguera = "images/capitulo2/ranchoHigueraEscalado.png"
 image higuera = "images/capitulo2/higueraEscalado.png"
 image casa = "images/capitulo2/casaEscalado.png"
 image casaInterior = "images/capitulo2/casaInteriorEscalado.png"
-image naturaleza = "images/capitulo3/naturaleza2.png"
+image naturaleza = "images/capitulo 3/naturaleza2.png"
 
 #################  PLACEHOLDERS IA CAP3 ####################
 ############################################################
 
-image pulperia = "images/capitulo3/pulperia1.png"
-image barraPulperia = "images/capitulo3/barrapulperia1.png"
-image pulperiaAplaudiendo = "images/capitulo3/pulperiaaplaudiendo1.png"
-image mesa = "images/capitulo3/charlaconcolorada1.png"
-image pibeYColorada = "images/capitulo3/pibeycolorada.png"
-image pueblo = "images/capitulo3/exteriorpueblo.png"
-image pibeColgado = "images/capitulo3/pibecolgado3.png"
-image casaProtagonista = "images/capitulo3/casaprota.png"
+image pulperia = "images/capitulo 3/pulperia1.png"
+image barraPulperia = "images/capitulo 3/barrapulperia1.png"
+image pulperiaAplaudiendo = "images/capitulo 3/pulperiaaplaudiendo1.png"
+image mesa = "images/capitulo 3/charlaconcolorada1.png"
+image pibeYColorada = "images/capitulo 3/pibeycolorada.png"
+image pueblo = "images/capitulo 3/exteriorpueblo.png"
+image pibeColgado = "images/capitulo 3/pibecolgado3.png"
+image casaProtagonista = "images/capitulo 3/casaprota.png"
 
 #################  PLACEHOLDERS IA CAP4 PIBE FARIAS ####################
 ########################################################################
