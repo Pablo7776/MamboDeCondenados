@@ -5,9 +5,9 @@ default pregunta_viejo = False
 default presentacion_colorada = False
 
 label capitulo3:
+    $ mostrar_repu()
 
-    hide placeholder6m
-    show placeholder2m at subir_centrada with Dissolve(1.0)
+    show naturaleza at subir_centrada with Dissolve(1.0)
 
     "Llegás a tu pueblo por la tarde, ya podés ver la pulpería de El Tarta."
 

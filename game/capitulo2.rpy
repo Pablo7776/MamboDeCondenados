@@ -125,6 +125,7 @@ label La_noche_de_pasión:
     "A la mañana siguiente tanto ella como su familia te ruegan que la aceptes como compañera, que la dejes acompañarte a donde vayas."
 
     "No te podés negar, ella es como una bendición para vos."
+    hide casaInterior
 
     menu:
         "Te vas con la china, camino a la pulpería del Tarta y a tu pueblo":
@@ -153,7 +154,7 @@ label Una_mañana_incómoda:
 
     "Salís corriendo al salón pero esa mañana todos te miran mal y prácticamente te echan de su rancho casi sin hablarte."
     hide placeholder6m
-    show placeholder3m at subir_centrada with Dissolve(1.0)
+
     menu:
         "Te subís a tu caballo y galopás hacia tu pueblo y hacia la Pulpería del Tarta":
             #jump capitulo3
@@ -229,6 +230,8 @@ label No_fuiste_muy_cordial:
     "Queda retumbando la última palabra, \"CONDENADO\". Te levantás agitado."
 
     "Tenés una deuda importante que saldar con ese poderoso ser de las profundidades."
+
+    hide muerte
 
     menu:
         "Tomás las riendas y seguís cabalgando pensativo rumbo a la pulpería del Tarta.":

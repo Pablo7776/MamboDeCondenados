@@ -102,7 +102,23 @@ image ranchoHiguera = "images/capitulo2/ranchoHigueraEscalado.png"
 image higuera = "images/capitulo2/higueraEscalado.png"
 image casa = "images/capitulo2/casaEscalado.png"
 image casaInterior = "images/capitulo2/casaInteriorEscalado.png"
+image naturaleza = "images/capitulo3/naturaleza2.png"
 
+#################  PLACEHOLDERS IA CAP3 ####################
+############################################################
+
+image pulperia = "images/capitulo3/pulperia1.png"
+image barraPulperia = "images/capitulo3/barrapulperia1.png"
+image pulperiaAplaudiendo = "images/capitulo3/pulperiaaplaudiendo1.png"
+image mesa = "images/capitulo3/charlaconcolorada1.png"
+image pibeYColorada = "images/capitulo3/pibeycolorada.png"
+image pueblo = "images/capitulo3/exteriorpueblo.png"
+image pibeColgado = "images/capitulo3/pibecolgado3.png"
+
+#################  PLACEHOLDERS IA CAP4 PIBE FARIAS ####################
+########################################################################
+
+image guitarraRota = "images/capitulo4/guitarrarota.png"
 
 ################  EFECTOS DE SONIDO #########################
 
