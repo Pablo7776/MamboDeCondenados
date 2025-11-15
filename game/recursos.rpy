@@ -114,6 +114,7 @@ image mesa = "images/capitulo3/charlaconcolorada1.png"
 image pibeYColorada = "images/capitulo3/pibeycolorada.png"
 image pueblo = "images/capitulo3/exteriorpueblo.png"
 image pibeColgado = "images/capitulo3/pibecolgado3.png"
+image casaProtagonista = "images/capitulo3/casaprota.png"
 
 #################  PLACEHOLDERS IA CAP4 PIBE FARIAS ####################
 ########################################################################

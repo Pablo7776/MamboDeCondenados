@@ -42,14 +42,14 @@ label capitulo3:
 
         menu:
                 "Ir a la barra.":
+                    hide pulperia
                     jump El_Tarta
                 "Acercarse al joven guitarrista.":
+                    hide pulperia
                     jump Lo_harias_mejor
 
 
     label El_Tarta:
-        
-        hide pulperia
         show barraPulperia at subir_centrada with Dissolve(1.0)
 
         "Te acercás a la barra y te hacés un hueco entre los muchachos que le piden más de un vaso cada uno al Tarta."
@@ -132,9 +132,15 @@ label capitulo3:
                 jump La_señora_Dowley
 
     label La_señora_Dowley:
+        hide barraPulperia
+        show pibeYColorada at subir_centrada with Dissolve(1.0)
+
         "Te acercás a la mesa de la Colorada Dowley."
 
         "Te parás frente a una de las sillas y la señora te invita a sentarte cuando ve que llevás una guitarra."
+
+        hide pibeYColorada
+        show mesa at subir_centrada with Dissolve(1.0)
         
         "—¡Buenas tardes, señor!"
 
@@ -169,12 +175,15 @@ label capitulo3:
         "—Supongo que no la conocés, se instaló hace poco en el país pero afuera es muy conocida."
         
         "—Veo que llevás tu guitarra. ¿Creés poder hacerlo mejor que el joven Farías?"
+        hide mesa
 
         menu:
             "Obviamente, ya va a ver":
                 jump Lo_harias_mejor
     
     label Lo_harias_mejor:
+        show pibeYColorada at subir_centrada with Dissolve(1.0)
+
         "Te acercás al rincón en que el pibe está tocando."
 
         "Él te saluda con la cabeza."
@@ -226,6 +235,10 @@ label capitulo3:
 
     label Hechizando_a_toda_la_pulpería:
         $ reputacion_con_el_mandinga += 20
+        hide pibeYColorada
+        hide mesa
+        show pulperia at subir_centrada with Dissolve(1.0)
+
         "Con el primer rasgueo de tu guitarra todas las miradas se clavan en vos."
         
         "Luego de la primera estrofa, ya todos están mirándote embelesados."
@@ -237,13 +250,18 @@ label capitulo3:
         "Él cambia repentinamente su expresión, sale de la pulpería casi arrastrando su guitarra con una cara de pánico y terror."
         
         "Terminás de tocar y se produce una ovación inmensa."
+
+        hide pulperia
+        show pulperiaAplaudiendo at subir_centrada with Dissolve(1.0)
         
         "Todos aplauden, silban y gritan por vos y tu canto."
         
         "Te vas acercando nuevamente a la mesa de la colorada y van tocándote la espalda, los hombros y felicitándote."
 
         if Vida_china:
-            "Tu china que se había quedado tomando algo en la barra se acerca, interrumpe tu paso y te llena de besos, te pregunta si ya pueden ir a tu casa."
+            "Tu china que se había quedado tomando algo en la barra se acerca, interrumpe tu paso y te llena de besos."
+            "Te pregunta si ya pueden ir a tu casa."
+
 
         menu:
             "Hacerle caso a tu china e ir a tu casa con ella." if Vida_china:
@@ -257,6 +275,10 @@ label capitulo3:
         $ reputacion_con_el_mandinga += 5
         if not presentacion_colorada:
             $ presentacion_colorada = True
+        
+        hide pulperiaAplaudiendo
+        show mesa at subir_centrada with Dissolve(1.0)
+
         "—Me presento correctamente, soy Diana Dowley."
 
         "—Vine a buscar talentos al interior."
@@ -284,12 +306,20 @@ label capitulo3:
                 jump Capítulo_4_Colony_Records
     
     label Una_noche_fría:
+        
         $ reputacion_con_el_mandinga -= 10
         "Salís de la pulpería agradecido de tu nuevo don."
+
+        hide pulperiaAplaudiendo
+        hide mesa
+        show pueblo at subir_centrada with Dissolve(1.0)
 
         "Vas zigzagueando por culpa del alcohol por las calles de tierra hacia tu casa."
 
         "Cuando estás a unas cuadras de tu casa..."
+
+        hide pueblo
+        show pibeColgado at subir_centrada with Dissolve(1.0)
         
         "... ves al pibe Farías, cuelga con una soga al cuello de una rama gruesa de un viejo caldén."
 
@@ -302,6 +332,9 @@ label capitulo3:
                 jump Capítulo_4_El_pobre_Pibe_Farías
 
     label Un_paso_atrás:
+        hide pibeColgado
+        show casaProtagonista at subir_centrada with Dissolve(1.0)
+
         "Llegás a tu casa y sentís un profundo pesar en el pecho."
 
         "Tocás la guitarra para tranquilizarte después de lo que viste."
@@ -316,12 +349,19 @@ label capitulo3:
 
     label La_calle_fría:
         $ reputacion_con_el_mandinga -= 10
-
+        
         "Salís de la pulpería con tu china, van zigzagueando por las calles, hace frío."
+
+        hide pulperiaAplaudiendo
+        hide mesa
+        show pueblo at subir_centrada with Dissolve(1.0)
 
         "Se abrazan para no tener frío, para sentir el calor del otro y para no caerse."
 
         "Cuando están a unas cuadras de tu casa..."
+
+        hide pueblo
+        show pibeColgado at subir_centrada with Dissolve(1.0)
 
         "... ves al pibe Farías, cuelga con una soga al cuello de una rama gruesa de un viejo caldén."
 
@@ -336,6 +376,9 @@ label capitulo3:
                 jump Capítulo_4_El_pobre_Pibe_Farías
 
     label La_noche_en_tu_casa:
+        hide pibeColgado
+        show casaProtagonista at subir_centrada with Dissolve(1.0)
+
         "Llegan a tu casa y la china se deshace en llanto sobre tu pecho ni bien entran."
         
         "La consolás y le decís que no se preocupe, que el pibe debería tener sus motivos, no era tema suyo ni tuyo."
@@ -351,6 +394,9 @@ label capitulo3:
                 jump Capítulo_4_El_pobre_Pibe_Farías
 
     label La_joda_terminó:
+        hide casaProtagonista
+        show pulperia at subir_centrada with Dissolve(1.0)
+        
         "La colorada Dowley ya no está."
 
         "Los borrachos aún están en la pulpería y algunos están cantando a coro una vieja vidala."
