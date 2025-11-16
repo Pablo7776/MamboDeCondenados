@@ -45,7 +45,16 @@ image protagonista_placeholder = Animation(
 
     repeat=True
 )
+image casaposeyendose = Animation(
+    "images/capitulo 3/casaprota.png", 0.7,
+    "images/capitulo4_pibe/casaprotaposeida.png", 0.2,
+    "images/capitulo 3/casaprota.png", 0.5,
+    "images/capitulo4_pibe/casaprotaposeida.png", 0.4,
+    "images/capitulo 3/casaprota.png", 0.3,
+    "images/capitulo4_pibe/casaprotaposeida.png", 0.6,
 
+    repeat=False
+)
 image china_placeholder = "images/personajes/chinaEscalado.png"
 
 ############################################################
@@ -81,7 +90,6 @@ image pergamino = "images/capitulo1/old_paper.png"
 
 #image chivo = "images/capitulo1/ia/chivo2.png"
 image chivo = Animation(
-    "images/capitulo1/ia/chivo2.png", 0.01,
     "images/capitulo1/ia/chivo3.png", 0.01,
 
     repeat=True
@@ -89,7 +97,7 @@ image chivo = Animation(
 
 image caida = "images/capitulo1/ia/caida2.png"
 image trono = "images/capitulo1/ia/trono2.png"
-image mandi = "images/capitulo1/ia/mandinga2.png"
+image mandi = "images/capitulo1/ia/mandingacueva4.png"
 image cuchillo = "images/capitulo1/ia/cuchilloEscalado.png"
 image demonios = "images/capitulo1/ia/risasDemonios2.png"
 image rancho = "images/capitulo1/ia/rancho2.png"
@@ -102,7 +110,27 @@ image ranchoHiguera = "images/capitulo2/ranchoHigueraEscalado.png"
 image higuera = "images/capitulo2/higueraEscalado.png"
 image casa = "images/capitulo2/casaEscalado.png"
 image casaInterior = "images/capitulo2/casaInteriorEscalado.png"
+image naturaleza = "images/capitulo 3/naturaleza2.png"
 
+#################  PLACEHOLDERS IA CAP3 ####################
+############################################################
+
+image pulperia = "images/capitulo 3/pulperia1.png"
+image barraPulperia = "images/capitulo 3/barrapulperia1.png"
+image pulperiaAplaudiendo = "images/capitulo 3/pulperiaaplaudiendo1.png"
+image mesa = "images/capitulo 3/charlaconcolorada1.png"
+image pibeYColorada = "images/capitulo 3/pibeycolorada.png"
+image pueblo = "images/capitulo 3/exteriorpueblo.png"
+image pibeColgado = "images/capitulo 3/pibecolgado3.png"
+image casaProtagonista = "images/capitulo 3/casaprota.png"
+
+#################  PLACEHOLDERS IA CAP4 PIBE FARIAS ####################
+########################################################################
+
+image guitarraRota = "images/capitulo4_pibe/guitarrarota.png"
+image naturalezaRota = "images/capitulo4_pibe/naturalezamandinga.png"
+image casaPoseida = "images/capitulo4_pibe/casaprotaposeida.png"
+image mandingaPower = "images/capitulo4_pibe/mandinga2.png"
 
 ################  EFECTOS DE SONIDO #########################
 

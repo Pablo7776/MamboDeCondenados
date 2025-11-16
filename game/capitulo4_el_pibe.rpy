@@ -2,12 +2,16 @@ label Capítulo_4_El_pobre_Pibe_Farías:
     $ reputacion_con_el_mandinga -= 35
 
     if Vida_china:
+        show casaProtagonista at subir_centrada with Dissolve(1.0)
         "Llevás a la china a tu casa, se acuesta y la tapás con una gruesa frazada."
         
         "Le decís que no se preocupe, que vas a ver qué pasó."
 
         "Volvés sobre tus pasos y llegás al cadáver del pibe Farías."
+        hide casaProtagonista
     
+    show pibeColgado at subir_centrada with Dissolve(1.0)
+
     "Investigás el cadáver del joven que había estado tocando en la pulpería."
 
     "Parece que fue él mismo quien se quitó la vida, que se trepó al árbol, se puso la soga al cuello y saltó."
@@ -15,6 +19,9 @@ label Capítulo_4_El_pobre_Pibe_Farías:
     "Encontrás debajo suyo un papelito, tiene una dirección anotada, parece de la capital."
 
     "Además dice “Colorada Dowley - Colony Records”, empezás a revisar por alrededor."
+
+    hide pibeColgado
+    show guitarraRota at subir_centrada with Dissolve(1.0)
 
     "Tirada un poco más adentro del campo está la guitarra del pibe, rota y destrozada."
 
@@ -35,12 +42,18 @@ label Capítulo_4_El_pobre_Pibe_Farías:
     "... lo siento mucho mamá”"
     
     "Sabés perfectamente quién es Flavia: una vecina del pueblo, una señora grande y enferma."
+
+    hide guitarraRota
+    show pueblo at subir_centrada with Dissolve(1.0)
     
     "Decidís llevar la nota vos mismo y la pasás por debajo de la puerta de La Flavia, y volvés a tu casa arrastrando los pies."
 
     jump La_peor_noche
 
     label La_peor_noche:
+        hide pueblo
+        show casaProtagonista at subir_centrada with Dissolve(1.0)
+
         "Llegás a tu casa desanimado."
 
         if Vida_china:
@@ -53,13 +66,23 @@ label Capítulo_4_El_pobre_Pibe_Farías:
 
         "Empezás a soñar y ves la entrada a La Salamanca: cientos de alimañas salen por montones."
 
+        hide casaProtagonista
+        show demonios at subir_centrada with Dissolve(1.0)
+
         "Coronando la marcha, el chivo negro endemoniado."
+        show chivo at subir_centrada with Dissolve(1.0)
 
         "Atrás de todo cerrando la comitiva, el basilisco que te guió por el laberinto."
 
+        hide chivo
+
         "Las huestes avanzan por el camino que anduviste hasta tu pueblo."
 
+        show casa at subir_centrada with Dissolve(1.0)
+
         "Ves que llegan hasta la casa de la familia de la joven china."
+
+        hide casa
 
         "El chivo mata a su padre y las demás alimañas destrozan la casa y se comen a sus hermanos y su madre."
 
@@ -72,17 +95,28 @@ label Capítulo_4_El_pobre_Pibe_Farías:
             
             "Se la traga lentamente y escuchás como poco a poco se van ahogando los gritos de la joven."
 
-        "Están cerca de tu pueblo..."
+        hide demonios
+        show naturalezaRota at subir_centrada with Dissolve(1.0)
 
+        "Están cerca de tu pueblo..."
+    
         "— ¡BIENVENIDO A MIS HUESTES, CONDENADO!"
 
         "Resuena la voz de El Mandinga en tu sueño..."
+
+        hide naturalezaRota
+        show casaposeyendose at subir_centrada with Dissolve(0.2)
+        "..."
+        show casaPoseida at subir_centrada with Dissolve(0.3)
+        hide casaposeyendose
 
         "Te despertás exaltado y lo ves, no era en tus sueños, es en persona..."
         
         jump Es_hora_de_rendir_cuentas
 
     label Es_hora_de_rendir_cuentas:
+        hide casaPoseida        
+        show mandi at subir_centrada with Dissolve(1.0)
         "... el Mandinga está de pie junto a tu cama."
         
         if Vida_china:
@@ -111,6 +145,9 @@ label Capítulo_4_El_pobre_Pibe_Farías:
 
         "Con la mano que tenía sobre la cabeza de tu china, la levanta de un solo movimiento."
 
+        hide mandi
+        show mandingaPower at subir_centrada with Dissolve(1.0)
+
         "Sus gritos son ahogados por la gran palma de ese ser demoníaco, que cada vez es más grotesco, su cara se transforma y deja de ser la de un humano."
 
         "Su cabeza pasa a ser la de una bestia con un gran hocico y una mandíbula que se desencaja como la de una serpiente."
@@ -136,7 +173,11 @@ label Capítulo_4_El_pobre_Pibe_Farías:
         jump El_viaje_eterno
 
     label La_Masacre_de_El_Mandinga:
-        "El Mandinga te toma por el cuello y de un salto atraviesa, con vos en sus manos, el techo de tu casa."
+        
+        hide mandi
+        show mandingaPower at subir_centrada with Dissolve(1.0)
+
+        "El Mandinga, se transforma en una figura mucho más monstruosa, te toma por el cuello y de un salto atraviesa, con vos en sus manos, el techo de tu casa."
 
         "Desde ahí podés ver cómo sus alimañas invadieron tu pueblo, ves al basilisco, al chivo negro, a cientos de serpientes, arañas y murciélagos."
 
