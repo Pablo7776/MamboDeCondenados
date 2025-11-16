@@ -8,6 +8,7 @@ label capitulo3:
     $ mostrar_repu()
 
     show naturaleza at subir_centrada with Dissolve(1.0)
+    ##Caballo y pájaros## AUDIO
 
     "Llegás a tu pueblo por la tarde, ya podés ver la pulpería de El Tarta."
 
@@ -26,7 +27,11 @@ label capitulo3:
     label La_pulperia:
         
         hide pueblo
+        ##Frenar caballo y pájaros## AUDIO
+
         show pulperia at subir_centrada with Dissolve(1.0)
+        ##Ruido ambiente de gente## AUDIO
+        ##Melodia guitarra pibe## AUDIO
 
         "Al entrar te sorprende el sonido de una guitarra."
         
@@ -204,26 +209,35 @@ label capitulo3:
         $ mostrar_repu()
 
         "Esperás a que él termine, y te saluda presentándose como Farías, el Pibe Farías."
+        
+        ##Frenar Melodia guitarra pibe## AUDIO
 
         "Te cede su lugar y se va a sentar junto a la Colorada."
 
         jump Hechizando_a_toda_la_pulpería
 
     label El_pibe_deja_de_tocar:
+        ##Frenar Melodia guitarra pibe## AUDIO
+
         $ reputacion_con_el_mandinga -= 5
         $ mostrar_repu()
+
+        ##Melodía pibe 2## AUDIO
         "El pibe empieza a tocar y enseguida copiás sus acordes."
+        ##Melodía pibe 2 duplicada## AUDIO
 
         "Después del cuarto acorde, él deja de tocar; su cara se transforma: ahora está muy triste."
-
+        ##Frenar Melodía pibe 2## AUDIO
         "Se va cabizbajo a la mesa de la colorada."
-
+        ##Frenar Melodía pibe 2 duplicada## AUDIO
         jump Hechizando_a_toda_la_pulpería
 
     label La_colorada_curiosa:
         "—¿Entonces creés que podés hacerlo mejor que él?"
         
         "Te lo dice casi desafiante; entonces le hace una seña al Farías."
+
+        ##Frenar Melodia guitarra pibe## AUDIO
 
         "El pibe corta abruptamente su interpretación y viene rápidamente a la mesa."
 
@@ -241,30 +255,34 @@ label capitulo3:
         hide pibeYColorada
         hide mesa
         show pulperia at subir_centrada with Dissolve(1.0)
-
+        ##Melodia prota1## AUDIO
         "Con el primer rasgueo de tu guitarra todas las miradas se clavan en vos."
-        
+        ##Frenar (fade out) Ruido ambiente de gente## AUDIO
         "Luego de la primera estrofa, ya todos están mirándote embelesados."
 
         "Todos, menos la Colorada Dowley, que te mira con curiosidad."
         
         "Luego de la segunda canción, ella le dice algo al Pibe Farías."
+        ##Frenar (fade out) Melodia prota1## AUDIO
+        ##Melodia prota2## AUDIO
 
         "Él cambia repentinamente su expresión, sale de la pulpería casi arrastrando su guitarra con una cara de pánico y terror."
         
         "Terminás de tocar y se produce una ovación inmensa."
-
+        ##Frenar (fade out) Melodia prota2## AUDIO
+        ##Ovación## AUDIO
         hide pulperia
         show pulperiaAplaudiendo at subir_centrada with Dissolve(1.0)
         
         "Todos aplauden, silban y gritan por vos y tu canto."
         
         "Te vas acercando nuevamente a la mesa de la colorada y van tocándote la espalda, los hombros y felicitándote."
+        ##Ruido ambiente de gente## AUDIO
 
         if Vida_china:
             "Tu china que se había quedado tomando algo en la barra se acerca, interrumpe tu paso y te llena de besos."
             "Te pregunta si ya pueden ir a tu casa."
-
+        ##Frenar Ovación## AUDIO
 
         menu:
             "Hacerle caso a tu china e ir a tu casa con ella." if Vida_china:
@@ -313,6 +331,10 @@ label capitulo3:
         
         $ reputacion_con_el_mandinga -= 10
         $ mostrar_repu()
+
+        ##Frenar Ruido ambiente de gente## AUDIO
+        ##Pájaros, naturaleza## AUDIO
+
         "Salís de la pulpería agradecido de tu nuevo don."
 
         hide pulperiaAplaudiendo
@@ -324,7 +346,11 @@ label capitulo3:
         "Cuando estás a unas cuadras de tu casa..."
 
         hide pueblo
+
+        ##Frenar Pájaros, naturaleza## AUDIO
         show pibeColgado at subir_centrada with Dissolve(1.0)
+        ##Sonido tenso, violines## AUDIO
+        ##Ruidos tétricos naturaleza## AUDIO
         
         "... ves al pibe Farías, cuelga con una soga al cuello de una rama gruesa de un viejo caldén."
 
@@ -340,13 +366,17 @@ label capitulo3:
     label Un_paso_atrás:
         hide pibeColgado
         show casaProtagonista at subir_centrada with Dissolve(1.0)
+        ##Frenar Sonido tenso, violines## AUDIO
+        ##Frenar Ruidos tétricos naturaleza## AUDIO
+
 
         "Llegás a tu casa y sentís un profundo pesar en el pecho."
 
+        ##Melodia prota1 (bajita)## AUDIO
         "Tocás la guitarra para tranquilizarte después de lo que viste."
 
         "Pero cuando lo pensás, creés que tiene que haber algo más."
-
+        ##Frenar Melodia prota1 (bajita)## AUDIO
         menu:
             "Volvés a la pulpería":
                 jump La_joda_terminó
@@ -360,8 +390,11 @@ label capitulo3:
         
         "Salís de la pulpería con tu china, van zigzagueando por las calles, hace frío."
 
-        hide pulperiaAplaudiendo
         hide mesa
+        hide pulperiaAplaudiendo
+        ##Frenar Ruido ambiente de gente## AUDIO
+        ##Pájaros, naturaleza## AUDIO
+        
         show pueblo at subir_centrada with Dissolve(1.0)
 
         "Se abrazan para no tener frío, para sentir el calor del otro y para no caerse."
@@ -369,10 +402,14 @@ label capitulo3:
         "Cuando están a unas cuadras de tu casa..."
 
         hide pueblo
+        ##Frenar Pájaros, naturaleza## AUDIO
         show pibeColgado at subir_centrada with Dissolve(1.0)
+        ##Sonido tenso, violines## AUDIO
+        ##Ruidos tétricos naturaleza## AUDIO
 
         "... ves al pibe Farías, cuelga con una soga al cuello de una rama gruesa de un viejo caldén."
 
+        ##Grito ahogado (sin loop)##AUDIO
         "La china pega un grito de espanto y te das vuelta a consolarla. Van despacio, ella aún llorando por la terrible imagen, hasta que llegan a tu casa."
 
         "¿Habrá sido lo que le dijo la colorada? te preguntás recordando la situación de la pulpería."
@@ -386,15 +423,17 @@ label capitulo3:
     label La_noche_en_tu_casa:
         hide pibeColgado
         show casaProtagonista at subir_centrada with Dissolve(1.0)
+        ##Frenar Sonido tenso, violines## AUDIO
+        ##Frenar Ruidos tétricos naturaleza## AUDIO
 
         "Llegan a tu casa y la china se deshace en llanto sobre tu pecho ni bien entran."
         
         "La consolás y le decís que no se preocupe, que el pibe debería tener sus motivos, no era tema suyo ni tuyo."
-
+        ##Melodia prota1 (bajita)## AUDIO
         "Tocás la guitarra para tranquilizarla."
 
         "Pero igual, cuando lo pensás, creés que tiene que haber algo más."
-
+        ##Frenar Melodia prota1 (bajita)## AUDIO
         menu:
             "Volvés a la pulpería":
                 jump La_joda_terminó
@@ -405,6 +444,8 @@ label capitulo3:
     label La_joda_terminó:
         hide casaProtagonista
         show pulperia at subir_centrada with Dissolve(1.0)
+
+        ##Ruido ambiente de gente## AUDIO
         
         "La colorada Dowley ya no está."
 
@@ -423,6 +464,8 @@ label capitulo3:
         "Preguntás un poco por ahí, pero nadie vio salir a la Colorada ni nadie te comenta nada del Pibe Farías."
 
         "Con cada persona que hablás, y que te escuchó tocar, te alaba nuevamente, de una manera muy lisonjera."
+
+        ##Frenar ruido ambiente de gente## AUDIO
 
         menu:
             "Ir a ver el cadaver del Farías":
