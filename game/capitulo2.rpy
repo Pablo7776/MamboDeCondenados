@@ -58,7 +58,7 @@ label noche_ante_las_estrellas:
 
 label puerta_del_rancho:
     hide ranchoHiguera
-    show casa at subir_centrada with Dissolve(1.0)
+    show puertaChina at subir_centrada with Dissolve(1.0)
     "Una china joven te abre la puerta. Un poco asustada, te pregunta con voz temblorosa:"
     ### personaje ##########################
     pause 0.01
@@ -82,7 +82,7 @@ label puerta_del_rancho:
 label Tus_primeros_hechizados:
     $ reputacion_con_el_mandinga += 10
 
-    hide casa
+    hide puertaChina
     show casaInterior at subir_centrada with Dissolve(1.0)
     "Empezás a rasguear la guitarra y cuando te das cuenta ya estás improvisando versos junto a toda la familia."
 
@@ -154,8 +154,10 @@ label Una_mañana_incómoda:
 
     "Son unas cinco serpientes que estaban dentro de la cama."
 
-    "Salís corriendo al salón pero esa mañana todos te miran mal y prácticamente te echan de su rancho casi sin hablarte."
     hide placeholder6m
+    show casa at subir_centrada with Dissolve(1.0)
+    "Salís corriendo al salón pero esa mañana todos te miran mal y prácticamente te echan de su rancho casi sin hablarte."
+    hide casa
     show naturaleza at subir_centrada with Dissolve(1.0)
 
     menu:
@@ -168,7 +170,7 @@ label Fuiste_cordial_y_se_te_agradece_por_ello:
     show reputacion1 at Position(xalign=0.9, yalign=0.9)
 
 
-    hide casa
+    hide puertaChina
     show casaInterior at subir_centrada with Dissolve(1.0)
 
     "Te abre la puerta, aún un poco temerosa, pero viene su padre del fondo del salón y te recibe con un apretón de manos."
@@ -214,6 +216,8 @@ label No_fuiste_muy_cordial:
     $ reputacion_con_el_mandinga -= 5
     $ mostrar_repu()
     show reputacion1 at Position(xalign=0.9, yalign=0.9)
+    hide puertaChina
+    show casa at subir_centrada with Dissolve(1.0)
 
     "Asustás a la joven y cierra la puerta, te quedás ahí frente a la puerta."
 

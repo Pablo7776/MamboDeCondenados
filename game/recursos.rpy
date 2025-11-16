@@ -103,6 +103,12 @@ image demonios = "images/capitulo1/ia/risasDemonios2.png"
 image rancho = "images/capitulo1/ia/rancho2.png"
 image muerte = "images/capitulo1/ia/muerteDifusa.png"
 
+############################################################
+#################  CAPITULO 2 ##############################
+############################################################
+
+image puertaChina = "images/capitulo2/puertaCasaChina.png"
+
 #################  PLACEHOLDERS IA CAP2 ####################
 ############################################################
 
