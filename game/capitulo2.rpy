@@ -34,8 +34,8 @@ label capitulo2:
 
 label noche_ante_las_estrellas:
     $ reputacion_con_el_mandinga -= 10
-
-    show reputacion2 at Position(xalign=0.9, yalign=0.9)
+    $ mostrar_repu()
+    #show reputacion2 at Position(xalign=0.9, yalign=0.9)
 
     hide ranchoHiguera
     show higuera at subir_centrada with Dissolve(1.0)
@@ -118,6 +118,7 @@ label Tus_primeros_hechizados:
 
 label La_noche_de_pasión:
     $ reputacion_con_el_mandinga += 10
+    $ mostrar_repu()
     $ Vida_china = True
 
     "Pasan juntos una noche de extrema pasión."
@@ -135,7 +136,7 @@ label La_noche_de_pasión:
 
 label Una_mañana_incómoda:
     $ reputacion_con_el_mandinga -= 15
-
+    $ mostrar_repu()
     show reputacion1 at Position(xalign=0.9, yalign=0.9)
 
     "Esa noche la rechazás, ella sale llorando de la habitación a viva voz."
@@ -211,6 +212,7 @@ label Fuiste_cordial_y_se_te_agradece_por_ello:
 
 label No_fuiste_muy_cordial:
     $ reputacion_con_el_mandinga -= 5
+    $ mostrar_repu()
     show reputacion1 at Position(xalign=0.9, yalign=0.9)
 
     "Asustás a la joven y cierra la puerta, te quedás ahí frente a la puerta."

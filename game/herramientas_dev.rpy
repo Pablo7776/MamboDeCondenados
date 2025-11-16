@@ -1,7 +1,7 @@
 # ---------------------------------------------------
 # Variables globales
 # ---------------------------------------------------
-define DEV_LABELS = False
+define DEV_LABELS = True
 default current_label = ""
 default _nombre_temp = ""  # SOLO UNA VEZ en todo el proyecto
 

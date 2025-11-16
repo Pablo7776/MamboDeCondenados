@@ -201,6 +201,7 @@ label capitulo3:
 
     label El_Pibe_Farías:
         $ reputacion_con_el_mandinga -= 15
+        $ mostrar_repu()
 
         "Esperás a que él termine, y te saluda presentándose como Farías, el Pibe Farías."
 
@@ -210,7 +211,7 @@ label capitulo3:
 
     label El_pibe_deja_de_tocar:
         $ reputacion_con_el_mandinga -= 5
-
+        $ mostrar_repu()
         "El pibe empieza a tocar y enseguida copiás sus acordes."
 
         "Después del cuarto acorde, él deja de tocar; su cara se transforma: ahora está muy triste."
@@ -236,6 +237,7 @@ label capitulo3:
 
     label Hechizando_a_toda_la_pulpería:
         $ reputacion_con_el_mandinga += 20
+        $ mostrar_repu()
         hide pibeYColorada
         hide mesa
         show pulperia at subir_centrada with Dissolve(1.0)
@@ -274,6 +276,7 @@ label capitulo3:
 
     label Colony_Records_y_otro_contrato:
         $ reputacion_con_el_mandinga += 5
+        $ mostrar_repu()
         if not presentacion_colorada:
             $ presentacion_colorada = True
         
@@ -309,6 +312,7 @@ label capitulo3:
     label Una_noche_fría:
         
         $ reputacion_con_el_mandinga -= 10
+        $ mostrar_repu()
         "Salís de la pulpería agradecido de tu nuevo don."
 
         hide pulperiaAplaudiendo
@@ -352,6 +356,7 @@ label capitulo3:
 
     label La_calle_fría:
         $ reputacion_con_el_mandinga -= 10
+        $ mostrar_repu()
         
         "Salís de la pulpería con tu china, van zigzagueando por las calles, hace frío."
 
