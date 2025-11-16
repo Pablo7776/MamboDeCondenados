@@ -1,7 +1,7 @@
 define af = renpy.audio.filter
 # Crear filtro de paso bajo (no aplicarlo todavía)
-define lowpass_filtro_viento = af.Lowpass(300.0)
-define lowpass_filtro_estatica = af.Lowpass(300.0)
+define lowpass_filtro_viento = af.Lowpass(400.0)
+define lowpass_filtro_estatica = af.Lowpass(400.0)
 
 init python:
     # Canales de sonido y ambiente

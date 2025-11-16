@@ -142,3 +142,5 @@ define sfx_SonidoAmbienteTerror = "audio/capitulo1/sfx_SonidoAmbienteTerror.ogg"
 define sfx_respiracion_chivo = "audio/capitulo1/respiracion_chivo.ogg"
 
 
+define sfx_infrasonido = "audio/capitulo1/sfx_infrasonido.ogg"
+define sfx_trueno = "audio/capitulo1/sfx_trueno.ogg"

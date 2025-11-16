@@ -14,7 +14,7 @@ transform vibrar:
 label capitulo1:    
 
 
-    play pisadas sfx_galope 
+    play sound sfx_galope 
 
 
     #scene gauchoACaballo with Dissolve(3.0)
@@ -96,6 +96,7 @@ label capitulo1:
         show chivo at subir_centrada with Dissolve(1.0)
 
         play fx sfx_respiracion_chivo 
+        play fx sfx_infrasonido
         "Entonces aparece ese animal grotesco del que te había contado el viejo: un chivo de pelo negro, ojos endemoniados, cuernos tan curvados como una espiral."
         "El animal bufa en tu dirección. Lo rodeás fácilmente sin que se mosquee, pero..."
         "Cuando por fin llegás al otro lado, el chivo se da vuelta, corre, te topeta y te arroja a un profundo hoyo."
@@ -180,12 +181,14 @@ label capitulo1:
         label Esperar_en_silencio:
             hide trono
             show mandi at subir_centrada with Dissolve(1.0)
+            play sound sfx_trueno
 
             "Se desmorona una de las paredes que deja un gran agujero en uno de los costados de la sala."
             "Él atraviesa las cortinas, un enorme ser, mitad serpiente, mitad humano, ES EL MANDINGA."
             "Se sienta en su trono y te mira con un gesto entre curioso y vehemente."
             
 
+            
             show mandinga_placeholder:
                 xoffset 0
                 yoffset 36
@@ -207,6 +210,7 @@ label capitulo1:
             $ reputacion_con_el_mandinga -= 10
             $ mostrar_repu()
 
+            play sound sfx_trueno
 
             "De repente escuchás una explosión mucho mayor que la de antes."
             "Se abre un agujero en una de las paredes y Él atraviesa las cortinas, un enorme ser, mitad serpiente, mitad humano, ES EL MANDINGA."
