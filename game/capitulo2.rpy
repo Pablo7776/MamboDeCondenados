@@ -2,6 +2,7 @@ default nombre_jugador = "Ramón"
 default Vida_china = False
 
 label capitulo2:
+    $ mostrar_repu()
     hide rancho
     show caida at subir_centrada with Dissolve(1.0)
 
@@ -81,6 +82,7 @@ label puerta_del_rancho:
 
 label Tus_primeros_hechizados:
     $ reputacion_con_el_mandinga += 10
+    $ mostrar_repu()
 
     hide puertaChina
     show casaInterior at subir_centrada with Dissolve(1.0)
@@ -137,7 +139,6 @@ label La_noche_de_pasión:
 label Una_mañana_incómoda:
     $ reputacion_con_el_mandinga -= 15
     $ mostrar_repu()
-    show reputacion1 at Position(xalign=0.9, yalign=0.9)
 
     "Esa noche la rechazás, ella sale llorando de la habitación a viva voz."
 
@@ -167,7 +168,7 @@ label Una_mañana_incómoda:
 
 label Fuiste_cordial_y_se_te_agradece_por_ello:
     $ reputacion_con_el_mandinga -= 5
-    show reputacion1 at Position(xalign=0.9, yalign=0.9)
+    $ mostrar_repu()
 
 
     hide puertaChina
@@ -215,7 +216,7 @@ label Fuiste_cordial_y_se_te_agradece_por_ello:
 label No_fuiste_muy_cordial:
     $ reputacion_con_el_mandinga -= 5
     $ mostrar_repu()
-    show reputacion1 at Position(xalign=0.9, yalign=0.9)
+    
     hide puertaChina
     show casa at subir_centrada with Dissolve(1.0)
 
