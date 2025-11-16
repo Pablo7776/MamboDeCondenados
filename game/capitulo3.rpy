@@ -8,7 +8,9 @@ label capitulo3:
     $ mostrar_repu()
 
     show naturaleza at subir_centrada with Dissolve(1.0)
-    ##Caballo y pájaros## AUDIO
+    play sfx_galope
+    
+    ##Caballo check y pájaros## AUDIO
 
     "Llegás a tu pueblo por la tarde, ya podés ver la pulpería de El Tarta."
 
@@ -30,7 +32,8 @@ label capitulo3:
         ##Frenar caballo y pájaros## AUDIO
 
         show pulperia at subir_centrada with Dissolve(1.0)
-        ##Ruido ambiente de gente## AUDIO
+        play sfx_taberna loop fadein 1.0
+        ##Ruido ambiente de gente check## AUDIO
         ##Melodia guitarra pibe## AUDIO
 
         "Al entrar te sorprende el sonido de una guitarra."
@@ -260,6 +263,8 @@ label capitulo3:
         show pulperia at subir_centrada with Dissolve(1.0)
         ##Melodia prota1## AUDIO
         "Con el primer rasgueo de tu guitarra todas las miradas se clavan en vos."
+
+        stop sfx_taberna fadeout 1.0
         ##Frenar (fade out) Ruido ambiente de gente## AUDIO
         "Luego de la primera estrofa, ya todos están mirándote embelesados."
 
@@ -272,7 +277,8 @@ label capitulo3:
         "Él cambia repentinamente su expresión, sale de la pulpería casi arrastrando su guitarra con una cara de pánico y terror."
         
         "Terminás de tocar y se produce una ovación inmensa."
-        ##Frenar (fade out) Melodia prota2## AUDIO
+        ##Frenar (fade out) Melodia prota2## 
+        play sfx_aplausos fadein 0.5
         ##Ovación## AUDIO
         hide pulperia
         show pulperiaAplaudiendo at subir_centrada with Dissolve(1.0)
@@ -281,11 +287,11 @@ label capitulo3:
         
         "Te vas acercando nuevamente a la mesa de la colorada y van tocándote la espalda, los hombros y felicitándote."
         ##Ruido ambiente de gente## AUDIO
+        play sfx_taberna loop fadein 1.0
 
         if Vida_china:
             "Tu china que se había quedado tomando algo en la barra se acerca, interrumpe tu paso y te llena de besos."
             "Te pregunta si ya pueden ir a tu casa."
-        ##Frenar Ovación## AUDIO
 
         menu:
             "Hacerle caso a tu china e ir a tu casa con ella." if Vida_china:
@@ -336,7 +342,9 @@ label capitulo3:
         $ reputacion_con_el_mandinga -= 10
         $ mostrar_repu()
 
+        stop sfx_taberna fadeout 1.0
         ##Frenar Ruido ambiente de gente## AUDIO
+        play sfx_noche fadein 0.5
         ##Pájaros, naturaleza## AUDIO
 
         "Salís de la pulpería agradecido de tu nuevo don."
@@ -350,10 +358,11 @@ label capitulo3:
         "Cuando estás a unas cuadras de tu casa..."
 
         hide pueblo
-
+        play sfx_SonidoAmbienteTerror loop fadein 1.0
         ##Frenar Pájaros, naturaleza## AUDIO
         show pibeColgado at subir_centrada with Dissolve(1.0)
         ##Sonido tenso, violines## AUDIO
+        stop sfx_noche
         ##Ruidos tétricos naturaleza## AUDIO
         
         "... ves al pibe Farías, cuelga con una soga al cuello de una rama gruesa de un viejo caldén."
@@ -371,6 +380,7 @@ label capitulo3:
     label Un_paso_atrás:
         hide pibeColgado
         show casaProtagonista at subir_centrada with Dissolve(1.0)
+        stop sfx_SonidoAmbienteTerror
         ##Frenar Sonido tenso, violines## AUDIO
         ##Frenar Ruidos tétricos naturaleza## AUDIO
 
@@ -398,7 +408,10 @@ label capitulo3:
 
         hide mesa
         hide pulperiaAplaudiendo
+        
+        stop sfx_taberna fadeout 1.0
         ##Frenar Ruido ambiente de gente## AUDIO
+        play sfx_noche fadein 0.5
         ##Pájaros, naturaleza## AUDIO
         
         show pueblo at subir_centrada with Dissolve(1.0)
@@ -408,9 +421,11 @@ label capitulo3:
         "Cuando están a unas cuadras de tu casa..."
 
         hide pueblo
+        play sfx_SonidoAmbienteTerror loop fadein 1.0
         ##Frenar Pájaros, naturaleza## AUDIO
         show pibeColgado at subir_centrada with Dissolve(1.0)
         ##Sonido tenso, violines## AUDIO
+        stop sfx_noche
         ##Ruidos tétricos naturaleza## AUDIO
 
         "... ves al pibe Farías, cuelga con una soga al cuello de una rama gruesa de un viejo caldén."
@@ -430,6 +445,7 @@ label capitulo3:
     label La_noche_en_tu_casa:
         hide pibeColgado
         show casaProtagonista at subir_centrada with Dissolve(1.0)
+        stop sfx_SonidoAmbienteTerror
         ##Frenar Sonido tenso, violines## AUDIO
         ##Frenar Ruidos tétricos naturaleza## AUDIO
 
@@ -453,6 +469,7 @@ label capitulo3:
         hide casaProtagonista
         show pulperia at subir_centrada with Dissolve(1.0)
 
+        play sfx_taberna loop fadein 1.0
         ##Ruido ambiente de gente## AUDIO
         
         "La colorada Dowley ya no está."
@@ -474,6 +491,7 @@ label capitulo3:
         "Con cada persona que hablás, y que te escuchó tocar, te alaba nuevamente, de una manera muy lisonjera."
 
         ##Frenar ruido ambiente de gente## AUDIO
+        stop sfx_taberna fadeout 1.0
 
         menu:
             "Ir a ver el cadaver del Farías":
