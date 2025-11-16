@@ -1,5 +1,5 @@
 label continuara:
-    "Continuará"
+    "Continuará..."
 
-    "Podés visitar {a=https://mambo-de-condenados-web.vercel.app}la página oficial{/a} para más información."
+    "Podés visitar la {a=https://mambo-de-condenados-web.vercel.app}página oficial{/a} para más información."
 
