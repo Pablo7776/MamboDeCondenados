@@ -24,7 +24,7 @@ screen dev_label():
 
 style dev_label_text:
     color "#ffffff"
-    size 40
+    size 60
     bold True
     outlines [(2, "#000000", 0, 0)]
 
