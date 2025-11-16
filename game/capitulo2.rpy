@@ -54,8 +54,8 @@ label noche_ante_las_estrellas:
 
     menu:
         "Cabalgás pensativo rumbo a la pulpería del Tarta, en tu pueblo.":
-            #jump capitulo3
-            jump continuara
+            jump capitulo3
+            #jump continuara
 
 label puerta_del_rancho:
     hide ranchoHiguera
@@ -133,8 +133,8 @@ label La_noche_de_pasión:
 
     menu:
         "Te vas con la china, camino a la pulpería del Tarta y a tu pueblo":
-            #jump capitulo3
-            jump continuara
+            jump capitulo3
+            #jump continuara
 
 label Una_mañana_incómoda:
     $ reputacion_con_el_mandinga -= 15
@@ -165,8 +165,8 @@ label Una_mañana_incómoda:
 
     menu:
         "Te subís a tu caballo y galopás hacia tu pueblo y hacia la Pulpería del Tarta":
-            #jump capitulo3
-            jump continuara
+            jump capitulo3
+            #jump continuara
 
 label Fuiste_cordial_y_se_te_agradece_por_ello:
     $ reputacion_con_el_mandinga -= 5
@@ -247,4 +247,5 @@ label No_fuiste_muy_cordial:
 
     menu:
         "Tomás las riendas y seguís cabalgando pensativo rumbo a la pulpería del Tarta.":
-            jump continuara
+            #jump continuara
+            jump capitulo3

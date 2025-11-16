@@ -94,7 +94,8 @@ label capitulo3:
             "Preguntarle al Tarta por la señora colorada" if not pregunta_colo:
                     jump La_del_whisky_caro
             "Ir al rancho de El Viejo a investigar.":
-                jump Que_paso
+                    jump continuara
+                    #jump capitulo4_el_viejo
 
     label El_Pibe:
         $ pregunta_pibe = True
@@ -110,7 +111,8 @@ label capitulo3:
             "Preguntarle al Tarta por la señora colorada" if not pregunta_colo:
                     jump La_del_whisky_caro
             "Ir al rancho de El Viejo a investigar." if pregunta_viejo:
-                    jump Que_paso
+                    jump continuara
+                    #jump capitulo4_el_viejo
             "Preguntarle al Tarta por El Viejo" if not pregunta_viejo:
                     jump Malas_noticias
             "Acercarse al Pibe Farías y pedirle que pare, para tocar vos":
@@ -130,7 +132,8 @@ label capitulo3:
             "Preguntarle al Tarta “¿Ese quién es?”" if not pregunta_pibe:
                     jump El_Pibe
             "Ir al rancho de El Viejo a investigar." if pregunta_viejo:
-                    jump Que_paso
+                    jump continuara
+                    #jump capitulo4_el_viejo
             "Preguntarle al Tarta por El Viejo" if not pregunta_viejo:
                     jump Malas_noticias
             "Acercarse a la Colorada Dowley":
@@ -325,7 +328,8 @@ label capitulo3:
             "Ya estás seguro de que no querés aceptar este trato" if not Vida_china:
                 jump Una_noche_fría
             "Lo vas a pensar, pero estás casi seguro de que sí, que te vas a sumar a la discográfica":
-                jump Capítulo_4_Colony_Records
+                jump continuara
+                #jump Capítulo_4_Colony_Records
     
     label Una_noche_fría:
         
@@ -361,7 +365,8 @@ label capitulo3:
                 jump Un_paso_atrás
             "Investigás qué pasó con el pibe":
                 hide pibeColgado
-                jump Capítulo_4_El_pobre_Pibe_Farías
+                jump continuara
+                #jump Capítulo_4_El_pobre_Pibe_Farías
 
     label Un_paso_atrás:
         hide pibeColgado
@@ -382,7 +387,8 @@ label capitulo3:
                 jump La_joda_terminó
             "Volvés a ver que pasó con el pibe":
                 hide casaProtagonista
-                jump Capítulo_4_El_pobre_Pibe_Farías
+                jump continuara
+                #jump Capítulo_4_El_pobre_Pibe_Farías
 
     label La_calle_fría:
         $ reputacion_con_el_mandinga -= 10
@@ -418,7 +424,8 @@ label capitulo3:
             "Ya alguien se hará cargo de ese pobre desgraciado, vos a lo tuyo, te quedás en tu casa con tu china":
                 jump La_noche_en_tu_casa
             "Llevás a la china a tu casa y volvés a ver qué pasó con el pibe":
-                jump Capítulo_4_El_pobre_Pibe_Farías
+                jump continuara
+                #jump Capítulo_4_El_pobre_Pibe_Farías
 
     label La_noche_en_tu_casa:
         hide pibeColgado
@@ -439,7 +446,8 @@ label capitulo3:
                 jump La_joda_terminó
             "Volvés a ver que pasó con el pibe":
                 hide casaProtagonista
-                jump Capítulo_4_El_pobre_Pibe_Farías
+                jump continuara
+                #jump Capítulo_4_El_pobre_Pibe_Farías
 
     label La_joda_terminó:
         hide casaProtagonista
@@ -470,6 +478,8 @@ label capitulo3:
         menu:
             "Ir a ver el cadaver del Farías":
                 hide pulperia
-                jump Capítulo_4_El_pobre_Pibe_Farías
+                jump continuara
+                #jump Capítulo_4_El_pobre_Pibe_Farías
             "Ir al rancho del viejo":
-                jump Que_paso
+                jump continuara
+                #jump capitulo4_el_viejo

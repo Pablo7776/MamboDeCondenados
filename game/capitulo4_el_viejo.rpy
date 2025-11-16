@@ -1,4 +1,4 @@
-label Que_paso:
+label capitulo4_el_viejo:
     $ reputacion_con_el_mandinga -= 25
     
     if Vida_china == True:
