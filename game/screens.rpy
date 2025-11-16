@@ -254,12 +254,12 @@ screen quick_menu():
             style "quick_menu"
 
             textbutton _("Atrás") action Rollback()
-            textbutton _("Historial") action ShowMenu('history')
-            textbutton _("Saltar") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Guardar") action ShowMenu('save')
-            textbutton _("Guardar R.") action QuickSave()
-            textbutton _("Cargar R.") action QuickLoad()
+            #textbutton _("Historial") action ShowMenu('history')
+            #textbutton _("Saltar") action Skip() alternate Skip(fast=True, confirm=True)
+            #textbutton _("Auto") action Preference("auto-forward", "toggle")
+            #textbutton _("Guardar") action ShowMenu('save')
+            #textbutton _("Guardar R.") action QuickSave()
+            #textbutton _("Cargar R.") action QuickLoad()
             textbutton _("Prefs.") action ShowMenu('preferences')
 
 
@@ -275,7 +275,7 @@ style quick_button is default
 style quick_button_text is button_text
 
 style quick_menu:
-    xalign 0.5
+    xalign 1.0
     yalign 1.0
 
 style quick_button:
