@@ -140,6 +140,8 @@ label Una_mañana_incómoda:
     $ reputacion_con_el_mandinga -= 15
     $ mostrar_repu()
 
+    hide casaInterior
+    show muerte at subir_centrada with Dissolve(1.0)
     "Esa noche la rechazás, ella sale llorando de la habitación a viva voz."
 
     "Te volvés a dormir y volvés a soñar:"
@@ -150,12 +152,12 @@ label Una_mañana_incómoda:
 
     "Te despertás abruptamente exaltado cuando algo te está tocando los pies, te sacás rápidamente la colcha de encima."
     
-    hide placeholder3m
-    show placeholder6m at subir_centrada with Dissolve(1.0)
+    #hide placeholder3m
+    #show placeholder6m at subir_centrada with Dissolve(1.0)
 
     "Son unas cinco serpientes que estaban dentro de la cama."
 
-    hide placeholder6m
+    hide muerte
     show casa at subir_centrada with Dissolve(1.0)
     "Salís corriendo al salón pero esa mañana todos te miran mal y prácticamente te echan de su rancho casi sin hablarte."
     hide casa
