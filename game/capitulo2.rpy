@@ -2,7 +2,8 @@ default nombre_jugador = "Ramón"
 default Vida_china = False
 
 label capitulo2:
-    stop sfx_SonidoAmbienteTerror
+    #stop sfx_SonidoAmbienteTerror
+    play ambiente sfx_SonidoAmbienteTerror loop fadein 1.0
     
     $ mostrar_repu()
     hide rancho

@@ -15,6 +15,21 @@ transform aparecer_flash:
     linear 0.05 alpha 0.8
 #    linear 0.3 alpha 1.0
     repeat
+transform flash:
+    alpha 0.0
+    linear 0.15 alpha 1.0
+    linear 0.15 alpha 0.8
+    alpha 0.0
+    linear 0.15 alpha 1.0
+    linear 0.15 alpha 0.8
+    alpha 0.0
+    linear 0.15 alpha 1.0
+    linear 0.15 alpha 0.8
+    alpha 0.0
+    linear 0.15 alpha 1.0
+    linear 0.15 alpha 0.8
+#    linear 0.3 alpha 1.0
+
 
 transform desvanecer:
     linear 33.0 alpha 0.0   # 5 segundos desapareciendo
@@ -194,7 +209,7 @@ label capitulo1:
             hide trono
             #with dissolve     # transición para que hide sea visible
             hide mandi
-            show mandi at subir_centrada with Dissolve(5.0)
+            show mandi at subir_centrada, flash with Dissolve(5.0)
             #with Fade(0.1, 0.0, 0.3)
 
 
@@ -350,6 +365,17 @@ label A_dónde_hay_que_firmar:
         show demonios at subir_centrada, aparecer_flash with Dissolve(1.0)
 
         stop sfx_SonidoAmbienteTerror fadeout 1.0
+        stop sfx_galope fadeout 1.0
+        stop audio fadeout 1.0
+        stop music fadeout 1.0
+        stop sound fadeout 1.0
+        stop ambiente fadeout 1.0
+        stop viento fadeout 1.0
+        stop fx fadeout 1.0
+        stop acufeno fadeout 1.0
+        stop pisadas fadeout 1.0
+        stop estatica fadeout 1.0
+        play sound sfx_viento1 volume 0.3
         play fx crucifijo
          
         "Escupís el crucifijo y seguís por el filo del facón, lográs llegar al otro lado."
