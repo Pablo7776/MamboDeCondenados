@@ -3,7 +3,7 @@ define Mandinga = Character("Mandinga", color="#880000")
 define china = Character("China", color="#880000")
 #default reputacion_con_el_mandinga = 100
 define config.default_text_cps = 80
-define burn_transition = Fade(0.5, 0.2, 0.5, color="#1a1d1f")  # naranja tipo fuego
+define burn_transition = Fade(0.6, 0.4, 0.8, color="#000000")  # naranja tipo fuego
 
 
 
