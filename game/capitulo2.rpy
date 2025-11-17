@@ -51,7 +51,7 @@ label noche_ante_las_estrellas:
     $ reputacion_con_el_mandinga -= 10
     $ mostrar_repu()
     #show reputacion2 at Position(xalign=0.9, yalign=0.9)
-
+    play audio sfx_noche loop fadein 0.5
     hide ranchoHiguera
     show higuera at subir_centrada with Dissolve(1.0)
     "Encontrás una gran higuera a un costado del camino, atás tu caballo y te recostás debajo de aquel custodio de la pampa."
@@ -65,6 +65,7 @@ label noche_ante_las_estrellas:
     "Te levantás agitado." 
 
     "Tenés una deuda importante que saldar con ese poderoso ser de las profundidades."
+    stop audio fadeout 1.0
 
     menu:
         "Cabalgás pensativo rumbo a la pulpería del Tarta, en tu pueblo.":

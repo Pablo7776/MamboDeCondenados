@@ -407,6 +407,7 @@ label A_dónde_hay_que_firmar:
             yoffset 36
         p "—Mi nombre es [nombre_jugador] y te vendo mi alma, Mandinga."
         hide protagonista_placeholder
+        stop fx fadeout 1.0
 
         menu:
             "¡Lo lograste!":
