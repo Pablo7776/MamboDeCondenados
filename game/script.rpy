@@ -40,24 +40,24 @@ label start:
     #show logo at Move((0.0, 0.5), (1.0, 0.5), 10.0)
     #"Ahora el logo se mueve de izquierda a derecha en 2 segundos."
     #############
-
-    menu:
-        "ir a cap 1":
-            jump capitulo1
-        "ir a cap 2":
-            jump capitulo2
-        "ir a cap 3":
-            jump capitulo3
-        "ejemplos de texto con efectos":
-            jump ejemplosTexto
-        "ir a ejemplo clickeable":
-            jump ejemplosClickeables
-        "ir a firmar":
-            jump Escupir_el_crucifijo
-        "continuará...":
-            jump continuará
-        "munú sonoro":
-            jump menuSonoro
+    jump capitulo1
+    #menu:
+        #"ir a cap 1":
+        #    jump capitulo1
+        #"ir a cap 2":
+        #    jump capitulo2
+        #"ir a cap 3":
+        #    jump capitulo3
+        #"ejemplos de texto con efectos":
+        #    jump ejemplosTexto
+        #"ir a ejemplo clickeable":
+        #    jump ejemplosClickeables
+        #"ir a firmar":
+        #    jump Escupir_el_crucifijo
+        #"continuará...":
+        #    jump continuará
+        #"munú sonoro":
+        #    jump menuSonoro
 
 
 

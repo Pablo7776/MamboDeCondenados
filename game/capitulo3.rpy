@@ -6,7 +6,7 @@ default presentacion_colorada = False
 
 label capitulo3:
     $ mostrar_repu()
-
+    hide higuera
     show naturaleza at subir_centrada with Dissolve(1.0)
     play sound sfx_galope 
     
