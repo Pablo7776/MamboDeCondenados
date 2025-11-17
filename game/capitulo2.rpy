@@ -6,7 +6,7 @@ label capitulo2:
     
     $ mostrar_repu()
     hide rancho
-    show caida at subir_centrada with Dissolve(1.0)
+    show caida at subir_centrada with Dissolve(5.0)
 
     "[nombre_jugador], trepás nuevamente por el abismo en espiral por el que caíste."
 

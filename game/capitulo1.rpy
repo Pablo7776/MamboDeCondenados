@@ -99,12 +99,14 @@ label capitulo1:
         
         #scene placeholder6 with fade
         hide cueva
-        #show placeholder2m at subir_centrada with Dissolve(1.0)
-        show chivo at subir_centrada with Dissolve(1.0)
+        show placeholder8 at subir_centrada with Dissolve(1.0)
 
         play fx sfx_respiracion_chivo 
         play fx sfx_infrasonido
+
         "Entonces aparece ese animal grotesco del que te había contado el viejo: un chivo de pelo negro, ojos endemoniados, cuernos tan curvados como una espiral."
+        hide placeholder8
+        show chivo at subir_centrada with Dissolve(1.0)
         "El animal bufa en tu dirección. Lo rodeás fácilmente sin que se mosquee, pero..."
         "Cuando por fin llegás al otro lado, el chivo se da vuelta, corre, te topeta y te arroja a un profundo hoyo."
 
@@ -113,7 +115,7 @@ label capitulo1:
     label La_caida:
         #scene caida with fade
         hide chivo
-        show caida at subir_centrada with Dissolve(1.0)
+        show caida at subir_centrada with Dissolve(4.0)
         "El hueco es profundo, más que profundo, estás cayendo al abismo."
         "Ves pasar murciélagos a tu lado, seguís cayendo y repentinamente te desmayás."
         #scene placeholder with fade
@@ -394,7 +396,7 @@ label A_dónde_hay_que_firmar:
         "Las brujas, los brujos y los diablillos arrancan la fiesta a tu alrededor, sentís como tu garganta arde y luego se calma y empezás a cantar junto a los demás."
         "Las alimañas te levantan sobre sus lomos y te pasean por toda la sala, tu voz y tu canto ahora suena como nunca antes sonó."
         hide demonios
-        show rancho at subir_centrada with Dissolve(1.0)
+        show rancho at subir_centrada with Dissolve(3.0)
         menu:
             "En un rancho cercano...":
                 jump En_un_rancho_cercano

@@ -91,6 +91,8 @@ image pergamino = "images/capitulo1/old_paper.png"
 #image chivo = "images/capitulo1/ia/chivo2.png"
 image chivo = Animation(
     "images/capitulo1/ia/chivo3.png", 0.01,
+    "images/capitulo1/ia/chivo2.png", 0.01,
+
 
     repeat=True
 )
