@@ -8,7 +8,7 @@ label capitulo3:
     $ mostrar_repu()
 
     show naturaleza at subir_centrada with Dissolve(1.0)
-    play sfx_galope
+    play sound sfx_galope 
     
     ##Caballo check y pájaros## AUDIO
 
@@ -35,7 +35,8 @@ label capitulo3:
         play sfx_taberna loop fadein 1.0
         ##Ruido ambiente de gente check## AUDIO
         ##Melodia guitarra pibe## AUDIO
-        play melo_pibe fadein 1.0
+        play sound melo_pibe fadein 1.0
+
 
         "Al entrar te sorprende el sonido de una guitarra."
         
@@ -282,7 +283,8 @@ label capitulo3:
         
         "Terminás de tocar y se produce una ovación inmensa."
         ##Frenar (fade out) Melodia prota2## 
-        play sfx_aplausos fadein 0.5
+        play sound sfx_aplausos fadein 0.5
+        
         ##Ovación## AUDIO
         hide pulperia
         show pulperiaAplaudiendo at subir_centrada with Dissolve(1.0)
@@ -348,7 +350,7 @@ label capitulo3:
 
         stop sfx_taberna fadeout 1.0
         ##Frenar Ruido ambiente de gente## AUDIO
-        play sfx_noche fadein 0.5
+        play sound sfx_noche fadein 0.5
         ##Pájaros, naturaleza## AUDIO
 
         "Salís de la pulpería agradecido de tu nuevo don."
@@ -415,7 +417,7 @@ label capitulo3:
         
         stop sfx_taberna fadeout 1.0
         ##Frenar Ruido ambiente de gente## AUDIO
-        play sfx_noche fadein 0.5
+        play sound sfx_noche fadein 0.5
         ##Pájaros, naturaleza## AUDIO
         
         show pueblo at subir_centrada with Dissolve(1.0)
