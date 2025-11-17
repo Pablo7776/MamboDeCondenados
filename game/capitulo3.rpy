@@ -8,7 +8,8 @@ label capitulo3:
     $ mostrar_repu()
     hide higuera
     show naturaleza at subir_centrada with Dissolve(1.0)
-    play sound sfx_galope 
+    play sound sfx_galope
+    play sound sfx_viento1 fadein 2.0
     
     ##Caballo check y pájaros## AUDIO
 
@@ -22,6 +23,7 @@ label capitulo3:
     "El Viejo, que siempre está tomando algo en este lugar, te dio todas las indicaciones de cómo superar esas primeras pruebas en La Salamanca."
     
     "Atás tu caballo afuera en el grueso aro de hierro incrustado en el suelo de la ochava."
+    stop sfx_viento1
 
     jump La_pulperia
 
@@ -32,7 +34,7 @@ label capitulo3:
         ##Frenar caballo y pájaros## AUDIO
 
         show pulperia at subir_centrada with Dissolve(1.0)
-        play sound sfx_taberna volume 1.5 fadein 1.0
+        play sound sfx_taberna  fadein 1.0
 
         ##Ruido ambiente de gente check## AUDIO
         ##Melodia guitarra pibe## AUDIO

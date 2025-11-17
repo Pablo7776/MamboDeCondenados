@@ -62,7 +62,7 @@ label capitulo1:
     stop pisadas fadeout 1.0
     "Atás y asegurás tu guitarra a la silla de tu fiel caballo, y luego pronunciás {i}La Palabra{/i}, esa que aquel viejo te confesó."
     "Entonces, se abre una cueva en la roca; das un paso dentro, el caballo relincha y sale corriendo hacia el campo."
-
+    stop sfx_galope
 
     jump Las_primeras_pruebas
 
@@ -330,7 +330,7 @@ label A_dónde_hay_que_firmar:
         hide cuchillo
         show demonios at subir_centrada, vibrar with Dissolve(1.0)
 
-        stop ambiente fadeout 1.0
+        stop sfx_SonidoAmbienteTerror fadeout 1.0
         play fx crucifijo
          
         "Escupís el crucifijo y seguís por el filo del facón, lográs llegar al otro lado."
@@ -387,7 +387,7 @@ label A_dónde_hay_que_firmar:
 
     label En_un_rancho_cercano:
         stop music fadeout 1.0
-        stop ambiente fadeout 1.0
+        stop sfx_SonidoAmbienteTerror fadeout 1.0
 
         "A pocos kilómetros una señora se despierta asustada por el alboroto, empieza a rezar..."
         "—¡Dios nos salve, que hoy hay baile en La Salamanca!"

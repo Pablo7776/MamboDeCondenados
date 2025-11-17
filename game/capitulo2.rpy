@@ -2,6 +2,8 @@ default nombre_jugador = "Ramón"
 default Vida_china = False
 
 label capitulo2:
+    stop sfx_SonidoAmbienteTerror
+    
     $ mostrar_repu()
     hide rancho
     show caida at subir_centrada with Dissolve(1.0)
@@ -18,7 +20,7 @@ label capitulo2:
 
     hide caida
     show ranchoHiguera at subir_centrada with Dissolve(1.0)
-    
+    play sound sfx_galope
     "Escuchás un galope y ves llegar a tu caballo, con tu guitarra aún bien atada a la silla."
 
     "Te ponés la guitarra en la espalda y comenzás a cabalgar. Pasan las horas y ya se te está haciendo de noche." 
@@ -26,6 +28,16 @@ label capitulo2:
     "A lo lejos ves una tranquera y al fondo del campo un pequeño rancho."
 
     "Un poco más adelante una frondosa higuera bajo la que podrías refugiarte del rocío."
+    stop sfx_galope fadeout 1.0
+    stop audio fadeout 1.0
+    stop music fadeout 1.0
+    stop sound fadeout 1.0
+    stop ambiente fadeout 1.0
+    stop viento fadeout 1.0
+    stop fx fadeout 1.0
+    stop acufeno fadeout 1.0
+    stop pisadas fadeout 1.0
+    stop estatica fadeout 1.0
 
     menu:
         "Entrás al campo y golpeás la puerta.":
