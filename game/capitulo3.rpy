@@ -38,7 +38,7 @@ label capitulo3:
 
         ##Ruido ambiente de gente check## AUDIO
         ##Melodia guitarra pibe## AUDIO
-        play sound melo_pibe fadein 1.0
+        play music melo_pibe fadein 1.0
 
 
         "Al entrar te sorprende el sonido de una guitarra."
@@ -222,14 +222,14 @@ label capitulo3:
         "Esperás a que él termine, y te saluda presentándose como Farías, el Pibe Farías."
         
         ##Frenar Melodia guitarra pibe## AUDIO
-        stop melo_pibe fadeout 1.0
+        stop music fadeout 1.0
 
         "Te cede su lugar y se va a sentar junto a la Colorada."
 
         jump Hechizando_a_toda_la_pulpería
 
     label El_pibe_deja_de_tocar:
-        stop melo_pibe fadeout 1.0
+        stop music fadeout 1.0
         ##Frenar Melodia guitarra pibe## AUDIO
 
         $ reputacion_con_el_mandinga -= 5
@@ -250,7 +250,7 @@ label capitulo3:
         
         "Te lo dice casi desafiante; entonces le hace una seña al Farías."
 
-        stop melo_pibe fadeout 1.0
+        stop music fadeout 1.0
         ##Frenar Melodia guitarra pibe## AUDIO
 
         "El pibe corta abruptamente su interpretación y viene rápidamente a la mesa."
@@ -432,7 +432,7 @@ label capitulo3:
         "Cuando están a unas cuadras de tu casa..."
 
         hide pueblo
-        play sfx_SonidoAmbienteTerror loop fadein 1.0
+        play music sfx_SonidoAmbienteTerror loop fadein 1.0
         ##Frenar Pájaros, naturaleza## AUDIO
         show pibeColgado at subir_centrada with Dissolve(1.0)
         ##Sonido tenso, violines## AUDIO
@@ -456,7 +456,7 @@ label capitulo3:
     label La_noche_en_tu_casa:
         hide pibeColgado
         show casaProtagonista at subir_centrada with Dissolve(1.0)
-        stop sfx_SonidoAmbienteTerror
+        stop music
         ##Frenar Sonido tenso, violines## AUDIO
         ##Frenar Ruidos tétricos naturaleza## AUDIO
 

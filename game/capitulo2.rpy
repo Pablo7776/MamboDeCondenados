@@ -38,6 +38,7 @@ label capitulo2:
     stop acufeno fadeout 1.0
     stop pisadas fadeout 1.0
     stop estatica fadeout 1.0
+    play sound sfx_viento1 volume 0.3
 
     menu:
         "Entrás al campo y golpeás la puerta.":
