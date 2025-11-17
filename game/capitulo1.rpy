@@ -9,6 +9,13 @@ transform vibrar:
     linear 0.05 xoffset -2 yoffset 2
     repeat
 
+transform aparecer_flash:
+    alpha 0.0
+    linear 0.05 alpha 1.0
+    linear 0.05 alpha 0.8
+#    linear 0.3 alpha 1.0
+    repeat
+
 
 
 label capitulo1:    
@@ -285,7 +292,8 @@ label A_dónde_hay_que_firmar:
     "Hace un gesto con su mano y, ante vos, se abre el suelo."
     "Una gran grieta separa la sala al medio: de un lado estás vos; del otro, el Mandinga, su trono y sus seguidores."
     hide mandi
-    show cuchillo at subir_centrada with Dissolve(1.0)
+    show cuchillo at subir_centrada,vibrar with Dissolve(1.0)
+    #show demonios at subir_centrada, vibrar with Dissolve(1.0)
     "Él saca un enorme facón de su costado y lo revolea, queda sobre la raja que se abrió en la tierra, formando un puente con el filo hacia arriba."
 
     pause 0.01
@@ -334,7 +342,7 @@ label A_dónde_hay_que_firmar:
 
     label Escupir_el_crucifijo:
         hide cuchillo
-        show demonios at subir_centrada, vibrar with Dissolve(1.0)
+        show demonios at subir_centrada, aparecer_flash with Dissolve(1.0)
 
         stop sfx_SonidoAmbienteTerror fadeout 1.0
         play fx crucifijo
