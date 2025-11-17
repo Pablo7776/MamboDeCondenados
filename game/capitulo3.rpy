@@ -32,7 +32,8 @@ label capitulo3:
         ##Frenar caballo y pájaros## AUDIO
 
         show pulperia at subir_centrada with Dissolve(1.0)
-        play sfx_taberna loop fadein 1.0
+        play sound sfx_taberna volume 1.5 fadein 1.0
+
         ##Ruido ambiente de gente check## AUDIO
         ##Melodia guitarra pibe## AUDIO
         play sound melo_pibe fadein 1.0
@@ -293,7 +294,8 @@ label capitulo3:
         
         "Te vas acercando nuevamente a la mesa de la colorada y van tocándote la espalda, los hombros y felicitándote."
         ##Ruido ambiente de gente## AUDIO
-        play sfx_taberna loop fadein 1.0
+        play sound sfx_taberna  fadein 1.0
+
 
         if Vida_china:
             "Tu china que se había quedado tomando algo en la barra se acerca, interrumpe tu paso y te llena de besos."
@@ -364,7 +366,8 @@ label capitulo3:
         "Cuando estás a unas cuadras de tu casa..."
 
         hide pueblo
-        play sfx_SonidoAmbienteTerror loop fadein 1.0
+        play sound sfx_SonidoAmbienteTerror loop fadein 1.0
+
         ##Frenar Pájaros, naturaleza## AUDIO
         show pibeColgado at subir_centrada with Dissolve(1.0)
         ##Sonido tenso, violines## AUDIO
@@ -475,7 +478,8 @@ label capitulo3:
         hide casaProtagonista
         show pulperia at subir_centrada with Dissolve(1.0)
 
-        play sfx_taberna loop fadein 1.0
+        play sound sfx_taberna loop fadein 1.0
+        
         ##Ruido ambiente de gente## AUDIO
         
         "La colorada Dowley ya no está."
