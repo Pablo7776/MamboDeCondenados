@@ -180,7 +180,12 @@ label capitulo1:
         
         label Esperar_en_silencio:
             hide trono
-            show mandi at subir_centrada with Dissolve(1.0)
+            #with dissolve     # transición para que hide sea visible
+            hide mandi
+            show mandi at subir_centrada with Dissolve(5.0)
+            #with Fade(0.1, 0.0, 0.3)
+
+
             play sound sfx_trueno
 
             "Se desmorona una de las paredes que deja un gran agujero en uno de los costados de la sala."
@@ -206,7 +211,8 @@ label capitulo1:
 
         label DÓNDE_ESTÁ_EL_MANDINGA:
             hide trono
-            show mandi at subir_centrada with Dissolve(1.0)
+            show mandi at subir_centrada with Dissolve(5.0)
+            
             $ reputacion_con_el_mandinga -= 10
             $ mostrar_repu()
 
