@@ -141,6 +141,7 @@ image guitarraRota = "images/capitulo4_pibe/guitarrarota.png"
 image naturalezaRota = "images/capitulo4_pibe/naturalezamandinga.png"
 image casaPoseida = "images/capitulo4_pibe/casaprotaposeida.png"
 image mandingaPower = "images/capitulo4_pibe/mandinga2.png"
+image devoraChina = "images/capitulo4_pibe/chinaDevorada.png"
 
 ################  EFECTOS DE SONIDO #########################
 

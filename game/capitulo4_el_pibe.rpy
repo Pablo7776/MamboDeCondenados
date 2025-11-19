@@ -143,18 +143,24 @@ label Capítulo_4_El_pobre_Pibe_Farías:
     label La_muerte_de_la_china:
         "Ve en tu alma cuál es tu elección."
 
-        "Con la mano que tenía sobre la cabeza de tu china, la levanta de un solo movimiento."
-
         hide mandi
         show mandingaPower at subir_centrada with Dissolve(1.0)
+
+        "Con la mano que tenía sobre la cabeza de tu china, la levanta de un solo movimiento."
 
         "Sus gritos son ahogados por la gran palma de ese ser demoníaco, que cada vez es más grotesco, su cara se transforma y deja de ser la de un humano."
 
         "Su cabeza pasa a ser la de una bestia con un gran hocico y una mandíbula que se desencaja como la de una serpiente."
 
+        hide mandingaPower
+        show devoraChina at subir_centrada with Dissolve(1.0)
+
         "Mete en sus fauces a la muchacha que estuvo a tu lado hasta anoche."
 
         "Cuando dejás de escuchar sus gritos lo entendés."
+
+        hide devoraChina
+        show mandingaPower at subir_centrada with Dissolve(1.0)
 
         "No podés volver a pisar este pueblo."
 
@@ -169,6 +175,8 @@ label Capítulo_4_El_pobre_Pibe_Farías:
         "Entonces se esfuma en una bola de humo y azufre."
 
         "Agarrás lo mínimo para sobrevivir en el camino, y empezás tu viaje..."
+
+        hide mandingaPower
 
         jump El_viaje_eterno
 
