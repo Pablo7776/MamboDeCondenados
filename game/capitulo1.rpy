@@ -133,7 +133,7 @@ label capitulo1:
     label La_caida:
         #scene caida with fade
         hide chivo
-        show caida at subir_centrada with Dissolve(4.0)
+        show caida1 at subir_centrada with Dissolve(4.0)
         "El hueco es profundo, más que profundo, estás cayendo al abismo."
         "Ves pasar murciélagos a tu lado, seguís cayendo y repentinamente te desmayás."
         #scene placeholder with fade
@@ -152,7 +152,7 @@ label capitulo1:
     
     label Trepar_por_el_abismo_para_salir:
         #scene placeholder3 with fade
-        hide caida
+        hide caida1
         show chivo at subir_centrada with Dissolve(1.0)
 
         "Luego de mucho esfuerzo y luchar contra murciélagos que te atacaban débilmente lográs llegar hasta el borde del hoyo."
@@ -191,7 +191,7 @@ label capitulo1:
 
 
     label Dar_un_paso_hacia_la_oscuridad:
-        hide caida
+        hide caida1
         show trono at subir_centrada with Dissolve(1.0)
 
         "Escuchás una pequeña explosión y se comienzan a prender, a cada lado, cien antorchas."

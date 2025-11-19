@@ -64,15 +64,21 @@ label capitulo3:
 
     label El_Tarta:
         show barraPulperia at subir_centrada with Dissolve(1.0)
+        
 
         "Te acercás a la barra y te hacés un hueco entre los muchachos que le piden más de un vaso cada uno al Tarta."
 
         "El Tarta te hace una seña con la cabeza como preguntando “¿qué querés?”."
 
         "Pedís un vino y, cuando se acerca para dártelo, te dice:"
+        show tarta_placeholder:
+            xoffset 1636
+            yoffset 36
 
         "—[nombre_jugador], tanto tiempo."
         
+        hide tarta_placeholder
+
         "Le respondés el saludo y se queda ahí un rato."
 
         menu:
@@ -85,12 +91,18 @@ label capitulo3:
 
     label Malas_noticias:
         $ pregunta_viejo = True
+
+        show tarta_placeholder:
+            xoffset 1636
+            yoffset 36
         
         "—El viejo falleció, lo encontramos sin vida en la calle, a unas cuadras."
 
         "—Le hicimos el velorio y no fue nadie. No sabemos qué carajos le pasó."
         
         "—Apareció muerto de un día para el otro. Viviá en el talar, en el camino donde viven los López, pero más allá."
+
+        hide tarta_placeholder
 
         menu:
             "Acercarse al Pibe Farías y pedirle que pare, para tocar vos" if pregunta_pibe:
@@ -107,9 +119,14 @@ label capitulo3:
 
     label El_Pibe:
         $ pregunta_pibe = True
+        show tarta_placeholder:
+            xoffset 1636
+            yoffset 36
         "—¿Ese? Llegó hace dos días; es el Pibe Farías, ¿te acordás de él?, el hijo de la Flavia."
 
         "—Parece que vino a llevarse a la madre a la ciudad, porque está enferma. ¿Es bueno no?"
+
+        hide tarta_placeholder
 
         "Ciertamente el Pibe Farías no toca mal, pero tiene las manías de los chicos de ciudad. Además, pensas: 'obviamente, ahora no hay nadie que se compare conmigo'."
 
@@ -129,10 +146,16 @@ label capitulo3:
     label La_del_whisky_caro:
         $ pregunta_colo = True
 
+        show tarta_placeholder:
+            xoffset 1636
+            yoffset 36
+
         "—Es la señora Dowley, parece que es de la capital."
         "—Llegó ayer y me preguntó por “artistas locales”, al día siguiente apareció el Farías."
         "—Parece encantada con él."
         "—Ayer y hoy me pidió el mejor whisky que tuviese."
+
+        hide tarta_placeholder
 
         menu:
             "Acercarse al Pibe Farías y pedirle que pare, para tocar vos" if pregunta_pibe:
@@ -491,12 +514,17 @@ label capitulo3:
         if not pregunta_viejo:
             
             "El Tarta te ve entrar y ni bien llegás a la barra, te cuenta sobre el Viejo."
+            show tarta_placeholder:
+                xoffset 1636
+                yoffset 36
 
             "—El viejo falleció, lo encontramos sin vida en la calle, a unas cuadras."
 
             "—Le hicimos el velorio y no fue nadie. No sabemos qué carajos le pasó."
 
             "—Apareció muerto de un día para el otro. Viviá en el talar, en el camino donde viven los López, pero más allá."
+
+            hide tarta_placeholder
         
         "Preguntás un poco por ahí, pero nadie vio salir a la Colorada ni nadie te comenta nada del Pibe Farías."
 

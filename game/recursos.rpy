@@ -57,6 +57,7 @@ image casaposeyendose = Animation(
 )
 image china_placeholder = "images/personajes/chinaEscalado.png"
 
+image tarta_placeholder = "images/personajes/placeholder IA/tarta1.png"
 ############################################################
 #################  REPUTACION ##############################
 ############################################################
@@ -79,6 +80,7 @@ image fondo = "images/fondos/fondo.jpg"
 
 image gauchoACaballo = "images/capitulo1/gauchoACaballo.jpeg"
 image salamanca = "images/capitulo1/salamanca1280.jpg"
+image caida1 = "images/capitulo1/abismo.png"
 image caida = "images/capitulo1/caida.jpg"
 image cueva = "images/capitulo1/cueva.png"
 
