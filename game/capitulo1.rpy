@@ -68,7 +68,7 @@ label capitulo1:
     #    yoffset 36
 #############################################
 
-    "Bienvenid@ al Mambo de los Condenados."
+    "Bienvenid@ al Mambo de Condenados."
 
     $ mostrar_repu()
 
@@ -125,7 +125,7 @@ label capitulo1:
         "Entonces aparece ese animal grotesco del que te había contado el viejo: un chivo de pelo negro, ojos endemoniados, cuernos tan curvados como una espiral."
         hide placeholder8
         show chivo at subir_centrada with Dissolve(1.0)
-        "El animal bufa en tu dirección. Lo rodeás fácilmente sin que se mosquee, pero..."
+        "Lo rodeás fácilmente sin que se mosquee, pero..."
         "Cuando por fin llegás al otro lado, el chivo se da vuelta, corre, te topeta y te arroja a un profundo hoyo."
 
     jump La_caida
@@ -193,8 +193,9 @@ label capitulo1:
     label Dar_un_paso_hacia_la_oscuridad:
         hide caida1
         show trono at subir_centrada with Dissolve(1.0)
-
-        "Escuchás una pequeña explosión y se comienzan a prender, a cada lado, cien antorchas."
+        play sound sfx_inicio_fuego
+        play audio sfx_hoguera_pequena loop fadein(1.5)
+        "Das un primer paso y se comienzan a prender, a cada lado, cien antorchas."
         "Lográs ver una sala con cortinas magníficas que cubren paredes de roca negra con piso y columnas de mármol que sostienen un techo de tierra y rocas."
         "En el fondo de la sala un enorme trono rodeado de lechuzas, quirquinchos, perros, chanchos, culebras y sapos; frente a él, hechiceros, brujas y diablillos."
         "Viniste para esto."
@@ -213,7 +214,7 @@ label capitulo1:
             #with Fade(0.1, 0.0, 0.3)
 
 
-            play sound sfx_trueno
+            play sound sfx_trueno volume 0.5
 
             "Se desmorona una de las paredes que deja un gran agujero en uno de los costados de la sala."
             "Él atraviesa las cortinas, un enorme ser, mitad serpiente, mitad humano, ES EL MANDINGA."
@@ -245,7 +246,6 @@ label capitulo1:
 
             play sound sfx_trueno
 
-            "De repente escuchás una explosión mucho mayor que la de antes."
             "Se abre un agujero en una de las paredes y Él atraviesa las cortinas, un enorme ser, mitad serpiente, mitad humano, ES EL MANDINGA."
             "Se sienta en su trono y te mira con un gesto entre curioso y vehemente."
             

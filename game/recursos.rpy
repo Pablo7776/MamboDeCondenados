@@ -154,6 +154,8 @@ define sfx_respiracion_chivo = "audio/capitulo1/respiracion_chivo.ogg"
 
 
 define sfx_infrasonido = "audio/capitulo1/sfx_infrasonido.ogg"
+define sfx_inicio_fuego = "audio/capitulo1/inicio_fuego.mp3"
+define sfx_hoguera_pequena = "audio/capitulo1/fuegoconstante_pequeno.wav"
 define sfx_trueno = "audio/capitulo1/sfx_trueno.ogg"
 
 define sfx_taberna = "audio/capitulo3/genteenlapulperia.mp3"
