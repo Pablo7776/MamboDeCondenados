@@ -430,7 +430,7 @@ label capitulo3:
         menu:
             "Volvés a la pulpería":
                 jump La_joda_terminó
-            "Volvés a ver que pasó con el pibe":
+            "Volvés a ver qué pasó con el pibe":
                 hide casaProtagonista
                 jump continuara
                 #jump Capítulo_4_El_pobre_Pibe_Farías
@@ -495,7 +495,7 @@ label capitulo3:
         menu:
             "Volvés a la pulpería":
                 jump La_joda_terminó
-            "Volvés a ver que pasó con el pibe":
+            "Volvés a ver qué pasó con el pibe":
                 hide casaProtagonista
                 jump continuara
                 #jump Capítulo_4_El_pobre_Pibe_Farías
