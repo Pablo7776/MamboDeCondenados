@@ -101,7 +101,7 @@ label capitulo3:
 
         "—Le hicimos el velorio y no fue nadie. No sabemos qué carajos le pasó."
         
-        "—Apareció muerto de un día para el otro. Viviá en el talar, en el camino donde viven los López, pero más allá."
+        "—Apareció muerto de un día para el otro. Vivía en el talar, en el camino donde viven los López, pero más allá."
 
         hide tarta_placeholder
 
@@ -523,7 +523,7 @@ label capitulo3:
 
             "—Le hicimos el velorio y no fue nadie. No sabemos qué carajos le pasó."
 
-            "—Apareció muerto de un día para el otro. Viviá en el talar, en el camino donde viven los López, pero más allá."
+            "—Apareció muerto de un día para el otro. Vivía en el talar, en el camino donde viven los López, pero más allá."
 
             hide tarta_placeholder
         
