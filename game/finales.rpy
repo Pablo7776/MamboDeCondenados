@@ -15,6 +15,8 @@ label finales:
                 return
 
     label El_viaje_eterno:
+        ### Posible imagen: una espiral que se mueve o difumina, capaz una guitarra animada sobre la espiral"###
+        
         "Muchos años estuviste recorriendo toda la provincia tocando en cada pulpería que podías."
 
         "Te ibas dando cuenta de cómo cada vez que tocabas para un público nuevo tu mente y tu corazón iban volviéndose más y más fríos."
