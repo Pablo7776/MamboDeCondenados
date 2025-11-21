@@ -129,7 +129,7 @@ label capitulo3:
 
         hide tarta_placeholder
 
-        "Ciertamente el Pibe Farías no toca mal, pero tiene las manías de los chicos de ciudad. Además, pensas: 'obviamente, ahora no hay nadie que se compare conmigo'."
+        "Ciertamente el Pibe Farías no toca mal, pero tiene las manías de los chicos de ciudad. Además, pensás: 'obviamente, ahora no hay nadie que se compare conmigo'."
 
         menu:
             "Acercarse a la colorada Dowley" if pregunta_colo:
