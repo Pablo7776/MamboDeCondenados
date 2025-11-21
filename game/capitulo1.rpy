@@ -41,7 +41,6 @@ label capitulo1:
 
     play sound sfx_galope 
 
-
     #scene gauchoACaballo with Dissolve(3.0)
     #scene gauchoACaballo with burn_transition
     #scene placeholder8
@@ -75,7 +74,7 @@ label capitulo1:
     "Vos, guitarrista y cantor venido a menos, que ahora vas al galope por la pampa."
     "Subís por el camino empinado de un pequeño cerro."
     play ambiente sfx_SonidoAmbienteTerror loop fadein 1.0
-
+    
     ###play fx sfx_viento1 loop fadein 1.0
     "El canto de los pájaros, que hasta hace poco era alegre y armonioso, ahora suena como gritos de dolor."
     hide gauchoACaballo
@@ -84,10 +83,10 @@ label capitulo1:
 
     "De repente, aparece frente tuyo la piedra roja de la que te había hablado el viejo, ese que siempre está en la pulpería de tu pueblo." 
 
-    stop pisadas fadeout 1.0
+    stop pisadas
+    stop sound
     "Atás y asegurás tu guitarra a la silla de tu fiel caballo, y luego pronunciás {i}La Palabra{/i}, esa que aquel viejo te confesó."
     "Entonces, se abre una cueva en la roca; das un paso dentro, el caballo relincha y sale corriendo hacia el campo."
-    stop sfx_galope
 
     jump Las_primeras_pruebas
 
@@ -107,7 +106,7 @@ label capitulo1:
         "Menos mal que no se ve; si no, te petrificaría. Con su siseo, el basilisco te guía para atravesar este laberinto, seguís ese ruido serpentino y lo lográs superar."
         
         "Ya en el pasillo recto y angosto empezás a caminar sin guía. Después de unos pasos, sentís las primeras alimañas:"
-        
+        ##Más ruido a bichos se podría poner
         "Víboras, lagartos y alacranes comienzan a trepar por tu cuerpo."
 
         "Tenés que quedarte completamente quieto, inmóvil, aguantando la respiración."
@@ -120,7 +119,7 @@ label capitulo1:
         show placeholder8 at subir_centrada with Dissolve(1.0)
 
         play fx sfx_respiracion_chivo 
-        play fx sfx_infrasonido
+        #play fx sfx_infrasonido
 
         "Entonces aparece ese animal grotesco del que te había contado el viejo: un chivo de pelo negro, ojos endemoniados, cuernos tan curvados como una espiral."
         hide placeholder8
@@ -173,10 +172,10 @@ label capitulo1:
 
             hide chivo
             show muerte at subir_centrada with Dissolve(1.0)
-
+            play sound "audio/capitulo1/GritoDeMiedo.ogg"
             "Moriste, el juego ha terminado junto a tu vida."
 
-            play sound "audio/capitulo1/GritoDeMiedo.ogg"
+            
             return
                 
 
