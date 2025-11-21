@@ -188,12 +188,13 @@ label Capítulo_4_El_pobre_Pibe_Farías:
         "El Mandinga, se transforma en una figura mucho más monstruosa, te toma por el cuello y de un salto atraviesa, con vos en sus manos, el techo de tu casa."
 
         "Desde ahí podés ver cómo sus alimañas invadieron tu pueblo, ves al basilisco, al chivo negro, a cientos de serpientes, arañas y murciélagos."
-
+        ###Acá poner una imagen de la matanza que está ocurriendo###
         "Todas esas bestias entran y salen de casas y locales matando a todos a su paso."
 
         "No se salva nadie: ves el cadáver del Tarta, ves a niños ser estrangulados por víboras, ves a ancianos ser pisoteados hasta la muerte por el chivo."
 
         if Vida_china:
+            ### Acá estaría muy piola poner una imagen de algún tipo de arpía basada en la imagen de la china###
             "Empezás a llorar y ves como él baja nuevamente y sube con tu china. Le araña la espalda con una de sus filosas garras."
 
             "De la espalda de ella empiezan a salir unas plumas negras y marrones, y poco a poco ves cómo tu compañera se convierte en una especie de lechuza grotesca."
