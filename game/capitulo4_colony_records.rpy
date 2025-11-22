@@ -180,19 +180,23 @@ label Capítulo_4_Colony_Records:
 
         "Hasta que al fin sale el tema."
 
-        "— Bueno [nombre_jugador], vamos a hablar sobre lo que podemos ofrecerte."
+        show colorada_placeholder:
+            xoffset 1636
+            yoffset 36
 
-        "— Sabemos perfectamente que esa habilidad no te pertenece, pero podemos hacer que sí sea así."
+        colorada "— Bueno [nombre_jugador], vamos a hablar sobre lo que podemos ofrecerte."
 
-        "— Nosotros tenemos un pacto con un ser superior a ese diablo local."
+        colorada "— Sabemos perfectamente que esa habilidad no te pertenece, pero podemos hacer que sí sea así."
 
-        "— Podemos saldar tranquilamente tu deuda con él sin que pierdas ese gran don que te concedió."
+        colorada "— Nosotros tenemos un pacto con un ser superior a ese diablo local."
 
-        "— Obviamente, a cambio, firmarías un contrato con nosotros que deberás cumplir."
+        colorada "— Podemos saldar tranquilamente tu deuda con él sin que pierdas ese gran don que te concedió."
 
-        "— Podrías dedicarte a tu música, al fin y al cabo, fue por eso que quisiste tener ese don, ¿no?"
+        colorada "— Obviamente, a cambio, firmarías un contrato con nosotros que deberás cumplir."
 
-        "— Vas a poder tocar frente a cientos y miles de personas, encantarlos a todos."
+        colorada "— Podrías dedicarte a tu música, al fin y al cabo, fue por eso que quisiste tener ese don, ¿no?"
+
+        colorada "— Vas a poder tocar frente a cientos y miles de personas, encantarlos a todos."
 
         "Su discográfica pagará tu deuda con él, y podrás seguir con tu don, pero vas a tener que seguir sus reglas."
 
