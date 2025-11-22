@@ -10,9 +10,9 @@ transform vibrar:
     repeat
 
 transform aparecer_flash:
-    alpha 0.0
-    linear 0.05 alpha 1.0
-    linear 0.05 alpha 0.8
+    alpha 0.5
+    linear 0.5 alpha 1.0
+    linear 0.5 alpha 1.0
 #    linear 0.3 alpha 1.0
     repeat
 transform flash:
