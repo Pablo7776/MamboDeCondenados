@@ -146,6 +146,12 @@ image devoraChina = "images/capitulo4_pibe/chinaDevorada.png"
 image arpiaChina = "images/capitulo4_pibe/china_arpia.png"
 image huestesEnPueblo = "images/capitulo4_pibe/pueblo_alimanas.png"
 
+#################  PLACEHOLDERS IA CAP4 COLONY RECORDS ####################
+###########################################################################
+
+image puebloNoche = "images/capitulo4_colony_records/pueblo_de_noche.png"
+
+
 #################  PLACEHOLDERS IA FINALES ####################
 ########################################################################
 

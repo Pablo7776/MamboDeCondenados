@@ -13,9 +13,7 @@ label Capítulo_4_Colony_Records:
 
     "Pero tus sueños no son tan reparadores..."
 
-    ###AUDIO 
-    - frenar crepitar de fuego
-    -  sonido ambiente terror###
+    ###AUDIO    - frenar crepitar de fuego    -  sonido ambiente terror###
 
     "Empezás a soñar y ves la entrada a La Salamanca, cientos de alimañas salen por montones."
     show chivo at subir_centrada with Dissolve(1.0)
@@ -36,9 +34,7 @@ label Capítulo_4_Colony_Records:
     if Vida_china:
         hide chivo
         show casaProtagonista at subir_centrada with Dissolve(1.0)
-        ###AUDIO
-        - frenar sonido ambiente terror
-        - llanto###
+        ###AUDIO        - frenar sonido ambiente terror        - llanto###
         "Te despertás por la mañana y tu joven china está llorando acurrucada con una frazada, hecha un bollito en tu cama."
 
     else:
@@ -52,14 +48,9 @@ label Capítulo_4_Colony_Records:
         "Se la traga lentamente y escuchás como poco a poco se van ahogando los gritos de la joven."
         hide devoraChina
         show casaProtagonista at subir_centrada with Dissolve(1.0)
-        ###AUDIO
-        - frenar sonido ambiente terror
-        - crepitar de fuego
-        - respiración agitada###
+        ###AUDIO        - frenar sonido ambiente terror        - crepitar de fuego        - respiración agitada###
         "Despertás por la mañana sobresaltado, sudando frío."
-    ###AUDIO
-    - frenar respiración agitada
-    - sonido auto viejo###
+    ###AUDIO    - frenar respiración agitada    - sonido auto viejo###
     "Escuchás llegar un moderno auto, con todo su ruido, y un sonido que nunca habías escuchado, parecido a una trompeta o algo así."
 
     menu:
@@ -73,9 +64,7 @@ label Capítulo_4_Colony_Records:
         $ reputacion_con_el_mandinga -=20
         ###AUDIO auto viejo yendose###
         "Escuchás cómo, después de un rato el auto arranca de nuevo."
-        ###AUDIO
-        - frenar llanto
-        - melodia prota (alguna)###
+        ###AUDIO        - frenar llanto        - melodia prota (alguna)###
         "Te quedás con tu china hasta la tarde, tocando la guitarra, cantando para consolarla y ofreciéndole tu hombro para llorar."
 
         "No entendés muy bien cómo, pero vos sabés que ese sueño que tuviste fue real y ella de alguna manera también sabe lo que pasó con su familia."
@@ -85,10 +74,7 @@ label Capítulo_4_Colony_Records:
         jump Culpable
 
     label Culpable:
-        ###AUDIO
-        - frenar crepitar
-        - frenar melodia prota
-        - gente en la pulpería###
+        ###AUDIO        - frenar crepitar        - frenar melodia prota        - gente en la pulpería###
         hide casaProtagonista
         show pulperia at subir_centrada with Dissolve(1.0) ###abría que cambiarla por una en la que se note que está todo podrido en la pulpería###
         "Llegás a la pulpería y, en cuanto atravesás la puerta todas las miradas van a vos."
@@ -122,23 +108,28 @@ label Capítulo_4_Colony_Records:
 
         "Te tiran con botellas vacías y te vas corriendo."
         hide pulperia
-        ###AUDIO
-        - frenar abucheo
-        - botella rompiendose
-        - sonido de naturaleza nocturna###
+        ###AUDIO - frenar abucheo      - botella rompiendose        - sonido de naturaleza nocturna###
+        show puebloNoche at subir_centrada with Dissolve(1.0)
         "Justo cuando cerrás la puerta escuchás cómo una estalla contra la puerta: tardabas un minuto más en irte y te daba directo en la cabeza."
-        
+
         "Volvés a tu casa, en el camino se hace de noche, llegás y a pesar de todo lográs dormir."
 
+        hide puebloNoche
+        show casaProtagonista at subir_centrada with Dissolve(1.0)
+        ###AUDIO        - frenar todo        - cripitar de fuego###
         "Sí, otra vez esos sueños."
-
+        hide casaProtagonista
+        show casaposeyendose
         "Soñás con las alimañas, pero esta vez ya están entrando al pueblo, te despertás sobresaltado por un gran estruendo."
-
+        ###AUDIO        - frenar crepitar fuego        - sonido ambiente terror ###
         "Abrís los ojos completamente agitado..."
-
+        show casaPoseida at subir_centrada with Dissolve(1.0)
+        hide casaposeyendose
+        
         jump Es_hora_de_rendir_cuentas #esto está en "capitulo4_el_pibe.rpy"
 
     label Esto_se_vuelve_costumbre:
+
         "Tu canto logró el efecto que querías: todos están alabándote nuevamente."
 
         "Te vas a tu casa satisfecho."
