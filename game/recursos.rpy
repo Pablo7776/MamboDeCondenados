@@ -143,6 +143,8 @@ image naturalezaRota = "images/capitulo4_pibe/naturalezamandinga.png"
 image casaPoseida = "images/capitulo4_pibe/casaprotaposeida.png"
 image mandingaPower = "images/capitulo4_pibe/mandinga2.png"
 image devoraChina = "images/capitulo4_pibe/chinaDevorada.png"
+image arpiaChina = "images/capitulo4_pibe/china_arpia.png"
+image huestesEnPueblo = "images/capitulo4_pibe/pueblo_alimanas.png"
 
 #################  PLACEHOLDERS IA FINALES ####################
 ########################################################################
