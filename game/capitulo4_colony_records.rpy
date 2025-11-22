@@ -129,32 +129,46 @@ label Capítulo_4_Colony_Records:
         jump Es_hora_de_rendir_cuentas #esto está en "capitulo4_el_pibe.rpy"
 
     label Esto_se_vuelve_costumbre:
-
+        hide pulperia
+        show pulperiaAplaudiendo at subir_centrada with Dissolve(1.0)
+        ###AUDIO    -melodía prota (alguna)     -aplausos###
         "Tu canto logró el efecto que querías: todos están alabándote nuevamente."
 
         "Te vas a tu casa satisfecho."
-        
+        hide pulperiaAplaudiendo
+        show casaProtagonista
+        ###AUDIO    -frenar todo    -crepitar de fuego###
         if Vida_china:
+            ###AUDIO    -melodia prota (alguna)###
             "Tocás la guitarra para tu china nuevamente y hasta ella se olvida de sus pesares y se lanza sobre tus brazos."
             
             "Te dormís con una sonrisa en la cara, contento de tenerla a tu lado."
+            ###AUDIO    -frenar melodia###
 
         "Esta noche sorprendentemente no soñaste con las alimañas, ni con El Mandinga, ni ninguna de las grandes bestias de sus huestes."
-
+        ###AUDIO    -frenar crepitar    -naturaleza día###
+        hide casaProtagonista
+        show pueblo at subir_centrada with Dissolve(1.0)
         "Por la mañana salís a la calle y todos te saludan alegremente, pero a medida que va cayendo el sol sus miradas se vuelven más acusatorias."
-
+        hide pueblo
+        ###AUDIO melodia prota (alguna)###
+        show pulperia at subir_centrada with Dissolve(1.0)
         "Por la noche llegás a la pulpería y el ambiente es tenso, pero volvés a tocar la guitarra y todos se apaciguan."
-
+        hide pulperia
+        show pulperiaAplaudiendo at subir_centrada with Dissolve(1.0)
         "Este ritual se repite día tras día, vas todas las noches a tocar a la pulpería para calmarlos y por la mañana te tiran flores."
-
+        hide pulperiaAplaudiendo
+        ###AUDIO    -frenar naturaleza día###
+        show pueblo at subir_centrada with Dissolve(1.0)
         "Un día te quedás un rato más en tu casa, no vas a tocar a la misma hora de siempre a la pulpería, pero terminás saliendo para allá."
-
+        ###AUDIO    -abucheo###
         "La gente se agolpa en el camino para gritarte, incluso te tiran con cosas."
 
         "Tenés que guitarrear ahí nomás en el medio de la calle y todos se calman."
 
         "Esta vez zafaste, pero ¿qué pasará la próxima?"
-
+        hide pueblo
+        ###AUDIO    -frenar todo###
         menu:
             "Seguís pasando así los días.":
                 jump Mantuviste_lejos_al_Mandinga
