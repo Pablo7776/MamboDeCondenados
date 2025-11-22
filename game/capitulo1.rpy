@@ -207,10 +207,9 @@ label capitulo1:
         
         label Esperar_en_silencio:
             hide trono
-            #with dissolve     # transición para que hide sea visible
+            show mandi at subir_centrada, with Dissolve(5.0)
             hide mandi
-            show mandi at subir_centrada, flash with Dissolve(5.0)
-            #with Fade(0.1, 0.0, 0.3)
+            show mandi2 at subir_centrada, with Dissolve(0.5)     
 
 
             play sound sfx_trueno volume 0.5
@@ -238,7 +237,9 @@ label capitulo1:
 
         label DÓNDE_ESTÁ_EL_MANDINGA:
             hide trono
-            show mandi at subir_centrada with Dissolve(5.0)
+            show mandi at subir_centrada, with Dissolve(5.0)
+            hide mandi
+            show mandi2 at subir_centrada, with Dissolve(0.5)   
             
             $ reputacion_con_el_mandinga -= 10
             $ mostrar_repu()
@@ -310,7 +311,7 @@ label A_dónde_hay_que_firmar:
     "Aceptás vender tu alma y el Mandinga te dice que aún hay unas pruebas más que debés superar."
     "Hace un gesto con su mano y, ante vos, se abre el suelo."
     "Una gran grieta separa la sala al medio: de un lado estás vos; del otro, el Mandinga, su trono y sus seguidores."
-    hide mandi
+    hide mandi2
     show cuchillo at subir_centrada,vibrar with Dissolve(1.0)
     #show demonios at subir_centrada, vibrar with Dissolve(1.0)
     "Él saca un enorme facón de su costado y lo revolea, queda sobre la raja que se abrió en la tierra, formando un puente con el filo hacia arriba."

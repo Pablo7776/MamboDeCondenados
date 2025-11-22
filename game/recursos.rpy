@@ -102,6 +102,7 @@ image chivo = Animation(
 image caida = "images/capitulo1/ia/caida2.png"
 image trono = "images/capitulo1/saladeltrono.png"
 image mandi = "images/capitulo1/ia/mandingacueva4.png"
+image mandi2 = "images/capitulo1/ia/mandingacueva5.png"
 image cuchillo = "images/capitulo1/ia/cuchilloEscalado.png"
 image demonios = "images/capitulo1/ia/risasDemonios2.png"
 image rancho = "images/capitulo1/ia/rancho2.png"

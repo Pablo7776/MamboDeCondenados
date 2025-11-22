@@ -44,6 +44,8 @@ label start:
     menu:
         "ir a cap 1":
             jump capitulo1
+        "Dar_un_paso_hacia_la_oscuridad":
+            jump Dar_un_paso_hacia_la_oscuridad
         "ir a cap 2":
             jump capitulo2
         "ir a cap 3":
