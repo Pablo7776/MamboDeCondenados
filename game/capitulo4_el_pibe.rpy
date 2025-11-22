@@ -196,12 +196,14 @@ label Capítulo_4_El_pobre_Pibe_Farías:
         "No se salva nadie: ves el cadáver del Tarta, ves a niños ser estrangulados por víboras, ves a ancianos ser pisoteados hasta la muerte por el chivo."
 
         if Vida_china:
-            show arpiaChina at subir_centrada with Dissolve(1.0)
+            
             ### Acá estaría muy piola poner una imagen de algún tipo de arpía basada en la imagen de la china###
             "Empezás a llorar y ves como él baja nuevamente y sube con tu china. Le araña la espalda con una de sus filosas garras."
-
+            hide huestesEnPueblo
+            show arpiaChina at subir_centrada with Dissolve(1.0)
             "De la espalda de ella empiezan a salir unas plumas negras y marrones, y poco a poco ves cómo tu compañera se convierte en una especie de lechuza grotesca."
 
             "Sale volando y empieza a picotear los ojos de los cadáveres de la calle frente a tu casa."
             hide arpiaChina
+        hide huestesEnPueblo
         jump Sucumbis_a_la_locura
