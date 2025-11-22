@@ -1,4 +1,8 @@
 label Capítulo_4_Colony_Records:
+    hide mesa
+    show casaProtagonista at subir_centrada with Dissolve(1.0)
+
+    ###AUDIO - Crepitar de fuego###
     if Vida_china:
         "Vas a tu casa junto a tu china, le contás la gran noticia de la discográfica y ella te abraza, te felicita y te llena de besos. Incluso te incentiva a aceptarlo."
 
@@ -9,32 +13,53 @@ label Capítulo_4_Colony_Records:
 
     "Pero tus sueños no son tan reparadores..."
 
-    "Empezás a soñar y ves la entrada a La Salamanca, cientos de alimañas salen por montones."
+    ###AUDIO 
+    - frenar crepitar de fuego
+    -  sonido ambiente terror###
 
+    "Empezás a soñar y ves la entrada a La Salamanca, cientos de alimañas salen por montones."
+    show chivo at subir_centrada with Dissolve(1.0)
     "Coronando la marcha, el chivo negro endemoniado."
 
     "Atrás de todo cerrando la comitiva, el basilisco que te guió por el laberinto."
-
+    hide chivo
+    show naturalezaRota at subir_centrada with Dissolve(1.0)
     "Las huestes avanzan por el camino que recorriste hasta tu pueblo."
 
     "Ves que llegan hasta la casa de la familia de la joven china."
+    hide naturaleza
+    show chivo at subir_centrada with Dissolve(1.0)
 
+    ###AUDIO - respiración del chivo###
     "El chivo mata a su padre y las demás alimañas destrozan la casa y se comen a sus hermanos y su madre."
 
     if Vida_china:
+        hide chivo
+        show casaProtagonista at subir_centrada with Dissolve(1.0)
+        ###AUDIO
+        - frenar sonido ambiente terror
+        - llanto###
         "Te despertás por la mañana y tu joven china está llorando acurrucada con una frazada, hecha un bollito en tu cama."
 
     else:
         "Por último la joven china que te había abierto la puerta."
 
         "Ella estuvo contemplando toda la masacre, sostenida por las grandes manos de El Mandinga."
-
+        show mandingaPower at subir_centrada with Dissolve(0.5)
         "Una vez que toda su familia fue asesinada, ves como el propio Mandinga se transforma en una bestia con unas descomunales fauces."
-
+        hide mandingaPower
+        show devoraChina at subir_centrada with Dissolve(0.5)
         "Se la traga lentamente y escuchás como poco a poco se van ahogando los gritos de la joven."
-
+        hide devoraChina
+        show casaProtagonista at subir_centrada with Dissolve(1.0)
+        ###AUDIO
+        - frenar sonido ambiente terror
+        - crepitar de fuego
+        - respiración agitada###
         "Despertás por la mañana sobresaltado, sudando frío."
-
+    ###AUDIO
+    - frenar respiración agitada
+    - sonido auto viejo###
     "Escuchás llegar un moderno auto, con todo su ruido, y un sonido que nunca habías escuchado, parecido a una trompeta o algo así."
 
     menu:
@@ -46,9 +71,11 @@ label Capítulo_4_Colony_Records:
 
     label Consolando_a_La_China:
         $ reputacion_con_el_mandinga -=20
-
+        ###AUDIO auto viejo yendose###
         "Escuchás cómo, después de un rato el auto arranca de nuevo."
-
+        ###AUDIO
+        - frenar llanto
+        - melodia prota (alguna)###
         "Te quedás con tu china hasta la tarde, tocando la guitarra, cantando para consolarla y ofreciéndole tu hombro para llorar."
 
         "No entendés muy bien cómo, pero vos sabés que ese sueño que tuviste fue real y ella de alguna manera también sabe lo que pasó con su familia."
@@ -58,10 +85,17 @@ label Capítulo_4_Colony_Records:
         jump Culpable
 
     label Culpable:
+        ###AUDIO
+        - frenar crepitar
+        - frenar melodia prota
+        - gente en la pulpería###
+        hide casaProtagonista
+        show pulperia at subir_centrada with Dissolve(1.0) ###abría que cambiarla por una en la que se note que está todo podrido en la pulpería###
         "Llegás a la pulpería y, en cuanto atravesás la puerta todas las miradas van a vos."
 
         "Ya la gente no te mira con admiración como anoche, ahora te miran con desprecio y odio."
 
+        ###AUDIO abucheo###
         "Empiezan a abuchearte; al principio no entendés por qué, hasta que logran ponerse de acuerdo y te gritan:"
 
         "—¡ASESINO! ¡ASESINO!"
@@ -83,13 +117,17 @@ label Capítulo_4_Colony_Records:
 
     label Otra_noche_terrible:
         $ reputacion_con_el_mandinga -=15
-
+        ###AUDIO frenar gente en la pulpería, aumentar abucheo###
         "Nadie te cree, te insultan y te echan de la pulpería."
 
         "Te tiran con botellas vacías y te vas corriendo."
-        
+        hide pulperia
+        ###AUDIO
+        - frenar abucheo
+        - botella rompiendose
+        - sonido de naturaleza nocturna###
         "Justo cuando cerrás la puerta escuchás cómo una estalla contra la puerta: tardabas un minuto más en irte y te daba directo en la cabeza."
-
+        
         "Volvés a tu casa, en el camino se hace de noche, llegás y a pesar de todo lográs dormir."
 
         "Sí, otra vez esos sueños."
