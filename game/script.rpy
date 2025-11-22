@@ -50,6 +50,12 @@ label start:
             jump capitulo2
         "ir a cap 3":
             jump capitulo3
+        "ir a Capítulo_4_El_pobre_Pibe_Farías":
+            jump Capítulo_4_El_pobre_Pibe_Farías
+        "ir a capitulo4_el_viejo":
+            jump capitulo4_el_viejo
+        "ir a Capítulo_4_Colony_Records":
+            jump Capítulo_4_Colony_Records
         #"ejemplos de texto con efectos":
         #    jump ejemplosTexto
         #"ir a ejemplo clickeable":
