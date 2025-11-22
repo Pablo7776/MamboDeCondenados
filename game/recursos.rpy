@@ -143,6 +143,11 @@ image casaPoseida = "images/capitulo4_pibe/casaprotaposeida.png"
 image mandingaPower = "images/capitulo4_pibe/mandinga2.png"
 image devoraChina = "images/capitulo4_pibe/chinaDevorada.png"
 
+#################  PLACEHOLDERS IA FINALES ####################
+########################################################################
+
+image grieta_casa = "/images/finales/cobro_deuda_casa.png"
+
 ################  EFECTOS DE SONIDO #########################
 
 define sfx_viento1 = "audio/capitulo1/viento1.ogg"

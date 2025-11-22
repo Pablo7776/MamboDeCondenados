@@ -85,7 +85,8 @@ label finales:
 
     label Se_cobró_tu_deuda:
         "El Mandinga golpea el suelo con su pesado píe."
-
+        hide mandingaPower
+        show grieta_casa at subir_centrada with Dissolve(1.0)
         if Vida_china:
             "Suelta la cabeza de la china, ella cae como desmayada en la cama."
 
@@ -96,6 +97,7 @@ label finales:
         "Es tu alma que es arrastrada por El Mandinga por las profundidades de los túneles que llevan a La Salamanca."
 
         "Has saldado tu deuda, El Mandinga te cobró al fin el alma."
+        hide grieta_casa
 
         menu:
             "Volver al menú principal":
