@@ -19,6 +19,8 @@ label capitulo2:
 
     "Das un paso afuera y la piedra que se había abierto antes ahora se cierra crujiendo suavemente."
 
+    play sound sfx_crujir
+
     hide caida
     show ranchoHiguera at subir_centrada with Dissolve(1.0)
     play sound sfx_galope

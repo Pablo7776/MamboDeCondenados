@@ -165,7 +165,7 @@ define sfx_inicio_fuego = "audio/capitulo1/inicio_fuego.mp3"
 define sfx_hoguera_pequena = "audio/capitulo1/fuegoconstante_pequeno.wav"
 define sfx_trueno = "audio/capitulo1/sfx_trueno.ogg"
 
-define sfx_crujir = "audio/capitulo2/piedra_cerrandose.wav"
+define sfx_crujir = "audio/capitulo2/piedra_cerrandose2.wav"
 
 define sfx_taberna = "audio/capitulo3/genteenlapulperia.mp3"
 define sfx_aplausos = "audio/capitulo3/aplausos1.mp3"
