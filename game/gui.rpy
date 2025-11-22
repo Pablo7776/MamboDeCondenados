@@ -26,7 +26,7 @@ define config.check_conflicting_properties = True
 ## Los colores del texto de la interfaz
 
 ## El color enfatizado usado en la interfaz para subrayar texto.
-define gui.accent_color = '#cc0000'
+define gui.accent_color = '#880000'
 
 ## El color del botón de texto cuando no está seleccionado ni enfocado.
 define gui.idle_color = '#880000'
