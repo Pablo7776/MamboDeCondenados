@@ -46,8 +46,8 @@ define gui.insensitive_color = '#8888887f'
 
 ## Colores de la parte vacía de las barras. No se usan directamente, sino en la
 ## regeneración de las imágenes de barra.
-define gui.muted_color = '#510000'
-define gui.hover_muted_color = '#7a0000'
+define gui.muted_color = '#880000'
+define gui.hover_muted_color = '#880000'
 
 ## Colores del texto del diálogo y menú.
 define gui.text_color = '#880000'
