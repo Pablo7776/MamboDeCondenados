@@ -218,3 +218,21 @@ init python:
 define config.mouse = {
     "default": [("gui/brown.png", 37, 37)]
 }
+
+
+
+screen confirm(message, yes_action, no_action):
+    modal True
+    zorder 200
+
+    frame:
+        style_prefix "confirm"
+        vbox:
+            spacing 20
+            text "¿Pensás huir de este Mambo, condenado?" xalign 0.5 size 70
+
+            hbox:
+                spacing 60
+                xalign 0.5
+                textbutton "Sí" action yes_action
+                textbutton "No" action no_action
