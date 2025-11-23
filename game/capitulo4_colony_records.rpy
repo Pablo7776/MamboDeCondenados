@@ -77,9 +77,10 @@ label Capítulo_4_Colony_Records:
     label Culpable:
         ###AUDIO        - frenar crepitar        - frenar melodia prota        - gente en la pulpería###
         hide casaProtagonista
-        show pulperia at subir_centrada with Dissolve(1.0) ###abría que cambiarla por una en la que se note que está todo podrido en la pulpería###
+        show pulperia at subir_centrada with Dissolve(1.0)
         "Llegás a la pulpería y, en cuanto atravesás la puerta todas las miradas van a vos."
-
+        hide pulperia
+        show pulperiaEnojados at subir_centrada with Dissolve(1.0)
         "Ya la gente no te mira con admiración como anoche, ahora te miran con desprecio y odio."
 
         ###AUDIO abucheo###
@@ -109,7 +110,7 @@ label Capítulo_4_Colony_Records:
         "Nadie te cree, te insultan y te echan de la pulpería."
 
         "Te tiran con botellas vacías y te vas corriendo."
-        hide pulperia
+        hide pulperiaEnojados
         ###AUDIO - frenar abucheo      - botella rompiendose        - sonido de naturaleza nocturna###
         show puebloNoche at subir_centrada with Dissolve(1.0)
         "Justo cuando cerrás la puerta escuchás cómo una estalla contra la puerta: tardabas un minuto más en irte y te daba directo en la cabeza."
@@ -177,7 +178,7 @@ label Capítulo_4_Colony_Records:
 
     label Una_revelación:
         ###AUDIO    - sonido auto viejo andando###
-        ### Imagen desde la ventana de atrás de un auto viejo###
+        show ventanaAuto at subir_centrada with Dissolve(1.0)
         "Salís y te subís al auto de la Colorada Dowley, al asiento trasero, junto a ella."
 
         "Te saluda animosamente y empiezan a recorrer las calles charlando de trivialidades."
@@ -217,8 +218,9 @@ label Capítulo_4_Colony_Records:
 
     label Adiós_a_la_colorada_y_a_Colony_Records:
         "En cuanto te negás la Colorada Dowley se lamenta, te lleva a tu casa y abandona el pueblo."
-        ###hide Imagen desde la ventana de atrás de un auto viejo###
+        hide ventanaAuto
         ###AUDIO    -frenar ruido auto vieja    -crepitar de fuego###
+        show casaProtagonista at subir_centrada with Dissolve(1.0)
 
         "Esa tarde pasa, no te sentís muy animado, pero por la noche, hay otra oportunidad de mostrar tu don en la pulpería de El Tarta."
 
@@ -226,7 +228,9 @@ label Capítulo_4_Colony_Records:
 
     label Las_giras_interminables:
         "La colorada vuelve a dejarte en tu casa para que prepares todo para irte."
-
+        hide ventanaAuto
+        show casaProtagonista at subir_centrada with Dissolve(1.0)
+        ###AUDIO    -frenar ruido auto vieja    -crepitar de fuego###
         if Vida_china:
             "Le contás todo a la china e incluso te ponés a tocar la guitarra de la alegría, ella está muy contenta por vos."
             
@@ -234,7 +238,8 @@ label Capítulo_4_Colony_Records:
 
         else:
             "Preparás todo, esa misma noche viene a buscarte la señora Dowley para llevarte a la capital."
-
+        hide casaProtagonista
+        ###show ... ciudad grande desde arriba? ... teatro lleno?###
         "El contrato se firmó el mismo día que llegaste y la colorada te prometió que nunca más ibas a tener que preocuparte por El Mandinga."
 
         "Los primeros años fueron excelentes para vos, grabaste muchas canciones, tocaste en lugares que nunca pensaste que ibas a tocar."
