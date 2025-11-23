@@ -1,4 +1,5 @@
 label finales:
+    $ mostrar_repu()
     label Sucumbis_a_la_locura:
         "Lo perdiste todo, incluso perdiste completamente tu humanidad."
         

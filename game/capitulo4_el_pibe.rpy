@@ -1,5 +1,6 @@
 label Capítulo_4_El_pobre_Pibe_Farías:
     $ reputacion_con_el_mandinga -= 35
+    $ mostrar_repu()
 
     if Vida_china:
         show casaProtagonista at subir_centrada with Dissolve(1.0)

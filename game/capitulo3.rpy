@@ -35,11 +35,11 @@ label capitulo3:
         ##Frenar caballo y pájaros## AUDIO
 
         show pulperia at subir_centrada with Dissolve(1.0)
-        play sound sfx_taberna  fadein 1.0
+        play sound sfx_taberna loop fadein 1.0
 
         ##Ruido ambiente de gente check## AUDIO
         ##Melodia guitarra pibe## AUDIO
-        play music melo_pibe fadein 1.0
+        play music melo_pibe loop fadein 1.0
 
 
         "Al entrar te sorprende el sonido de una guitarra."

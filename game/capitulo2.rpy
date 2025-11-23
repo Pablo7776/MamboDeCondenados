@@ -16,32 +16,31 @@ label capitulo2:
     "Las alimañas te miran con respeto desde sus cuevas. Cuando llegás al laberinto, otra vez aparece el basilisco: te guía para salir." 
     
     "En la última curva te esperan tus botas, tu sombrero y tu pañuelo, que te los volvés a poner."
-
-    "Das un paso afuera y la piedra que se había abierto antes ahora se cierra crujiendo suavemente."
-
     play sound sfx_crujir
+    "Das un paso afuera y la piedra que se había abierto antes ahora se cierra crujiendo suavemente."
+    stop ambiente
 
     hide caida
     show ranchoHiguera at subir_centrada with Dissolve(1.0)
     play sound sfx_galope
-    "Escuchás un galope y ves llegar a tu caballo, con tu guitarra aún bien atada a la silla."
+    "Ves llegar a tu caballo, con tu guitarra aún bien atada a la silla."
 
     "Te ponés la guitarra en la espalda y comenzás a cabalgar. Pasan las horas y ya se te está haciendo de noche." 
     
     "A lo lejos ves una tranquera y al fondo del campo un pequeño rancho."
 
     "Un poco más adelante una frondosa higuera bajo la que podrías refugiarte del rocío."
-    stop sfx_galope fadeout 1.0
-    stop audio fadeout 1.0
-    stop music fadeout 1.0
-    stop sound fadeout 1.0
-    stop ambiente fadeout 1.0
-    stop viento fadeout 1.0
-    stop fx fadeout 1.0
-    stop acufeno fadeout 1.0
-    stop pisadas fadeout 1.0
-    stop estatica fadeout 1.0
-    play sound sfx_viento1 volume 0.3
+    stop sfx_galope
+    stop audio
+    stop music
+    stop sound
+    stop ambiente
+    stop viento
+    stop fx
+    stop acufeno
+    stop pisadas
+    stop estatica
+    play sound sfx_viento1 loop volume 0.3
 
     menu:
         "Entrás al campo y golpeás la puerta.":
@@ -102,6 +101,9 @@ label Tus_primeros_hechizados:
     $ mostrar_repu()
 
     hide puertaChina
+    stop sound
+    $ renpy.music.set_volume(1.0, channel="sound")
+    play sound sfx_hoguera_pequena loop fadein 1.0
     show casaInterior at subir_centrada with Dissolve(1.0)
     "Empezás a rasguear la guitarra y cuando te das cuenta ya estás improvisando versos junto a toda la familia."
 
@@ -191,6 +193,9 @@ label Fuiste_cordial_y_se_te_agradece_por_ello:
 
 
     hide puertaChina
+    stop sound
+    $ renpy.music.set_volume(1.0, channel="sound")
+    play sound sfx_hoguera_pequena loop fadein 1.0
     show casaInterior at subir_centrada with Dissolve(1.0)
 
     "Te abre la puerta, aún un poco temerosa, pero viene su padre del fondo del salón y te recibe con un apretón de manos."

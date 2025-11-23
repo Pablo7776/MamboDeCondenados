@@ -1,5 +1,6 @@
 label capitulo4_el_viejo:
     $ reputacion_con_el_mandinga -= 25
+    $ mostrar_repu()
     
     if Vida_china == True:
         "Llevás a la china a tu casa y le prometés que vas a volver."
@@ -102,6 +103,7 @@ label capitulo4_el_viejo:
 
     label En_lo_oscuro_del_bosque:
         $ reputacion_con_el_mandinga -=15
+        $ mostrar_repu()
 
         "Empezás a caminar y en un momento se escucha un zumbido muy fuerte, como si miles de mangangás hubieran entrado al talar de repente."
 
@@ -130,6 +132,7 @@ label capitulo4_el_viejo:
     
     label Un_claro_despejado:
         $ reputacion_con_el_mandinga -=15
+        $ mostrar_repu()
 
         "Llegás a un claro en el medio del talar y no hay nada excepto unas luciérnagas que brillan con una fuerte luz naranja, nada más."
 
@@ -141,6 +144,7 @@ label capitulo4_el_viejo:
 
     label Su_propia_melodia:
         $ reputacion_con_el_mandinga -= 15
+        $ mostrar_repu()
 
         "Seguís tocando, sobre tu música la luz empieza a chillar unas notas muy agudas que suenan por encima de lo que vos estás tocando."
 

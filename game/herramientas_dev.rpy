@@ -19,14 +19,14 @@ screen dev_label():
             yoffset 10
             background "#0008"
             padding (6, 6)
-            text "[current_label if current_label else '…'] \nreputación con el mandinga: [reputacion_con_el_mandinga] \nhumanidad: [humanidad]":
+            text "[current_label if current_label else '…'] \nreputación con el mandinga: [reputacion_con_el_mandinga]":
                 style "dev_label_text"
 
 style dev_label_text:
     color "#ffffff"
     size 60
-    bold True
-    outlines [(2, "#000000", 0, 0)]
+    bold False
+    outlines [(1, "#af0e0e", 1, 1)]
 
 init python:
     if DEV_LABELS and "dev_label" not in config.overlay_screens:
@@ -86,6 +86,12 @@ screen pergamino_input_simple(prompt):
 
 init python:
     def mostrar_repu():
+        renpy.hide("reputacion1")
+        renpy.hide("reputacion2")
+        renpy.hide("reputacion3")
+        renpy.hide("reputacion4")
+        renpy.hide("reputacion5")
+
         if reputacion_con_el_mandinga > 99:
             renpy.show("reputacion5", at_list=[Position(xalign=0.9, yalign=0.9)])
         elif reputacion_con_el_mandinga > 74:

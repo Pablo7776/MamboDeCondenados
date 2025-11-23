@@ -193,7 +193,7 @@ label capitulo1:
         hide caida1
         show trono at subir_centrada with Dissolve(1.0)
         play sound sfx_inicio_fuego
-        play audio sfx_hoguera_pequena loop fadein(1.5)
+        play audio sfx_hoguera_pequena loop fadein(1.0)
         "Das un primer paso y se comienzan a prender, a cada lado, cien antorchas."
         "Lográs ver una sala con cortinas magníficas que cubren paredes de roca negra con piso y columnas de mármol que sostienen un techo de tierra y rocas."
         "En el fondo de la sala un enorme trono rodeado de lechuzas, quirquinchos, perros, chanchos, culebras y sapos; frente a él, hechiceros, brujas y diablillos."
@@ -398,7 +398,6 @@ label A_dónde_hay_que_firmar:
         # redefinir el personaje p con el nombre elegido
         $ p = Character(nombre_jugador)
         play sound "audio/capitulo1/risaDiabolica.wav"
-        $ humanidad -= 10
 
 
         pause 0.01

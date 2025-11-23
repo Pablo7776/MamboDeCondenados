@@ -14,7 +14,7 @@
 - **Narrativa**: Ramificada con múltiples finales
 
 ## Sistema de Juego
-- Decisiones con consecuencias en Humanidad y Reputación
+- Decisiones con consecuencias en Reputación
 - capítulos con narrativa ramificada
 - Mecánica de "permadeath" y rejugabilidad
 - Personajes del folklore argentino adaptados

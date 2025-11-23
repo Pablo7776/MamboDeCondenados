@@ -62,6 +62,7 @@ label Capítulo_4_Colony_Records:
 
     label Consolando_a_La_China:
         $ reputacion_con_el_mandinga -=20
+        $ mostrar_repu()
         ###AUDIO auto viejo yendose###
         "Escuchás cómo, después de un rato el auto arranca de nuevo."
         ###AUDIO        - frenar llanto        - melodia prota (alguna)###
@@ -103,6 +104,7 @@ label Capítulo_4_Colony_Records:
 
     label Otra_noche_terrible:
         $ reputacion_con_el_mandinga -=15
+        $ mostrar_repu()
         ###AUDIO frenar gente en la pulpería, aumentar abucheo###
         "Nadie te cree, te insultan y te echan de la pulpería."
 
@@ -174,6 +176,8 @@ label Capítulo_4_Colony_Records:
                 jump Mantuviste_lejos_al_Mandinga
 
     label Una_revelación:
+        ###AUDIO    - sonido auto viejo andando###
+        ### Imagen desde la ventana de atrás de un auto viejo###
         "Salís y te subís al auto de la Colorada Dowley, al asiento trasero, junto a ella."
 
         "Te saluda animosamente y empiezan a recorrer las calles charlando de trivialidades."
@@ -209,6 +213,8 @@ label Capítulo_4_Colony_Records:
 
     label Adiós_a_la_colorada_y_a_Colony_Records:
         "En cuanto te negás la Colorada Dowley se lamenta, te lleva a tu casa y abandona el pueblo."
+        ###hide Imagen desde la ventana de atrás de un auto viejo###
+        ###AUDIO    -frenar ruido auto vieja    -crepitar de fuego###
 
         "Esa tarde pasa, no te sentís muy animado, pero por la noche, hay otra oportunidad de mostrar tu don en la pulpería de El Tarta."
 
