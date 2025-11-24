@@ -239,7 +239,7 @@ label Capítulo_4_Colony_Records:
         else:
             "Preparás todo, esa misma noche viene a buscarte la señora Dowley para llevarte a la capital."
         hide casaProtagonista
-        ###show ... ciudad grande desde arriba? ... teatro lleno?###
+        show teatro at subir_centrada with Dissolve(1.0)
         "El contrato se firmó el mismo día que llegaste y la colorada te prometió que nunca más ibas a tener que preocuparte por El Mandinga."
 
         "Los primeros años fueron excelentes para vos, grabaste muchas canciones, tocaste en lugares que nunca pensaste que ibas a tocar."
@@ -254,7 +254,7 @@ label Capítulo_4_Colony_Records:
         "Las giras pronto se convirtieron en algo habitual, al igual que los excesos, que cada vez eran más. Eran giras y giras sin parar; de alguna manera, había que soportarlas."
 
         "Hasta que un verano te dieron un descanso, ya habían pasado veinte años desde la última vez que pisaste tu pueblo, así que decidís volver."
-
+        hide teatro
         if reputacion_con_el_mandinga > 65:
             jump Qué_cambiado_que_está_todo
         else:

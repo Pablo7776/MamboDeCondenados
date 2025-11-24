@@ -154,6 +154,7 @@ image huestesEnPueblo = "images/capitulo4_pibe/pueblo_alimanas.png"
 image puebloNoche = "images/capitulo4_colony_records/pueblo_de_noche.png"
 image ventanaAuto = "images/capitulo4_colony_records/autoatras.png"
 image pulperiaEnojados = "images/capitulo4_colony_records/pulperiaenojada.png"
+image teatro = "images/capitulo4_colony_records/teatrolleno.png"
 
 
 #################  PLACEHOLDERS IA FINALES ####################
