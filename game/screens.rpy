@@ -599,6 +599,8 @@ screen about():
             #text _("Hecho con {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
             text _("Proyecto educativo desarrollado como trabajo integrador de la tecnicatura universitaria en  DISEÑO Y PROGRAMACIÓN DE VIDEOJUEGOS.")
             text _("   ")
+            text _("Adaptación de las leyendas de La Salamanca y Santos Vega")
+            text _("   ")
             text _("Equipo Ctapó:")
             text _("   ")
             text _("M. Luz Opazo: Producción, marketing, co-diseño de juego y co-guionista.")
