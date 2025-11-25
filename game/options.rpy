@@ -236,3 +236,8 @@ screen confirm(message, yes_action, no_action):
                 xalign 0.5
                 textbutton "Sí" action yes_action
                 textbutton "No" action no_action
+
+
+
+define config.keymap['game_menu'] = []
+define config.keymap['hide_windows'] = []
