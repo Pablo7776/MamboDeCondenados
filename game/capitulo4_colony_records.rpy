@@ -128,8 +128,8 @@ label Capítulo_4_Colony_Records:
         "Soñás con las alimañas, pero esta vez ya están entrando al pueblo, te despertás sobresaltado por un gran estruendo."
         ###AUDIO        - frenar crepitar fuego        - sonido ambiente terror ###
         "Abrís los ojos completamente agitado..."
-        hide casaposeyendose
-        show casaPoseida at subir_centrada with Dissolve(1.0)
+        #hide casaposeyendose
+        #show casaPoseida at subir_centrada with Dissolve(1.0)
 
         
         jump Es_hora_de_rendir_cuentas #esto está en "capitulo4_el_pibe.rpy"

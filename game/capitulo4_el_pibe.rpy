@@ -116,20 +116,27 @@ label Capítulo_4_El_pobre_Pibe_Farías:
         jump Es_hora_de_rendir_cuentas
 
     label Es_hora_de_rendir_cuentas:
-        hide casaPoseida        
+        hide casaposeyendose        
         show mandi at subir_centrada with Dissolve(1.0)
         "... el Mandinga está de pie junto a tu cama."
         
         if Vida_china:
             "Tiene una mano sobre la china."
         
-        "— No has hecho mucho por complacerme condenado."
+        pause 0.01
+        show mandinga_placeholder:
+            xoffset 0
+            yoffset 36
 
-        "— No te comportaste como alguien digno del don que te concedí."
+        Mandinga "— No has hecho mucho por complacerme condenado."
 
-        "— Vas a tener que elegir."
+        Mandinga "— No te comportaste como alguien digno del don que te concedí."
 
-        "Te dice, clara y fríamente, tus posibilidades:"
+        Mandinga "— Vas a tener que elegir."
+
+        Mandinga "Te dice, clara y fríamente, tus posibilidades:"
+
+        hide mandinga_placeholder
 
         menu:
             "Entregás la vida de tu joven y atractiva china" if Vida_china and reputacion_con_el_mandinga > 50:
