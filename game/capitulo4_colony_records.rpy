@@ -16,6 +16,7 @@ label Capítulo_4_Colony_Records:
     ###AUDIO    - frenar crepitar de fuego    -  sonido ambiente terror###
 
     "Empezás a soñar y ves la entrada a La Salamanca, cientos de alimañas salen por montones."
+    hide casaProtagonista
     show chivo at subir_centrada with Dissolve(1.0)
     "Coronando la marcha, el chivo negro endemoniado."
 
@@ -25,7 +26,7 @@ label Capítulo_4_Colony_Records:
     "Las huestes avanzan por el camino que recorriste hasta tu pueblo."
 
     "Ves que llegan hasta la casa de la familia de la joven china."
-    hide naturaleza
+    hide naturalezaRota
     show chivo at subir_centrada with Dissolve(1.0)
 
     ###AUDIO - respiración del chivo###
@@ -41,6 +42,7 @@ label Capítulo_4_Colony_Records:
         "Por último la joven china que te había abierto la puerta."
 
         "Ella estuvo contemplando toda la masacre, sostenida por las grandes manos de El Mandinga."
+        hide chivo
         show mandingaPower at subir_centrada with Dissolve(0.5)
         "Una vez que toda su familia fue asesinada, ves como el propio Mandinga se transforma en una bestia con unas descomunales fauces."
         hide mandingaPower
@@ -122,24 +124,25 @@ label Capítulo_4_Colony_Records:
         ###AUDIO        - frenar todo        - cripitar de fuego###
         "Sí, otra vez esos sueños."
         hide casaProtagonista
-        show casaposeyendose
+        show casaposeyendose at subir_centrada with Dissolve(1.0)
         "Soñás con las alimañas, pero esta vez ya están entrando al pueblo, te despertás sobresaltado por un gran estruendo."
         ###AUDIO        - frenar crepitar fuego        - sonido ambiente terror ###
         "Abrís los ojos completamente agitado..."
-        show casaPoseida at subir_centrada with Dissolve(1.0)
         hide casaposeyendose
+        show casaPoseida at subir_centrada with Dissolve(1.0)
+
         
         jump Es_hora_de_rendir_cuentas #esto está en "capitulo4_el_pibe.rpy"
 
     label Esto_se_vuelve_costumbre:
-        hide pulperia
+        hide pulperiaEnojados
         show pulperiaAplaudiendo at subir_centrada with Dissolve(1.0)
         ###AUDIO    -melodía prota (alguna)     -aplausos###
         "Tu canto logró el efecto que querías: todos están alabándote nuevamente."
 
         "Te vas a tu casa satisfecho."
         hide pulperiaAplaudiendo
-        show casaProtagonista
+        show casaProtagonista at subir_centrada with Dissolve(1.0)
         ###AUDIO    -frenar todo    -crepitar de fuego###
         if Vida_china:
             ###AUDIO    -melodia prota (alguna)###
@@ -202,6 +205,8 @@ label Capítulo_4_Colony_Records:
         colorada "— Podrías dedicarte a tu música, al fin y al cabo, fue por eso que quisiste tener ese don, ¿no?"
 
         colorada "— Vas a poder tocar frente a cientos y miles de personas, encantarlos a todos."
+
+        hide colorada_placeholder
 
         "Su discográfica pagará tu deuda con él, y podrás seguir con tu don, pero vas a tener que seguir sus reglas."
 
