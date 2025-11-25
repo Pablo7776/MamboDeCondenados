@@ -57,7 +57,7 @@ image casaposeyendose = Animation(
 )
 image china_placeholder = "images/personajes/chinaEscalado.png"
 
-image colorada_placeholder = "images/personajes/colorada.png"
+image colorada_placeholder = "images/personajes/colorada2.png"
 
 image tarta_placeholder = "images/personajes/placeholder IA/tarta1.png"
 ############################################################
