@@ -445,7 +445,7 @@ label A_dónde_hay_que_firmar:
         Mandinga "—BIENVENIDO A MIS HUESTES, CONDENADO!"
         hide mandinga_placeholder
 
-        "Resuena una vez más la voz del Mandinga, mucho más fuerte, mucho más demoníaca."
+        #"Resuena una vez más la voz del Mandinga, mucho más fuerte, mucho más demoníaca."
         "Las brujas, los brujos y los diablillos arrancan la fiesta a tu alrededor, sentís como tu garganta arde y luego se calma y empezás a cantar junto a los demás."
         "Las alimañas te levantan sobre sus lomos y te pasean por toda la sala, tu voz y tu canto ahora suena como nunca antes sonó."
         hide demonios
