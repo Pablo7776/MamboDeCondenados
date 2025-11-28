@@ -276,8 +276,11 @@ label capitulo1:
                 hide muerte
                 show muerte at subir_centrada with Dissolve(1.0)
                 "Te arrepentís, empezás a balbucear y… "
+                hide muerte
+                show pulperia at subir_centrada with Dissolve(1.0)
                 "Estás completamente borracho, con la cabeza sobre una mesa de la pulpería del Tarta."
                 "Una guitarra suena; parece que eso te despertó. El payador empieza a contar una vieja leyenda de estas tierras: la leyenda de La Salamanca."
+                hide pulperia
             return
 
 
