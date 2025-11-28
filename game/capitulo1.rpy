@@ -175,7 +175,7 @@ label capitulo1:
             "Tras unos cuantos minutos de pisotones tu cuerpo yace inerte en la oscuridad de la cueva."
 
 
-            play sound "audio/capitulo1/GritoDeMiedo.ogg"
+            play sound sfx_gritito_muerte2
             "Moriste, tu mambo ha terminado junto con tu vida."
 
             
@@ -379,8 +379,9 @@ label A_dónde_hay_que_firmar:
             show muerte at subir_centrada with Dissolve(1.0)
             "Das un paso sobre el cuchillo y dudás, el filo del facón se hunde en tu pie y no podés frenar la fuerza de la gravedad."
             "Empezás a caer sobre ese último paso, tu cuerpo se desbalancea y cae."
+            play sound sfx_gritito_muerte
             "Yacés en dos mitades en lo profundo de la grieta del infierno."
-            "Moriste, el juego ha terminado junto a tu vida."
+            "Moriste, tu mambo ha terminado junto con tu vida."
             return
 
     label Escupir_el_crucifijo:
