@@ -303,14 +303,20 @@ label Quiero_hechizar:
 
     "Le decís a aquel ser del inframundo."
 
+    hide mandi2
+    show mandi2 at subir_centrada,vibrar, with Dissolve(0.5)
+    play sound sfx_basilisco
+
     pause 0.01
     show mandinga_placeholder:
         xoffset 0
         yoffset 36
     Mandinga "—Me gusta tu pasión, pero no tan rápido, eso va a costarte el alma."
-    hide mandinga_placeholder
 
-    "Su voz vuelve a hacer temblar las paredes y termina en siseo."
+    hide mandinga_placeholder
+    pause 1.5 
+    show mandi2 at subir_centrada
+    #"Su voz vuelve a hacer temblar las paredes y termina en siseo."
 
     menu:
         "Reculás, ¿quién le entregaría su alma a un ser así?":
