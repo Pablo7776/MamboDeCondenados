@@ -196,10 +196,10 @@ label capitulo1:
         hide caida2
         show trono at subir_centrada with Dissolve(1.0)
         play sound sfx_inicio_fuego
-        play audio sfx_hoguera_pequena loop fadein(1.0)
         "Das un primer paso y se comienzan a prender, a cada lado, cien antorchas."
-        "Lográs ver una sala con cortinas magníficas que cubren paredes de roca negra con piso y columnas de mármol que sostienen un techo de tierra y rocas."
-        "En el fondo de la sala un enorme trono rodeado de lechuzas, quirquinchos, perros, chanchos, culebras y sapos; frente a él, hechiceros, brujas y diablillos."
+        play audio sfx_hoguera_pequena loop fadein(1.0)
+        "Lográs ver la enorme sala con sus cortinas magníficas, su piso y sus columnas de mármol."
+        "En el fondo el enorme trono, escondidas entre las columnas y detrás de él ves lechuzas, quirquinchos, perros, chanchos, culebras y sapos, también, hechiceros, brujas y diablillos."
         "Viniste para esto."
         menu:
             "Gritar ¡¿DÓNDE ESTÁ EL MANDINGA?!":
