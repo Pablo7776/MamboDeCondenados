@@ -175,7 +175,7 @@ label capitulo1:
             "Tras unos cuantos minutos de pisotones tu cuerpo yace inerte en la oscuridad de la cueva."
 
 
-            play sound "audio/capitulo1/GritoDeMiedo.ogg"
+            play sound sfx_gritito_muerte2
             "Moriste, tu mambo ha terminado junto con tu vida."
 
             
@@ -211,8 +211,7 @@ label capitulo1:
         label Esperar_en_silencio:
             hide trono
             show mandi at subir_centrada, with Dissolve(5.0)
-            hide mandi
-            show mandi2 at subir_centrada, with Dissolve(0.5)     
+   
 
 
             play sound sfx_trueno volume 0.5
@@ -220,16 +219,21 @@ label capitulo1:
             "Se desmorona una de las paredes que deja un gran agujero en uno de los costados de la sala."
             "Él atraviesa las cortinas, un enorme ser, mitad serpiente, mitad humano, ES EL MANDINGA."
             "Se sienta en su trono y te mira con un gesto entre curioso y vehemente."
-            
+            hide mandi
+            show mandi2 at subir_centrada,vibrar, with Dissolve(0.5)
+            play sound sfx_basilisco
 
-            
+            ### personaje ##########################
+            pause 0.01
+
             show mandinga_placeholder:
                 xoffset 0
                 yoffset 36
 
             Mandinga "—¿Qué desea el que me busca?"
             hide mandinga_placeholder
-
+            pause 1.5 
+            show mandi2 at subir_centrada
             #"Su voz retumba como un trueno en toda la habitación y una vez termina su frase queda resonando un zumbido siseante en el ambiente."
 
             menu:
@@ -375,12 +379,13 @@ label A_dónde_hay_que_firmar:
                 jump Pasar_cautelosamente
 
         label Pasar_cautelosamente:
-            hide muerte
+            hide cuchillo
             show muerte at subir_centrada with Dissolve(1.0)
             "Das un paso sobre el cuchillo y dudás, el filo del facón se hunde en tu pie y no podés frenar la fuerza de la gravedad."
             "Empezás a caer sobre ese último paso, tu cuerpo se desbalancea y cae."
+            play sound sfx_gritito_muerte
             "Yacés en dos mitades en lo profundo de la grieta del infierno."
-            "Moriste, el juego ha terminado junto a tu vida."
+            "Moriste, tu mambo ha terminado junto con tu vida."
             return
 
     label Escupir_el_crucifijo:
