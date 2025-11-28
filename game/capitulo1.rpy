@@ -338,6 +338,7 @@ label A_dónde_hay_que_firmar:
     "Él saca un enorme facón de su costado y lo revolea, queda sobre la raja que se abrió en la tierra, formando un puente con el filo hacia arriba."
 
     pause 0.01
+    play sound sfx_basilisco
     show mandinga_placeholder:
         xoffset 0
         yoffset 36
@@ -359,13 +360,14 @@ label A_dónde_hay_que_firmar:
         "Cuando llegás a la mitad ves una luz dorada bajo tus pies, mirás hacia abajo y hay un crucifijo del que emana la luz."
         
         pause 0.01
+        play sound sfx_basilisco
         show mandinga_placeholder:
             xoffset 0
             yoffset 36
         Mandinga "—¡ESCUPILO!"
         hide mandinga_placeholder
 
-        "La voz del Mandinga suena más fuerte que nunca, hace temblar todo y casi estás a punto de caerte, pero recuperás el equilibrio."
+        #"La voz del Mandinga suena más fuerte que nunca, hace temblar todo y casi estás a punto de caerte, pero recuperás el equilibrio."
         menu:
             "Escupís el crucifijo.":
                 jump Escupir_el_crucifijo
@@ -436,6 +438,7 @@ label A_dónde_hay_que_firmar:
     label Lo_lograste:
 
         pause 0.01
+        play sound sfx_basilisco
         show mandinga_placeholder:
             xoffset 0
             yoffset 36
