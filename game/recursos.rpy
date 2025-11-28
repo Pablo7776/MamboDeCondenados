@@ -170,8 +170,8 @@ define sfx_viento1 = "audio/capitulo1/viento1.ogg"
 define sfx_galope = "audio/capitulo1/sfx_galope.ogg"
 define sfx_SonidoAmbienteTerror = "audio/capitulo1/sfx_SonidoAmbienteTerror.ogg"
 define sfx_respiracion_chivo = "audio/capitulo1/respiracion_chivo.ogg"
-define sfx_basilisco = "game/audio/capitulo1/siseo_corto.mp3"
-define sfx_gritito_muerte = "game/audio/capitulo1/quejido_muerte.mp3"
+define sfx_basilisco = "audio/capitulo1/siseo_corto.ogg"
+define sfx_gritito_muerte = "audio/capitulo1/quejido_muerte.mp3" ###no usado...
 
 
 define sfx_infrasonido = "audio/capitulo1/sfx_infrasonido.ogg"
