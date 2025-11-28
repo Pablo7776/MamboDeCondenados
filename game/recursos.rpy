@@ -45,6 +45,21 @@ image protagonista_placeholder = Animation(
 
     repeat=True
 )
+
+image china_placeholder = Animation(
+    "images/personajes/china/frame1.png", 0.2,
+    "images/personajes/china/frame2.png", 0.2,
+    "images/personajes/china/frame3.png", 0.2,
+    "images/personajes/china/frame3.png", 0.2,
+    "images/personajes/china/frame3.png", 0.2,
+    #"images/personajes/china/frame6.png", 0.2,
+    "images/personajes/china/frame8.png", 0.2,
+    "images/personajes/china/frame8.png", 0.2,
+    "images/personajes/china/frame9.png", 0.2,
+    "images/personajes/china/frame10.png", 0.2,
+
+    repeat=True
+)
 image casaposeyendose = Animation(
     "images/capitulo 3/casaprota.png", 0.7,
     "images/capitulo4_pibe/casaprotaposeida.png", 0.2,
@@ -55,7 +70,7 @@ image casaposeyendose = Animation(
 
     repeat=False
 )
-image china_placeholder = "images/personajes/chinaEscalado.png"
+#image china_placeholder = "images/personajes/chinaEscalado.png"
 
 image colorada_placeholder = "images/personajes/colorada2.png"
 
