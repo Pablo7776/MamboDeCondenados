@@ -375,7 +375,7 @@ label A_dónde_hay_que_firmar:
                 jump Pasar_cautelosamente
 
         label Pasar_cautelosamente:
-            hide muerte
+            hide cuchillo
             show muerte at subir_centrada with Dissolve(1.0)
             "Das un paso sobre el cuchillo y dudás, el filo del facón se hunde en tu pie y no podés frenar la fuerza de la gravedad."
             "Empezás a caer sobre ese último paso, tu cuerpo se desbalancea y cae."
