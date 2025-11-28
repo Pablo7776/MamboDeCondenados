@@ -436,9 +436,8 @@ label A_dónde_hay_que_firmar:
         hide protagonista_placeholder
         stop fx fadeout 1.0
 
-        menu:
-            "¡Lo lograste!":
-                jump Lo_lograste
+
+        jump Lo_lograste
             
     label Lo_lograste:
 
