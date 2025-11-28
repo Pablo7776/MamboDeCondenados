@@ -230,7 +230,7 @@ label capitulo1:
             Mandinga "—¿Qué desea el que me busca?"
             hide mandinga_placeholder
 
-            "Su voz retumba como un trueno en toda la habitación y una vez termina su frase queda resonando un zumbido siseante en el ambiente."
+            #"Su voz retumba como un trueno en toda la habitación y una vez termina su frase queda resonando un zumbido siseante en el ambiente."
 
             menu:
                 "Reculás ante su presencia":
@@ -266,7 +266,7 @@ label capitulo1:
             show mandi2 at subir_centrada
             #play sound sfx_basilisco
             #play sound sfx_trueno
-            "Su voz retumba como un trueno en toda la habitación y una vez termina su frase queda resonando un zumbido siseante en el ambiente."
+            #"Su voz retumba como un trueno en toda la habitación y una vez termina su frase queda resonando un zumbido siseante en el ambiente."
 
 
 
