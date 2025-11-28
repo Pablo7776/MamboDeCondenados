@@ -277,6 +277,9 @@ label capitulo1:
                 show muerte at subir_centrada with Dissolve(1.0)
                 "Te arrepentís, empezás a balbucear y… "
                 hide muerte
+                stop sfx_hoguera_pequena
+                stop sfx_SonidoAmbienteTerror
+                play ambiente sfx_taberna loop fadein 1.0
                 show pulperia at subir_centrada with Dissolve(1.0)
                 "Estás completamente borracho, con la cabeza sobre una mesa de la pulpería del Tarta."
                 "Una guitarra suena; parece que eso te despertó. El payador empieza a contar una vieja leyenda de estas tierras: la leyenda de La Salamanca."
