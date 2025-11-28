@@ -32,7 +32,7 @@ transform flash:
 
 
 transform desvanecer:
-    linear 33.0 alpha 0.0   # 5 segundos desapareciendo
+    linear 25.0 alpha 0.0   # 5 segundos desapareciendo
 
 
 
@@ -72,7 +72,7 @@ label capitulo1:
     $ mostrar_repu()
 
     "Vos, guitarrista y cantor venido a menos, que ahora vas al galope por la pampa."
-    "Subís por el camino empinado de un pequeño cerro."
+
     play ambiente sfx_SonidoAmbienteTerror loop fadein 1.0
     
     ###play fx sfx_viento1 loop fadein 1.0
@@ -86,8 +86,8 @@ label capitulo1:
     stop pisadas
     stop sound
     "Atás y asegurás tu guitarra a la silla de tu fiel caballo, y luego pronunciás {i}La Palabra{/i}, esa que aquel viejo te confesó."
-    "Entonces, se abre una cueva en la roca; das un paso dentro, el caballo relincha y sale corriendo hacia el campo."
-
+    "Entonces, se abre una cueva en la roca; das un paso dentro, el caballo sale corriendo despavorido hacia el campo."
+    ###(sfx: relincho con fade out)
     jump Las_primeras_pruebas
 
     label Las_primeras_pruebas:
@@ -102,8 +102,8 @@ label capitulo1:
         $ renpy.music.set_audio_filter("estatica", lowpass_filtro_estatica, replace=True)
         "En el primer pasillo de este laberinto te sacás los zapatos, el sombrero y el pañuelo. Así debe ser."
         
-        "Ya sumido en la oscuridad, comenzás a escuchar el arpa tenebrosa y pronto sentís la presencia del basilisco."
-        "Menos mal que no se ve; si no, te petrificaría. Con su siseo, el basilisco te guía para atravesar este laberinto, seguís ese ruido serpentino y lo lográs superar."
+        "Ya sumido en la oscuridad pronto sentís la presencia del basilisco."
+        "Menos mal que no lo ves; porque, si no, te petrificaría. Con su siseo, el basilisco te guía para atravesar este laberinto, seguís ese ruido serpentino y lo lográs superar."
         
         "Ya en el pasillo recto y angosto empezás a caminar sin guía. Después de unos pasos, sentís las primeras alimañas:"
         ##Más ruido a bichos se podría poner
@@ -121,7 +121,7 @@ label capitulo1:
         play fx sfx_respiracion_chivo 
         #play fx sfx_infrasonido
 
-        "Entonces aparece ese animal grotesco del que te había contado el viejo: un chivo de pelo negro, ojos endemoniados, cuernos tan curvados como una espiral."
+        "Entonces aparece ese animal grotesco del que te había contado el viejo: un chivo de pelo negro, ojos endemoniados y cuernos tan curvados como una espiral."
         hide placeholder8
         show chivo at subir_centrada with Dissolve(1.0)
         "Lo rodeás fácilmente sin que se mosquee, pero..."
@@ -136,6 +136,8 @@ label capitulo1:
         "El hueco es profundo, más que profundo, estás cayendo al abismo."
         "Ves pasar murciélagos a tu lado, seguís cayendo y repentinamente te desmayás."
         #scene placeholder with fade
+        hide caida1
+        show caida2 at subir_centrada with Dissolve(4.0)
         "Despertás y estás en el fondo, ves sobre vos el abismo que sube en espirales de roca viva."
 
         "Te levantás y delante tuyo no podés ver más allá, es una profunda oscuridad."
@@ -151,7 +153,7 @@ label capitulo1:
     
     label Trepar_por_el_abismo_para_salir:
         #scene placeholder3 with fade
-        hide caida1
+        hide caida2
         show chivo at subir_centrada with Dissolve(1.0)
 
         "Luego de mucho esfuerzo y luchar contra murciélagos que te atacaban débilmente lográs llegar hasta el borde del hoyo."
@@ -168,12 +170,13 @@ label capitulo1:
             "El chivo corre hacia vos, lográs evitar el primer golpe y le pegás una patada."
             "Se da vuelta y vuelve a intentar embestirte, de éste no pudiste zafar, caés al suelo, te defendes con patadas y trompadas."
             "Pero el chivo es pesado y sus pezuñas son como hachas contra tu cuerpo."
-            "Tras unos cuantos minutos de pisotones tu cuerpo yace inerte en la oscuridad de la cueva."
-
             hide chivo
             show muerte at subir_centrada with Dissolve(1.0)
+            "Tras unos cuantos minutos de pisotones tu cuerpo yace inerte en la oscuridad de la cueva."
+
+
             play sound "audio/capitulo1/GritoDeMiedo.ogg"
-            "Moriste, el juego ha terminado junto a tu vida."
+            "Moriste, tu mambo ha terminado junto con tu vida."
 
             
             return
@@ -190,7 +193,7 @@ label capitulo1:
 
 
     label Dar_un_paso_hacia_la_oscuridad:
-        hide caida1
+        hide caida2
         show trono at subir_centrada with Dissolve(1.0)
         play sound sfx_inicio_fuego
         play audio sfx_hoguera_pequena loop fadein(1.0)

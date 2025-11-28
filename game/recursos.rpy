@@ -101,7 +101,7 @@ image chivo = Animation(
     repeat=True
 )
 
-image caida = "images/capitulo1/ia/caida2.png"
+image caida2 = "images/capitulo1/ia/caida2.png"
 image trono = "images/capitulo1/saladeltrono.png"
 image mandi = "images/capitulo1/ia/mandingacueva4.png"
 image mandi2 = "images/capitulo1/ia/mandingacueva5.png"
