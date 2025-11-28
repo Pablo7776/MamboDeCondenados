@@ -7,7 +7,7 @@ label capitulo2:
     
     $ mostrar_repu()
     hide rancho
-    show caida at subir_centrada with Dissolve(5.0)
+    show caida1 at subir_centrada with Dissolve(5.0)
 
     "[nombre_jugador], trepás nuevamente por el abismo en espiral por el que caíste."
 
@@ -20,7 +20,7 @@ label capitulo2:
     "Das un paso afuera y la piedra que se había abierto antes ahora se cierra crujiendo suavemente."
     stop ambiente
 
-    hide caida
+    hide caida1
     show ranchoHiguera at subir_centrada with Dissolve(1.0)
     play sound sfx_galope
     "Ves llegar a tu caballo, con tu guitarra aún bien atada a la silla."
