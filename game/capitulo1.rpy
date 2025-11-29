@@ -283,7 +283,7 @@ label capitulo1:
 
 
             label Recular:
-                hide muerte
+                hide mandi2
                 show muerte at subir_centrada with Dissolve(1.0)
                 "Te arrepentís, empezás a balbucear y… "
                 hide muerte
