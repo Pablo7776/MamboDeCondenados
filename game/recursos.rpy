@@ -192,7 +192,7 @@ define sfx_gritito_muerte2 = "audio/capitulo1/gritoDeMIedo.ogg"
 
 define sfx_infrasonido = "audio/capitulo1/sfx_infrasonido.ogg"
 define sfx_inicio_fuego = "audio/capitulo1/inicio_fuego.mp3"
-define sfx_hoguera_pequena = "audio/capitulo1/fuegoconstante_pequeno.wav"
+define sfx_hoguera_pequena = "audio/capitulo1/fuegoconstante_pequeno2.wav"
 define sfx_trueno = "audio/capitulo1/sfx_trueno.ogg"
 
 
