@@ -452,7 +452,7 @@ label A_dónde_hay_que_firmar:
 
         #"Resuena una vez más la voz del Mandinga, mucho más fuerte, mucho más demoníaca."
         
-        play sound musica_piedra_y_camino
+        play music musica_piedra_y_camino
 
         "Las brujas, los brujos y los diablillos arrancan la fiesta a tu alrededor, sentís como tu garganta arde y luego se calma y empezás a cantar junto a los demás."
         "Las alimañas te levantan sobre sus lomos y te pasean por toda la sala, tu voz y tu canto ahora suena como nunca antes sonó."
@@ -463,7 +463,7 @@ label A_dónde_hay_que_firmar:
                 jump En_un_rancho_cercano
 
     label En_un_rancho_cercano:
-        stop music fadeout 1.0
+
         stop sfx_SonidoAmbienteTerror fadeout 1.0
 
         "A pocos kilómetros una señora se despierta asustada por el alboroto, empieza a rezar..."

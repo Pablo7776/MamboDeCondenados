@@ -8,6 +8,7 @@ label capitulo3:
     $ mostrar_repu()
     hide higuera
     show naturaleza at subir_centrada with Dissolve(1.0)
+    stop music fadeout 2.0
     play sound sfx_galope
     play audio sfx_pajaritos fadein 1.0
     

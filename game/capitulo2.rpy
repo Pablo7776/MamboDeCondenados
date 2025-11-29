@@ -3,6 +3,7 @@ default Vida_china = False
 
 label capitulo2:
     #stop sfx_SonidoAmbienteTerror
+    stop music fadeout 12.0
     play ambiente sfx_SonidoAmbienteTerror loop fadein 1.0
     
     $ mostrar_repu()
@@ -16,13 +17,15 @@ label capitulo2:
     "Las alimañas te miran con respeto desde sus cuevas. Cuando llegás al laberinto, otra vez aparece el basilisco: te guía para salir." 
     
     "En la última curva te esperan tus botas, tu sombrero y tu pañuelo, que te los volvés a poner."
-    play sound sfx_crujir
-    "Das un paso afuera y la piedra que se había abierto antes ahora se cierra crujiendo suavemente."
+
+    "Das un paso afuera y la piedra que se había abierto antes ahora se cierra suavemente."
+    play fx sfx_crujir
     stop ambiente
+    play sound sfx_viento1 loop volume 0.7
 
     hide caida1
     show ranchoHiguera at subir_centrada with Dissolve(1.0)
-    play sound sfx_galope
+    play fx sfx_galope 
     "Ves llegar a tu caballo, con tu guitarra aún bien atada a la silla."
 
     "Te ponés la guitarra en la espalda y comenzás a cabalgar. Pasan las horas y ya se te está haciendo de noche." 
@@ -32,15 +35,15 @@ label capitulo2:
     "Un poco más adelante una frondosa higuera bajo la que podrías refugiarte del rocío."
     stop sfx_galope
     stop audio
-    stop music
-    stop sound
-    stop ambiente
+    #stop music
+    #stop sound
+    #stop ambiente
     stop viento
     stop fx
-    stop acufeno
-    stop pisadas
+    #stop acufeno
+    #stop pisadas
     stop estatica
-    play sound sfx_viento1 loop volume 0.7
+    #play sound sfx_viento1 loop volume 0.7
 
     menu:
         "Entrás al campo y golpeás la puerta.":
@@ -101,9 +104,10 @@ label Tus_primeros_hechizados:
     $ mostrar_repu()
 
     hide puertaChina
-    stop sound
-    $ renpy.music.set_volume(1.0, channel="sound")
-    play sound sfx_hoguera_pequena loop fadein 1.0
+    #stop sound
+    #$ renpy.music.set_volume(1.0, channel="sound")
+    play fx sfx_hoguera_pequena  ### creo que no funciona...
+    play music musica_piedra_y_camino
     show casaInterior at subir_centrada with Dissolve(1.0)
     "Empezás a rasguear la guitarra y cuando te das cuenta ya estás improvisando versos junto a toda la familia."
 
@@ -116,8 +120,9 @@ label Tus_primeros_hechizados:
     "Te muestran una habitación en la que podés dormir, es la habitación de los padres de la familia, ellos van a dormir en el comedor para dejarte la mejor cama de la casa."
     hide casaInterior
     show muerte at subir_centrada with Dissolve(1.0)
+    $ renpy.music.set_volume(0.5, delay=2.0, channel="music")
     "Te dormís y empezás a soñar"
-
+### hacer fundido a negra
     "Es la voz de El Mandinga ... \"CONDENA...\" !" # efecto texto
 
     hide muerte
@@ -141,7 +146,7 @@ label La_noche_de_pasión:
     $ reputacion_con_el_mandinga += 10
     $ mostrar_repu()
     $ Vida_china = True
-
+    $ renpy.music.set_volume(1.0, delay=2.0, channel="music")
     "Pasan juntos una noche de extrema pasión."
 
     "A la mañana siguiente tanto ella como su familia te ruegan que la aceptes como compañera, que la dejes acompañarte a donde vayas."
@@ -158,7 +163,7 @@ label La_noche_de_pasión:
 label Una_mañana_incómoda:
     $ reputacion_con_el_mandinga -= 15
     $ mostrar_repu()
-
+    stop music
     hide casaInterior
     show muerte at subir_centrada with Dissolve(1.0)
     "Esa noche la rechazás, ella sale llorando de la habitación a viva voz."
