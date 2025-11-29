@@ -49,7 +49,7 @@ label capitulo2:
             jump noche_ante_las_estrellas
 
 label noche_ante_las_estrellas:
-    $ reputacion_con_el_mandinga -= 20
+    $ reputacion_con_el_mandinga -= 30
     $ mostrar_repu()
     #show reputacion2 at Position(xalign=0.9, yalign=0.9)
     play audio sfx_noche loop fadein 0.5
