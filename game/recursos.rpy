@@ -202,7 +202,7 @@ define sfx_taberna = "audio/capitulo3/genteenlapulperia.mp3"
 define sfx_aplausos = "audio/capitulo3/aplausos1.mp3"
 define sfx_noche = "audio/capitulo3/Nochedenoche.wav"
 define sfx_pajaritos = "audio/capitulo3/pajarosdia.mp3"
-define sfx_respiracion = "game/audio/capitulo3/respiracion.mp3"
+define sfx_respiracion = "audio/capitulo3/respiracion.mp3"
 define melo_pibe = "musica/Zamba de lozano_Cuchi Leguizamon (Version para chiptune)_ melopibe.mp3"
 
 #################  musica CAP1 ############################################

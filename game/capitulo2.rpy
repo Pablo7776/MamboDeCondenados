@@ -40,7 +40,7 @@ label capitulo2:
     stop acufeno
     stop pisadas
     stop estatica
-    play sound sfx_viento1 loop volume 0.3
+    play sound sfx_viento1 loop volume 0.7
 
     menu:
         "Entrás al campo y golpeás la puerta.":
