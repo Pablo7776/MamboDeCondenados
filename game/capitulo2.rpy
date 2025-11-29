@@ -59,7 +59,7 @@ label noche_ante_las_estrellas:
 
     "Por la noche en tus sueños se repite la frase que dijo El Mandinga: \"¡Bienvenido a mis huestes CONDENADO!\"" # efecto de texto
 
-    "Ves cómo las alimañas de La Salamanca salen de la cueva y se dirigen al camino que andaste para llegar hasta acá."
+    "Ves, en sueños, cómo las alimañas de La Salamanca salen de la cueva y se dirigen al camino que andaste para llegar hasta acá."
 
     "Queda retumbando, en tu mente, la palabra \"CONDENADO\""
 
