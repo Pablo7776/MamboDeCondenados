@@ -252,7 +252,7 @@ label Fuiste_cordial_y_se_te_agradece_por_ello:
 
 
 label No_fuiste_muy_cordial:
-    $ reputacion_con_el_mandinga -= 5
+    $ reputacion_con_el_mandinga -= 20
     $ mostrar_repu()
     
     hide puertaChina
