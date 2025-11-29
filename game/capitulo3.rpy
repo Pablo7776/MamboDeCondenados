@@ -116,8 +116,7 @@ label capitulo3:
             "Preguntarle al Tarta por la señora colorada" if not pregunta_colo:
                     jump La_del_whisky_caro
             "Ir al rancho de El Viejo a investigar.":
-                    jump continuara
-                    #jump capitulo4_el_viejo
+                    jump capitulo4_el_viejo
 
     label El_Pibe:
         $ pregunta_pibe = True
