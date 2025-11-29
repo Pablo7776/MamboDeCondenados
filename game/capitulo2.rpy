@@ -107,7 +107,7 @@ label Tus_primeros_hechizados:
     #stop sound
     #$ renpy.music.set_volume(1.0, channel="sound")
     play fx sfx_hoguera_pequena  ### creo que no funciona...
-    play music musica_piedra_y_camino
+    play music musica_piedra_y_camino volume 0.7
     show casaInterior at subir_centrada with Dissolve(1.0)
     "Empezás a rasguear la guitarra y cuando te das cuenta ya estás improvisando versos junto a toda la familia."
 
@@ -223,6 +223,7 @@ label Fuiste_cordial_y_se_te_agradece_por_ello:
 
     hide casaInterior
     show muerte at subir_centrada with Dissolve(1.0)
+    play fx ruidoRosa volume 0.5
 
     "Ves en tus sueños como las alimañas brotan de aquel cerro en el que encontraste la Salamanca."
 
@@ -232,12 +233,16 @@ label Fuiste_cordial_y_se_te_agradece_por_ello:
 
     "Te sacás rápidamente la colcha de encima y son unas cinco cucarachas que estaban debajo de la frazada."
 
+    stop fx fadeout 2.0
+
     "Viene corriendo la china a preguntarte si estás bien, le señalás a donde estaban esos bichos y cuando volvés a mirar ya no están."
 
     hide muerte
     show casaInterior at subir_centrada with Dissolve(1.0)
 
     "Ella te acaricia tiernamente la espalda y empieza a cantarte una nana."
+
+    play music musica_piedra_y_camino volume 0.7
 
     "Su voz es hermosa, y al poco tiempo estás cantando con ella, las cuerdas de tu guitarra empiezan a resonar con sus voces y cuando ya termina la canción, se besan con la joven."
 
