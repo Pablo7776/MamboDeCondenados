@@ -170,6 +170,8 @@ label Una_mañana_incómoda:
 
     "Te volvés a dormir y volvés a soñar:"
 
+    play fx ruidoRosa volume 0.5
+
     "Ves en tus sueños como las alimañas brotan de aquel cerro en el que encontraste la Salamanca."
 
     "Las huestes de El Mandinga, parecen recorrer el camino que vos hiciste."
@@ -180,6 +182,8 @@ label Una_mañana_incómoda:
     #show placeholder6m at subir_centrada with Dissolve(1.0)
 
     "Son unas cinco serpientes que estaban dentro de la cama."
+
+    stop fx fadeout 2.0
 
     hide muerte
     show casa at subir_centrada with Dissolve(1.0)

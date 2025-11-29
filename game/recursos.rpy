@@ -180,6 +180,7 @@ image grieta_casa = "/images/finales/cobro_deuda_casa.png"
 ################  EFECTOS DE SONIDO #########################
 
 define sfx_viento1 = "audio/capitulo1/viento1.ogg"
+define ruidoRosa = "audio/ruidoRosa2.mp3"
 
 
 define sfx_galope = "audio/capitulo1/sfx_galope.ogg"
