@@ -253,7 +253,7 @@ label capitulo3:
                 jump El_pibe_deja_de_tocar
 
     label El_Pibe_Farías:
-        $ reputacion_con_el_mandinga -= 15
+        $ reputacion_con_el_mandinga -= 20
         $ mostrar_repu()
 
         "Esperás a que él termine, y te saluda presentándose como Farías, el Pibe Farías."
@@ -269,7 +269,7 @@ label capitulo3:
         stop music fadeout 1.0
         ##Frenar Melodia guitarra pibe## AUDIO
 
-        $ reputacion_con_el_mandinga -= 5
+        $ reputacion_con_el_mandinga += 5
         $ mostrar_repu()
 
         ##Melodía pibe 2## AUDIO
