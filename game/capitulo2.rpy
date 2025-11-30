@@ -19,7 +19,7 @@ label capitulo2:
     "En la última curva te esperan tus botas, tu sombrero y tu pañuelo, que te los volvés a poner."
 
     "Das un paso afuera y la piedra que se había abierto antes ahora se cierra suavemente."
-    play fx sfx_crujir
+    #play fx sfx_crujir
     stop ambiente
     play sound sfx_viento1 loop volume 0.7
 
