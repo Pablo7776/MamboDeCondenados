@@ -451,9 +451,9 @@ label capitulo3:
         "¿Habrá sido por lo que le dijo la Colorada?, te preguntás, recordando la situación de la pulpería."
 
         menu:
-            "Ya alguien se hará cargo de ese pobre desgraciado, vos a lo tuyo, te vas para tu casa":
+            "Ya alguien se hará cargo de ese pobre desgraciado, vos a lo tuyo, te vas para tu casa.":
                 jump Un_paso_atrás
-            "Investigás qué pasó con el pibe":
+            "Investigás qué pasó con el pibe.":
                 hide pibeColgado
                 #jump continuara
                 jump Capítulo_4_El_pobre_Pibe_Farías
@@ -484,18 +484,16 @@ label capitulo3:
     label La_calle_fría:
         $ reputacion_con_el_mandinga -= 15
         $ mostrar_repu()
-        
-        "Salís de la pulpería con tu china, van zigzagueando por las calles, hace frío."
 
         hide mesa
         hide pulperiaAplaudiendo
         
         stop sfx_taberna fadeout 1.0
-        ##Frenar Ruido ambiente de gente## AUDIO
+        
         play sound sfx_noche fadein 0.5
-        ##Pájaros, naturaleza## AUDIO
         
         show pueblo at subir_centrada with Dissolve(1.0)
+        "Salís de la pulpería con tu china, van zigzagueando, por culpa del alcohol, por las calles, hace frío."
 
         "Se abrazan para no tener frío, para sentir el calor del otro y para no caerse."
 
@@ -503,11 +501,11 @@ label capitulo3:
 
         hide pueblo
         play music sfx_SonidoAmbienteTerror loop fadein 1.0
-        ##Frenar Pájaros, naturaleza## AUDIO
+        
         show pibeColgado at subir_centrada with Dissolve(1.0)
-        ##Sonido tenso, violines## AUDIO
+        
         stop sfx_noche
-        ##Ruidos tétricos naturaleza## AUDIO
+        
 
         "... ves al pibe Farías, cuelga con una soga al cuello de una rama gruesa de un viejo caldén."
 
@@ -519,7 +517,7 @@ label capitulo3:
         menu:
             "Ya alguien se hará cargo de ese pobre desgraciado, vos a lo tuyo, te quedás en tu casa con tu china":
                 jump La_noche_en_tu_casa
-            "Llevás a la china a tu casa y volvés a ver qué pasó con el pibe":
+            "Volvés a ver qué pasó con el pibe":
                 jump continuara
                 #jump Capítulo_4_El_pobre_Pibe_Farías
 
