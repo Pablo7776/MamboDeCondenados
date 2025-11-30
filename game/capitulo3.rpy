@@ -75,7 +75,7 @@ label capitulo3:
 
         "Pedís un vino y se acerca para dártelo."
         show tarta_placeholder:
-            xoffset 1636
+            xoffset 0
             yoffset 36
 
         Tarta "—[nombre_jugador], tanto tiempo."
@@ -96,7 +96,7 @@ label capitulo3:
         $ pregunta_viejo = True
 
         show tarta_placeholder:
-            xoffset 1636
+            xoffset 0
             yoffset 36
         
         Tarta "El viejo falleció, lo encontramos sin vida en la calle, a unas cuadras."
@@ -122,7 +122,7 @@ label capitulo3:
     label El_Pibe:
         $ pregunta_pibe = True
         show tarta_placeholder:
-            xoffset 1636
+            xoffset 0
             yoffset 36
         Tarta "¿Ese? Llegó hace dos días; es el Pibe Farías, ¿te acordás de él?, el hijo de la Flavia."
 
@@ -161,7 +161,7 @@ label capitulo3:
         $ pregunta_colo = True
 
         show tarta_placeholder:
-            xoffset 1636
+            xoffset 0
             yoffset 36
 
         "—Es la señora Dowley, parece que es de la capital."
@@ -529,7 +529,7 @@ label capitulo3:
             
             "El Tarta te ve entrar y ni bien llegás a la barra, te cuenta sobre el Viejo."
             show tarta_placeholder:
-                xoffset 1636
+                xoffset 0
                 yoffset 36
 
             "—El viejo falleció, lo encontramos sin vida en la calle, a unas cuadras."
