@@ -210,10 +210,10 @@ label capitulo3:
     label Admitiendo_la_torpeza_del_Farias:
         "La señora se acomoda el peinado y se queda mirándote unos segundos."
 
-        "—Bueno, es verdad que por el estudio, pasaron muchos músicos y algunos eran muy buenos, mucho mejores que aquel joven."
+        "—Bueno, es verdad que por el estudio de grabación, pasaron muchos músicos y algunos eran muy buenos, mucho mejores que aquel joven."
 
         menu:
-            "¿Por el estudio? (preguntás extrañado)":
+            "¿Por el estudio de grabación? (preguntás extrañado)":
                 jump Colony_Records
 
     label Colony_Records:
