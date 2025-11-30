@@ -272,17 +272,15 @@ label No_fuiste_muy_cordial:
     "En tus sueños se repite la frase que dijo El Mandinga:"
 
     "\"—¡Bienvenido a mis huestes CONDENADO!\"" # efecto texto
-
+    ### agregar los efectos del mandinga hablando
     "Ves cómo las alimañas de La Salamanca salen de la cueva y se dirigen al camino que andaste para llegar hasta acá."
 
     "Queda retumbando la última palabra, \"CONDENADO\". Te levantás agitado."
 
     "Tenés una deuda importante que saldar con ese poderoso ser de las profundidades."
 
+    "Tomás las riendas y seguís cabalgando pensativo rumbo a la pulpería del Tarta."
     hide muerte
     show naturaleza at subir_centrada with Dissolve(1.0)
-
-    menu:
-        "Tomás las riendas y seguís cabalgando pensativo rumbo a la pulpería del Tarta.":
-            #jump continuara
-            jump capitulo3
+        #jump continuara
+        jump capitulo3
