@@ -289,7 +289,7 @@ label capitulo3:
         
         "Te lo dice casi desafiante; entonces le hace una seña al Farías."
 
-        stop music fadeout 1.0
+        stop music 
         ##Frenar Melodia guitarra pibe## AUDIO
 
         "El pibe viene rápidamente a la mesa."
