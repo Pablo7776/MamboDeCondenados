@@ -390,7 +390,7 @@ label capitulo3:
                
         hide pulperiaAplaudiendo
         show mesa at subir_centrada with Dissolve(1.0)
-        
+
         if not presentacion_colorada:
             "—Me presento correctamente, soy Diana Dowley."
 
@@ -417,8 +417,8 @@ label capitulo3:
             "Ya estás seguro de que no querés aceptar este trato" if not Vida_china:
                 jump Una_noche_fría
             "Lo vas a pensar, pero estás casi seguro de que sí, que te vas a sumar a la discográfica":
-                jump continuara
-                #jump Capítulo_4_Colony_Records
+                #jump continuara
+                jump Capítulo_4_Colony_Records
     
     label Una_noche_fría:
         
@@ -485,7 +485,7 @@ label capitulo3:
                 #jump Capítulo_4_El_pobre_Pibe_Farías
 
     label La_calle_fría:
-        $ reputacion_con_el_mandinga -= 10
+        $ reputacion_con_el_mandinga -= 15
         $ mostrar_repu()
         
         "Salís de la pulpería con tu china, van zigzagueando por las calles, hace frío."
