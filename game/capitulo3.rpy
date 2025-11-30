@@ -344,13 +344,13 @@ label capitulo3:
         ##Melodia prota1## AUDIO
         "Con el primer rasgueo de tu guitarra todas las miradas se clavan en vos."
 
-        stop sfx_taberna fadeout 1.0
+        stop sfx_taberna fadeout 2.0
         ##Frenar (fade out) Ruido ambiente de gente## AUDIO
         "Luego de la primera estrofa, ya todos están mirándote embelesados."
 
         "Todos, menos la Colorada Dowley, que te mira con curiosidad."
         
-        "Luego de la segunda canción, ella le dice algo al Pibe Farías."
+        "Luego de la segunda vuelta, ella le dice algo al Pibe Farías."
         ##Frenar (fade out) Melodia prota1## AUDIO
         ##Melodia prota2## AUDIO
 
@@ -364,16 +364,16 @@ label capitulo3:
         hide pulperia
         show pulperiaAplaudiendo at subir_centrada with Dissolve(1.0)
         
-        "Todos aplauden, silban y gritan por vos y tu canto."
+        "Te levantás y te acercás nuevamente a la mesa de la colorada y van tocándote la espalda, los hombros y felicitándote."
         
-        "Te vas acercando nuevamente a la mesa de la colorada y van tocándote la espalda, los hombros y felicitándote."
         ##Ruido ambiente de gente## AUDIO
         play sound sfx_taberna  fadein 1.0
 
 
         if Vida_china:
             "Tu china que se había quedado tomando algo en la barra se acerca, interrumpe tu paso y te llena de besos."
-            "Te pregunta si ya pueden ir a tu casa."
+            ### Hay que meter todo lo que se usa pa que sea un diálogo de la china ###
+            China "¿Ya podemos ir a tu casa?"
 
         menu:
             "Hacerle caso a tu china e ir a tu casa con ella." if Vida_china:
@@ -391,7 +391,8 @@ label capitulo3:
         
         hide pulperiaAplaudiendo
         show mesa at subir_centrada with Dissolve(1.0)
-
+        
+        ### Hay que meter todo lo que se usa pa que sea un diálogo de la colorada ###
         "—Me presento correctamente, soy Diana Dowley."
 
         "—Vine a buscar talentos al interior."
