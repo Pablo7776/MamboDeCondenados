@@ -120,13 +120,13 @@ label Tus_primeros_hechizados:
 
     "Te muestran una habitación en la que podés dormir, es la habitación de los padres de la familia, ellos van a dormir en el comedor para dejarte la mejor cama de la casa."
     hide casaInterior
-    show muerte at subir_centrada with Dissolve(1.0)
+    show muerte at subir_centrada with Dissolve(5.0)
     $ renpy.music.set_volume(0.5, delay=2.0, channel="music")
     "Te dormís y empezás a soñar"
-### hacer fundido a negra
+
     "Es la voz de El Mandinga ... \"CONDENA...\" !" # efecto texto
 
-    hide muerte
+    hide muerte with Dissolve(5.0)
     show casaInterior at subir_centrada with Dissolve(1.0)
 
     "Te despierta una voz dulce y alguien que te sacude suavemente, es la china que te abrió la puerta."
@@ -187,7 +187,7 @@ label Una_mañana_incómoda:
 
     stop fx fadeout 2.0
 
-    hide muerte
+    hide muerte with Dissolve(5.0)
     show casa at subir_centrada with Dissolve(1.0)
     "Salís corriendo al salón pero esa mañana todos te miran mal y prácticamente te echan de su rancho casi sin hablarte."
     hide casa
@@ -239,7 +239,7 @@ label Fuiste_cordial_y_se_te_agradece_por_ello:
     "Viene corriendo la china a preguntarte si estás bien, le señalás a donde estaban esos bichos y cuando volvés a mirar ya no están."
 
     stop fx fadeout 2.0
-    hide muerte
+    hide muerte with Dissolve(5.0)
     show casaInterior at subir_centrada with Dissolve(1.0)
 
     "Ella te acaricia tiernamente la espalda y empieza a cantarte una nana."
@@ -268,7 +268,7 @@ label No_fuiste_muy_cordial:
 
     hide casa
     show muerte at subir_centrada with Dissolve(5.0)
-    ### AGREGAR ESTÄTICA###
+
     "Te dormís sobre la silla de montar y empezás a soñar."
 
     play fx ruidoRosa volume 0.5
@@ -286,7 +286,7 @@ label No_fuiste_muy_cordial:
     "Tenés una deuda importante que saldar con ese poderoso ser de las profundidades."
 
     "Tomás las riendas y seguís cabalgando pensativo rumbo a la pulpería del Tarta."
-    hide muerte
+    hide muerte with Dissolve(5.0)
     show naturaleza at subir_centrada with Dissolve(1.0)
         #jump continuara
     jump capitulo3
