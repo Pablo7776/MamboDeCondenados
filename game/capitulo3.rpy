@@ -10,7 +10,7 @@ label capitulo3:
     show naturaleza at subir_centrada with Dissolve(1.0)
     stop music fadeout 2.0
     play sound sfx_galope
-    play audio sfx_pajaritos fadein 1.0
+    play fx sfx_pajaritos fadein 1.0
     
     ##Caballo check y pájaros## AUDIO
 
@@ -24,7 +24,7 @@ label capitulo3:
     "El Viejo, que siempre está tomando algo en este lugar, te dio todas las indicaciones de cómo superar esas primeras pruebas en La Salamanca."
     
     "Atás tu caballo afuera en el grueso aro de hierro incrustado en el suelo de la ochava."
-    stop audio
+    stop fx
     stop sound
 
     jump La_pulperia
