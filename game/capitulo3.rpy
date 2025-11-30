@@ -266,36 +266,38 @@ label capitulo3:
         jump Hechizando_a_toda_la_pulpería
 
     label El_pibe_deja_de_tocar:
-        #stop music fadeout 5.0
+        stop music fadeout 2.0
         ##Frenar Melodia guitarra pibe## AUDIO
 
         $ reputacion_con_el_mandinga += 5
         $ mostrar_repu()
 
-        ##Melodía pibe 2## AUDIO
+        ##Melodía pibe 2## AUDIO  #### SE PEUDE USAR LA CHACARERA
         "El pibe empieza a tocar y enseguida copiás sus acordes."
-        stop music fadeout 5.0
-        ##Melodía pibe 2 duplicada## AUDIO
+        
+        ##Melodía pibe 2 duplicada## AUDIO QUE ACÄ EMPIECE OTRA VEZ LA CHACARERA EN OTRO CANAL
 
         "Después del cuarto acorde, él deja de tocar; su cara se transforma: ahora está muy triste."
-        ##Frenar Melodía pibe 2## AUDIO
+        ##Frenar Melodía pibe 2## AUDIO FRENA LA PRIMER CHACARERA
         "Se va cabizbajo a la mesa de la colorada."
-        ##Frenar Melodía pibe 2 duplicada## AUDIO
+        ##Frenar Melodía pibe 2 duplicada## AUDIO FRENA LA SEGUNDA CHACARERA
         jump Hechizando_a_toda_la_pulpería
 
     label La_colorada_curiosa:
+        ### Hay que meter todo lo que se usa pa que sea un diálogo de la colorada
         "—¿Entonces creés que podés hacerlo mejor que él?"
         
         "Te lo dice casi desafiante; entonces le hace una seña al Farías."
 
-        stop music fadeout 1.0
+        stop music 
         ##Frenar Melodia guitarra pibe## AUDIO
 
-        "El pibe corta abruptamente su interpretación y viene rápidamente a la mesa."
+        "El pibe viene rápidamente a la mesa."
 
         "Se sienta y la colorada te habla de nuevo a vos."
 
-        "—Es su turno, don... —dice, haciéndote una seña para que le digas tu nombre."
+        ### Hay que meter todo lo que se usa pa que sea un diálogo de la colorada
+        "—Es su turno, don... ¿Cuál es su nombre?"
 
         menu:
             "[nombre_jugador] me llamo —respondés—, y vas al rincón de los cantores y payadores":
