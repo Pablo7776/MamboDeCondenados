@@ -56,7 +56,7 @@ label capitulo3:
         "De aquel Viejo, que te explicó todo sobre el Mandinga y el pacto, ni rastros."
 
         menu:
-                "Ir a la barra.":
+                "Ir a la barra, a hablar con El Tarta.":
                     hide pulperia
                     jump El_Tarta
                 "Acercarse al joven guitarrista.":
