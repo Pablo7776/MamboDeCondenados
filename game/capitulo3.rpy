@@ -439,14 +439,12 @@ label capitulo3:
 
         "Cuando estás a unas cuadras de tu casa..."
 
-        hide pueblo
+        hide pueblo ###HAbría que hacer un efecto de oscurecer la pantalla o meterle una nueva imagen de noche más oscura###
         play sound sfx_SonidoAmbienteTerror loop fadein 1.0
 
-        ##Frenar Pájaros, naturaleza## AUDIO
         show pibeColgado at subir_centrada with Dissolve(1.0)
-        ##Sonido tenso, violines## AUDIO
         stop sfx_noche
-        ##Ruidos tétricos naturaleza## AUDIO
+        
         
         "... el pibe Farías, cuelga con una soga al cuello de una rama gruesa de un viejo caldén."
 
@@ -457,8 +455,8 @@ label capitulo3:
                 jump Un_paso_atrás
             "Investigás qué pasó con el pibe":
                 hide pibeColgado
-                jump continuara
-                #jump Capítulo_4_El_pobre_Pibe_Farías
+                #jump continuara
+                jump Capítulo_4_El_pobre_Pibe_Farías
 
     label Un_paso_atrás:
         hide pibeColgado
