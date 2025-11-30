@@ -427,14 +427,13 @@ label capitulo3:
 
         stop sfx_taberna fadeout 1.0
         ##Frenar Ruido ambiente de gente## AUDIO
+        hide pulperiaAplaudiendo
+        hide mesa
+        show pueblo at subir_centrada with Dissolve(1.0)
         play sound sfx_noche fadein 0.5
         ##Pájaros, naturaleza## AUDIO
 
         "Salís de la pulpería agradecido de tu nuevo don."
-
-        hide pulperiaAplaudiendo
-        hide mesa
-        show pueblo at subir_centrada with Dissolve(1.0)
 
         "Vas zigzagueando por culpa del alcohol por las calles de tierra hacia tu casa."
 
