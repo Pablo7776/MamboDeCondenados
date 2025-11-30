@@ -152,16 +152,17 @@ label La_noche_de_pasión:
     "A la mañana siguiente tanto ella como su familia te ruegan que la aceptes como compañera, que la dejes acompañarte a donde vayas."
 
     "No te podés negar, ella es como una bendición para vos."
+        
+    "Te vas con la china, camino a la pulpería del Tarta y a tu pueblo"
+    stop sound
     hide casaInterior
     show naturaleza at subir_centrada with Dissolve(1.0)
-
-    menu:
-        "Te vas con la china, camino a la pulpería del Tarta y a tu pueblo":
-            jump capitulo3
-            #jump continuara
+    
+    jump capitulo3
+    #jump continuara
 
 label Una_mañana_incómoda:
-    $ reputacion_con_el_mandinga -= 15
+    $ reputacion_con_el_mandinga -= 20
     $ mostrar_repu()
     stop music
     hide casaInterior
@@ -190,14 +191,15 @@ label Una_mañana_incómoda:
     "Salís corriendo al salón pero esa mañana todos te miran mal y prácticamente te echan de su rancho casi sin hablarte."
     hide casa
     show naturaleza at subir_centrada with Dissolve(1.0)
+    stop sound
 
-    menu:
-        "Te subís a tu caballo y galopás hacia tu pueblo y hacia la Pulpería del Tarta":
-            jump capitulo3
-            #jump continuara
+    "Te subís a tu caballo y galopás hacia tu pueblo y hacia la Pulpería del Tarta"
+
+    jump capitulo3
+    #jump continuara
 
 label Fuiste_cordial_y_se_te_agradece_por_ello:
-    $ reputacion_con_el_mandinga -= 5
+    $ reputacion_con_el_mandinga -= 15
     $ mostrar_repu()
 
 
@@ -246,9 +248,9 @@ label Fuiste_cordial_y_se_te_agradece_por_ello:
 
     "Su voz es hermosa, y al poco tiempo estás cantando con ella, las cuerdas de tu guitarra empiezan a resonar con sus voces y cuando ya termina la canción, se besan con la joven."
 
-    menu:
-        "Te dejás llevar":
-            jump La_noche_de_pasión 
+    "Te dejás llevar"
+    
+    jump La_noche_de_pasión 
 
 
 label No_fuiste_muy_cordial:
@@ -258,7 +260,7 @@ label No_fuiste_muy_cordial:
     hide puertaChina
     show casa at subir_centrada with Dissolve(1.0)
 
-    "Asustás a la joven y cierra la puerta, te quedás ahí frente a la puerta."
+    "Asustás a la joven y cierra rápidamente, te quedás ahí frente a la puerta."
 
     "De repente se vuelve a abrir, parece ser el padre de la joven."
 
@@ -266,22 +268,21 @@ label No_fuiste_muy_cordial:
 
     hide casa
     show muerte at subir_centrada with Dissolve(1.0)
+    ### AGREGAR ESTÄTICA###
     "Te dormís sobre la silla de montar y empezás a soñar."
 
     "En tus sueños se repite la frase que dijo El Mandinga:"
 
     "\"—¡Bienvenido a mis huestes CONDENADO!\"" # efecto texto
-
+    ### agregar los efectos del mandinga hablando
     "Ves cómo las alimañas de La Salamanca salen de la cueva y se dirigen al camino que andaste para llegar hasta acá."
 
     "Queda retumbando la última palabra, \"CONDENADO\". Te levantás agitado."
 
     "Tenés una deuda importante que saldar con ese poderoso ser de las profundidades."
 
+    "Tomás las riendas y seguís cabalgando pensativo rumbo a la pulpería del Tarta."
     hide muerte
     show naturaleza at subir_centrada with Dissolve(1.0)
-
-    menu:
-        "Tomás las riendas y seguís cabalgando pensativo rumbo a la pulpería del Tarta.":
-            #jump continuara
-            jump capitulo3
+        #jump continuara
+    jump capitulo3
