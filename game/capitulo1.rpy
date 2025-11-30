@@ -447,7 +447,8 @@ label A_dónde_hay_que_firmar:
         show mandinga_placeholder:
             xoffset 0
             yoffset 36
-        Mandinga "—BIENVENIDO A MIS HUESTES, CONDENADO!"
+        Mandinga "{size=70}{cps=10}—BIENVENIDO A MIS HUESTES, CONDENADO!{/cps}{/size}"
+
         hide mandinga_placeholder
 
         #"Resuena una vez más la voz del Mandinga, mucho más fuerte, mucho más demoníaca."
