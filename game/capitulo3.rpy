@@ -43,7 +43,7 @@ label capitulo3:
         play music melo_pibe loop fadein 1.0
 
 
-        "Al entrar te sorprende el sonido de una guitarra."
+        "Al entrar te sorprende el sonido de la guitarra."
         
         "A un costado, en el rincón que siempre ocupás vos cuando tocás para todos, hay un chico joven tocando y cantando."
 
@@ -51,7 +51,7 @@ label capitulo3:
         
         "Ella está muy bien arreglada, tiene unos marcados rulos rojos y lleva un collar de perlas, aplaude con entusiasmo cada verso del joven guitarrista."
         
-        "Del otro lado de la barra, el Tarta sirve vino a cuatro manos."
+        "El Tarta sirve vino a cuatro manos."
         
         "De aquel Viejo, que te explicó todo sobre el Mandinga y el pacto, ni rastros."
 
