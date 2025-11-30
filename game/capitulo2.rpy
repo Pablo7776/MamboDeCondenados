@@ -139,7 +139,7 @@ label Tus_primeros_hechizados:
     show china_placeholder:
         xoffset 1636
         yoffset 36
-    china "— Disculpe, ¿puedo... estar con usted esta noche?" #efecto
+    china "Disculpe, ¿puedo... estar con usted esta noche?" #efecto
     hide china_placeholder
 
     menu:

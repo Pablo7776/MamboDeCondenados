@@ -230,7 +230,7 @@ label capitulo1:
                 xoffset 0
                 yoffset 36
 
-            Mandinga "—¿Qué desea el que me busca?"
+            Mandinga "¿Qué desea el que me busca?"
             hide mandinga_placeholder
             pause 1.5 
             show mandi2 at subir_centrada
@@ -263,7 +263,7 @@ label capitulo1:
                 yoffset 36
 
 
-            Mandinga "- ¿Qué desea el que me busca?"
+            Mandinga "¿Qué desea el que me busca?"
             hide mandinga_placeholder
 
             pause 1.5 
@@ -316,7 +316,7 @@ label Quiero_hechizar:
     show mandinga_placeholder:
         xoffset 0
         yoffset 36
-    Mandinga "—Me gusta tu pasión, pero no tan rápido, eso va a costarte el alma."
+    Mandinga "Me gusta tu pasión, pero no tan rápido, eso va a costarte el alma."
 
     hide mandinga_placeholder
     pause 1.5 
@@ -347,7 +347,7 @@ label A_dónde_hay_que_firmar:
     show mandinga_placeholder:
         xoffset 0
         yoffset 36
-    Mandinga "—Vení conmigo."
+    Mandinga "Vení conmigo."
     hide mandinga_placeholder
 
     "Dice el Mandinga abriendo los brazos como invitándote a su regazo serpentino y luego señala el filo del cuchillo que acaba de lanzar."
@@ -433,7 +433,7 @@ label A_dónde_hay_que_firmar:
         show protagonista_placeholder:
             xoffset 1636
             yoffset 36
-        p "—Mi nombre es [nombre_jugador] y te vendo mi alma, Mandinga."
+        p "Mi nombre es [nombre_jugador] y te vendo mi alma, Mandinga."
         hide protagonista_placeholder
         stop fx fadeout 1.0
 
