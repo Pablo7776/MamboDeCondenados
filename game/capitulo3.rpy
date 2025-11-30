@@ -99,11 +99,11 @@ label capitulo3:
             xoffset 1636
             yoffset 36
         
-        "—El viejo falleció, lo encontramos sin vida en la calle, a unas cuadras."
+        Tarta "El viejo falleció, lo encontramos sin vida en la calle, a unas cuadras."
 
-        "—Le hicimos el velorio y no fue nadie. No sabemos qué carajos le pasó."
+        Tarta "Le hicimos el velorio y no fue nadie. No sabemos qué carajos le pasó."
         
-        "—Apareció muerto de un día para el otro. Vivía en el talar, en el camino donde viven los López, pero más allá."
+        Tarta "Apareció muerto de un día para el otro. Vivía en el talar, en el camino donde viven los López, pero más allá."
 
         hide tarta_placeholder
 
