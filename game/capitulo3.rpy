@@ -204,7 +204,7 @@ label capitulo3:
         menu:
             "Respondés: Yo lo haría mucho mejor.":
                 jump La_colorada_curiosa
-            "Respondés: No lo hace mal, pero seguramente usté escuchó mejores alguna vez, en la ciudad seguro hay muchos buenos músicos.":
+            "Respondés: No lo hace mal, pero seguro usté escuchó mejores músicos alguna vez. En la ciudad seguro que hay muchos buenos guitarristas y cantores.":
                 jump Admitiendo_la_torpeza_del_Farias
 
     label Admitiendo_la_torpeza_del_Farias:
