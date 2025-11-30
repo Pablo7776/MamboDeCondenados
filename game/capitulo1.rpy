@@ -469,6 +469,8 @@ label A_dónde_hay_que_firmar:
 
         "A pocos kilómetros una señora se despierta asustada por el alboroto, empieza a rezar..."
         "—¡Dios nos salve, que hoy hay baile en La Salamanca!"
+        
+        hide rancho with Dissolve(5.0)
 
         menu:
             "Al segundo capítulo":

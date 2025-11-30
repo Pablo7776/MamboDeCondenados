@@ -7,7 +7,7 @@ label capitulo2:
     play ambiente sfx_SonidoAmbienteTerror loop fadein 1.0
     
     $ mostrar_repu()
-    hide rancho with Dissolve(6.0)
+    #hide rancho with Dissolve(6.0)
     show caida1 at subir_centrada with Dissolve(5.0)
 
     "[nombre_jugador], trepás nuevamente por el abismo en espiral por el que caíste."
@@ -76,10 +76,16 @@ label noche_ante_las_estrellas:
     "Tenés una deuda importante que saldar con ese poderoso ser de las profundidades."
     stop sound fadeout 2.0
 
+    "Cabalgás pensativo rumbo a la pulpería del Tarta, en tu pueblo."
+    
+    hide higuera with Dissolve(5.0)
+
     menu:
-        "Cabalgás pensativo rumbo a la pulpería del Tarta, en tu pueblo.":
-            jump capitulo3
+        #"Cabalgás pensativo rumbo a la pulpería del Tarta, en tu pueblo.":
+            #jump capitulo3
             #jump continuara
+        "Al tercer capítulo":
+            jump capitulo3
 
 label puerta_del_rancho:
     hide ranchoHiguera
@@ -161,11 +167,14 @@ label La_noche_de_pasión:
         
     "Te vas con la china, camino a la pulpería del Tarta y a tu pueblo"
     stop sound
-    hide casaInterior
-    show naturaleza at subir_centrada with Dissolve(1.0)
+    hide casaInterior with Dissolve(6.0)
+    #show naturaleza at subir_centrada with Dissolve(1.0)
     
-    jump capitulo3
+    #jump capitulo3
     #jump continuara
+    menu:
+        "Al tercer capítulo":
+            jump capitulo3
 
 label Una_mañana_incómoda:
     $ reputacion_con_el_mandinga -= 20
@@ -195,14 +204,17 @@ label Una_mañana_incómoda:
     hide muerte with Dissolve(5.0)
     show casa at subir_centrada with Dissolve(1.0)
     "Salís corriendo al salón pero esa mañana todos te miran mal y prácticamente te echan de su rancho casi sin hablarte."
-    hide casa
-    show naturaleza at subir_centrada with Dissolve(1.0)
+    #hide casa with Dissolve(5.0)
+    #show naturaleza at subir_centrada with Dissolve(1.0)
     stop sound
 
     "Te subís a tu caballo y galopás hacia tu pueblo y hacia la Pulpería del Tarta"
-
-    jump capitulo3
+    hide casa with Dissolve(5.0)
+    #jump capitulo3
     #jump continuara
+    menu:
+        "Al tercer capítulo":
+            jump capitulo3
 
 label Fuiste_cordial_y_se_te_agradece_por_ello:
     $ reputacion_con_el_mandinga -= 15
@@ -293,6 +305,9 @@ label No_fuiste_muy_cordial:
 
     "Tomás las riendas y seguís cabalgando pensativo rumbo a la pulpería del Tarta."
     hide muerte with Dissolve(5.0)
-    show naturaleza at subir_centrada with Dissolve(1.0)
+    #show naturaleza at subir_centrada with Dissolve(1.0)
         #jump continuara
-    jump capitulo3
+    #jump capitulo3
+    menu:
+        "Al tercer capítulo":
+            jump capitulo3
