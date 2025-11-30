@@ -448,7 +448,7 @@ label capitulo3:
         stop sfx_noche
         ##Ruidos tétricos naturaleza## AUDIO
         
-        "... ves al pibe Farías, cuelga con una soga al cuello de una rama gruesa de un viejo caldén."
+        "... el pibe Farías, cuelga con una soga al cuello de una rama gruesa de un viejo caldén."
 
         "¿Habrá sido por lo que le dijo la Colorada?, te preguntás, recordando la situación de la pulpería."
 
