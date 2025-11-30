@@ -266,7 +266,7 @@ label capitulo3:
         jump Hechizando_a_toda_la_pulpería
 
     label El_pibe_deja_de_tocar:
-        stop music fadeout 1.0
+        #stop music fadeout 5.0
         ##Frenar Melodia guitarra pibe## AUDIO
 
         $ reputacion_con_el_mandinga += 5
@@ -274,6 +274,7 @@ label capitulo3:
 
         ##Melodía pibe 2## AUDIO
         "El pibe empieza a tocar y enseguida copiás sus acordes."
+        stop music fadeout 5.0
         ##Melodía pibe 2 duplicada## AUDIO
 
         "Después del cuarto acorde, él deja de tocar; su cara se transforma: ahora está muy triste."
