@@ -192,16 +192,16 @@ define sfx_gritito_muerte2 = "audio/capitulo1/gritoDeMIedo.ogg"
 
 define sfx_infrasonido = "audio/capitulo1/sfx_infrasonido.ogg"
 define sfx_inicio_fuego = "audio/capitulo1/inicio_fuego.mp3"
-define sfx_hoguera_pequena = "audio/capitulo1/fuegoconstante_pequeno2.wav"
+define sfx_hoguera_pequena = "audio/capitulo1/fuegoconstante_pequeno.mp3"
 define sfx_trueno = "audio/capitulo1/sfx_trueno.ogg"
 
 
 
-define sfx_crujir = "audio/capitulo2/piedra_cerrandose2.wav"
+define sfx_crujir = "audio/capitulo2/piedra_cerrandose2.mp3"
 
 define sfx_taberna = "audio/capitulo3/genteenlapulperia.mp3"
 define sfx_aplausos = "audio/capitulo3/aplausos1.mp3"
-define sfx_noche = "audio/capitulo3/Nochedenoche.wav"
+define sfx_noche = "audio/capitulo3/Nochedenoche.mp3"
 define sfx_pajaritos = "audio/capitulo3/pajarosdia.mp3"
 define sfx_respiracion = "audio/capitulo3/respiracion.mp3"
 define melo_pibe = "musica/Zamba de lozano_Cuchi Leguizamon (Version para chiptune)_ melopibe.mp3"

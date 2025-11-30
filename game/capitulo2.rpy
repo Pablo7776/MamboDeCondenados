@@ -106,6 +106,7 @@ label Tus_primeros_hechizados:
     hide puertaChina
     #stop sound
     #$ renpy.music.set_volume(1.0, channel="sound")
+    $ renpy.music.set_volume(1.0, channel= "fx")
     play fx sfx_hoguera_pequena  ### creo que no funciona...
     play music musica_piedra_y_camino volume 0.7
     show casaInterior at subir_centrada with Dissolve(1.0)
