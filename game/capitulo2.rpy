@@ -55,12 +55,13 @@ label noche_ante_las_estrellas:
     $ reputacion_con_el_mandinga -= 30
     $ mostrar_repu()
     #show reputacion2 at Position(xalign=0.9, yalign=0.9)
-    play audio sfx_noche loop fadein 0.5
+    play sound sfx_noche loop fadein 0.5
     hide ranchoHiguera
-    show higuera at subir_centrada with Dissolve(1.0)
+    show higuera at subir_centrada with Dissolve(3.0)
     "Encontrás una gran higuera a un costado del camino, atás tu caballo y te recostás debajo de aquel custodio de la pampa."
 
-    "Por la noche en tus sueños se repite la frase que dijo El Mandinga: \"¡Bienvenido a mis huestes CONDENADO!\"" # efecto de texto
+    "Por la noche en tus sueños se repite la frase que dijo El Mandinga:"
+    "{size=70}{cps=10}—BIENVENIDO A MIS HUESTES, CONDENADO!{/cps}{/size}" # efecto de texto
 
     "Ves, en sueños, cómo las alimañas de La Salamanca salen de la cueva y se dirigen al camino que andaste para llegar hasta acá."
 
@@ -69,7 +70,7 @@ label noche_ante_las_estrellas:
     "Te levantás agitado." 
 
     "Tenés una deuda importante que saldar con ese poderoso ser de las profundidades."
-    stop audio fadeout 1.0
+    stop sound fadeout 2.0
 
     menu:
         "Cabalgás pensativo rumbo a la pulpería del Tarta, en tu pueblo.":
