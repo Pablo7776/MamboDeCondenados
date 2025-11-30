@@ -284,6 +284,7 @@ label capitulo3:
         jump Hechizando_a_toda_la_pulpería
 
     label La_colorada_curiosa:
+        ### Hay que meter todo lo que se usa pa que sea un diálogo de la colorada
         "—¿Entonces creés que podés hacerlo mejor que él?"
         
         "Te lo dice casi desafiante; entonces le hace una seña al Farías."
@@ -291,11 +292,12 @@ label capitulo3:
         stop music fadeout 1.0
         ##Frenar Melodia guitarra pibe## AUDIO
 
-        "El pibe corta abruptamente su interpretación y viene rápidamente a la mesa."
+        "El pibe viene rápidamente a la mesa."
 
         "Se sienta y la colorada te habla de nuevo a vos."
 
-        "—Es su turno, don... —dice, haciéndote una seña para que le digas tu nombre."
+        ### Hay que meter todo lo que se usa pa que sea un diálogo de la colorada
+        "—Es su turno, don... ¿Cuál es su nombre?"
 
         menu:
             "[nombre_jugador] me llamo —respondés—, y vas al rincón de los cantores y payadores":
