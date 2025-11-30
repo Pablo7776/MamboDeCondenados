@@ -124,13 +124,25 @@ label capitulo3:
         show tarta_placeholder:
             xoffset 1636
             yoffset 36
-        "—¿Ese? Llegó hace dos días; es el Pibe Farías, ¿te acordás de él?, el hijo de la Flavia."
+        Tarta "¿Ese? Llegó hace dos días; es el Pibe Farías, ¿te acordás de él?, el hijo de la Flavia."
 
-        "—Parece que vino a llevarse a la madre a la ciudad, porque está enferma. ¿Es bueno no?"
+        Tarta "Parece que vino a llevarse a la madre a la ciudad, porque está enferma. ¿Es bueno no?"
 
         hide tarta_placeholder
 
-        "Ciertamente el Pibe Farías no toca mal, pero tiene las manías de los chicos de ciudad. Además, pensás: 'obviamente, ahora no hay nadie que se compare conmigo'."
+        show protagonista_placeholder:
+            xoffset 1636
+            yoffset 36
+        # 
+        # redefinir el personaje p con el nombre elegido
+        $ p = Character(nombre_jugador)
+        #
+
+        p "Ciertamente el Pibe Farías no toca mal, pero tiene las manías de los chicos de ciudad."
+        
+        p "Pensás: obviamente, ahora no hay nadie que se compare conmigo."
+        
+        hide protagonista_placeholder
 
         menu:
             "Acercarse a la colorada Dowley" if pregunta_colo:
