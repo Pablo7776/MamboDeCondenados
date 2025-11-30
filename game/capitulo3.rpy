@@ -386,21 +386,20 @@ label capitulo3:
     label Colony_Records_y_otro_contrato:
         $ reputacion_con_el_mandinga += 5
         $ mostrar_repu()
+        ### Hay que meter todo lo que se usa pa que sea un diálogo de la colorada ###
         if not presentacion_colorada:
+            "—Me presento correctamente, soy Diana Dowley."
+
+            "—Vine a buscar talentos al interior."
+
+            "—Represento a la discográfica Colony Records."
+
+            "—Supongo que no la conocés; se instaló hace poco en el país, pero afuera es muy conocida."
             $ presentacion_colorada = True
         
         hide pulperiaAplaudiendo
         show mesa at subir_centrada with Dissolve(1.0)
         
-        ### Hay que meter todo lo que se usa pa que sea un diálogo de la colorada ###
-        "—Me presento correctamente, soy Diana Dowley."
-
-        "—Vine a buscar talentos al interior."
-
-        "—Represento a la discográfica Colony Records."
-
-        "—Supongo que no la conocés; se instaló hace poco en el país, pero afuera es muy conocida."
-
         "—Me parece que tenés mucho potencial para ser parte de nuestros artistas."
 
         "—Podrías conseguir mucho dinero, mucha fama y mucho más. Te llevaríamos por todo el país. Incluso puede que hasta al extranjero."
