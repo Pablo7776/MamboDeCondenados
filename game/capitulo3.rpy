@@ -164,10 +164,10 @@ label capitulo3:
             xoffset 0
             yoffset 36
 
-        "—Es la señora Dowley, parece que es de la capital."
-        "—Llegó ayer y me preguntó por “artistas locales”, al día siguiente apareció el Farías."
-        "—Parece encantada con él."
-        "—Ayer y hoy me pidió el mejor whisky que tuviese."
+        Tarta "Es la señora Dowley, parece que es de la capital."
+        Tarta "Llegó ayer y me preguntó por “artistas locales”, al día siguiente apareció el Farías."
+        Tarta "Parece encantada con él."
+        Tarta "Ayer y hoy me pidió el mejor whisky que tuviese."
 
         hide tarta_placeholder
 
@@ -195,11 +195,23 @@ label capitulo3:
         hide pibeYColorada
         show mesa at subir_centrada with Dissolve(1.0)
         
-        "—¡Buenas tardes, señor!"
+        show colorada_placeholder:
+            xoffset 0
+            yoffset 36
+
+        colorada "¡Buenas tardes, señor!"
+
+        hide colorada_placeholder
 
         "Dice ella con una voz grave, pero melodiosa y continúa:"
         
-        "—Muy buena voz la de aquel joven, El Farías, ¿no?"
+        show colorada_placeholder:
+            xoffset 0
+            yoffset 36
+
+        colorada "Muy buena voz la de aquel joven, El Farías, ¿no?"
+
+        hide colorada_placeholder
 
         menu:
             "Respondés: Yo lo haría mucho mejor.":
@@ -210,7 +222,13 @@ label capitulo3:
     label Admitiendo_la_torpeza_del_Farias:
         "La señora se acomoda el peinado y se queda mirándote unos segundos."
 
-        "—Bueno, es verdad que por el estudio de grabación, pasaron muchos músicos y algunos eran muy buenos, mucho mejores que aquel joven."
+        show colorada_placeholder:
+            xoffset 0
+            yoffset 36
+
+        colorada "Bueno, es verdad que por el estudio de grabación, pasaron muchos músicos y algunos eran muy buenos, mucho mejores que aquel joven."
+
+        hide colorada_placeholder
 
         menu:
             "¿Por el estudio de grabación? (preguntás extrañado)":
@@ -219,19 +237,26 @@ label capitulo3:
     label Colony_Records:
         $ presentacion_colorada = True
 
-        "—Me presento correctamente: soy Diana Dowley."
+        show colorada_placeholder:
+            xoffset 0
+            yoffset 36
 
-        "—Vine a buscar talentos al interior."
-        
-        "—Represento a la discográfica Colony Records."
+        colorada "Me presento correctamente: soy Diana Dowley."
 
-        "—Supongo que no la conocés, se instaló hace poco en el país pero afuera es muy conocida."
+        colorada "Vine a buscar talentos al interior."
         
-        "—Veo que llevás tu guitarra. ¿Creés poder hacerlo mejor que el joven Farías?"
+        colorada "Represento a la discográfica Colony Records."
+
+        colorada "Supongo que no la conocés, se instaló hace poco en el país pero afuera es muy conocida."
+        
+        colorada "Veo que llevás tu guitarra. ¿Creés poder hacerlo mejor que el joven Farías?"
+        
+        hide colorada_placeholder
+
         hide mesa
 
         menu:
-            "Obviamente, ya va a ver":
+            "Obviamente, ya va a ver": ### ### el fondo negro acá es intecional????
                 jump Lo_harias_mejor
     
     label Lo_harias_mejor:
@@ -285,8 +310,15 @@ label capitulo3:
 
     label La_colorada_curiosa:
         ### Hay que meter todo lo que se usa pa que sea un diálogo de la colorada
-        "—¿Entonces creés que podés hacerlo mejor que él?"
         
+        show colorada_placeholder:
+            xoffset 0
+            yoffset 36
+
+        colorada "¿Entonces creés que podés hacerlo mejor que él?"
+        
+        hide colorada_placeholder
+
         "Te lo dice casi desafiante; entonces le hace una seña al Farías."
 
         stop music 
