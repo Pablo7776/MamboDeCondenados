@@ -387,6 +387,10 @@ label capitulo3:
         $ reputacion_con_el_mandinga += 5
         $ mostrar_repu()
         ### Hay que meter todo lo que se usa pa que sea un diálogo de la colorada ###
+               
+        hide pulperiaAplaudiendo
+        show mesa at subir_centrada with Dissolve(1.0)
+        
         if not presentacion_colorada:
             "—Me presento correctamente, soy Diana Dowley."
 
@@ -396,9 +400,6 @@ label capitulo3:
 
             "—Supongo que no la conocés; se instaló hace poco en el país, pero afuera es muy conocida."
             $ presentacion_colorada = True
-        
-        hide pulperiaAplaudiendo
-        show mesa at subir_centrada with Dissolve(1.0)
         
         "—Me parece que tenés mucho potencial para ser parte de nuestros artistas."
 
