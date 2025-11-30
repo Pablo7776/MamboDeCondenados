@@ -272,6 +272,8 @@ label No_fuiste_muy_cordial:
     ### AGREGAR ESTÄTICA###
     "Te dormís sobre la silla de montar y empezás a soñar."
 
+    play fx ruidoRosa volume 0.5
+
     "En tus sueños se repite la frase que dijo El Mandinga:"
 
     "\"—¡Bienvenido a mis huestes CONDENADO!\"" # efecto texto
@@ -279,6 +281,8 @@ label No_fuiste_muy_cordial:
     "Ves cómo las alimañas de La Salamanca salen de la cueva y se dirigen al camino que andaste para llegar hasta acá."
 
     "Queda retumbando la última palabra, \"CONDENADO\". Te levantás agitado."
+
+    stop fx fadeout 2.0
 
     "Tenés una deuda importante que saldar con ese poderoso ser de las profundidades."
 
