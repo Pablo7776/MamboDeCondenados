@@ -167,7 +167,7 @@ label Una_mañana_incómoda:
     $ mostrar_repu()
     stop music
     hide casaInterior
-    show muerte at subir_centrada with Dissolve(1.0)
+    show muerte at subir_centrada with Dissolve(5.0)
     "Esa noche la rechazás, ella sale llorando de la habitación a viva voz."
 
     "Te volvés a dormir y volvés a soñar:"
@@ -225,7 +225,7 @@ label Fuiste_cordial_y_se_te_agradece_por_ello:
     "Dormís cálidamente y por la noche soñás:"
 
     hide casaInterior
-    show muerte at subir_centrada with Dissolve(1.0)
+    show muerte at subir_centrada with Dissolve(5.0)
     play fx ruidoRosa volume 0.5
 
     "Ves en tus sueños como las alimañas brotan de aquel cerro en el que encontraste la Salamanca."
@@ -236,10 +236,9 @@ label Fuiste_cordial_y_se_te_agradece_por_ello:
 
     "Te sacás rápidamente la colcha de encima y son unas cinco cucarachas que estaban debajo de la frazada."
 
-    stop fx fadeout 2.0
-
     "Viene corriendo la china a preguntarte si estás bien, le señalás a donde estaban esos bichos y cuando volvés a mirar ya no están."
 
+    stop fx fadeout 2.0
     hide muerte
     show casaInterior at subir_centrada with Dissolve(1.0)
 
@@ -268,7 +267,7 @@ label No_fuiste_muy_cordial:
     "Te echan a rebencazos de su campo, montás de nuevo tu caballo y seguís cabalgando toda la noche."
 
     hide casa
-    show muerte at subir_centrada with Dissolve(1.0)
+    show muerte at subir_centrada with Dissolve(5.0)
     ### AGREGAR ESTÄTICA###
     "Te dormís sobre la silla de montar y empezás a soñar."
 
