@@ -274,9 +274,10 @@ label No_fuiste_muy_cordial:
     play fx ruidoRosa volume 0.5
 
     "En tus sueños se repite la frase que dijo El Mandinga:"
-
-    "\"—¡Bienvenido a mis huestes CONDENADO!\"" # efecto texto
-    ### agregar los efectos del mandinga hablando
+    
+    play sound sfx_basilisco 
+    "{size=70}{cps=10}\"—BIENVENIDO A MIS HUESTES, CONDENADO!\"{/cps}{/size}" # efecto texto
+    ### agregar los efectos del mandinga hablando ### esto es lo que hay
     "Ves cómo las alimañas de La Salamanca salen de la cueva y se dirigen al camino que andaste para llegar hasta acá."
 
     "Queda retumbando la última palabra, \"CONDENADO\". Te levantás agitado."
