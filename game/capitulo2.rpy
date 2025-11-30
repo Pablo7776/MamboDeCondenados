@@ -7,7 +7,7 @@ label capitulo2:
     play ambiente sfx_SonidoAmbienteTerror loop fadein 1.0
     
     $ mostrar_repu()
-    hide rancho
+    hide rancho with Dissolve(6.0)
     show caida1 at subir_centrada with Dissolve(5.0)
 
     "[nombre_jugador], trepás nuevamente por el abismo en espiral por el que caíste."

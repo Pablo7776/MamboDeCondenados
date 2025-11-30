@@ -473,5 +473,3 @@ label A_dónde_hay_que_firmar:
             "Al segundo capítulo":
                 jump capitulo2
 
-    label Al_segundo_capítulo:
-        "aun en desarrollo..."
