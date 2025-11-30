@@ -60,6 +60,8 @@ image china_placeholder = Animation(
 
     repeat=True
 )
+
+
 image casaposeyendose = Animation(
     "images/capitulo 3/casaprota.png", 0.7,
     "images/capitulo4_pibe/casaprotaposeida.png", 0.2,
@@ -74,7 +76,24 @@ image casaposeyendose = Animation(
 
 image colorada_placeholder = "images/personajes/colorada2.png"
 
-image tarta_placeholder = "images/personajes/placeholder IA/tarta1.png"
+
+
+image tarta_placeholder = Animation(
+    "images/personajes/framesTarta/frame_0001.png", 0.2,
+    "images/personajes/framesTarta/frame_0002.png", 0.2,
+    "images/personajes/framesTarta/frame_0003.png", 0.2,
+    "images/personajes/framesTarta/frame_0004.png", 0.2,
+    "images/personajes/framesTarta/frame_0005.png", 0.2,
+    "images/personajes/framesTarta/frame_0006.png", 0.2,
+    "images/personajes/framesTarta/frame_0007.png", 0.2,
+    "images/personajes/framesTarta/frame_0008.png", 0.2,
+    "images/personajes/framesTarta/frame_0009.png", 0.2,
+    "images/personajes/framesTarta/frame_0010.png", 0.2,
+    "images/personajes/framesTarta/frame_0011.png", 0.2,
+
+    repeat=True
+)
+#image tarta_placeholder = "images/personajes/placeholder IA/tarta1.png"
 ############################################################
 #################  REPUTACION ##############################
 ############################################################
