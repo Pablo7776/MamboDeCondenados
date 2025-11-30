@@ -72,16 +72,16 @@ label capitulo3:
 
         "El Tarta te hace una seña con la cabeza como preguntando “¿qué querés?”."
 
-        "Pedís un vino y, cuando se acerca para dártelo, te dice:"
+        "Pedís un vino y se acerca para dártelo."
         show tarta_placeholder:
             xoffset 1636
             yoffset 36
 
-        "—[nombre_jugador], tanto tiempo."
+        Tarta "—[nombre_jugador], tanto tiempo."
         
         hide tarta_placeholder
 
-        "Le respondés el saludo y se queda ahí un rato."
+        "Le respondés el saludo y se queda ahí un rato, esperando que continúes la conversación."
 
         menu:
             "Preguntarle al Tarta “¿Ese quién es?”":
