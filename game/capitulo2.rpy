@@ -267,6 +267,7 @@ label No_fuiste_muy_cordial:
 
     hide casa
     show muerte at subir_centrada with Dissolve(1.0)
+    ### AGREGAR ESTÄTICA###
     "Te dormís sobre la silla de montar y empezás a soñar."
 
     "En tus sueños se repite la frase que dijo El Mandinga:"
