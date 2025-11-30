@@ -78,7 +78,7 @@ label noche_ante_las_estrellas:
 
     "Cabalgás pensativo rumbo a la pulpería del Tarta, en tu pueblo."
     
-    hide higuera with Dissolve(5.0)
+    hide higuera with Dissolve(4.0)
 
     menu:
         #"Cabalgás pensativo rumbo a la pulpería del Tarta, en tu pueblo.":
@@ -94,7 +94,7 @@ label puerta_del_rancho:
     ### personaje ##########################
     pause 0.01
     show china_placeholder:
-        xoffset 1636
+        xoffset 0
         yoffset 36
 
     china "—¿Quién es? ¿Qué necesitás?"
@@ -143,7 +143,7 @@ label Tus_primeros_hechizados:
     "Te despierta una voz dulce y alguien que te sacude suavemente, es la china que te abrió la puerta."
 
     show china_placeholder:
-        xoffset 1636
+        xoffset 0
         yoffset 36
     china "Disculpe, ¿puedo... estar con usted esta noche?" #efecto
     hide china_placeholder
@@ -167,7 +167,7 @@ label La_noche_de_pasión:
         
     "Te vas con la china, camino a la pulpería del Tarta y a tu pueblo"
     stop sound
-    hide casaInterior with Dissolve(6.0)
+    hide casaInterior with Dissolve(4.0)
     #show naturaleza at subir_centrada with Dissolve(1.0)
     
     #jump capitulo3
@@ -209,7 +209,7 @@ label Una_mañana_incómoda:
     stop sound
 
     "Te subís a tu caballo y galopás hacia tu pueblo y hacia la Pulpería del Tarta"
-    hide casa with Dissolve(5.0)
+    hide casa with Dissolve(4.0)
     #jump capitulo3
     #jump continuara
     menu:
@@ -304,7 +304,7 @@ label No_fuiste_muy_cordial:
     "Tenés una deuda importante que saldar con ese poderoso ser de las profundidades."
 
     "Tomás las riendas y seguís cabalgando pensativo rumbo a la pulpería del Tarta."
-    hide muerte with Dissolve(5.0)
+    hide muerte with Dissolve(4.0)
     #show naturaleza at subir_centrada with Dissolve(1.0)
         #jump continuara
     #jump capitulo3
