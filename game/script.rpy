@@ -41,21 +41,21 @@ label start:
     #"Ahora el logo se mueve de izquierda a derecha en 2 segundos."
     #############
     #jump capitulo1
-    menu:
-        "ir a cap 1":
-            jump capitulo1
-        "Dar_un_paso_hacia_la_oscuridad":
-            jump Dar_un_paso_hacia_la_oscuridad
-        "ir a cap 2":
-            jump capitulo2
-        "ir a cap 3":
-            jump capitulo3
-        "ir a Capítulo_4_El_pobre_Pibe_Farías":
-            jump Capítulo_4_El_pobre_Pibe_Farías
-        "ir a capitulo4_el_viejo":
-            jump capitulo4_el_viejo
-        "ir a Capítulo_4_Colony_Records":
-            jump Capítulo_4_Colony_Records
+    #menu:
+        #"ir a cap 1":
+        #    jump capitulo1
+        #"Dar_un_paso_hacia_la_oscuridad":
+        #    jump Dar_un_paso_hacia_la_oscuridad
+        #"ir a cap 2":
+        #    jump capitulo2
+        #"ir a cap 3":
+        #    jump capitulo3
+        #"ir a Capítulo_4_El_pobre_Pibe_Farías":
+        #    jump Capítulo_4_El_pobre_Pibe_Farías
+        #"ir a capitulo4_el_viejo":
+        #    jump capitulo4_el_viejo
+        #"ir a Capítulo_4_Colony_Records":
+        #    jump Capítulo_4_Colony_Records
         #"ejemplos de texto con efectos":
         #    jump ejemplosTexto
         #"ir a ejemplo clickeable":
@@ -66,6 +66,8 @@ label start:
         #    jump continuará
         #"munú sonoro":
         #    jump menuSonoro
+
+    jump capitulo1
 
 
 
