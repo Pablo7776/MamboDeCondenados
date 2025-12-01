@@ -74,7 +74,22 @@ image casaposeyendose = Animation(
 )
 #image china_placeholder = "images/personajes/chinaEscalado.png"
 
-image colorada_placeholder = "images/personajes/colorada2.png"
+image colorada_placeholder = Animation(
+    "images/personajes/coloradaFames/frame_1.png", 0.2,
+    "images/personajes/coloradaFames/frame_2.png", 0.2,
+    "images/personajes/coloradaFames/frame_3.png", 0.2,
+    "images/personajes/coloradaFames/frame_4.png", 0.2,
+    "images/personajes/coloradaFames/frame_5.png", 0.2,
+    "images/personajes/coloradaFames/frame_6.png", 0.2,
+    "images/personajes/coloradaFames/frame_7.png", 0.2,
+    "images/personajes/coloradaFames/frame_8.png", 0.2,
+    "images/personajes/coloradaFames/frame_9.png", 0.2,
+    "images/personajes/coloradaFames/frame_10.png", 0.2,
+
+    repeat=True
+)
+
+#image colorada_placeholder = "images/personajes/colorada2.png"
 
 
 
