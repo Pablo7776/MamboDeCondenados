@@ -582,15 +582,20 @@ label capitulo3:
 
         if not pregunta_viejo:
             
-            "El Tarta te ve entrar y ni bien llegás a la barra, te cuenta sobre el Viejo."
+            "El Tarta te ve entrar y te hace una seña para que te acerques."
             show tarta_placeholder:
                 xoffset 0
                 yoffset 36
+            
+            Tarta "¡[nombre_jugador], volviste! Che, ¿te acordás del viejo con el que hablaste la última vez que estuviste acá antes de tu viaje?"
+            
+            Tarta "El pobre viejo falleció, lo encontramos sin vida en la calle, a unas cuadras."
 
             Tarta "El viejo falleció, lo encontramos sin vida en la calle, a unas cuadras."
 
             Tarta "Le hicimos el velorio y no fue nadie. No sabemos qué carajos le pasó."
 
+            Tarta "Apareció muerto de un día para el otro. Vivía en el talar, en el camino donde viven los López, pero más allá."
             Tarta "Apareció muerto de un día para el otro. Vivía en el talar, en el camino donde viven los López, pero más allá."
 
             hide tarta_placeholder
@@ -605,8 +610,8 @@ label capitulo3:
         menu:
             "Ir a ver el cadaver del Farías":
                 hide pulperia
-                jump continuara
-                #jump Capítulo_4_El_pobre_Pibe_Farías
+                #jump continuara
+                jump Capítulo_4_El_pobre_Pibe_Farías
             "Ir al rancho del viejo":
                 jump continuara
                 #jump capitulo4_el_viejo
