@@ -446,8 +446,8 @@ label capitulo3:
             "Ya estás seguro de que no querés aceptar este trato" if not Vida_china:
                 jump Una_noche_fría
             "Lo vas a pensar, pero estás casi seguro de que sí, que te vas a sumar a la discográfica":
-                jump continuara
-                #jump Capítulo_4_Colony_Records
+                #jump continuara
+                jump Capítulo_4_Colony_Records
     
     label Una_noche_fría:
         
@@ -484,8 +484,8 @@ label capitulo3:
                 jump Un_paso_atrás
             "Investigás qué pasó con el pibe.":
                 hide pibeColgado
-                jump continuara
-                #jump Capítulo_4_El_pobre_Pibe_Farías
+                #jump continuara
+                jump Capítulo_4_El_pobre_Pibe_Farías
 
     label Un_paso_atrás:
         hide pibeColgado
@@ -511,8 +511,8 @@ label capitulo3:
                 jump La_joda_terminó
             "Volvés a ver qué pasó con el pibe":
                 hide casaProtagonista
-                jump continuara
-                #jump Capítulo_4_El_pobre_Pibe_Farías
+                #jump continuara
+                jump Capítulo_4_El_pobre_Pibe_Farías
 
     label La_calle_fría:
         $ reputacion_con_el_mandinga -= 15
