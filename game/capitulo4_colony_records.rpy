@@ -13,13 +13,14 @@ label Capítulo_4_Colony_Records:
 
     "Pero tus sueños no son tan reparadores..."
 
-    ###AUDIO    - frenar crepitar de fuego    -  sonido ambiente terror###
-
     "Empezás a soñar y ves la entrada a La Salamanca, cientos de alimañas salen por montones."
+    
+    ###AUDIO    - frenar crepitar de fuego    -  sonido ambiente terror###
     stop fx
+    play music sfx_SonidoAmbienteTerror fadein 1.0
     hide casaProtagonista
     show chivo at subir_centrada with Dissolve(1.0)
-    play music sfx_SonidoAmbienteTerror fadein 1.0
+
     "Coronando la marcha, el chivo negro endemoniado."
 
     "Atrás de todo cerrando la comitiva, el basilisco que te guió por el laberinto."
@@ -39,6 +40,7 @@ label Capítulo_4_Colony_Records:
         show casaProtagonista at subir_centrada with Dissolve(1.0)
         stop music fadeout 1.0
         ###Llanto de la china ### AUDIO
+        play fx llantoChina
         "Te despertás por la mañana y tu joven china está acurrucada con una frazada, hecha un bollito en tu cama."
 
     else:
@@ -57,6 +59,8 @@ label Capítulo_4_Colony_Records:
         "Despertás por la mañana sobresaltado, sudando frío."
     ###AUDIO sonido auto viejo###
     ###AUDIO bocina auto viejo###
+    play sound auto loop fadein 1.5
+    play fx bocina 
     "Escuchás llegar un moderno auto y un sonido que nunca habías escuchado te sobresalta."
 
     menu:
@@ -70,9 +74,11 @@ label Capítulo_4_Colony_Records:
         $ reputacion_con_el_mandinga -=20
         $ mostrar_repu()
         ###AUDIO auto viejo yendose###
+        play fx autoAlejandose 
         
         "Te quedás con tu china hasta la tarde, tocando la guitarra, cantando para consolarla y ofreciéndole tu hombro para llorar."
         ###AUDIO        - frenar llanto        - melodia prota (alguna)###
+        play sound musica_piedra_y_camino
         "No entendés muy bien cómo, pero vos sabés que ese sueño que tuviste fue real y ella de alguna manera también sabe lo que pasó con su familia."
 
         "El contrato no lo pudiste firmar, pero por la noche tenés otra oportunidad de demostrar tu don. Vas a la pulpería nuevamente."
@@ -90,6 +96,7 @@ label Capítulo_4_Colony_Records:
         "Ya la gente no te mira con admiración como anoche, ahora te miran con desprecio y odio."
         stop music
         ###AUDIO abucheo### AUDIO
+        play fx abucheo
         "Al principio no entendés por qué, hasta que lográs entender lo que te gritan:"
 
         "—¡ASESINO! ¡ASESINO!"
@@ -113,6 +120,7 @@ label Capítulo_4_Colony_Records:
         $ reputacion_con_el_mandinga -=20
         $ mostrar_repu()
         ###AUDIO frenar gente en la pulpería, aumentar abucheo###
+        play fx abucheo
         "Nadie te cree, te insultan y te echan de la pulpería."
 
         "Te tiran con botellas vacías y te vas corriendo."
@@ -126,11 +134,14 @@ label Capítulo_4_Colony_Records:
         hide puebloNoche
         show casaProtagonista at subir_centrada with Dissolve(1.0)
         ###AUDIO        - frenar todo        - cripitar de fuego###
+        play fx sfx_hoguera_pequena volume 1.0 fadein 1.0
         "Sí, otra vez esos sueños."
         hide casaProtagonista
         show casaposeyendose at subir_centrada with Dissolve(1.0)
         "Soñás con las alimañas, pero esta vez ya están entrando al pueblo, te despertás sobresaltado por un gran estruendo."
         ###AUDIO        - frenar crepitar fuego        - sonido ambiente terror ###
+        stop fx
+        play music sfx_SonidoAmbienteTerror fadein 1.0
         "Abrís los ojos completamente agitado..."
         #hide casaposeyendose
         #show casaPoseida at subir_centrada with Dissolve(1.0)
@@ -142,26 +153,37 @@ label Capítulo_4_Colony_Records:
         hide pulperiaEnojados
         show pulperiaAplaudiendo at subir_centrada with Dissolve(1.0)
         ###AUDIO    -melodía prota (alguna)     -aplausos###
+        play sound chacarera volume 0.6
         "Tu canto logró el efecto que querías: todos están alabándote nuevamente."
-
+        stop sound
+        play fx sfx_aplausos
         "Te vas a tu casa satisfecho."
         hide pulperiaAplaudiendo
         show casaProtagonista at subir_centrada with Dissolve(1.0)
         ###AUDIO    -frenar todo    -crepitar de fuego###
+        play fx sfx_hoguera_pequena volume 1.0 fadein 1.0
         if Vida_china:
             ###AUDIO    -melodia prota (alguna)###
+            play sound chacarera
             "Tocás la guitarra para tu china nuevamente y hasta ella se olvida de sus pesares y se lanza sobre tus brazos."
             
             "Te dormís con una sonrisa en la cara, contento de tenerla a tu lado."
             ###AUDIO    -frenar melodia###
+            stop sound fadeout 1.5
 
         "Esta noche sorprendentemente no soñaste con las alimañas, ni con El Mandinga, ni ninguna de las grandes bestias de sus huestes."
         ###AUDIO    -frenar crepitar    -naturaleza día###
+        play sound sfx_pajaritos 
+
         hide casaProtagonista
         show pueblo at subir_centrada with Dissolve(1.0)
         "Por la mañana salís a la calle y todos te saludan alegremente, pero a medida que va cayendo el sol sus miradas se vuelven más acusatorias."
         hide pueblo
         ###AUDIO melodia prota (alguna)###
+        stop sound
+        play sound chacarera volume 0.5
+
+
         show pulperia at subir_centrada with Dissolve(1.0)
         "Por la noche llegás a la pulpería y el ambiente es tenso, pero volvés a tocar la guitarra y todos se apaciguan."
         hide pulperia
@@ -170,8 +192,10 @@ label Capítulo_4_Colony_Records:
         hide pulperiaAplaudiendo
         ###AUDIO    -frenar naturaleza día###
         show pueblo at subir_centrada with Dissolve(1.0)
+        stop sound fadeout 1.5
         "Un día te quedás un rato más en tu casa, no vas a tocar a la misma hora de siempre a la pulpería, pero terminás saliendo para allá."
         ###AUDIO    -abucheo###
+        play fx abucheo
         "La gente se agolpa en el camino para gritarte, incluso te tiran con cosas."
 
         "Tenés que guitarrear ahí nomás en el medio de la calle y todos se calman."
@@ -179,12 +203,15 @@ label Capítulo_4_Colony_Records:
         "Esta vez zafaste, pero ¿qué pasará la próxima?"
         hide pueblo
         ###AUDIO    -frenar todo###
+        stop fx
+        stop sound
         menu:
             "Seguís pasando así los días.":
-                jump Mantuviste_lejos_al_Mandinga
+                jump Mantuviste_lejos_al_Mandinga ### va afinales.rpy
 
     label Una_revelación:
-        ###AUDIO    - sonido auto viejo andando###
+        play sound auto loop fadein 1.5
+
         show ventanaAuto at subir_centrada with Dissolve(1.0)
         "Salís y te subís al auto de la Colorada Dowley, al asiento trasero, junto a ella."
 
@@ -234,6 +261,8 @@ label Capítulo_4_Colony_Records:
         "En cuanto te negás la Colorada Dowley se lamenta, te lleva a tu casa y abandona el pueblo."
         hide ventanaAuto
         ###AUDIO    -frenar ruido auto vieja    -crepitar de fuego###
+        stop sound fadeout 1.5
+
         show casaProtagonista at subir_centrada with Dissolve(1.0)
 
         "Esa tarde pasa, no te sentís muy animado, pero por la noche, hay otra oportunidad de mostrar tu don en la pulpería de El Tarta."
@@ -245,6 +274,7 @@ label Capítulo_4_Colony_Records:
         hide ventanaAuto
         show casaProtagonista at subir_centrada with Dissolve(1.0)
         ###AUDIO    -frenar ruido auto vieja    -crepitar de fuego###
+        stop sound fadeout 1.5
         if Vida_china:
             "Le contás todo a la china e incluso te ponés a tocar la guitarra de la alegría, ella está muy contenta por vos."
             

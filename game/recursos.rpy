@@ -240,6 +240,14 @@ define sfx_pajaritos = "audio/capitulo3/pajarosdia.mp3"
 define sfx_respiracion = "audio/capitulo3/respiracion.mp3"
 define melo_pibe = "musica/Zamba de lozano_Cuchi Leguizamon (Version para chiptune)_ melopibe.mp3"
 
+### efectos audio cap4 colony ################################################
+
+define auto = "audio/cap4Colony/autoLoop.ogg"
+define autoAlejandose = "audio/cap4Colony/autoAlejandose.ogg"
+define bocina = "audio/cap4Colony/bocina.ogg"
+define llantoChina = "audio/cap4Colony/llantoChina.ogg"
+define abucheo = "audio/cap4Colony/abucheo.ogg"
+
 #################  musica CAP1 y 3 ############################################
 ###########################################################################
 
