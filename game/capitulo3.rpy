@@ -465,14 +465,13 @@ label capitulo3:
         ##Frenar Sonido tenso, violines## AUDIO
         ##Frenar Ruidos tétricos naturaleza## AUDIO
 
-
         "Llegás a tu casa y sentís un profundo pesar en el pecho."
 
-        ##Melodia prota1 (bajita)## AUDIO
+        play music musica_piedra_y_camino volume 0.5 fadein 1.0
         "Tocás la guitarra para tranquilizarte después de lo que viste."
 
         "Pero cuando lo pensás, creés que tiene que haber algo más."
-        ##Frenar Melodia prota1 (bajita)## AUDIO
+        stop music fadeout 2.0
         menu:
             "Volvés a la pulpería":
                 jump La_joda_terminó
@@ -525,6 +524,8 @@ label capitulo3:
         hide pibeColgado
         show casaProtagonista at subir_centrada with Dissolve(1.0)
         stop music
+        play fx sfx_hoguera_pequena fadein 1.0
+        play music musica_piedra_y_camino volume 0.5 fadein 1.0
         ##Frenar Sonido tenso, violines## AUDIO
         ##Frenar Ruidos tétricos naturaleza## AUDIO
 
@@ -536,6 +537,7 @@ label capitulo3:
 
         "Pero igual, cuando lo pensás, creés que tiene que haber algo más."
         ##Frenar Melodia prota1 (bajita)## AUDIO
+        stop music fadeout 2.0
         menu:
             "Volvés a la pulpería":
                 jump La_joda_terminó
