@@ -1,6 +1,9 @@
 label finales:
     $ mostrar_repu()
     label Sucumbis_a_la_locura:
+
+        show gauchoACaballo at subir_centrada, desvanecer with Dissolve(2.0)
+
         "Lo perdiste todo, incluso perdiste completamente tu humanidad."
         
         "Luego de presenciar toda la matanza te unís a las huestes de La Salamanca."

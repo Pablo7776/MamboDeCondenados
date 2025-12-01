@@ -30,6 +30,7 @@ label capitulo4_el_viejo:
 
     label Un_camino_de_alimanas:
         hide luz_mala 
+        hide talar
         show calle_alacranes at subir_centrada with Dissolve(3.0)
         "Cuando estás volviendo en la oscura noche ves cómo el camino que entra a tu pueblo está alfombrado de alacranes."
 
@@ -66,6 +67,9 @@ label capitulo4_el_viejo:
                 jump Escapa_al_bosque
 
     label Las_huestes_llegaron:
+
+        hide calle_alacranes
+        show plaza_brujos at subir_centrada with Dissolve(3.0)
         "Cuando al fin llegás, ves cómo las alimañas, El Mandinga, incluso el chivo negro están destrozando el pueblo y matándolos a todos."
 
         if Vida_china:
@@ -78,6 +82,8 @@ label capitulo4_el_viejo:
         "Agarrás tu guitarra y empezás a cantar avanzando entre los cadáveres, las calles con charcos de sangre y las casas incendiadas."
 
         "Hacés bailar a las huestes del Mandinga con tu canto."
+
+        hide plaza_brujos
         
         jump Sucumbis_a_la_locura
 
@@ -144,6 +150,9 @@ label capitulo4_el_viejo:
     label Un_claro_despejado:
         $ reputacion_con_el_mandinga -=15
         $ mostrar_repu()
+
+        hide luz_mala
+        show talar at subir_centrada with Dissolve(3.0)
 
         "Llegás a un claro en el medio del talar y no hay nada excepto unas luciérnagas que brillan con una fuerte luz naranja, nada más."
 
