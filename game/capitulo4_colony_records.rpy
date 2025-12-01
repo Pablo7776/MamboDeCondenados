@@ -193,22 +193,22 @@ label Capítulo_4_Colony_Records:
         "Hasta que al fin sale el tema."
 
         show colorada_placeholder:
-            xoffset 1636
+            xoffset 0
             yoffset 36
 
-        colorada "— Bueno [nombre_jugador], vamos a hablar sobre lo que podemos ofrecerte."
+        colorada "Bueno [nombre_jugador], vamos a hablar sobre lo que podemos ofrecerte."
 
-        colorada "— Sabemos perfectamente que esa habilidad no te pertenece, pero podemos hacer que sí sea así."
+        colorada "Sabemos perfectamente que esa habilidad no te pertenece, pero podemos hacer que sí sea así."
 
-        colorada "— Nosotros tenemos un pacto con un ser superior a ese diablo local."
+        colorada "Nosotros tenemos un pacto con un ser superior a ese diablo local."
 
-        colorada "— Podemos saldar tranquilamente tu deuda con él sin que pierdas ese gran don que te concedió."
+        colorada "Podemos saldar tranquilamente tu deuda con él sin que pierdas ese gran don que te concedió."
 
-        colorada "— Obviamente, a cambio, firmarías un contrato con nosotros que deberás cumplir."
+        colorada "Obviamente, a cambio, firmarías un contrato con nosotros que deberás cumplir."
 
-        colorada "— Podrías dedicarte a tu música, al fin y al cabo, fue por eso que quisiste tener ese don, ¿no?"
+        colorada "Podrías dedicarte a tu música, al fin y al cabo, fue por eso que quisiste tener ese don, ¿no?"
 
-        colorada "— Vas a poder tocar frente a cientos y miles de personas, encantarlos a todos."
+        colorada "Vas a poder tocar frente a cientos y miles de personas, encantarlos a todos."
 
         hide colorada_placeholder
 
@@ -216,8 +216,13 @@ label Capítulo_4_Colony_Records:
 
         "Te vas a poder dedicar a la música pero lejos de tu pueblo y bajo la supervisión de Colony Records."
 
-        "—¿Qué decís? —te pregunta la Colorada Dowley."
+        show colorada_placeholder:
+            xoffset 0
+            yoffset 36
 
+        colorada "¿Qué decís?"
+
+        hide colorada_placeholder
         menu:
             "Aceptás el contrato":
                 jump Las_giras_interminables

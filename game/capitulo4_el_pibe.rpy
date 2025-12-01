@@ -128,11 +128,11 @@ label Capítulo_4_El_pobre_Pibe_Farías:
             xoffset 0
             yoffset 36
 
-        Mandinga "— No has hecho mucho por complacerme condenado."
+        Mandinga "No has hecho mucho por complacerme condenado."
 
-        Mandinga "— No te comportaste como alguien digno del don que te concedí."
+        Mandinga "No te comportaste como alguien digno del don que te concedí."
 
-        Mandinga "— Vas a tener que elegir."
+        Mandinga "Vas a tener que elegir."
 
         Mandinga "Te dice, clara y fríamente, tus posibilidades:"
 
@@ -176,9 +176,15 @@ label Capítulo_4_El_pobre_Pibe_Farías:
 
         "El Mandinga se va sonriendo y te dice:"
 
-        "— El don que te di te puede llevar lejos, pero recordá que cada hechizo cuenta."
+        show mandinga_placeholder:
+            xoffset 0
+            yoffset 36
 
-        "— Mientras más personas hechices con tu canto más lejos me mantendré."
+        Mandinga "El don que te di te puede llevar lejos, pero recordá que cada hechizo cuenta."
+
+        Mandinga "Mientras más personas hechices con tu canto más lejos me mantendré."
+
+        hide mandinga_placeholder
 
         "Entonces se esfuma en una bola de humo y azufre."
 
