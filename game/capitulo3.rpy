@@ -150,8 +150,8 @@ label capitulo3:
             "Preguntarle al Tarta por la señora colorada" if not pregunta_colo:
                     jump La_del_whisky_caro
             "Ir al rancho de El Viejo a investigar." if pregunta_viejo:
-                    jump continuara
-                    #jump capitulo4_el_viejo
+                    #jump continuara
+                    jump capitulo4_el_viejo
             "Preguntarle al Tarta por El Viejo" if not pregunta_viejo:
                     jump Malas_noticias
             "Acercarse al Pibe Farías y pedirle que pare, para tocar vos":
@@ -177,8 +177,8 @@ label capitulo3:
             "Preguntarle al Tarta “¿Ese quién es?”" if not pregunta_pibe:
                     jump El_Pibe
             "Ir al rancho de El Viejo a investigar." if pregunta_viejo:
-                    jump continuara
-                    #jump capitulo4_el_viejo
+                    #jump continuara
+                    jump capitulo4_el_viejo
             "Preguntarle al Tarta por El Viejo" if not pregunta_viejo:
                     jump Malas_noticias
             "Acercarse a la Colorada Dowley":
@@ -253,7 +253,7 @@ label capitulo3:
         
         hide colorada_placeholder
 
-        hide mesa
+        #hide mesa
 
         menu:
             "Obviamente, ya va a ver": ### ### el fondo negro acá es intecional????
@@ -261,6 +261,7 @@ label capitulo3:
     
     label Lo_harias_mejor:
         hide barraPulperia
+        hide mesa
         show pibeYColorada at subir_centrada with Dissolve(1.0)
 
         "Te acercás al rincón en que el pibe está tocando."
@@ -345,9 +346,12 @@ label capitulo3:
         hide mesa
         show pulperia at subir_centrada with Dissolve(1.0)
         ##Melodia prota1## AUDIO
-        "Con el primer rasgueo de tu guitarra todas las miradas se clavan en vos."
+        $ renpy.music.set_volume(0.2, channel="music")
+        play music chacarera fadein 1.0
 
-        stop sfx_taberna fadeout 2.0
+        "Con el primer rasgueo de tu guitarra todas las miradas se clavan en vos."
+        
+        stop sound fadeout 2.0
         ##Frenar (fade out) Ruido ambiente de gente## AUDIO
         "Luego de la primera estrofa, ya todos están mirándote embelesados."
 
@@ -361,6 +365,7 @@ label capitulo3:
         
         "Terminás de tocar y se produce una ovación inmensa."
         ##Frenar (fade out) Melodia prota2## 
+        stop music fadeout 1.5
         play sound sfx_aplausos fadein 0.5
         
         ##Ovación## AUDIO
@@ -423,7 +428,9 @@ label capitulo3:
 
         colorada "Me parece que tenés mucho potencial para ser parte de nuestros artistas."
 
-        colorada "Podrías conseguir mucho dinero, mucha fama y mucho más. Te llevaríamos por todo el país. Incluso puede que hasta al extranjero."
+        colorada "Podrías conseguir mucho dinero, mucha fama y mucho más. "
+        
+        colorada "Te llevaríamos por todo el país. Incluso puede que hasta al extranjero."
 
         colorada "Te propongo algo: nos podemos encontrar mañana por la mañana, me estoy quedando en una estancia a unos kilómetros."
 
@@ -439,8 +446,8 @@ label capitulo3:
             "Ya estás seguro de que no querés aceptar este trato" if not Vida_china:
                 jump Una_noche_fría
             "Lo vas a pensar, pero estás casi seguro de que sí, que te vas a sumar a la discográfica":
-                #jump continuara
-                jump Capítulo_4_Colony_Records
+                jump continuara
+                #jump Capítulo_4_Colony_Records
     
     label Una_noche_fría:
         
@@ -464,7 +471,7 @@ label capitulo3:
         hide pueblo ###HAbría que hacer un efecto de oscurecer la pantalla o meterle una nueva imagen de noche más oscura###
         play sound sfx_SonidoAmbienteTerror loop fadein 1.0
 
-        show pibeColgado at subir_centrada with Dissolve(1.0)
+        show pibeColgado at subir_centrada, aparecer_flash with Dissolve(5.0)
         stop sfx_noche
         
         
@@ -477,19 +484,24 @@ label capitulo3:
                 jump Un_paso_atrás
             "Investigás qué pasó con el pibe.":
                 hide pibeColgado
-                #jump continuara
-                jump Capítulo_4_El_pobre_Pibe_Farías
+                jump continuara
+                #jump Capítulo_4_El_pobre_Pibe_Farías
 
     label Un_paso_atrás:
         hide pibeColgado
         show casaProtagonista at subir_centrada with Dissolve(1.0)
-        stop sfx_SonidoAmbienteTerror
+
+        stop sound
+        stop viento fadeout 1.5
+        stop estatica fadeout 1.5
+
+
         ##Frenar Sonido tenso, violines## AUDIO
         ##Frenar Ruidos tétricos naturaleza## AUDIO
 
         "Llegás a tu casa y sentís un profundo pesar en el pecho."
 
-        play music musica_piedra_y_camino volume 0.5 fadein 1.0
+        play music musica_piedra_y_camino volume 1.0 fadein 1.0
         "Tocás la guitarra para tranquilizarte después de lo que viste."
 
         "Pero cuando lo pensás, creés que tiene que haber algo más."
@@ -539,8 +551,8 @@ label capitulo3:
             "Ya alguien se hará cargo de ese pobre desgraciado, vos a lo tuyo, te quedás en tu casa con tu china":
                 jump La_noche_en_tu_casa
             "Volvés a ver qué pasó con el pibe":
-                jump continuara
-                #jump Capítulo_4_El_pobre_Pibe_Farías
+                #jump continuara
+                jump Capítulo_4_El_pobre_Pibe_Farías
 
     label La_noche_en_tu_casa:
         hide pibeColgado
@@ -565,8 +577,8 @@ label capitulo3:
                 jump La_joda_terminó
             "Volvés a ver qué pasó con el pibe":
                 hide casaProtagonista
-                jump continuara
-                #jump Capítulo_4_El_pobre_Pibe_Farías
+                #jump continuara
+                jump Capítulo_4_El_pobre_Pibe_Farías
 
     label La_joda_terminó:
         hide casaProtagonista
@@ -613,5 +625,5 @@ label capitulo3:
                 #jump continuara
                 jump Capítulo_4_El_pobre_Pibe_Farías
             "Ir al rancho del viejo":
-                jump continuara
-                #jump capitulo4_el_viejo
+                #jump continuara
+                jump capitulo4_el_viejo
