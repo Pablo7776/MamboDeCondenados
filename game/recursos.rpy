@@ -225,7 +225,8 @@ define sfx_pajaritos = "audio/capitulo3/pajarosdia.mp3"
 define sfx_respiracion = "audio/capitulo3/respiracion.mp3"
 define melo_pibe = "musica/Zamba de lozano_Cuchi Leguizamon (Version para chiptune)_ melopibe.mp3"
 
-#################  musica CAP1 ############################################
+#################  musica CAP1 y 3 ############################################
 ###########################################################################
 
 define musica_piedra_y_camino = "musica/Piedra y Camino - Atahualpa Yupanqui - Chiptune.mp3"
+define chacarera = "musica/Chacarera del Zorrito – Cuchi Leguizamon Chacarera del Zorrito - 8 bit (2).mp3"

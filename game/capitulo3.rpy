@@ -253,7 +253,7 @@ label capitulo3:
         
         hide colorada_placeholder
 
-        hide mesa
+        #hide mesa
 
         menu:
             "Obviamente, ya va a ver": ### ### el fondo negro acá es intecional????
@@ -261,6 +261,7 @@ label capitulo3:
     
     label Lo_harias_mejor:
         hide barraPulperia
+        hide mesa
         show pibeYColorada at subir_centrada with Dissolve(1.0)
 
         "Te acercás al rincón en que el pibe está tocando."
@@ -345,9 +346,12 @@ label capitulo3:
         hide mesa
         show pulperia at subir_centrada with Dissolve(1.0)
         ##Melodia prota1## AUDIO
-        "Con el primer rasgueo de tu guitarra todas las miradas se clavan en vos."
+        $ renpy.music.set_volume(0.2, channel="music")
+        play music chacarera fadein 1.0
 
-        stop sfx_taberna fadeout 2.0
+        "Con el primer rasgueo de tu guitarra todas las miradas se clavan en vos."
+        
+        stop sound fadeout 2.0
         ##Frenar (fade out) Ruido ambiente de gente## AUDIO
         "Luego de la primera estrofa, ya todos están mirándote embelesados."
 
@@ -361,6 +365,7 @@ label capitulo3:
         
         "Terminás de tocar y se produce una ovación inmensa."
         ##Frenar (fade out) Melodia prota2## 
+        stop music fadeout 1.5
         play sound sfx_aplausos fadein 0.5
         
         ##Ovación## AUDIO
@@ -423,7 +428,9 @@ label capitulo3:
 
         colorada "Me parece que tenés mucho potencial para ser parte de nuestros artistas."
 
-        colorada "Podrías conseguir mucho dinero, mucha fama y mucho más. Te llevaríamos por todo el país. Incluso puede que hasta al extranjero."
+        colorada "Podrías conseguir mucho dinero, mucha fama y mucho más. "
+        
+        colorada "Te llevaríamos por todo el país. Incluso puede que hasta al extranjero."
 
         colorada "Te propongo algo: nos podemos encontrar mañana por la mañana, me estoy quedando en una estancia a unos kilómetros."
 
