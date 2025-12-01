@@ -38,7 +38,8 @@ label Capítulo_4_Colony_Records:
         hide chivo
         show casaProtagonista at subir_centrada with Dissolve(1.0)
         stop music fadeout 1.0
-        "Te despertás por la mañana y tu joven china está llorando acurrucada con una frazada, hecha un bollito en tu cama."
+        ###Llanto de la china ### AUDIO
+        "Te despertás por la mañana y tu joven china está acurrucada con una frazada, hecha un bollito en tu cama."
 
     else:
         "Por último la joven china que te había abierto la puerta."
@@ -55,7 +56,8 @@ label Capítulo_4_Colony_Records:
         stop music fadeout 1.0
         "Despertás por la mañana sobresaltado, sudando frío."
     ###AUDIO sonido auto viejo###
-    "Escuchás llegar un moderno auto, con todo su ruido, y un sonido que nunca habías escuchado, parecido a una trompeta o algo así."
+    ###AUDIO bocina auto viejo###
+    "Escuchás llegar un moderno auto y un sonido que nunca habías escuchado te sobresalta."
 
     menu:
         "Decidís no salir: te vas a quedar a consolar a tu china" if Vida_china is True:
