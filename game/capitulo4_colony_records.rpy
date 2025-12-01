@@ -124,21 +124,21 @@ label Capítulo_4_Colony_Records:
         "Nadie te cree, te insultan y te echan de la pulpería."
 
         "Te tiran con botellas vacías y te vas corriendo."
-        hide pulperiaEnojados
-        ###AUDIO - frenar abucheo      - botella rompiendose        - sonido de naturaleza nocturna###
-        show puebloNoche at subir_centrada with Dissolve(1.0)
-        "Justo cuando cerrás la puerta escuchás cómo una estalla contra la puerta: tardabas un minuto más en irte y te daba directo en la cabeza."
-
+        
+        "Salís y las botellas se rompen contra la puerta que acabás de cerrar."
         "Volvés a tu casa, en el camino se hace de noche, llegás y a pesar de todo lográs dormir."
 
-        hide puebloNoche
+        hide pulperiaEnojados
+        stop fx
+         
         show casaProtagonista at subir_centrada with Dissolve(1.0)
-        ###AUDIO        - frenar todo        - cripitar de fuego###
+        
         play fx sfx_hoguera_pequena volume 1.0 fadein 1.0
         "Sí, otra vez esos sueños."
         hide casaProtagonista
         show casaposeyendose at subir_centrada with Dissolve(1.0)
-        "Soñás con las alimañas, pero esta vez ya están entrando al pueblo, te despertás sobresaltado por un gran estruendo."
+        "Soñás con las alimañas, pero esta vez ya están entrando al pueblo, te despertás sobresaltado."
+        play sound sfx_trueno volume 1.0
         ###AUDIO        - frenar crepitar fuego        - sonido ambiente terror ###
         stop fx
         play music sfx_SonidoAmbienteTerror fadein 1.0
