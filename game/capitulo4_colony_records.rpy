@@ -2,7 +2,7 @@ label Capítulo_4_Colony_Records:
     hide mesa
     show casaProtagonista at subir_centrada with Dissolve(1.0)
 
-    ###AUDIO - Crepitar de fuego###
+    play fx sfx_hoguera_pequena volume 1.0 fadein 1.0
     if Vida_china:
         "Vas a tu casa junto a tu china, le contás la gran noticia de la discográfica y ella te abraza, te felicita y te llena de besos. Incluso te incentiva a aceptarlo."
 
@@ -16,8 +16,10 @@ label Capítulo_4_Colony_Records:
     ###AUDIO    - frenar crepitar de fuego    -  sonido ambiente terror###
 
     "Empezás a soñar y ves la entrada a La Salamanca, cientos de alimañas salen por montones."
+    stop fx
     hide casaProtagonista
     show chivo at subir_centrada with Dissolve(1.0)
+    play music sfx_SonidoAmbienteTerror fadein 1.0
     "Coronando la marcha, el chivo negro endemoniado."
 
     "Atrás de todo cerrando la comitiva, el basilisco que te guió por el laberinto."
@@ -29,7 +31,7 @@ label Capítulo_4_Colony_Records:
     hide naturalezaRota
     show chivo at subir_centrada with Dissolve(1.0)
 
-    ###AUDIO - respiración del chivo###
+    play fx sfx_respiracion_chivo
     "El chivo mata a su padre y las demás alimañas destrozan la casa y se comen a sus hermanos y su madre."
 
     if Vida_china:
