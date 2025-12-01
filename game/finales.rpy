@@ -85,7 +85,11 @@ label finales:
                 return
 
     label Se_cobró_tu_deuda:
+
+        play sound sfx_trueno
+
         "El Mandinga golpea el suelo con su pesado píe."
+        
         hide mandingaPower
         show grieta_casa at subir_centrada with Dissolve(1.0)
         if Vida_china:

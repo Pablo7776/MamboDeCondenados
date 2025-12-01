@@ -11,7 +11,8 @@ label Capítulo_4_El_pobre_Pibe_Farías:
         "Volvés sobre tus pasos y llegás al cadáver del pibe Farías."
         hide casaProtagonista
     
-    show pibeColgado at subir_centrada with Dissolve(1.0)
+    show pibeColgado at subir_centrada, flash with Dissolve(1.0)
+    play sound sfx_SonidoAmbienteTerror loop
 
     "Investigás el cadáver del joven que había estado tocando en la pulpería."
 
@@ -68,10 +69,11 @@ label Capítulo_4_El_pobre_Pibe_Farías:
         "Empezás a soñar y ves la entrada a La Salamanca: cientos de alimañas salen por montones."
 
         hide casaProtagonista
-        show demonios at subir_centrada with Dissolve(1.0)
+        show demonios at subir_centrada with Dissolve(4.0)
 
         "Coronando la marcha, el chivo negro endemoniado."
         show chivo at subir_centrada with Dissolve(1.0)
+        play fx sfx_respiracion_chivo 
 
         "Atrás de todo cerrando la comitiva, el basilisco que te guió por el laberinto."
 
@@ -117,7 +119,9 @@ label Capítulo_4_El_pobre_Pibe_Farías:
 
     label Es_hora_de_rendir_cuentas:
         hide casaposeyendose        
-        show mandi at subir_centrada with Dissolve(1.0)
+        show mandi at subir_centrada with Dissolve(5.0)
+        play sound sfx_trueno
+
         "... el Mandinga está de pie junto a tu cama."
         
         if Vida_china:
@@ -156,6 +160,8 @@ label Capítulo_4_El_pobre_Pibe_Farías:
 
         "Con la mano que tenía sobre la cabeza de tu china, la levanta de un solo movimiento."
 
+        play sound llantoChina
+
         "Sus gritos son ahogados por la gran palma de ese ser demoníaco, que cada vez es más grotesco, su cara se transforma y deja de ser la de un humano."
 
         "Su cabeza pasa a ser la de una bestia con un gran hocico y una mandíbula que se desencaja como la de una serpiente."
@@ -180,6 +186,7 @@ label Capítulo_4_El_pobre_Pibe_Farías:
             xoffset 0
             yoffset 36
 
+        play sound sfx_basilisco
         Mandinga "El don que te di te puede llevar lejos, pero recordá que cada hechizo cuenta."
 
         Mandinga "Mientras más personas hechices con tu canto más lejos me mantendré."
