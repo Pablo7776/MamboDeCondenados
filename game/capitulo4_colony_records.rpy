@@ -70,10 +70,9 @@ label Capítulo_4_Colony_Records:
         $ reputacion_con_el_mandinga -=20
         $ mostrar_repu()
         ###AUDIO auto viejo yendose###
-        "Escuchás cómo, después de un rato el auto arranca de nuevo."
-        ###AUDIO        - frenar llanto        - melodia prota (alguna)###
+        
         "Te quedás con tu china hasta la tarde, tocando la guitarra, cantando para consolarla y ofreciéndole tu hombro para llorar."
-
+        ###AUDIO        - frenar llanto        - melodia prota (alguna)###
         "No entendés muy bien cómo, pero vos sabés que ese sueño que tuviste fue real y ella de alguna manera también sabe lo que pasó con su familia."
 
         "El contrato no lo pudiste firmar, pero por la noche tenés otra oportunidad de demostrar tu don. Vas a la pulpería nuevamente."
@@ -81,16 +80,17 @@ label Capítulo_4_Colony_Records:
         jump Culpable
 
     label Culpable:
-        ###AUDIO        - frenar crepitar        - frenar melodia prota        - gente en la pulpería###
+        ###AUDIO        - frenar crepitar        - frenar melodia prota###
         hide casaProtagonista
         show pulperia at subir_centrada with Dissolve(1.0)
+        play music sfx_taberna fadein 1.0
         "Llegás a la pulpería y, en cuanto atravesás la puerta todas las miradas van a vos."
         hide pulperia
         show pulperiaEnojados at subir_centrada with Dissolve(1.0)
         "Ya la gente no te mira con admiración como anoche, ahora te miran con desprecio y odio."
-
-        ###AUDIO abucheo###
-        "Empiezan a abuchearte; al principio no entendés por qué, hasta que logran ponerse de acuerdo y te gritan:"
+        stop music
+        ###AUDIO abucheo### AUDIO
+        "Al principio no entendés por qué, hasta que lográs entender lo que te gritan:"
 
         "—¡ASESINO! ¡ASESINO!"
 
@@ -110,7 +110,7 @@ label Capítulo_4_Colony_Records:
                 jump Esto_se_vuelve_costumbre
 
     label Otra_noche_terrible:
-        $ reputacion_con_el_mandinga -=15
+        $ reputacion_con_el_mandinga -=20
         $ mostrar_repu()
         ###AUDIO frenar gente en la pulpería, aumentar abucheo###
         "Nadie te cree, te insultan y te echan de la pulpería."
