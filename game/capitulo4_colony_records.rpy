@@ -38,7 +38,8 @@ label Capítulo_4_Colony_Records:
         hide chivo
         show casaProtagonista at subir_centrada with Dissolve(1.0)
         stop music fadeout 1.0
-        "Te despertás por la mañana y tu joven china está llorando acurrucada con una frazada, hecha un bollito en tu cama."
+        ###Llanto de la china ### AUDIO
+        "Te despertás por la mañana y tu joven china está acurrucada con una frazada, hecha un bollito en tu cama."
 
     else:
         "Por último la joven china que te había abierto la puerta."
