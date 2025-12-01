@@ -37,7 +37,7 @@ label Capítulo_4_Colony_Records:
     if Vida_china:
         hide chivo
         show casaProtagonista at subir_centrada with Dissolve(1.0)
-        ###AUDIO        - frenar sonido ambiente terror        - llanto###
+        stop music fadeout 1.0
         "Te despertás por la mañana y tu joven china está llorando acurrucada con una frazada, hecha un bollito en tu cama."
 
     else:
@@ -52,9 +52,9 @@ label Capítulo_4_Colony_Records:
         "Se la traga lentamente y escuchás como poco a poco se van ahogando los gritos de la joven."
         hide devoraChina
         show casaProtagonista at subir_centrada with Dissolve(1.0)
-        ###AUDIO        - frenar sonido ambiente terror        - crepitar de fuego        - respiración agitada###
+        stop music fadeout 1.0
         "Despertás por la mañana sobresaltado, sudando frío."
-    ###AUDIO    - frenar respiración agitada    - sonido auto viejo###
+    ###AUDIO sonido auto viejo###
     "Escuchás llegar un moderno auto, con todo su ruido, y un sonido que nunca habías escuchado, parecido a una trompeta o algo así."
 
     menu:
