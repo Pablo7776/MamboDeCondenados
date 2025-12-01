@@ -206,6 +206,14 @@ image pulperiaEnojados = "images/capitulo4_colony_records/pulperiaenojada.png"
 image teatro = "images/capitulo4_colony_records/teatrolleno.png"
 
 
+#################  PLACEHOLDERS IA CAP4     EL VIEJO   ####################
+###########################################################################
+
+image talar = "images/cap4 el_viejo/talar_noche2.png"
+image luz_mala = "images/cap4 el_viejo/talar_luz_mala2.png"
+image calle_alacranes = "images/cap4 el_viejo/calle_alacranes2.png"
+image plaza_brujos = "images/cap4 el_viejo/plaza_de_brujos2.png"
+
 #################  PLACEHOLDERS IA FINALES ####################
 ########################################################################
 

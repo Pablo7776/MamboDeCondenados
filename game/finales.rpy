@@ -17,7 +17,10 @@ label finales:
 
     label El_viaje_eterno:
         ### Posible imagen: una espiral que se mueve o difumina, capaz una guitarra animada sobre la espiral"###
-        
+        ### naaa
+
+        show gauchoACaballo at subir_centrada, desvanecer with Dissolve(2.0)
+
         "Muchos años estuviste recorriendo toda la provincia tocando en cada pulpería que podías."
 
         "Te ibas dando cuenta de cómo cada vez que tocabas para un público nuevo tu mente y tu corazón iban volviéndose más y más fríos."
@@ -89,7 +92,7 @@ label finales:
         play sound sfx_trueno
 
         "El Mandinga golpea el suelo con su pesado píe."
-        
+
         hide mandingaPower
         show grieta_casa at subir_centrada with Dissolve(1.0)
         if Vida_china:

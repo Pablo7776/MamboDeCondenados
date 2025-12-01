@@ -7,9 +7,14 @@ label capitulo4_el_viejo:
         
         "Ella te besa con pasión e incluso parece que se le cae una lágrima cuando al fin te despedís."
 
+    show talar at subir_centrada with Dissolve(3.0)
+
     "Camino a la casa del viejo, se va haciendo cada vez más de noche."
     
     "El camino es largo, tenés que ir a campo traviesa, pero ya ves el límite del talar en el que está su rancho."
+
+    hide talar
+    show luz_mala at subir_centrada with Dissolve(3.0)
 
     "Estando a tiro de boleadora ves que hay una luz naranja, como una luz mala."
 
@@ -24,6 +29,8 @@ label capitulo4_el_viejo:
             jump El_canto_de_la_luz
 
     label Un_camino_de_alimanas:
+        hide luz_mala 
+        show calle_alacranes at subir_centrada with Dissolve(3.0)
         "Cuando estás volviendo en la oscura noche ves cómo el camino que entra a tu pueblo está alfombrado de alacranes."
 
         menu:
@@ -77,6 +84,10 @@ label capitulo4_el_viejo:
     label Un_gualicho_de_La_Salamanca:
         "Una caravana de alacranes, víboras y murciélagos recorren las calles de tu pueblo, vos pasás a su lado como si nada, sos una más de las alimañas."
 
+        hide calle_alacranes
+        show plaza_brujos at subir_centrada with Dissolve(3.0)
+
+
         "Llegás al centro, a la plaza principal y hay un grupo de brujas de La Salamanca haciendo un gualicho."
 
         "Te acercás, te reciben cordialmente y te explican cómo funciona tu pacto con El Mandinga."
@@ -98,7 +109,7 @@ label capitulo4_el_viejo:
         "Agarrás fuerte tu guitarra, te subís al caballo y empezás a cabalgar hacia otro destino en la pampa, a otra pulpería en la que encantar a todos con tu canto."
 
         "Y así seguís tu vida, preso de esa deuda que te perseguirá por siempre."
-        
+        hide plaza_brujos
         jump El_viaje_eterno
 
     label En_lo_oscuro_del_bosque:
