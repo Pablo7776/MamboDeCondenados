@@ -78,7 +78,7 @@ label capitulo3:
             xoffset 0
             yoffset 36
 
-        Tarta "—[nombre_jugador], tanto tiempo."
+        Tarta "[nombre_jugador], tanto tiempo."
         
         hide tarta_placeholder
 
@@ -309,7 +309,6 @@ label capitulo3:
         jump Hechizando_a_toda_la_pulpería
 
     label La_colorada_curiosa:
-        ### Hay que meter todo lo que se usa pa que sea un diálogo de la colorada
         
         show colorada_placeholder:
             xoffset 0
@@ -328,9 +327,13 @@ label capitulo3:
 
         "Se sienta y la colorada te habla de nuevo a vos."
 
-        ### Hay que meter todo lo que se usa pa que sea un diálogo de la colorada
-        "—Es su turno, don... ¿Cuál es su nombre?"
+        show colorada_placeholder:
+            xoffset 0
+            yoffset 36
+        
+        colorada "Es su turno, don... ¿Cuál es su nombre?"
 
+        hide colorada_placeholder
         menu:
             "[nombre_jugador] me llamo —respondés—, y vas al rincón de los cantores y payadores":
                 jump Hechizando_a_toda_la_pulpería
@@ -372,8 +375,14 @@ label capitulo3:
 
         if Vida_china:
             "Tu china que se había quedado tomando algo en la barra se acerca, interrumpe tu paso y te llena de besos."
-            ### Hay que meter todo lo que se usa pa que sea un diálogo de la china ###
+            
+            show china_placeholder:
+                xoffset 0
+                yoffset 36
+            
             China "¿Ya podemos ir a tu casa?"
+
+            hide china_placeholder
 
         menu:
             "Hacerle caso a tu china e ir a tu casa con ella." if Vida_china:
@@ -386,30 +395,43 @@ label capitulo3:
     label Colony_Records_y_otro_contrato:
         $ reputacion_con_el_mandinga += 5
         $ mostrar_repu()
-        ### Hay que meter todo lo que se usa pa que sea un diálogo de la colorada ###
                
         hide pulperiaAplaudiendo
         show mesa at subir_centrada with Dissolve(1.0)
 
         if not presentacion_colorada:
-            "—Me presento correctamente, soy Diana Dowley."
 
-            "—Vine a buscar talentos al interior."
+            show colorada_placeholder:
+                xoffset 0
+                yoffset 36
+            colorada "Me presento correctamente, soy Diana Dowley."
 
-            "—Represento a la discográfica Colony Records."
+            colorada "Vine a buscar talentos al interior."
 
-            "—Supongo que no la conocés; se instaló hace poco en el país, pero afuera es muy conocida."
+            colorada "Represento a la discográfica Colony Records."
+
+            colorada "Supongo que no la conocés; se instaló hace poco en el país, pero afuera es muy conocida."
+            
             $ presentacion_colorada = True
+            
+            hide colorada_placeholder
         
-        "—Me parece que tenés mucho potencial para ser parte de nuestros artistas."
 
-        "—Podrías conseguir mucho dinero, mucha fama y mucho más. Te llevaríamos por todo el país. Incluso puede que hasta al extranjero."
+        show colorada_placeholder:
+            xoffset 0
+            yoffset 36
 
-        "—Te propongo algo: nos podemos encontrar mañana por la mañana, me estoy quedando en una estancia a unos kilómetros."
+        colorada "Me parece que tenés mucho potencial para ser parte de nuestros artistas."
 
-        "—Paso por vos a la mañana; si no salís, supondré que no querés ser parte de esta gran aventura que te propongo."
+        colorada "Podrías conseguir mucho dinero, mucha fama y mucho más. Te llevaríamos por todo el país. Incluso puede que hasta al extranjero."
+
+        colorada "Te propongo algo: nos podemos encontrar mañana por la mañana, me estoy quedando en una estancia a unos kilómetros."
+
+        colorada "Paso por vos a la mañana; si no salís, supondré que no querés ser parte de esta gran aventura que te propongo."
         
-        "—Obviamente, tendrías que mudarte, al menos un tiempo, a la capital. Yo puedo organizar sin problemas esa mudanza."
+        colorada "Obviamente, tendrías que mudarte, al menos un tiempo, a la capital. Yo puedo organizar sin problemas esa mudanza."
+
+        hide colorada_placeholder
 
         menu:
             "Ya estás seguro de que no querés aceptar este trato" if Vida_china:
@@ -565,11 +587,11 @@ label capitulo3:
                 xoffset 0
                 yoffset 36
 
-            "—El viejo falleció, lo encontramos sin vida en la calle, a unas cuadras."
+            Tarta "El viejo falleció, lo encontramos sin vida en la calle, a unas cuadras."
 
-            "—Le hicimos el velorio y no fue nadie. No sabemos qué carajos le pasó."
+            Tarta "Le hicimos el velorio y no fue nadie. No sabemos qué carajos le pasó."
 
-            "—Apareció muerto de un día para el otro. Vivía en el talar, en el camino donde viven los López, pero más allá."
+            Tarta "Apareció muerto de un día para el otro. Vivía en el talar, en el camino donde viven los López, pero más allá."
 
             hide tarta_placeholder
         
