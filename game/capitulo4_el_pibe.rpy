@@ -25,7 +25,7 @@ label Capítulo_4_El_pobre_Pibe_Farías:
     hide pibeColgado
     show guitarraRota at subir_centrada with Dissolve(1.0)
 
-    "Tirada un poco más adentro del campo está la guitarra del pibe, rota y destrozada."
+    "Tirada un poco más adentro del campo está la guitarra del pibe destrozada."
 
     "Tiene otra nota escrita a mano enganchada entre las cuerdas:"
 
@@ -41,19 +41,16 @@ label Capítulo_4_El_pobre_Pibe_Farías:
 
     "... no fui ni buen cantor ni buen hijo..."
 
-    "... lo siento mucho mamá”"
+    "... lo siento mucho mamá.”"
     
     "Sabés perfectamente quién es Flavia: una vecina del pueblo, una señora grande y enferma."
-
-    hide guitarraRota
-    show pueblo at subir_centrada with Dissolve(1.0)
     
     "Decidís llevar la nota vos mismo y la pasás por debajo de la puerta de La Flavia, y volvés a tu casa arrastrando los pies."
 
     jump La_peor_noche
 
     label La_peor_noche:
-        hide pueblo
+        hide guitarraRota
         show casaProtagonista at subir_centrada with Dissolve(1.0)
 
         "Llegás a tu casa desanimado."
@@ -85,25 +82,25 @@ label Capítulo_4_El_pobre_Pibe_Farías:
 
         "Ves que llegan hasta la casa de la familia de la joven china."
 
-        hide casa
-
         "El chivo mata a su padre y las demás alimañas destrozan la casa y se comen a sus hermanos y su madre."
 
         if not Vida_china:
             "Por último la joven china que te había abierto la puerta."
 
             "Ella estuvo contemplando toda la masacre, sostenida por las grandes manos de El Mandinga."
-            
+            hide casa
+            show mandingaPower at subir_centrada with Dissolve(1.0)
             "Una vez que toda su familia fue asesinada, ves al propio Mandinga se transforma en una bestia con unas descomunales fauces."
             
             "Se la traga lentamente y escuchás como poco a poco se van ahogando los gritos de la joven."
+            hide mandingaPower
 
         hide demonios
         show naturalezaRota at subir_centrada with Dissolve(1.0)
 
         "Están cerca de tu pueblo..."
     
-        "{size=70}{cps=10}\"—BIENVENIDO A MIS HUESTES, CONDENADO!\"{/cps}{/size}"
+        Mandi "{size=70}{cps=10}\"—BIENVENIDO A MIS HUESTES, CONDENADO!\"{/cps}{/size}"
 
         "Resuena la voz de El Mandinga en tu sueño..."
 
