@@ -1,71 +1,10 @@
-# nota #
-#dos tipor de faders:
-#burn_transition y Dissolve()
-#hola
-transform vibrar:
-    linear 0.05 xoffset 4 yoffset -4
-    linear 0.05 xoffset -4 yoffset 4
-    linear 0.05 xoffset 2 yoffset -4
-    linear 0.05 xoffset -2 yoffset 2
-    repeat
-
-transform aparecer_flash:
-    alpha 0.5
-    linear 0.5 alpha 1.0
-    linear 0.5 alpha 1.0
-#    linear 0.3 alpha 1.0
-    repeat
-transform flash:
-    alpha 0.0
-    linear 0.15 alpha 1.0
-    linear 0.15 alpha 0.8
-    alpha 0.0
-    linear 0.15 alpha 1.0
-    linear 0.15 alpha 0.8
-    alpha 0.0
-    linear 0.15 alpha 1.0
-    linear 0.15 alpha 0.8
-    alpha 0.0
-    linear 0.15 alpha 1.0
-    linear 0.15 alpha 0.8
-#    linear 0.3 alpha 1.0
-
-
-transform desvanecer:
-    linear 25.0 alpha 0.0   # 5 segundos desapareciendo
-
-
-
 label capitulo1:    
 
 
     play sound sfx_galope 
 
-    #scene gauchoACaballo with Dissolve(3.0)
-    #scene gauchoACaballo with burn_transition
-    #scene placeholder8
-
-    #transform para posicionar la imagen
-    transform subir_centrada:
-        xalign 0.5      # centra horizontalmente
-        yalign 0.1      # mueve hacia arriba (0.0 es arriba, 1.0 es abajo)
-        linear 1.0 alpha 1.0  # opcional, para un fade-in suave
-
     show gauchoACaballo at subir_centrada with burn_transition
 
-
-#########################################
-### personajes ##########################
-    
-    #show personaje_placeholder:
-    #    xoffset 0
-    #    yoffset 36
-
-
-    #show protagonista_placeholder:
-    #    xoffset 1636
-    #    yoffset 36
-#############################################
 
     "Bienvenid@ al Mambo de Condenados."
 
@@ -74,30 +13,30 @@ label capitulo1:
     "Vos, guitarrista y cantor venido a menos, que ahora vas al galope por la pampa."
 
     play ambiente sfx_SonidoAmbienteTerror loop fadein 1.0
-    
-    ###play fx sfx_viento1 loop fadein 1.0
+
     "El canto de los pájaros, que hasta hace poco era alegre y armonioso, ahora suena como gritos de dolor."
+    
     hide gauchoACaballo
     show salamanca at subir_centrada with Dissolve(3.0)
     
-
     "De repente, aparece frente tuyo la piedra roja de la que te había hablado el viejo, ese que siempre está en la pulpería de tu pueblo." 
 
     stop pisadas
     stop sound
+
     "Atás y asegurás tu guitarra a la silla de tu fiel caballo, y luego pronunciás {i}La Palabra{/i}, esa que aquel viejo te confesó."
+    
     "Entonces, se abre una cueva en la roca; das un paso dentro, el caballo sale corriendo despavorido hacia el campo."
+    
     ###(sfx: relincho con fade out)
     jump Las_primeras_pruebas
 
     label Las_primeras_pruebas:
 
-        #scene placeholder with Dissolve(3.0)
         hide salamanca
         show cueva at subir_centrada, desvanecer with Dissolve(2.0)
 
         
-        ###stop fx fadeout 1.0
         $ renpy.music.set_audio_filter("viento", lowpass_filtro_viento, replace=True)
         $ renpy.music.set_audio_filter("estatica", lowpass_filtro_estatica, replace=True)
         "En el primer pasillo de este laberinto te sacás los zapatos, el sombrero y el pañuelo. Así debe ser."

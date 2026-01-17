@@ -58,6 +58,9 @@ define gui.interface_text_color = '#880000'
 
 ## Tipos y tamaños de letra ####################################################
 
+## cuántos caracteres por segundo aparecen cuando el texto se escribe en pantalla
+define config.default_text_cps = 80
+
 ## El tipo de letra del texto del juego
 define gui.text_font = "fonts/Alkhemikal.ttf"
 

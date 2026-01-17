@@ -1,18 +1,18 @@
-﻿define p = Character(" ", color="#880000")
-define Mandinga = Character("Mandinga", color="#880000")
-define china = Character("China", color="#880000")
+﻿#################  personajes ##############################
+############################################################
+
+define p = Character(" ", color="#D4AF37")
+define Mandinga = Character("Mandinga", color="#D4AF37")
+define china = Character("China", color="#D4AF37")
+define colorada = Character("Colorada", color="#D4AF37")
+define Tarta = Character("Tarta", color="#D4AF37")
+
+############################################################
+
+
 default reputacion_con_el_mandinga = 100
-define colorada = Character("Colorada", color="#880000")
-define Tarta = Character("Tarta", color="#880000")
-
-#default reputacion_con_el_mandinga = 100
-define config.default_text_cps = 80
-define burn_transition = Fade(0.6, 0.4, 0.8, color="#000000")  # naranja tipo fuego
 
 
-
-
-#image logo = "images/y.png"
 
 label start:
     # Cargar la reputación persistente o usar 100 si no existe
@@ -27,21 +27,15 @@ label start:
 
     play viento "audio/viento.mp3" loop
     play estatica "audio/ruidoRosa.mp3" loop
-    #$ renpy.music.set_audio_filter("viento", lowpass_filtro_viento, replace=True)
 
 
 
-    #play acufeno "audio/acufeno.mp3"
+    ##########################################################
     
-    ######pruebas
-    #show logo at left
-    #"El logo está a la izquierda."
-
-    #show logo at Move((0.0, 0.5), (1.0, 0.5), 10.0)
-    #"Ahora el logo se mueve de izquierda a derecha en 2 segundos."
-    #############
     #jump capitulo1
+    
     #menu:
+        
         #"ir a cap 1":
         #    jump capitulo1
         #"Dar_un_paso_hacia_la_oscuridad":
