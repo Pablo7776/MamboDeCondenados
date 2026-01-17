@@ -30,7 +30,6 @@ image mandinga_placeholder = Animation(
 )
 
 
-#image protagonista_placeholder = "placeholders/personajes/prota.jpg"
 
 image protagonista_placeholder = Animation(
     "images/personajes/framesProtagonista/frame1.png", 0.2,
@@ -52,7 +51,6 @@ image china_placeholder = Animation(
     "images/personajes/china/frame3.png", 0.2,
     "images/personajes/china/frame3.png", 0.2,
     "images/personajes/china/frame3.png", 0.2,
-    #"images/personajes/china/frame6.png", 0.2,
     "images/personajes/china/frame8.png", 0.2,
     "images/personajes/china/frame8.png", 0.2,
     "images/personajes/china/frame9.png", 0.2,
@@ -72,7 +70,7 @@ image casaposeyendose = Animation(
 
     repeat=False
 )
-#image china_placeholder = "images/personajes/chinaEscalado.png"
+
 
 image colorada_placeholder = Animation(
     "images/personajes/coloradaFames/frame_1.png", 0.2,
@@ -89,7 +87,6 @@ image colorada_placeholder = Animation(
     repeat=True
 )
 
-#image colorada_placeholder = "images/personajes/colorada2.png"
 
 
 
@@ -108,7 +105,7 @@ image tarta_placeholder = Animation(
 
     repeat=True
 )
-#image tarta_placeholder = "images/personajes/placeholder IA/tarta1.png"
+
 ############################################################
 #################  REPUTACION ##############################
 ############################################################
@@ -125,30 +122,20 @@ image reputacion5 = "images/reputacion/Guitarra100repuomas.png"
 #################  CAPITULO 1 ##############################
 ############################################################
 
-#image fondo_pampa = "images/fondos/gaucho.jpeg"
-#image fondo = "images/fondos/fondo.jpg"
-#image gaucho_a_caballo = "images/personajes/gaucho.png"
 
 image gauchoACaballo = "images/capitulo1/gauchoACaballo.jpeg"
 image salamanca = "images/capitulo1/salamanca1280.jpg"
 image caida1 = "images/capitulo1/abismo.png"
-image caida = "images/capitulo1/caida.jpg"
 image cueva = "images/capitulo1/cueva.png"
 
-
-image pergamino = "images/capitulo1/old_paper.png"
-
 #################  PLACEHOLDERS IA CAP1 ####################
-############################################################
 
-#image chivo = "images/capitulo1/ia/chivo2.png"
-image chivo = Animation(
-    "images/capitulo1/ia/chivo3.png", 0.01,
-    "images/capitulo1/ia/chivo2.png", 0.01,
-
-
-    repeat=True
-)
+image chivo = "images/capitulo1/ia/chivo2.png"
+#image chivo = Animation(
+#    "images/capitulo1/ia/chivo3.png", 0.01,
+#    "images/capitulo1/ia/chivo2.png", 0.01,
+#    repeat=True
+#)
 
 image caida2 = "images/capitulo1/ia/caida2.png"
 image trono = "images/capitulo1/saladeltrono.png"

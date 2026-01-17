@@ -408,7 +408,6 @@ label A_dónde_hay_que_firmar:
         play fx crucifijo
          
         "Escupís el crucifijo y seguís por el filo del facón, lográs llegar al otro lado."
-        #show pergamino with dissolve  # ← muestra la imagen del pergamino
         "Una bruja te recibe con un pergamino abierto, un diablillo moja una pluma en la sangre de tus pies y te la da."
     
 

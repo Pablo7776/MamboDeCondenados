@@ -60,7 +60,6 @@ define gui.interface_text_color = '#880000'
 
 ## El tipo de letra del texto del juego
 define gui.text_font = "fonts/Alkhemikal.ttf"
-#define gui.text_font = "fonts/tarotheque/JMH Typewriter.otf"
 
 ## El tipo de letra de los nombres de personajes
 define gui.name_text_font = "fonts/Alkhemikal.ttf"
