@@ -361,35 +361,8 @@ transform fade_in_background:
     linear 2.5 alpha 1.0  # tarda 2.5 segundos en aparecer
 screen main_menu():
 
-    ## Esto asegura que cualquier otra pantalla de menu es remplazada.
     tag menu
-
-        # Fondo con aparición suave
-    add "gui/faconMenu.png" at fade_in_background
-#######################################################################
-    # Fondo del menú
-    #add "images/facon2.png"
-
-    # Muestra la imagen del título solo cuando hoverea
-    imagebutton:
-        idle "images/facon4.png"  # puede ser transparente
-        hover "images/facon4.png"
-        action Start()  # si querés que se pueda hacer click para empezar
-        xalign 0.9
-        yalign 0.9
-###########################################################
-
     add gui.main_menu_background  xalign 1.5 yalign 0.0
-
-        # Imagen del título sobre el fondo
-    #add # "images/facon2.png":
-        #xalign 0.5   # centro horizontal
-        #yalign 1.5   # un poco arriba
-        # podés usar xpos/ypos si preferís coordenadas exactas
-        #zoom 2.0 
-    ## Este marco vacío oscurece el menu principal.
-    #frame:
-        #style "main_menu_frame"
 
     ## La sentencia 'use' incluye otra pantalla dentro de esta. El contenido
     ## real del menú principal está en la pantalla de navegación.
