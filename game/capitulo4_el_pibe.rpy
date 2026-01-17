@@ -100,7 +100,7 @@ label Capítulo_4_El_pobre_Pibe_Farías:
 
         "Están cerca de tu pueblo..."
     
-        Mandi "{size=70}{cps=10}\"—BIENVENIDO A MIS HUESTES, CONDENADO!\"{/cps}{/size}"
+        "{size=70}{cps=10}\"—BIENVENIDO A MIS HUESTES, CONDENADO!\"{/cps}{/size}"
 
         "Resuena la voz de El Mandinga en tu sueño..."
 

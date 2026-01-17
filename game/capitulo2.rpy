@@ -80,12 +80,11 @@ label noche_ante_las_estrellas:
     
     hide higuera with Dissolve(4.0)
 
-    menu:
-        #"Cabalgás pensativo rumbo a la pulpería del Tarta, en tu pueblo.":
-            #jump capitulo3
-            #jump continuara
-        "Al tercer capítulo":
-            jump capitulo3
+    jump continuara
+    #menu:
+    #jump continuara
+        #"Al tercer capítulo":
+        #    jump capitulo3
 
 label puerta_del_rancho:
     hide ranchoHiguera
@@ -171,10 +170,10 @@ label La_noche_de_pasión:
     #show naturaleza at subir_centrada with Dissolve(1.0)
     
     #jump capitulo3
-    #jump continuara
-    menu:
-        "Al tercer capítulo":
-            jump capitulo3
+    jump continuara
+    #menu:
+    #    "Al tercer capítulo":
+    #        jump capitulo3
 
 label Una_mañana_incómoda:
     $ reputacion_con_el_mandinga -= 20
@@ -211,10 +210,10 @@ label Una_mañana_incómoda:
     "Te subís a tu caballo y galopás hacia tu pueblo y hacia la Pulpería del Tarta"
     hide casa with Dissolve(4.0)
     #jump capitulo3
-    #jump continuara
-    menu:
-        "Al tercer capítulo":
-            jump capitulo3
+    jump continuara
+    #menu:
+    #    "Al tercer capítulo":
+    #        jump capitulo3
 
 label Fuiste_cordial_y_se_te_agradece_por_ello:
     $ reputacion_con_el_mandinga -= 15
@@ -306,8 +305,8 @@ label No_fuiste_muy_cordial:
     "Tomás las riendas y seguís cabalgando pensativo rumbo a la pulpería del Tarta."
     hide muerte with Dissolve(4.0)
     #show naturaleza at subir_centrada with Dissolve(1.0)
-        #jump continuara
+    jump continuara
     #jump capitulo3
-    menu:
-        "Al tercer capítulo":
-            jump capitulo3
+    #menu:
+    #    "Al tercer capítulo":
+    #        jump capitulo3
