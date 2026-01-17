@@ -125,8 +125,8 @@ image reputacion5 = "images/reputacion/Guitarra100repuomas.png"
 #################  CAPITULO 1 ##############################
 ############################################################
 
-image fondo_pampa = "images/fondos/gaucho.jpeg"
-image fondo = "images/fondos/fondo.jpg"
+#image fondo_pampa = "images/fondos/gaucho.jpeg"
+#image fondo = "images/fondos/fondo.jpg"
 #image gaucho_a_caballo = "images/personajes/gaucho.png"
 
 image gauchoACaballo = "images/capitulo1/gauchoACaballo.jpeg"

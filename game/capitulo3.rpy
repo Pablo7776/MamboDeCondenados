@@ -385,7 +385,7 @@ label capitulo3:
                 xoffset 0
                 yoffset 36
             
-            China "¿Ya podemos ir a tu casa?"
+            china "¿Ya podemos ir a tu casa?"
 
             hide china_placeholder
 
