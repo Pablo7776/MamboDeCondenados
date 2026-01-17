@@ -39,6 +39,7 @@ label capitulo1:
         
         $ renpy.music.set_audio_filter("viento", lowpass_filtro_viento, replace=True)
         $ renpy.music.set_audio_filter("estatica", lowpass_filtro_estatica, replace=True)
+        
         "En el primer pasillo de este laberinto te sacás los zapatos, el sombrero y el pañuelo. Así debe ser."
         
         "Ya sumido en la oscuridad pronto sentís la presencia del basilisco."
