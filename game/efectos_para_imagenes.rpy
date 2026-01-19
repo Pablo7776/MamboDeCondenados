@@ -45,4 +45,4 @@ transform mostrar_derecha:
     yoffset 36
 
 
-define burn_transition = Fade(0.6, 0.4, 0.8, color="#000000")  # naranja tipo fuego
+define black_transition = Fade(0.6, 0.4, 0.8, color="#000000")  # 

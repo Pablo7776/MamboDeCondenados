@@ -3,7 +3,7 @@ label capitulo1:
 
     play sound sfx_galope 
 
-    show gauchoACaballo at subir_centrada with burn_transition
+    show gauchoACaballo at subir_centrada with black_transition
 
 
     "Bienvenid@ al Mambo de Condenados."
