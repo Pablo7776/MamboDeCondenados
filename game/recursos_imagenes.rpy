@@ -1,46 +1,47 @@
-################### PLACEHOLDERS ###########################
+################### PLACEHOLDERS 1920 x 1080 #########################
 
-image placeholder = "placeholders/Unnamed.jpg"
-image placeholder2 = "placeholders/Unnamed2.jpg"
-image placeholder3 = "placeholders/Unnamed3.jpg"
-image placeholder4 = "placeholders/Unnamed4.jpg"
-image placeholder5 = "placeholders/Unnamed5.jpg"
-image placeholder6 = "placeholders/Unnamed6.jpg"
-image placeholder7 = "placeholders/Unnamed7.jpg"
-image placeholder8 = "placeholders/negro.jpg"
+image placeholder = "images/placeholders/Unnamed.jpg"
+image placeholder2 = "images/placeholders/Unnamed2.jpg"
+image placeholder3 = "images/placeholders/Unnamed3.jpg"
+image placeholder4 = "images/placeholders/Unnamed4.jpg"
+image placeholder5 = "images/placeholders/Unnamed5.jpg"
+image placeholder6 = "images/placeholders/Unnamed6.jpg"
+image placeholder7 = "images/placeholders/Unnamed7.jpg"
+image placeholder_negro = "images/placeholders/negro.jpg"
 
 
-################### PLACEHOLDERS pequeños ###########################
+################### PLACEHOLDERS 1280 x 720 ###########################
 
-image placeholderm = "placeholders/m/Unnamed.png"
-image placeholder2m = "placeholders/m/Unnamed2.png"
-image placeholder3m = "placeholders/m/Unnamed3.png"
-image placeholder6m = "placeholders/m/Unnamed6.png"
+image placeholderm = "images/placeholders/m/Unnamed.png"
+image placeholder2m = "images/placeholders/m/Unnamed2.png"
+image placeholder3m = "images/placeholders/m/Unnamed3.png"
+image placeholder6m = "images/placeholders/m/Unnamed6.png"
 
-################### PLACEHOLDERS personajes ###########################
+
+################### PLACEHOLDERS personajes 200 x 200 ##################
 
 image mandinga_placeholder = Animation(
-    "images/personajes/frameMandinga/frame1.png", 0.2,
-    "images/personajes/frameMandinga/frame2.png", 0.2,
-    "images/personajes/frameMandinga/frame3.png", 0.2,
-    "images/personajes/frameMandinga/frame4.png", 0.2,
-    "images/personajes/frameMandinga/frame5.png", 0.2,
-    "images/personajes/frameMandinga/frame6.png", 0.2,
+    "images/personajes/mandinga/frame1.png", 0.2,
+    "images/personajes/mandinga/frame2.png", 0.2,
+    "images/personajes/mandinga/frame3.png", 0.2,
+    "images/personajes/mandinga/frame4.png", 0.2,
+    "images/personajes/mandinga/frame5.png", 0.2,
+    "images/personajes/mandinga/frame6.png", 0.2,
     repeat=True
 )
 
 
 
 image protagonista_placeholder = Animation(
-    "images/personajes/framesProtagonista/frame1.png", 0.2,
-    "images/personajes/framesProtagonista/frame2.png", 0.2,
-    "images/personajes/framesProtagonista/frame3.png", 0.2,
-    "images/personajes/framesProtagonista/frame4.png", 0.2,
-    "images/personajes/framesProtagonista/frame5.png", 0.2,
-    "images/personajes/framesProtagonista/frame6.png", 0.2,
-    "images/personajes/framesProtagonista/frame7.png", 0.2,
-    "images/personajes/framesProtagonista/frame8.png", 0.2,
-    "images/personajes/framesProtagonista/frame9.png", 0.2,
+    "images/personajes/protagonista/frame1.png", 0.2,
+    "images/personajes/protagonista/frame2.png", 0.2,
+    "images/personajes/protagonista/frame3.png", 0.2,
+    "images/personajes/protagonista/frame4.png", 0.2,
+    "images/personajes/protagonista/frame5.png", 0.2,
+    "images/personajes/protagonista/frame6.png", 0.2,
+    "images/personajes/protagonista/frame7.png", 0.2,
+    "images/personajes/protagonista/frame8.png", 0.2,
+    "images/personajes/protagonista/frame9.png", 0.2,
 
     repeat=True
 )
@@ -60,29 +61,17 @@ image china_placeholder = Animation(
 )
 
 
-image casaposeyendose = Animation(
-    "images/capitulo 3/casaprota.png", 0.7,
-    "images/capitulo4_pibe/casaprotaposeida.png", 0.2,
-    "images/capitulo 3/casaprota.png", 0.5,
-    "images/capitulo4_pibe/casaprotaposeida.png", 0.4,
-    "images/capitulo 3/casaprota.png", 0.3,
-    "images/capitulo4_pibe/casaprotaposeida.png", 0.6,
-
-    repeat=False
-)
-
-
 image colorada_placeholder = Animation(
-    "images/personajes/coloradaFames/frame_1.png", 0.2,
-    "images/personajes/coloradaFames/frame_2.png", 0.2,
-    "images/personajes/coloradaFames/frame_3.png", 0.2,
-    "images/personajes/coloradaFames/frame_4.png", 0.2,
-    "images/personajes/coloradaFames/frame_5.png", 0.2,
-    "images/personajes/coloradaFames/frame_6.png", 0.2,
-    "images/personajes/coloradaFames/frame_7.png", 0.2,
-    "images/personajes/coloradaFames/frame_8.png", 0.2,
-    "images/personajes/coloradaFames/frame_9.png", 0.2,
-    "images/personajes/coloradaFames/frame_10.png", 0.2,
+    "images/personajes/colorada/frame_1.png", 0.2,
+    "images/personajes/colorada/frame_2.png", 0.2,
+    "images/personajes/colorada/frame_3.png", 0.2,
+    "images/personajes/colorada/frame_4.png", 0.2,
+    "images/personajes/colorada/frame_5.png", 0.2,
+    "images/personajes/colorada/frame_6.png", 0.2,
+    "images/personajes/colorada/frame_7.png", 0.2,
+    "images/personajes/colorada/frame_8.png", 0.2,
+    "images/personajes/colorada/frame_9.png", 0.2,
+    "images/personajes/colorada/frame_10.png", 0.2,
 
     repeat=True
 )
@@ -91,17 +80,17 @@ image colorada_placeholder = Animation(
 
 
 image tarta_placeholder = Animation(
-    "images/personajes/framesTarta/frame_0001.png", 0.2,
-    "images/personajes/framesTarta/frame_0002.png", 0.2,
-    "images/personajes/framesTarta/frame_0003.png", 0.2,
-    "images/personajes/framesTarta/frame_0004.png", 0.2,
-    "images/personajes/framesTarta/frame_0005.png", 0.2,
-    "images/personajes/framesTarta/frame_0006.png", 0.2,
-    "images/personajes/framesTarta/frame_0007.png", 0.2,
-    "images/personajes/framesTarta/frame_0008.png", 0.2,
-    "images/personajes/framesTarta/frame_0009.png", 0.2,
-    "images/personajes/framesTarta/frame_0010.png", 0.2,
-    "images/personajes/framesTarta/frame_0011.png", 0.2,
+    "images/personajes/tarta/frame_0001.png", 0.2,
+    "images/personajes/tarta/frame_0002.png", 0.2,
+    "images/personajes/tarta/frame_0003.png", 0.2,
+    "images/personajes/tarta/frame_0004.png", 0.2,
+    "images/personajes/tarta/frame_0005.png", 0.2,
+    "images/personajes/tarta/frame_0006.png", 0.2,
+    "images/personajes/tarta/frame_0007.png", 0.2,
+    "images/personajes/tarta/frame_0008.png", 0.2,
+    "images/personajes/tarta/frame_0009.png", 0.2,
+    "images/personajes/tarta/frame_0010.png", 0.2,
+    "images/personajes/tarta/frame_0011.png", 0.2,
 
     repeat=True
 )
@@ -131,6 +120,9 @@ image cueva = "images/capitulo1/cueva.png"
 #################  PLACEHOLDERS IA CAP1 ####################
 
 image chivo = "images/capitulo1/ia/chivo2.png"
+
+### mete bug en android...
+
 #image chivo = Animation(
 #    "images/capitulo1/ia/chivo3.png", 0.01,
 #    "images/capitulo1/ia/chivo2.png", 0.01,
@@ -161,6 +153,9 @@ image casa = "images/capitulo2/casaEscalado.png"
 image casaInterior = "images/capitulo2/casaInteriorEscalado.png"
 image naturaleza = "images/capitulo 3/naturaleza2.png"
 
+
+
+
 #################  PLACEHOLDERS IA CAP3 ####################
 ############################################################
 
@@ -173,7 +168,27 @@ image pueblo = "images/capitulo 3/exteriorpueblo.png"
 image pibeColgado = "images/capitulo 3/pibecolgado3.png"
 image casaProtagonista = "images/capitulo 3/casaprota.png"
 
-#################  PLACEHOLDERS IA CAP4 PIBE FARIAS ####################
+
+
+
+
+#################  PLACEHOLDERS IA CAP4 ################################
+########################################################################
+
+image casaposeyendose = Animation(
+    "images/capitulo 3/casaprota.png", 0.7,
+    "images/capitulo4_pibe/casaprotaposeida.png", 0.2,
+    "images/capitulo 3/casaprota.png", 0.5,
+    "images/capitulo4_pibe/casaprotaposeida.png", 0.4,
+    "images/capitulo 3/casaprota.png", 0.3,
+    "images/capitulo4_pibe/casaprotaposeida.png", 0.6,
+
+    repeat=False
+)
+
+
+
+################# CAP4 PIBE FARIAS ####################
 ########################################################################
 
 image guitarraRota = "images/capitulo4_pibe/guitarrarota.png"
@@ -184,7 +199,7 @@ image devoraChina = "images/capitulo4_pibe/chinaDevorada.png"
 image arpiaChina = "images/capitulo4_pibe/china_arpia.png"
 image huestesEnPueblo = "images/capitulo4_pibe/pueblo_alimanas.png"
 
-#################  PLACEHOLDERS IA CAP4 COLONY RECORDS ####################
+################# CAP4 COLONY RECORDS ####################
 ###########################################################################
 
 image puebloNoche = "images/capitulo4_colony_records/pueblo_de_noche.png"
@@ -193,7 +208,7 @@ image pulperiaEnojados = "images/capitulo4_colony_records/pulperiaenojada.png"
 image teatro = "images/capitulo4_colony_records/teatrolleno.png"
 
 
-#################  PLACEHOLDERS IA CAP4     EL VIEJO   ####################
+################# CAP4 EL VIEJO   ####################
 ###########################################################################
 
 image talar = "images/cap4 el_viejo/talar_noche2.png"

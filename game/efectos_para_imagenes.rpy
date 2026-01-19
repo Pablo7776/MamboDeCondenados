@@ -36,5 +36,13 @@ transform subir_centrada:
     yalign 0.1      # mueve hacia arriba (0.0 es arriba, 1.0 es abajo)
     linear 1.0 alpha 1.0  # opcional, para un fade-in suave
 
+transform mostrar_izquierda:
+    xoffset 0    
+    yoffset 36      
+
+transform mostrar_derecha:
+    xoffset 1636
+    yoffset 36
+
 
 define burn_transition = Fade(0.6, 0.4, 0.8, color="#000000")  # naranja tipo fuego

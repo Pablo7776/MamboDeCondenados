@@ -96,7 +96,7 @@ label puerta_del_rancho:
         xoffset 0
         yoffset 36
 
-    china "—¿Quién es? ¿Qué necesitás?"
+    China "—¿Quién es? ¿Qué necesitás?"
     hide china_placeholder
 
     menu:
@@ -144,7 +144,7 @@ label Tus_primeros_hechizados:
     show china_placeholder:
         xoffset 0
         yoffset 36
-    china "Disculpe, ¿puedo... estar con usted esta noche?" #efecto
+    China "Disculpe, ¿puedo... estar con usted esta noche?" #efecto
     hide china_placeholder
 
     menu:
