@@ -31,9 +31,6 @@ label start:
 
 
     ##########################################################
-    
-    #jump capitulo1
-    
     #menu:
         
         #"ir a cap 1":
@@ -60,6 +57,8 @@ label start:
         #    jump continuará
         #"munú sonoro":
         #    jump menuSonoro
+    ##########################################################
+
 
     jump capitulo1
 
