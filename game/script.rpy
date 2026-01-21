@@ -25,10 +25,6 @@ label start:
     
     stop music fadeout 1.0
 
-    play viento "audio/viento.mp3" loop
-    play estatica "audio/ruidoRosa.mp3" loop
-
-
 
     ##########################################################
     #menu:

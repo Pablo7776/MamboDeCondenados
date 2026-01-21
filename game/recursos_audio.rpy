@@ -1,9 +1,8 @@
 ################  EFECTOS DE SONIDO #########################
 
+
 define sfx_viento1 = "audio/capitulo1/viento1.ogg"
-define ruidoRosa = "audio/ruidoRosa2.mp3"
-
-
+define ruidoRosa = "audio/capitulo1/ruidoRosa2.mp3"
 define sfx_galope = "audio/capitulo1/sfx_galope.ogg"
 define sfx_SonidoAmbienteTerror = "audio/capitulo1/sfx_SonidoAmbienteTerror.ogg"
 define sfx_respiracion_chivo = "audio/capitulo1/respiracion_chivo.ogg"
@@ -14,10 +13,13 @@ define sfx_infrasonido = "audio/capitulo1/sfx_infrasonido.ogg"
 define sfx_inicio_fuego = "audio/capitulo1/inicio_fuego.mp3"
 define sfx_hoguera_pequena = "audio/capitulo1/fuegoconstante_pequeno.mp3"
 define sfx_trueno = "audio/capitulo1/sfx_trueno.ogg"
+define crucifijo = "audio/capitulo1/acufeno.ogg"
 
 
 
 define sfx_crujir = "audio/capitulo2/piedra_cerrandose2.mp3"
+
+
 
 define sfx_taberna = "audio/capitulo3/genteenlapulperia.mp3"
 define sfx_aplausos = "audio/capitulo3/aplausos1.mp3"

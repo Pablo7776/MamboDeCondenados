@@ -21,7 +21,6 @@ label capitulo1:
     
     "De repente, aparece frente tuyo la piedra roja de la que te había hablado el viejo, ese que siempre está en la pulpería de tu pueblo." 
 
-    stop pisadas
     stop sound
 
     "Atás y asegurás tu guitarra a la silla de tu fiel caballo, y luego pronunciás {i}La Palabra{/i}, esa que aquel viejo te confesó."
@@ -387,17 +386,13 @@ label A_dónde_hay_que_firmar:
         hide cuchillo
         show demonios at subir_centrada, aparecer_flash with Dissolve(1.0)
 
-        stop sfx_SonidoAmbienteTerror fadeout 1.0
-        stop sfx_galope fadeout 1.0
-        stop audio fadeout 1.0
+        stop ambiente fadeout 1.0
         stop music fadeout 1.0
         stop sound fadeout 1.0
-        stop ambiente fadeout 1.0
-        stop viento fadeout 1.0
         stop fx fadeout 1.0
-        stop acufeno fadeout 1.0
-        stop pisadas fadeout 1.0
-        stop estatica fadeout 1.0
+        stop audio fadeout 1.0
+        stop viento fadeout 1.0
+
         play sound sfx_viento1 volume 0.3
         play fx crucifijo
          
