@@ -459,7 +459,7 @@ label A_dónde_hay_que_firmar:
     label Lo_lograste:
 
         pause 0.01
-        play sound sfx_basilisco
+        play SFX_2 sfx_basilisco
         
         show mandinga_placeholder at mostrar_izquierda
 
@@ -468,7 +468,7 @@ label A_dónde_hay_que_firmar:
         hide mandinga_placeholder
 
         
-        play music musica_piedra_y_camino
+        play BGM musica_piedra_y_camino
 
         "Las brujas, los brujos y los diablillos arrancan la fiesta a tu alrededor, sentís como tu garganta arde y luego se calma y empezás a cantar junto a los demás."
         
@@ -483,7 +483,8 @@ label A_dónde_hay_que_firmar:
 
     label En_un_rancho_cercano:
 
-        stop sfx_SonidoAmbienteTerror fadeout 1.0
+        stop SFX_1 fadeout 1.0
+        stop SFX_2 fadeout 1.0
 
         "A pocos kilómetros una señora se despierta asustada por el alboroto, empieza a rezar..."
         
