@@ -1,8 +1,15 @@
 label capitulo1:    
 
+    # ESCENA 1.1
 
+    # (SFX: galope de caballo)
+    # (SFX: viento y estática)
+    # (SFX: canto de pájaros)
+    
+    # SFX
     play SFX_1 sfx_galope loop
-
+    play SFX_2 sfx_VientoYEstatica loop
+    # ESCENA
     show gauchoACaballo at subir_centrada with black_transition
 
     "Bienvenid@ al Mambo de Condenados."
@@ -14,15 +21,28 @@ label capitulo1:
 
     stop SFX_1 fadeout 5
 
-    play SFX_2 sfx_SonidoAmbienteTerror loop fadein 2.0
+    
 
     "El canto de los pájaros, 
     que hasta hace poco era alegre y armonioso, 
     ahora suena como gritos de dolor."
     
     hide gauchoACaballo
+
+    # ESCENA 1.2
+    # (SFX:Sonido ambiental de terror que se intensifica)
+    # (SFX: sigue el sonido del viento)
+    # (SFX: el canto de los pájaros se convierte en graznidos y ululaciones)
+
+    # SFX
+    # play SFX_1 sfx_SonidoAmbienteTerror loop fadein 2.0 
+    play SFX_1 sfx_AmbientalTerror loop fadein 2.0 
+
+
     show salamanca at subir_centrada with Dissolve(3.0)
     
+
+
     "De repente, aparece frente tuyo la piedra roja 
     de la que te había hablado el viejo, 
     ese que siempre está en la pulpería de tu pueblo." 
@@ -40,10 +60,12 @@ label capitulo1:
 
     label Las_primeras_pruebas:
 
+        # Callar sonido de viento y estatica
+        stop SFX_2 fadeout 5
 
         hide salamanca
 
-        $ aplicar_lpf("SFX_2")
+        # $ aplicar_lpf("SFX_2")
 
         show cueva at subir_centrada, desvanecer with Dissolve(2.0)
         
@@ -80,7 +102,7 @@ label capitulo1:
         hide cueva
         show placeholder_negro at subir_centrada with Dissolve(1.0)
 
-        play SFX_1 sfx_respiracion_chivo 
+        play SFX_2 sfx_respiracion_chivo 
 
         "Entonces aparece ese animal grotesco del que te había contado el viejo: un chivo de pelo negro, ojos endemoniados y cuernos tan curvados como una espiral."
         
