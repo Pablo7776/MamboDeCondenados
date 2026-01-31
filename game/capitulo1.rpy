@@ -113,7 +113,6 @@ label capitulo1:
         show caida1 at subir_centrada with Dissolve(4.0)
         ###(SFX: Sonido de viento al caer)        
         "El hueco es profundo, más que profundo, estás cayendo al abismo."
-        
         "Ves pasar lechuzas negras a tu lado, seguís cayendo y de repente te desmayás."
         
         hide caida1
@@ -122,7 +121,6 @@ label capitulo1:
         # ESCENA 1.7
         
         "Despertás y estás en el fondo, ves sobre vos el abismo que sube en espirales de roca viva."
-
         "Te levantás y no podés ver nada delante tuyo, es sólo una profunda oscuridad."  
     
         menu:
@@ -156,7 +154,6 @@ label capitulo1:
             "El chivo corre hacia vos, lográs evitar el primer golpe y le pegás una patada."
             ###(SFX: Trote de cabra)
             "Se da vuelta y vuelve a intentar embestirte, de éste no pudiste zafar, caés al suelo y te defendes a las patadas y a las trompadas."
-            
             "Pero el chivo es pesado y sus pezuñas son como hachas contra tu cuerpo."
             
             #ESCENA 1.7A.1a.2
@@ -177,7 +174,6 @@ label capitulo1:
             "Si antes pudiste pasar por al lado de él sin que se de cuenta ¿por qué no intentarlo nuevamente?"
             ###(SFX: Trote de cabra)
             "Das un paso y el chivo corre tan rápidamente hacia vos que no lográs evitarlo, te tira nuevamente por el hueco del que saliste." 
-
             "Caés y caés a lo profundo del abismo nuevamente.":
                     jump La_caida
 
@@ -202,9 +198,7 @@ label capitulo1:
         # play SFX_2 ruidoRosa loop fadein 1.0
         
         "Lográs ver la enorme sala con sus cortinas magníficas, su piso y sus columnas de mármol."
-        
         "En el fondo el enorme trono, escondidas entre las columnas y detrás de él ves lechuzas, quirquinchos, perros, chanchos, culebras y sapos, también, hechiceros, brujas y diablillos."
-        
         "Viniste para esto."
         
         menu:
@@ -223,9 +217,7 @@ label capitulo1:
             play SFX_2 sfx_trueno volume 0.5
 
             "Se desmorona una de las paredes que deja un gran agujero en uno de los costados de la sala."
-            
             "Él atraviesa las cortinas, un enorme ser, mitad serpiente, mitad humano, ES EL MANDINGA."
-            
             "Se sienta en su trono y te mira con un gesto curioso."
             
             hide mandi
@@ -266,7 +258,6 @@ label capitulo1:
             "Se abre un agujero en una de las paredes y él atraviesa las cortinas."
             "Un enorme ser, con pequeños cuernos, mitad serpiente, mitad humano."
             "ES EL MANDINGA." ###Aplicar VFX shake sobre el texto
-            
             "Se sienta en su trono y te mira con un gesto severo y vehemente."
             
             hide mandi
@@ -297,25 +288,21 @@ label capitulo1:
 
 
             label Recular:
-                hide mandi2
-                show muerte at subir_centrada with Dissolve(1.0)
+                # ESCENA 1.7B.2
 
                 "Te arrepentís, empezás a balbucear y… "
-
-                hide muerte
                 
+                hide mandi2
                 stop SFX_1 fadeout 1.0
                 stop SFX_2 fadeout 1.0
                 # Aca estaria bueno reveer el orden ya que no da lugar al fadeout
                 play SFX_1 sfx_taberna loop fadein 1.0
-                
+                ###(Música: vidala de 0:46 con fadein de 2 segundos)
                 show pulperia at subir_centrada with Dissolve(1.0)
                 
                 "Estás completamente borracho, con la cabeza sobre una mesa de la pulpería del Tarta."
-                
                 "Una guitarra suena; parece que eso te despertó."
-                
-                "El payador empieza a contar una vieja leyenda de estas tierras: la leyenda de La Salamanca."
+                "Un vidalero empieza a contar una vieja leyenda de tus tierras: la leyenda de La Salamanca."
                 
                 hide pulperia
 
@@ -324,15 +311,13 @@ label capitulo1:
 
 label Quiero_hechizar:
 
+    # ESCENA 1.7B.3
     show protagonista_placeholder at mostrar_derecha
 
     
     Protagonista "¡Quiero hechizar a todos con mi canto!"
     
     hide protagonista_placeholder
-
-
-    "Le decís a aquel ser del inframundo."
 
     hide mandi2
     show mandi2 at subir_centrada,vibrar, with Dissolve(0.5)
@@ -343,31 +328,39 @@ label Quiero_hechizar:
     show mandinga_placeholder at mostrar_izquierda
 
     
-    Mandinga "Me gusta tu pasión, pero no tan rápido, eso va a costarte el alma."
+    Mandinga "Me gusta tu pasión, pero ¿estás seguro?."
+    Mandinga "Eso va a costarte el alma."
+    ###(SFX: siseo)
 
     hide mandinga_placeholder
     pause 1.5 
     show mandi2 at subir_centrada
 
     menu:
-        "Reculás, ¿quién le entregaría su alma a un ser así?":
+        "Pensás “¿quién le entregaría su alma a un ser así?” y titubeás":
             jump Recular
-        "¿A dónde hay que firmar?":
+        "Decís “¿A dónde hay que firmar?”":
             jump A_dónde_hay_que_firmar
 
 
 label A_dónde_hay_que_firmar:
-
-    "Aceptás vender tu alma y el Mandinga te dice que aún hay unas pruebas más que debés superar."
+    # ESCENA 1.7B.4
+    "Aceptás vender tu alma."
+    ###show mandinga_placeholder at mostrar_izquierda
+    Mandinga "Perfecto, pero no terminamos todavía, hay unas pruebas que vas a tener que pasar."
+    ###(SFX: siseo)
+    ###hide mandinga_placeholder
     
-    "Hace un gesto con su mano y, ante vos, se abre el suelo."
-    
-    "Una gran grieta separa la sala al medio: de un lado estás vos; del otro, el Mandinga, su trono y sus seguidores."
+    "El Mandinga hace un gesto con la mano y, ante vos, se abre el suelo."
+    "Una gran grieta separa la sala al medio:"
+    "De un lado estás vos; del otro, el Mandinga, su trono y sus seguidores."
     
     hide mandi2
+
+    # ESCENA 1.7B.5
     show cuchillo at subir_centrada,vibrar with Dissolve(1.0)
     
-    "Él saca un enorme facón de su costado y lo revolea, queda sobre la raja que se abrió en la tierra, formando un puente con el filo hacia arriba."
+    "Él saca un enorme facón de su costado y lo revolea, queda sobre la fosa que se abrió en la tierra, formando un puente con el filo hacia arriba."
 
     pause 0.01
     
@@ -380,7 +373,7 @@ label A_dónde_hay_que_firmar:
     
     hide mandinga_placeholder
 
-    "Dice el Mandinga abriendo los brazos como invitándote a su regazo serpentino y luego señala el filo del cuchillo que acaba de lanzar."
+    "Abre los brazos como invitándote a su lado y luego señala el filo del cuchillo que acaba de calzar frente tuyo."
 
     menu:
         "Pasás decididamente":
@@ -390,50 +383,45 @@ label A_dónde_hay_que_firmar:
             jump Pasar_cautelosamente
 
     label Pasar_decididamente:
+        # ESCENA 1.7B.5A.1
         
-        "Comenzás decididamente a caminar sobre el filo del facón."
-        
+        "Arrancás a caminar decidido sobre el filo del facón."
         "Paso tras paso, tus pies sangran, pero no sentís dolor."
+        "Cuando llegás a la mitad ves una luz dorada bajo tus pies."
         
-        "Cuando llegás a la mitad ves una luz dorada bajo tus pies, mirás hacia abajo y hay un crucifijo del que emana la luz."
-        
+        # ESCENA 1.7B.5A.2
+
+        "Mirás hacia abajo y hay un crucifijo sobre una luz que no sabés de dónde viene."
         pause 0.01
-
-        play SFX_2 sfx_basilisco
-
+        #play SFX_2 sfx_basilisco
         show mandinga_placeholder:
             xoffset 0
             yoffset 36
-
         Mandinga "—¡ESCUPILO!"
-
         hide mandinga_placeholder
 
         
         menu:
-            "Escupís el crucifijo.":
+            "Escupís el crucifijo":
                 jump Escupir_el_crucifijo
-            "Decís “eso es una blasfemia“.":
+            "Decís “¡Eso es una blasfemia!“":
                 jump Pasar_cautelosamente
 
         label Pasar_cautelosamente:
-            
+            # ESCENA 1.7B.5B.1
             hide cuchillo
             show muerte at subir_centrada with Dissolve(1.0)
             
-            "Das un paso sobre el cuchillo y dudás, el filo del facón se hunde en tu pie y no podés frenar la fuerza de la gravedad."
-            
+            "Das un paso sobre el cuchillo y dudás, el filo del facón se hunde en tu pie y no podés frenar el peso de tu cuerpo."
             "Empezás a caer sobre ese último paso, tu cuerpo se desbalancea y cae."
-            
             play SFX_2 sfx_gritito_muerte
-            
             "Yacés en dos mitades en lo profundo de la grieta del infierno."
-            
             "Moriste, tu mambo ha terminado junto con tu vida."
             
             return
 
     label Escupir_el_crucifijo:
+        # ESCENA 1.7B.5A.3
         hide cuchillo
         show demonios at subir_centrada, aparecer_flash with Dissolve(1.0)
 
@@ -448,38 +436,29 @@ label A_dónde_hay_que_firmar:
         play SFX_1 sfx_viento1 volume 0.3
         play SFX_2 crucifijo
          
-        "Escupís el crucifijo y seguís por el filo del facón, lográs llegar al otro lado."
-        
+        "Escupís el crucifijo y seguís por el filo del facón, conseguís llegar al otro lado."
         "Una bruja te recibe con un pergamino abierto, un diablillo moja una pluma en la sangre de tus pies y te la da."
     
         ### Nombre del protagonista ###################################################
-
         $ nombre_jugador = renpy.input("¿Con qué nombre vas a firmar el contrato?") 
         $ nombre_jugador = nombre_jugador.strip()
-
         if nombre_jugador == "":
             $ nombre_jugador = "Protagonista"
-
-
         $ Protagonista = Character(nombre_jugador + ":", color="#D4AF37")
         
         play SFX_2 "audio/capitulo1/risaDiabolica.wav" #esto no va a funcionar pq es WAV
 
-
         pause 0.01
         show protagonista_placeholder at mostrar_derecha
-        
         
         Protagonista "Mi nombre es [nombre_jugador] y te vendo mi alma, Mandinga."
         
         hide protagonista_placeholder
         stop SFX_2 fadeout 1.0
-
-
         jump Lo_lograste
             
     label Lo_lograste:
-
+        # ESCENA 1.7B.5A.4
         pause 0.01
         play SFX_2 sfx_basilisco
         
@@ -488,29 +467,23 @@ label A_dónde_hay_que_firmar:
         Mandinga "{size=70}{cps=10}—BIENVENIDO A MIS HUESTES, CONDENADO!{/cps}{/size}"
 
         hide mandinga_placeholder
-
-        
         play BGM musica_piedra_y_camino
 
-        "Las brujas, los brujos y los diablillos arrancan la fiesta a tu alrededor, sentís como tu garganta arde y luego se calma y empezás a cantar junto a los demás."
+        "Las brujas, los brujos y los diablillos arrancan la fiesta a tu alrededor, sentís como tu garganta arde y después se calma, entonces empezás a cantar junto a los demás."
+        "Las alimañas te levantan sobre sus lomos y te pasean por toda la sala, tu voz y tu canto ahora suenan como nunca antes sonaron."
         
-        "Las alimañas te levantan sobre sus lomos y te pasean por toda la sala, tu voz y tu canto ahora suena como nunca antes sonó."
-        
-        hide demonios
+        hide demonios ###(VFX: fundido a negro lento que no se pueda pasar)
         show rancho at subir_centrada with Dissolve(3.0)
-        
-        menu:
-            "En un rancho cercano...":
-                jump En_un_rancho_cercano
+        jump En_un_rancho_cercano
 
     label En_un_rancho_cercano:
-
+        # ESCENA 1.7B.5A.5
         stop SFX_1 fadeout 1.0
         stop SFX_2 fadeout 1.0
 
-        "A pocos kilómetros una señora se despierta asustada por el alboroto, empieza a rezar..."
+        "A pocos kilómetros una señora se despierta asustada por el alboroto y empieza a rezar..."
         
-        "—¡Dios nos salve, que hoy hay baile en La Salamanca!"
+        Señora "¡Dios nos salve, que hoy hay baile en La Salamanca!"
         
         hide rancho with Dissolve(5.0)
 
