@@ -7,8 +7,9 @@ label capitulo1:
     # (SFX: canto de pájaros)
     
     # SFX
-    play SFX_1 sfx_galope loop
-    play SFX_2 sfx_VientoYEstatica loop
+    play SFX_1 sfx_galope loop fadein 1
+    play SFX_2 sfx_VientoYEstatica loop fadein 4 volume 0.3
+    
     # ESCENA
     show gauchoACaballo at subir_centrada with black_transition
 
@@ -19,8 +20,7 @@ label capitulo1:
     "Vos, guitarrista y cantor venido a menos, 
     que ahora vas al galope por la pampa."
 
-    stop SFX_1 fadeout 5
-
+    stop SFX_1 fadeout 3
     
 
     "El canto de los pájaros, 
@@ -28,6 +28,8 @@ label capitulo1:
     ahora suena como gritos de dolor."
     
     hide gauchoACaballo
+    
+    stop SFX_2 fadeout 3
 
     # ESCENA 1.2
     # (SFX:Sonido ambiental de terror que se intensifica)
@@ -36,7 +38,7 @@ label capitulo1:
 
     # SFX
     # play SFX_1 sfx_SonidoAmbienteTerror loop fadein 2.0 
-    play SFX_1 sfx_AmbientalTerror loop fadein 2.0 
+    play SFX_1 sfx_AmbientalTerror loop fadein 1.5
 
 
     show salamanca at subir_centrada with Dissolve(3.0)
@@ -65,7 +67,7 @@ label capitulo1:
 
         hide salamanca
 
-        # $ aplicar_lpf("SFX_2")
+        $ aplicar_lpf("SFX_1",1500)
 
         show cueva at subir_centrada, desvanecer with Dissolve(2.0)
         
@@ -102,8 +104,8 @@ label capitulo1:
         hide cueva
         show placeholder_negro at subir_centrada with Dissolve(1.0)
 
-        play SFX_2 sfx_respiracion_chivo 
-
+        play SFX_2 sfx_respiracion_chivo loop
+    
         "Entonces aparece ese animal grotesco del que te había contado el viejo: un chivo de pelo negro, ojos endemoniados y cuernos tan curvados como una espiral."
         
         hide placeholder_negro
@@ -112,6 +114,8 @@ label capitulo1:
         "Lo rodeás fácilmente sin que se mosquee, pero..."
         
         "Cuando por fin llegás al otro lado, el chivo se da vuelta, corre, te topeta y te arroja a un profundo hoyo."
+
+        stop SFX_2 fadeout 2.0
 
     jump La_caida
 
