@@ -7,8 +7,12 @@ label capitulo1:
     # (SFX: canto de pájaros)
     
     # SFX
-    play SFX_1 sfx_galope loop
-    play SFX_2 sfx_VientoYEstatica loop
+    play SFX_1 sfx_galope loop fadein 1
+    play SFX_2 sfx_VientoYEstatica loop fadein 4 volume 0.3
+    
+    # BGM TEST
+    # play BGM bgm_VidalaInicio loop fadein 1
+
     # ESCENA
     show gauchoACaballo at subir_centrada with black_transition
 
@@ -18,8 +22,16 @@ label capitulo1:
     "que ahora vas al galope por el campo argentino, camino a La Salamanca."
     "Arrancaste este viaje hace unos días y ya estás llegando a tu destino."
 
-    stop SFX_1 fadeout 5
+    stop SFX_1 fadeout 3
+    
+
+    "El canto de los pájaros, 
+    que hasta hace poco era alegre y armonioso, 
+    ahora suena como gritos de dolor."
+    
     hide gauchoACaballo
+    
+    stop SFX_2 fadeout 3
 
     # ESCENA 1.2
     # (SFX:Sonido ambiental de terror que se intensifica)
@@ -28,7 +40,7 @@ label capitulo1:
 
     # SFX
     # play SFX_1 sfx_SonidoAmbienteTerror loop fadein 2.0 
-    play SFX_1 sfx_AmbientalTerror loop fadein 2.0 
+    play SFX_1 sfx_AmbientalTerror loop fadein 1.5
 
 
     show salamanca at subir_centrada with Dissolve(3.0)
@@ -53,7 +65,7 @@ label capitulo1:
 
         hide salamanca
 
-        # $ aplicar_lpf("SFX_2")
+        $ aplicar_lpf("SFX_1",1500)
 
         show cueva at subir_centrada, desvanecer with Dissolve(2.0)
         
@@ -84,11 +96,10 @@ label capitulo1:
         hide cueva
         show placeholder_negro at subir_centrada with Dissolve(1.0)
 
-        # ESCENA 1.5
-
-        play SFX_2 sfx_respiracion_chivo 
-
-        "Entonces aparece ese animal grotesco del que te había contado el viejo:"
+        play SFX_2 sfx_respiracion_chivo loop
+    
+        "Entonces aparece ese animal grotesco del que te había contado el viejo: un chivo de pelo negro, ojos endemoniados y cuernos tan curvados como una espiral."
+        
         hide placeholder_negro
         show chivo at subir_centrada with Dissolve(1.0)
         "Un chivo de pelo negro, inmenso, mucho más grande que cualquier bestia del campo."
@@ -103,6 +114,8 @@ label capitulo1:
         "Corre derecho hacia vos."
         "Te topeta y te tira a un profundo hoyo."
         ###(SFX: sonido de grito cayendo)
+
+        stop SFX_2 fadeout 2.0
 
     jump La_caida
 
