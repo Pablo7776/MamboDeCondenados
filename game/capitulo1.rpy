@@ -12,21 +12,13 @@ label capitulo1:
     # ESCENA
     show gauchoACaballo at subir_centrada with black_transition
 
-    "Bienvenid@ al Mambo de Condenados."
-
     $ mostrar_repu()
 
-    "Vos, guitarrista y cantor venido a menos, 
-    que ahora vas al galope por la pampa."
+    "¡Vos! guitarrista y cantor venido a menos,"
+    "que ahora vas al galope por el campo argentino, camino a La Salamanca."
+    "Arrancaste este viaje hace unos días y ya estás llegando a tu destino."
 
     stop SFX_1 fadeout 5
-
-    
-
-    "El canto de los pájaros, 
-    que hasta hace poco era alegre y armonioso, 
-    ahora suena como gritos de dolor."
-    
     hide gauchoACaballo
 
     # ESCENA 1.2
@@ -42,23 +34,19 @@ label capitulo1:
     show salamanca at subir_centrada with Dissolve(3.0)
     
 
-
-    "De repente, aparece frente tuyo la piedra roja 
-    de la que te había hablado el viejo, 
-    ese que siempre está en la pulpería de tu pueblo." 
-
-    "Atás y asegurás tu guitarra a la silla de tu fiel caballo, 
-    y luego pronunciás {i}La Palabra{/i}, esa que aquel viejo te confesó."
-    
-    "Entonces, se abre una cueva en la roca; das un paso dentro, 
-    el caballo sale corriendo despavorido hacia el campo."
-    
+    "Aparece frente a vos esa piedra roja, de la que te habló aquel viejo, el que siempre está en la pulpería de tu pueblo."
+    "Ese que te contó como en La Salamanca se puede hacer un pacto con el Mandinga para conseguir el don que uno quiera."
+    "Atás y asegurás tu guitarra a la silla de tu fiel caballo, y luego pronunciás La Palabra, la que el viejo te confesó."
+    ###(SFX: crujido de piedras arrastrándose)
+    "Entonces, se abre una cueva en la roca; das un paso dentro, el caballo sale corriendo despavorido hacia el campo."
+ 
     ###(sfx: relincho con fade out)
 
     # Sale reproduciendo SFX_2 en loop
     jump Las_primeras_pruebas
 
     label Las_primeras_pruebas:
+        # ESCENA 1.3
 
         # Callar sonido de viento y estatica
         stop SFX_2 fadeout 5
@@ -73,122 +61,129 @@ label capitulo1:
         # $ renpy.music.set_audio_filter("viento", lowpass_filtro_viento, replace=True)
         # $ renpy.music.set_audio_filter("estatica", lowpass_filtro_estatica, replace=True)
         
-        "En el primer pasillo de este laberinto te sacás los zapatos, 
-        el sombrero y el pañuelo. Así debe ser."
+        "En el primer pasillo de este laberinto te sacás las botas, el sombrero y el pañuelo."
+        "Así debe ser."
+        "Ya sumido en la oscuridad sentís la presencia del basilisco."
+        "Menos mal que no se ve nada; porque, si no, tu cuerpo ya sería piedra."
+        ###(SFX: siseo grave)
+        "Con su siseo, el basilisco te guía para atravesar este laberinto."
         
-        "Ya sumido en la oscuridad pronto sentís la presencia del basilisco."
-        
-        "Menos mal que no lo ves; porque, si no, te petrificaría. 
-        Con su siseo, el basilisco te guía para atravesar este laberinto, 
-        seguís ese ruido serpentino y lo lográs superar."
-        
-        "Ya en el pasillo recto y angosto empezás a caminar sin guía. 
-        Después de unos pasos, sentís las primeras alimañas:"
+        # ESCENA 1.4
+        ###(SFX: sonido de pisadas de insectos y siseos de serpientes)
 
-        ##Más ruido a bichos se podría poner
-
-        "Víboras, lagartos y alacranes comienzan a trepar por tu cuerpo."
-
-        "Tenés que quedarte completamente quieto, inmóvil, aguantando la respiración."
-        
-        "De a una van trepando por tus piernas, tu pecho, 
-        tu cabeza, tus hombros... y bajan por tu espalda, 
-        siguiendo su camino sin hacerte daño."
-        
-        "Todas esas criaturas pasan por tu cuerpo hasta dejarte atrás, 
-        y ahora sí, podés avanzar."
+        "Dejás atrás el laberinto y en un nuevo pasillo recto sentís que algo trepa tus pies descalzos, algo no, muchos pequeños pies. Son cientos, una marea de alimañas. Sentís el roce de algún reptil, una víbora quizás."
+        "Sentís el cosquilleo de unas patas y unas pinzas, son alacranes que están subiendo por tus piernas."
+        "..."
+        "Pero te quedás tieso, sin moverte."
+        "Sin temblequear."
+        "Las alimañas siguen su camino sin hacerte daño."
+        "El viejo te lo había dicho:"
+        "“Cuando la patota de bichos se te acerque quedate tieso, no muevas ni un pelo y van a pasar embaladas sin darte bola”."
 
         
         hide cueva
         show placeholder_negro at subir_centrada with Dissolve(1.0)
 
+        # ESCENA 1.5
+
         play SFX_2 sfx_respiracion_chivo 
 
-        "Entonces aparece ese animal grotesco del que te había contado el viejo: un chivo de pelo negro, ojos endemoniados y cuernos tan curvados como una espiral."
-        
+        "Entonces aparece ese animal grotesco del que te había contado el viejo:"
         hide placeholder_negro
         show chivo at subir_centrada with Dissolve(1.0)
-        
-        "Lo rodeás fácilmente sin que se mosquee, pero..."
-        
-        "Cuando por fin llegás al otro lado, el chivo se da vuelta, corre, te topeta y te arroja a un profundo hoyo."
+        "Un chivo de pelo negro, inmenso, mucho más grande que cualquier bestia del campo."
+        "Tiene los cuernos retorcidos como ramas secas."
+        "Sus ojos amarillos que te miran con una inteligencia burlona."
+        "Apesta a azufre y a sangre vieja."
+        play SFX_2 sfx_respiracion_chivo 
+        "Empezás a rodearlo. Te pegás a la pared de la cueva, aguantando la respiración."
+        "El animal no se mueve. Te sigue con la mirada, quieto, como quien mira a una mosca."
+        "Cuando por fin llegás al otro lado, el chivo se da vuelta, corre desaforado."
+        ###(SFX: Trote de cabra)
+        "Corre derecho hacia vos."
+        "Te topeta y te tira a un profundo hoyo."
+        ###(SFX: sonido de grito cayendo)
 
     jump La_caida
 
     label La_caida:
-
+        
+        # ESCENA 1.6
         hide chivo
         show caida1 at subir_centrada with Dissolve(4.0)
-        
+        ###(SFX: Sonido de viento al caer)        
         "El hueco es profundo, más que profundo, estás cayendo al abismo."
         
-        "Ves pasar murciélagos a tu lado, seguís cayendo y repentinamente te desmayás."
+        "Ves pasar lechuzas negras a tu lado, seguís cayendo y de repente te desmayás."
         
         hide caida1
         show caida2 at subir_centrada with Dissolve(4.0)
+
+        # ESCENA 1.7
         
         "Despertás y estás en el fondo, ves sobre vos el abismo que sube en espirales de roca viva."
 
-        "Te levantás y delante tuyo no podés ver más allá, es una profunda oscuridad."
-        
-        "¿Qué decidís?"
-
-
+        "Te levantás y no podés ver nada delante tuyo, es sólo una profunda oscuridad."  
+    
         menu:
-            "Trepar por el abismo para salir":
+            "Trepás por el abismo para salir":
                 jump Trepar_por_el_abismo_para_salir
-            "Dar un paso hacia la oscuridad":
+            "Dás un paso hacia la oscuridad":
                 jump Dar_un_paso_hacia_la_oscuridad
             
     
     label Trepar_por_el_abismo_para_salir:
+        
+        # ESCENA 1.7A.1
 
         hide caida2
         show chivo at subir_centrada with Dissolve(1.0)
 
-        "Luego de mucho esfuerzo y luchar contra murciélagos que te atacaban débilmente lográs llegar hasta el borde del hoyo."
-        
+        "Luego de mucho esfuerzo y luchar contra lechuzas que te atacaban débilmente lográs llegar hasta el borde del hoyo."
         "Estás de vuelta frente a aquel chivo endemoniado que te mira colérico."
         
         menu:
-            "Enfrentarlo":
+            "Lo enfrentá":
                 jump  Te_enfrentas_al_chivo
-            "Esquivarlo":
+            "Lo esquivás":
                 jump Intentas_esquivar_al_chivo
 
 
         label Te_enfrentas_al_chivo:
 
+            #ESCENA 1.7A.1a.1
+
             "El chivo corre hacia vos, lográs evitar el primer golpe y le pegás una patada."
-            
-            "Se da vuelta y vuelve a intentar embestirte, de éste no pudiste zafar, caés al suelo, te defendes con patadas y trompadas."
+            ###(SFX: Trote de cabra)
+            "Se da vuelta y vuelve a intentar embestirte, de éste no pudiste zafar, caés al suelo y te defendes a las patadas y a las trompadas."
             
             "Pero el chivo es pesado y sus pezuñas son como hachas contra tu cuerpo."
             
+            #ESCENA 1.7A.1a.2
+
             hide chivo
             show muerte at subir_centrada with Dissolve(1.0)
-            
+            ###(SFX: Fade out del sonido ambiental de terror.)
+            ###(SFX: pisotones contra un cráneo)
             "Tras unos cuantos minutos de pisotones tu cuerpo yace inerte en la oscuridad de la cueva."
-
-            play SFX_1 sfx_gritito_muerte2
-            
             "Moriste, tu mambo ha terminado junto con tu vida."
 
             return
                 
 
         label Intentas_esquivar_al_chivo:
+            #ESCENA 1.7A.1b.1
 
             "Si antes pudiste pasar por al lado de él sin que se de cuenta ¿por qué no intentarlo nuevamente?"
-            
-            "Das un paso y el chivo corre tan rápidamente hacia vos que no lográs evitarlo, te tira nuevamente por el hueco del que acabás de salir." 
+            ###(SFX: Trote de cabra)
+            "Das un paso y el chivo corre tan rápidamente hacia vos que no lográs evitarlo, te tira nuevamente por el hueco del que saliste." 
 
-            menu:
-                "Caés y caés a lo profundo del abismo nuevamente.":
+            "Caés y caés a lo profundo del abismo nuevamente.":
                     jump La_caida
 
 
     label Dar_un_paso_hacia_la_oscuridad:
+        # ESCENA 1.7B.1
         
         $ quitar_filtros("SFX_2")
         stop SFX_1 fadeout 1.0
@@ -199,7 +194,7 @@ label capitulo1:
         
         play SFX_1 sfx_inicio_fuego
         
-        "Das un primer paso y se comienzan a prender, 
+        "Das un primer paso y se empiezan a prender, 
         a cada lado, cien antorchas."
         
         # play SFX_2 sfx_hoguera_pequena loop fadein 1.0  # Este sonido no funciona pq esta mal el formato , no debe ser WAV
@@ -213,13 +208,14 @@ label capitulo1:
         "Viniste para esto."
         
         menu:
-            "Gritar ¡¿DÓNDE ESTÁ EL MANDINGA?!":
+            "Gritás “¡¿DÓNDE ESTÁ EL MANDINGA?!”":
                 jump DÓNDE_ESTÁ_EL_MANDINGA
-            "Esperar en silencio":
+            "Esperás quieto y en silencio":
                 jump Esperar_en_silencio
 
         
         label Esperar_en_silencio:
+            # ESCENA 1.7B.1b.1
             
             hide trono
             show mandi at subir_centrada, with Dissolve(5.0)
@@ -230,7 +226,7 @@ label capitulo1:
             
             "Él atraviesa las cortinas, un enorme ser, mitad serpiente, mitad humano, ES EL MANDINGA."
             
-            "Se sienta en su trono y te mira con un gesto entre curioso y vehemente."
+            "Se sienta en su trono y te mira con un gesto curioso."
             
             hide mandi
             show mandi2 at subir_centrada,vibrar, with Dissolve(0.5)
@@ -243,7 +239,8 @@ label capitulo1:
                 xoffset 0
                 yoffset 36
 
-            Mandinga "¿Qué desea el que me busca?"
+            Mandinga "¿Qué es lo que deseás de mí humano?"
+            ###(SFX: siseo)
 
             hide mandinga_placeholder
             pause 1.5 
@@ -252,22 +249,25 @@ label capitulo1:
             menu:
                 "Reculás ante su presencia":
                     jump Recular
-                "¡Quiero hechizar a todo el mundo con mi canto!":
+                "Decís “¡Quiero hechizar a todo el mundo con mi canto y mi guitarra!”":
                     jump Quiero_hechizar
 
         label DÓNDE_ESTÁ_EL_MANDINGA:
             
+            # ESCENA 1.7B.1a.1
             hide trono
             show mandi at subir_centrada, with Dissolve(5.0)
    
             $ reputacion_con_el_mandinga -= 10
             $ mostrar_repu()
 
-            play sound sfx_trueno
+            play sound sfx_trueno ### Volumen 1
 
-            "Se abre un agujero en una de las paredes y Él atraviesa las cortinas, un enorme ser, mitad serpiente, mitad humano, ES EL MANDINGA."
+            "Se abre un agujero en una de las paredes y él atraviesa las cortinas."
+            "Un enorme ser, con pequeños cuernos, mitad serpiente, mitad humano."
+            "ES EL MANDINGA." ###Aplicar VFX shake sobre el texto
             
-            "Se sienta en su trono y te mira con un gesto entre curioso y vehemente."
+            "Se sienta en su trono y te mira con un gesto severo y vehemente."
             
             hide mandi
             show mandi2 at subir_centrada,vibrar, with Dissolve(0.5)
@@ -279,7 +279,7 @@ label capitulo1:
             show mandinga_placeholder at mostrar_izquierda
 
 
-            Mandinga "¿Qué desea el que me busca?"
+            Mandinga "¿Qué es lo que deseás de mí desgraciado?"
             
             hide mandinga_placeholder
 
@@ -291,7 +291,7 @@ label capitulo1:
             menu:
                 "Reculás ante su presencia":
                     jump Recular
-                "¡Quiero hechizar a todo el mundo con mi canto!":
+                "Decís “¡Quiero hechizar a todo el mundo con mi canto y mi guitarra!”":
                     jump Quiero_hechizar
 
 
