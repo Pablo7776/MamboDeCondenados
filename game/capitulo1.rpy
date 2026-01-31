@@ -10,6 +10,9 @@ label capitulo1:
     play SFX_1 sfx_galope loop fadein 1
     play SFX_2 sfx_VientoYEstatica loop fadein 4 volume 0.3
     
+    # BGM TEST
+    # play BGM bgm_VidalaInicio loop fadein 1
+
     # ESCENA
     show gauchoACaballo at subir_centrada with black_transition
 

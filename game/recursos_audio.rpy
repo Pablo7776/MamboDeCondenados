@@ -34,6 +34,11 @@ define sfx_Goteo =""
 # Estática 
 define sfx_Estatica =""
 
+# Lista BGM :
+# Capitulo 1
+# Vidala inicio
+define bgm_VidalaInicio = "/audio/CAP_1/BGM/Sintes_testvidala3.ogg"
+
 
 
 
