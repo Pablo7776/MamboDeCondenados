@@ -213,6 +213,8 @@ define gui.quick_button_text_selected_color = gui.accent_color
 ##
 ## Los botones de opción se utilizan en los menús del juego.
 
+
+
 define gui.choice_button_width = 1185
 define gui.choice_button_height = None
 define gui.choice_button_tile = False
