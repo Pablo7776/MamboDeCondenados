@@ -174,8 +174,8 @@ label capitulo1:
             "Si antes pudiste pasar por al lado de él sin que se de cuenta ¿por qué no intentarlo nuevamente?"
             ###(SFX: Trote de cabra)
             "Das un paso y el chivo corre tan rápidamente hacia vos que no lográs evitarlo, te tira nuevamente por el hueco del que saliste." 
-            "Caés y caés a lo profundo del abismo nuevamente.":
-                    jump La_caida
+            "Caés y caés a lo profundo del abismo nuevamente."
+            jump La_caida
 
 
     label Dar_un_paso_hacia_la_oscuridad:
