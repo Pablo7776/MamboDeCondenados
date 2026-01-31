@@ -1,5 +1,46 @@
 ################  EFECTOS DE SONIDO #########################
 
+# Lista de SFX Actualizada
+# SFX:
+# Capitulo 1
+# Viento Y Estática
+define sfx_VientoYEstatica = "audio/CAP_1/SFX/SFX_VientoYEstatica.ogg"
+# Sonido ambiental de terror (Semi musical)
+define sfx_AmbientalTerror ="audio/CAP_1/SFX/SFX_HiRes_AmbienteTerror_marcos.ogg"
+# Caída por la cueva
+define sfx_CaidaCueva =""
+# Respiración del chivo
+define sfx_RespiracionChivo ="audio/CAP_1/SFX/SFX_HiRes_RespiraChivo.ogg"
+# Sonido huesos rotos
+define sfx_HuesosRotos =""
+# Crepitar de fuego
+define sfx_CrepitarFuego = "audio/CAP_1/SFX/SFX_CrepitarDeFuego.ogg"
+# Siseo del mandinga
+define sfx_SiseoMandinga =""
+# Estruendo - Roca
+define sfx_EstruendoiRoca =""
+# Cuchilla
+define sfx_Cuchilla =""
+# Risa - Chillido diabólica
+define sfx_ChillidoDiabolico =""
+# Viento tranquilo / Con hojas al viento
+define sfx_VientoTranquilo =""
+# Chillido de puerta abriéndose
+define sfx_Puerta =""
+# Galope caballo
+define sfx_GalopeCaballo =""
+# Goteo
+define sfx_Goteo =""
+# Estática 
+define sfx_Estatica =""
+
+# Lista BGM :
+# Capitulo 1
+# Vidala inicio
+define bgm_VidalaInicio = "/audio/CAP_1/BGM/Sintes_testvidala3.ogg"
+
+
+
 
 define sfx_viento1 = "audio/capitulo1/viento1.ogg"
 define ruidoRosa = "audio/capitulo1/ruidoRosa2.mp3"
@@ -11,7 +52,7 @@ define sfx_gritito_muerte = "audio/capitulo1/quejido_muerte.mp3"
 define sfx_gritito_muerte2 = "audio/capitulo1/gritoDeMIedo.ogg"
 define sfx_infrasonido = "audio/capitulo1/sfx_infrasonido.ogg"
 define sfx_inicio_fuego = "audio/capitulo1/inicio_fuego.mp3"
-define sfx_hoguera_pequena = "audio/capitulo1/fuegoconstante_pequeno.mp3"
+define sfx_hoguera_pequena = "/audio/capitulo1/fuegoconstante_pequeno.wav"
 define sfx_trueno = "audio/capitulo1/sfx_trueno.ogg"
 define crucifijo = "audio/capitulo1/acufeno.ogg"
 

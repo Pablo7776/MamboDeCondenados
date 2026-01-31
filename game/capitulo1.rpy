@@ -1,66 +1,114 @@
 label capitulo1:    
 
+    # ESCENA 1.1
 
-    play sound sfx_galope 
+    # (SFX: galope de caballo)
+    # (SFX: viento y estática)
+    # (SFX: canto de pájaros)
+    
+    # SFX
+    play SFX_1 sfx_galope loop fadein 1
+    play SFX_2 sfx_VientoYEstatica loop fadein 4 volume 0.3
+    
+    # BGM TEST
+    # play BGM bgm_VidalaInicio loop fadein 1
 
+    # ESCENA
     show gauchoACaballo at subir_centrada with black_transition
-
 
     "Bienvenid@ al Mambo de Condenados."
 
     $ mostrar_repu()
 
-    "Vos, guitarrista y cantor venido a menos, que ahora vas al galope por la pampa."
+    "Vos, guitarrista y cantor venido a menos, 
+    que ahora vas al galope por la pampa."
 
-    play ambiente sfx_SonidoAmbienteTerror loop fadein 1.0
+    stop SFX_1 fadeout 3
+    
 
-    "El canto de los pájaros, que hasta hace poco era alegre y armonioso, ahora suena como gritos de dolor."
+    "El canto de los pájaros, 
+    que hasta hace poco era alegre y armonioso, 
+    ahora suena como gritos de dolor."
     
     hide gauchoACaballo
+    
+    stop SFX_2 fadeout 3
+
+    # ESCENA 1.2
+    # (SFX:Sonido ambiental de terror que se intensifica)
+    # (SFX: sigue el sonido del viento)
+    # (SFX: el canto de los pájaros se convierte en graznidos y ululaciones)
+
+    # SFX
+    # play SFX_1 sfx_SonidoAmbienteTerror loop fadein 2.0 
+    play SFX_1 sfx_AmbientalTerror loop fadein 1.5
+
+
     show salamanca at subir_centrada with Dissolve(3.0)
     
-    "De repente, aparece frente tuyo la piedra roja de la que te había hablado el viejo, ese que siempre está en la pulpería de tu pueblo." 
 
-    stop sound
 
-    "Atás y asegurás tu guitarra a la silla de tu fiel caballo, y luego pronunciás {i}La Palabra{/i}, esa que aquel viejo te confesó."
+    "De repente, aparece frente tuyo la piedra roja 
+    de la que te había hablado el viejo, 
+    ese que siempre está en la pulpería de tu pueblo." 
+
+    "Atás y asegurás tu guitarra a la silla de tu fiel caballo, 
+    y luego pronunciás {i}La Palabra{/i}, esa que aquel viejo te confesó."
     
-    "Entonces, se abre una cueva en la roca; das un paso dentro, el caballo sale corriendo despavorido hacia el campo."
+    "Entonces, se abre una cueva en la roca; das un paso dentro, 
+    el caballo sale corriendo despavorido hacia el campo."
     
     ###(sfx: relincho con fade out)
+
+    # Sale reproduciendo SFX_2 en loop
     jump Las_primeras_pruebas
 
     label Las_primeras_pruebas:
 
-        hide salamanca
-        show cueva at subir_centrada, desvanecer with Dissolve(2.0)
+        # Callar sonido de viento y estatica
+        stop SFX_2 fadeout 5
 
+        hide salamanca
+
+        $ aplicar_lpf("SFX_1",1500)
+
+        show cueva at subir_centrada, desvanecer with Dissolve(2.0)
         
-        $ renpy.music.set_audio_filter("viento", lowpass_filtro_viento, replace=True)
-        $ renpy.music.set_audio_filter("estatica", lowpass_filtro_estatica, replace=True)
+        # Nota: Esto aplica filtro pero esos canales no se estan reproduciendo
+        # $ renpy.music.set_audio_filter("viento", lowpass_filtro_viento, replace=True)
+        # $ renpy.music.set_audio_filter("estatica", lowpass_filtro_estatica, replace=True)
         
-        "En el primer pasillo de este laberinto te sacás los zapatos, el sombrero y el pañuelo. Así debe ser."
+        "En el primer pasillo de este laberinto te sacás los zapatos, 
+        el sombrero y el pañuelo. Así debe ser."
         
         "Ya sumido en la oscuridad pronto sentís la presencia del basilisco."
         
-        "Menos mal que no lo ves; porque, si no, te petrificaría. Con su siseo, el basilisco te guía para atravesar este laberinto, seguís ese ruido serpentino y lo lográs superar."
+        "Menos mal que no lo ves; porque, si no, te petrificaría. 
+        Con su siseo, el basilisco te guía para atravesar este laberinto, 
+        seguís ese ruido serpentino y lo lográs superar."
         
-        "Ya en el pasillo recto y angosto empezás a caminar sin guía. Después de unos pasos, sentís las primeras alimañas:"
+        "Ya en el pasillo recto y angosto empezás a caminar sin guía. 
+        Después de unos pasos, sentís las primeras alimañas:"
+
         ##Más ruido a bichos se podría poner
+
         "Víboras, lagartos y alacranes comienzan a trepar por tu cuerpo."
 
         "Tenés que quedarte completamente quieto, inmóvil, aguantando la respiración."
         
-        "De a una van trepando por tus piernas, tu pecho, tu cabeza, tus hombros... y bajan por tu espalda, siguiendo su camino sin hacerte daño."
+        "De a una van trepando por tus piernas, tu pecho, 
+        tu cabeza, tus hombros... y bajan por tu espalda, 
+        siguiendo su camino sin hacerte daño."
         
-        "Todas esas criaturas pasan por tu cuerpo hasta dejarte atrás, y ahora sí, podés avanzar."
+        "Todas esas criaturas pasan por tu cuerpo hasta dejarte atrás, 
+        y ahora sí, podés avanzar."
 
         
         hide cueva
         show placeholder_negro at subir_centrada with Dissolve(1.0)
 
-        play fx sfx_respiracion_chivo 
-
+        play SFX_2 sfx_respiracion_chivo loop
+    
         "Entonces aparece ese animal grotesco del que te había contado el viejo: un chivo de pelo negro, ojos endemoniados y cuernos tan curvados como una espiral."
         
         hide placeholder_negro
@@ -69,6 +117,8 @@ label capitulo1:
         "Lo rodeás fácilmente sin que se mosquee, pero..."
         
         "Cuando por fin llegás al otro lado, el chivo se da vuelta, corre, te topeta y te arroja a un profundo hoyo."
+
+        stop SFX_2 fadeout 2.0
 
     jump La_caida
 
@@ -127,7 +177,7 @@ label capitulo1:
             
             "Tras unos cuantos minutos de pisotones tu cuerpo yace inerte en la oscuridad de la cueva."
 
-            play sound sfx_gritito_muerte2
+            play SFX_1 sfx_gritito_muerte2
             
             "Moriste, tu mambo ha terminado junto con tu vida."
 
@@ -147,14 +197,21 @@ label capitulo1:
 
     label Dar_un_paso_hacia_la_oscuridad:
         
+        $ quitar_filtros("SFX_2")
+        stop SFX_1 fadeout 1.0
+        stop SFX_2 fadeout 1.0
+
         hide caida2
         show trono at subir_centrada with Dissolve(1.0)
         
-        play sound sfx_inicio_fuego
+        play SFX_1 sfx_inicio_fuego
         
-        "Das un primer paso y se comienzan a prender, a cada lado, cien antorchas."
+        "Das un primer paso y se comienzan a prender, 
+        a cada lado, cien antorchas."
         
-        play audio sfx_hoguera_pequena loop fadein(1.0)
+        # play SFX_2 sfx_hoguera_pequena loop fadein 1.0  # Este sonido no funciona pq esta mal el formato , no debe ser WAV
+        
+        # play SFX_2 ruidoRosa loop fadein 1.0
         
         "Lográs ver la enorme sala con sus cortinas magníficas, su piso y sus columnas de mármol."
         
@@ -174,7 +231,7 @@ label capitulo1:
             hide trono
             show mandi at subir_centrada, with Dissolve(5.0)
    
-            play sound sfx_trueno volume 0.5
+            play SFX_2 sfx_trueno volume 0.5
 
             "Se desmorona una de las paredes que deja un gran agujero en uno de los costados de la sala."
             
@@ -185,7 +242,7 @@ label capitulo1:
             hide mandi
             show mandi2 at subir_centrada,vibrar, with Dissolve(0.5)
             
-            play sound sfx_basilisco
+            play SFX_2 sfx_basilisco
 
             ### personaje ##########################
             pause 0.01
@@ -222,7 +279,7 @@ label capitulo1:
             hide mandi
             show mandi2 at subir_centrada,vibrar, with Dissolve(0.5)
             
-            play sound sfx_basilisco
+            play SFX_2 sfx_basilisco
 
             ### personaje ##########################
             pause 0.01
@@ -254,9 +311,10 @@ label capitulo1:
 
                 hide muerte
                 
-                stop sfx_hoguera_pequena
-                stop sfx_SonidoAmbienteTerror
-                play ambiente sfx_taberna loop fadein 1.0
+                stop SFX_1 fadeout 1.0
+                stop SFX_2 fadeout 1.0
+                # Aca estaria bueno reveer el orden ya que no da lugar al fadeout
+                play SFX_1 sfx_taberna loop fadein 1.0
                 
                 show pulperia at subir_centrada with Dissolve(1.0)
                 
@@ -348,7 +406,7 @@ label A_dónde_hay_que_firmar:
         
         pause 0.01
 
-        play sound sfx_basilisco
+        play SFX_2 sfx_basilisco
 
         show mandinga_placeholder:
             xoffset 0
@@ -374,7 +432,7 @@ label A_dónde_hay_que_firmar:
             
             "Empezás a caer sobre ese último paso, tu cuerpo se desbalancea y cae."
             
-            play sound sfx_gritito_muerte
+            play SFX_2 sfx_gritito_muerte
             
             "Yacés en dos mitades en lo profundo de la grieta del infierno."
             
@@ -386,15 +444,16 @@ label A_dónde_hay_que_firmar:
         hide cuchillo
         show demonios at subir_centrada, aparecer_flash with Dissolve(1.0)
 
-        stop ambiente fadeout 1.0
-        stop music fadeout 1.0
-        stop sound fadeout 1.0
-        stop fx fadeout 1.0
-        stop audio fadeout 1.0
-        stop viento fadeout 1.0
+        stop SFX_1 fadeout 1.0
+        stop SFX_2 fadeout 1.0
+        # El resto de los canales no se utiliza
+        # stop sound fadeout 1.0
+        # stop fx fadeout 1.0
+        # stop audio fadeout 1.0
+        # stop viento fadeout 1.0
 
-        play sound sfx_viento1 volume 0.3
-        play fx crucifijo
+        play SFX_1 sfx_viento1 volume 0.3
+        play SFX_2 crucifijo
          
         "Escupís el crucifijo y seguís por el filo del facón, lográs llegar al otro lado."
         
@@ -411,7 +470,7 @@ label A_dónde_hay_que_firmar:
 
         $ Protagonista = Character(nombre_jugador + ":", color="#D4AF37")
         
-        play sound "audio/capitulo1/risaDiabolica.wav"
+        play SFX_2 "audio/capitulo1/risaDiabolica.wav" #esto no va a funcionar pq es WAV
 
 
         pause 0.01
@@ -421,7 +480,7 @@ label A_dónde_hay_que_firmar:
         Protagonista "Mi nombre es [nombre_jugador] y te vendo mi alma, Mandinga."
         
         hide protagonista_placeholder
-        stop fx fadeout 1.0
+        stop SFX_2 fadeout 1.0
 
 
         jump Lo_lograste
@@ -429,7 +488,7 @@ label A_dónde_hay_que_firmar:
     label Lo_lograste:
 
         pause 0.01
-        play sound sfx_basilisco
+        play SFX_2 sfx_basilisco
         
         show mandinga_placeholder at mostrar_izquierda
 
@@ -438,7 +497,7 @@ label A_dónde_hay_que_firmar:
         hide mandinga_placeholder
 
         
-        play music musica_piedra_y_camino
+        play BGM musica_piedra_y_camino
 
         "Las brujas, los brujos y los diablillos arrancan la fiesta a tu alrededor, sentís como tu garganta arde y luego se calma y empezás a cantar junto a los demás."
         
@@ -453,7 +512,8 @@ label A_dónde_hay_que_firmar:
 
     label En_un_rancho_cercano:
 
-        stop sfx_SonidoAmbienteTerror fadeout 1.0
+        stop SFX_1 fadeout 1.0
+        stop SFX_2 fadeout 1.0
 
         "A pocos kilómetros una señora se despierta asustada por el alboroto, empieza a rezar..."
         
