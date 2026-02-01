@@ -203,8 +203,9 @@ label capitulo1:
         
         play SFX_1 sfx_inicio_fuego
         
-        "Das un primer paso y se empiezan a prender, 
-        a cada lado, cien antorchas."
+        "Das el primer paso hacia la oscuridad."
+        "A ambos lados, cien antorchas despiertan una tras otra, y la llamarada te ciega por un instante."
+        ### Se podrá agregar un VFX de brillo intenso que luego se desvanece? Debería venir de una escena en negro y recién acá aparecer el trono. O agregar unas dos o tres imágenes de antorchas en primer plano, luego brillo y luego el trono.
         
         # play SFX_2 sfx_hoguera_pequena loop fadein 1.0  # Este sonido no funciona pq esta mal el formato , no debe ser WAV
         
@@ -212,7 +213,7 @@ label capitulo1:
         
         "Lográs ver la enorme sala con sus cortinas magníficas, su piso y sus columnas de mármol."
         "En el fondo el enorme trono, escondidas entre las columnas y detrás de él ves lechuzas, quirquinchos, perros, chanchos, culebras y sapos, también, hechiceros, brujas y diablillos."
-        "Viniste para esto."
+        "Viniste a esto."
         
         menu:
             "Gritás “¡¿DÓNDE ESTÁ EL MANDINGA?!”":
@@ -295,7 +296,7 @@ label capitulo1:
             menu:
                 "Reculás ante su presencia":
                     jump Recular
-                "Decís “¡Quiero hechizar a todo el mundo con mi canto y mi guitarra!”":
+                "Decís “¡Mandinga!... ¡Quiero hechizar a todo el mundo con mi canto y mi guitarra!”":
                     jump Quiero_hechizar
 
 
@@ -352,7 +353,7 @@ label Quiero_hechizar:
     menu:
         "Pensás “¿quién le entregaría su alma a un ser así?” y titubeás":
             jump Recular
-        "Decís “¿A dónde hay que firmar?”":
+        "Decís “¿Dónde firmo?”":
             jump A_dónde_hay_que_firmar
 
 
