@@ -253,7 +253,7 @@ label capitulo1:
             show mandi2 at subir_centrada
 
             menu:
-                "Reculás ante su presencia":
+                "Te ponés a cantar tus desgracias":
                     jump Recular
                 "Decís “¡Quiero hechizar a todo el mundo con mi canto y mi guitarra!”":
                     jump Quiero_hechizar
@@ -294,7 +294,7 @@ label capitulo1:
 
 
             menu:
-                "Reculás ante su presencia":
+                "Te ponés a cantar tus desgracias":
                     jump Recular
                 "Decís “¡Mandinga!... ¡Quiero hechizar a todo el mundo con mi canto y mi guitarra!”":
                     jump Quiero_hechizar
@@ -303,18 +303,30 @@ label capitulo1:
 
             label Recular:
                 # ESCENA 1.7B.2
+                ###(Música: vidala de 0:46 volumen bajo)
 
-                "Te arrepentís, empezás a balbucear y… "
-                
+                "Cuando intentás empezar a cantar no sale nada de tu garganta"
+
+                ###(SFX:Risa grave y burlona del Mandinga, con fade out)
+                ###(MÚSICA: la vidla empieza a subir de volumen)
+                "El Mandinga se empieza a reír de vos"
+                show mandinga_placeholder at mostrar_izquierda
+                ###(VFX: fundido a negro de mandi2 (o su reemplazo))
                 hide mandi2
+                ###(SFX: bullicio de gente en la pulpería con fade in)
+                Mandinga "Acá no se viene a eso cantorsucho de segunda"
+                ###(SFX: el siseo del Mandinga)
+                hide mandinga_placeholder
+                
                 stop SFX_1 fadeout 1.0
                 stop SFX_2 fadeout 1.0
                 # Aca estaria bueno reveer el orden ya que no da lugar al fadeout
                 play SFX_1 sfx_taberna loop fadein 1.0
-                ###(Música: vidala de 0:46 con fadein de 2 segundos)
+               
                 show pulperia at subir_centrada with Dissolve(1.0)
-                
-                "Estás completamente borracho, con la cabeza sobre una mesa de la pulpería del Tarta."
+                "Poco a poco vas recuperando la conciencia"
+                "..."
+                "Te despertás completamente borracho, con la cabeza sobre una mesa de la pulpería del Tarta."
                 "Una guitarra suena; parece que eso te despertó."
                 "Un vidalero empieza a contar una vieja leyenda de tus tierras: la leyenda de La Salamanca."
                 
@@ -340,13 +352,19 @@ label Quiero_hechizar:
 
     pause 0.01
     show mandinga_placeholder at mostrar_izquierda
-
-    
     Mandinga "Me gusta tu pasión, pero ¿estás seguro?."
-    Mandinga "Eso va a costarte el alma."
+    Mandinga "Eso va a costarte caro."
     ###(SFX: siseo)
 
+    show protagonista_placeholder at mostrar_derecha  
+    Protagonista "¿Cuál es el precio?"
+        
+    hide protagonista_placeholder
+
+    Mandinga "Tu alma." ###Resaltar en rojo el texto.
+    ###(SFX: siseo)
     hide mandinga_placeholder
+
     pause 1.5 
     show mandi2 at subir_centrada
 
