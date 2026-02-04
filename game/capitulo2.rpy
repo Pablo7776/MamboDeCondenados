@@ -154,9 +154,9 @@ label Tus_primeros_hechizados:
     hide china_placeholder
 
     menu:
-        "Aceptar":
+        "Aceptás la propuesta":
             jump La_noche_de_pasión
-        "Rechazar":
+        "Rechazás la invitación, ella es muy joven para vos.":
             jump Una_mañana_incómoda
 
 label La_noche_de_pasión:

@@ -187,8 +187,8 @@ label capitulo1:
             "Si antes pudiste pasar por al lado de él sin que se de cuenta ¿por qué no intentarlo nuevamente?"
             ###(SFX: Trote de cabra)
             "Das un paso y el chivo corre tan rápidamente hacia vos que no lográs evitarlo, te tira nuevamente por el hueco del que saliste." 
-            "Caés y caés a lo profundo del abismo nuevamente.":
-                    jump La_caida
+            "Caés y caés a lo profundo del abismo nuevamente."
+            jump La_caida
 
 
     label Dar_un_paso_hacia_la_oscuridad:
@@ -203,8 +203,9 @@ label capitulo1:
         
         play SFX_1 sfx_inicio_fuego
         
-        "Das un primer paso y se empiezan a prender, 
-        a cada lado, cien antorchas."
+        "Das el primer paso hacia la oscuridad."
+        "A ambos lados, cien antorchas despiertan una tras otra, y la llamarada te ciega por un instante."
+        ### Se podrá agregar un VFX de brillo intenso que luego se desvanece? Debería venir de una escena en negro y recién acá aparecer el trono. O agregar unas dos o tres imágenes de antorchas en primer plano, luego brillo y luego el trono.
         
         # play SFX_2 sfx_hoguera_pequena loop fadein 1.0  # Este sonido no funciona pq esta mal el formato , no debe ser WAV
         
@@ -212,7 +213,7 @@ label capitulo1:
         
         "Lográs ver la enorme sala con sus cortinas magníficas, su piso y sus columnas de mármol."
         "En el fondo el enorme trono, escondidas entre las columnas y detrás de él ves lechuzas, quirquinchos, perros, chanchos, culebras y sapos, también, hechiceros, brujas y diablillos."
-        "Viniste para esto."
+        "Viniste a esto."
         
         menu:
             "Gritás “¡¿DÓNDE ESTÁ EL MANDINGA?!”":
@@ -252,7 +253,7 @@ label capitulo1:
             show mandi2 at subir_centrada
 
             menu:
-                "Reculás ante su presencia":
+                "Te ponés a cantar tus desgracias":
                     jump Recular
                 "Decís “¡Quiero hechizar a todo el mundo con mi canto y mi guitarra!”":
                     jump Quiero_hechizar
@@ -293,27 +294,39 @@ label capitulo1:
 
 
             menu:
-                "Reculás ante su presencia":
+                "Te ponés a cantar tus desgracias":
                     jump Recular
-                "Decís “¡Quiero hechizar a todo el mundo con mi canto y mi guitarra!”":
+                "Decís “¡Mandinga!... ¡Quiero hechizar a todo el mundo con mi canto y mi guitarra!”":
                     jump Quiero_hechizar
 
 
 
             label Recular:
                 # ESCENA 1.7B.2
+                ###(Música: vidala de 0:46 volumen bajo)
 
-                "Te arrepentís, empezás a balbucear y… "
-                
+                "Cuando intentás empezar a cantar no sale nada de tu garganta"
+
+                ###(SFX:Risa grave y burlona del Mandinga, con fade out)
+                ###(MÚSICA: la vidla empieza a subir de volumen)
+                "El Mandinga se empieza a reír de vos"
+                show mandinga_placeholder at mostrar_izquierda
+                ###(VFX: fundido a negro de mandi2 (o su reemplazo))
                 hide mandi2
+                ###(SFX: bullicio de gente en la pulpería con fade in)
+                Mandinga "Acá no se viene a eso cantorsucho de segunda"
+                ###(SFX: el siseo del Mandinga)
+                hide mandinga_placeholder
+                
                 stop SFX_1 fadeout 1.0
                 stop SFX_2 fadeout 1.0
                 # Aca estaria bueno reveer el orden ya que no da lugar al fadeout
                 play SFX_1 sfx_taberna loop fadein 1.0
-                ###(Música: vidala de 0:46 con fadein de 2 segundos)
+               
                 show pulperia at subir_centrada with Dissolve(1.0)
-                
-                "Estás completamente borracho, con la cabeza sobre una mesa de la pulpería del Tarta."
+                "Poco a poco vas recuperando la conciencia"
+                "..."
+                "Te despertás completamente borracho, con la cabeza sobre una mesa de la pulpería del Tarta."
                 "Una guitarra suena; parece que eso te despertó."
                 "Un vidalero empieza a contar una vieja leyenda de tus tierras: la leyenda de La Salamanca."
                 
@@ -339,25 +352,60 @@ label Quiero_hechizar:
 
     pause 0.01
     show mandinga_placeholder at mostrar_izquierda
-
-    
     Mandinga "Me gusta tu pasión, pero ¿estás seguro?."
-    Mandinga "Eso va a costarte el alma."
+    Mandinga "Eso va a costarte caro."
     ###(SFX: siseo)
 
+    show protagonista_placeholder at mostrar_derecha  
+    Protagonista "¿Cuál es el precio?"
+        
+    hide protagonista_placeholder
+
+    Mandinga "Tu alma." ###Resaltar en rojo el texto.
+    ###(SFX: siseo)
     hide mandinga_placeholder
+
     pause 1.5 
     show mandi2 at subir_centrada
 
     menu:
         "Pensás “¿quién le entregaría su alma a un ser así?” y titubeás":
-            jump Recular
-        "Decís “¿A dónde hay que firmar?”":
+            jump No_se_vende_el_alma
+        "Decís “¿Dónde firmo?”":
             jump A_dónde_hay_que_firmar
+    
+label No_se_vende_el_alma:
+                # ESCENA 1.7B.4A.1
+                ###(Música: vidala de 0:46 volumen bajo)
+                ###(SFX:Risa grave y burlona del Mandinga, con fade out)
+                ###(MÚSICA: la vidla empieza a subir de volumen)
+                "El Mandinga se empieza a reír de vos"
+                show mandinga_placeholder at mostrar_izquierda
+                ###(SFX: bullicio de gente en la pulpería con fade in)
+                Mandinga "Que corajudo presentarme tu deseo y no estar dispuesto a darlo todo por este don sobrenatural ..."
+                ###(SFX: el siseo del Mandinga)
+                ###(VFX: fundido a negro de mandi2 (o su reemplazo))
+                hide mandi2
+                hide mandinga_placeholder
+                "Las últimas palabras de El Mandinga suenan lejanas mientras tus  ojos se cierran lentamente"
+                stop SFX_1 fadeout 1.0
+                stop SFX_2 fadeout 1.0
+                # Aca estaria bueno reveer el orden ya que no da lugar al fadeout
+                play SFX_1 sfx_taberna loop fadein 1.0
+               
+                show pulperia at subir_centrada with Dissolve(1.0)
+                "Poco a poco vas recuperando la conciencia"
+                "..."
+                "Te despertás completamente borracho, con la cabeza sobre una mesa de la pulpería del Tarta."
+                "Una guitarra suena; parece que eso te despertó."
+                "Un vidalero empieza a contar una vieja leyenda de tus tierras: la leyenda de La Salamanca."
+                
+                hide pulperia
 
+            return
 
 label A_dónde_hay_que_firmar:
-    # ESCENA 1.7B.4
+    # ESCENA 1.7B.4b.1
     "Aceptás vender tu alma."
     ###show mandinga_placeholder at mostrar_izquierda
     Mandinga "Perfecto, pero no terminamos todavía, hay unas pruebas que vas a tener que pasar."
