@@ -370,13 +370,42 @@ label Quiero_hechizar:
 
     menu:
         "Pensás “¿quién le entregaría su alma a un ser así?” y titubeás":
-            jump Recular
+            jump No_se_vende_el_alma
         "Decís “¿Dónde firmo?”":
             jump A_dónde_hay_que_firmar
+    
+label No_se_vende_el_alma:
+                # ESCENA 1.7B.4A.1
+                ###(Música: vidala de 0:46 volumen bajo)
+                ###(SFX:Risa grave y burlona del Mandinga, con fade out)
+                ###(MÚSICA: la vidla empieza a subir de volumen)
+                "El Mandinga se empieza a reír de vos"
+                show mandinga_placeholder at mostrar_izquierda
+                ###(SFX: bullicio de gente en la pulpería con fade in)
+                Mandinga "Que corajudo presentarme tu deseo y no estar dispuesto a darlo todo por este don sobrenatural ..."
+                ###(SFX: el siseo del Mandinga)
+                ###(VFX: fundido a negro de mandi2 (o su reemplazo))
+                hide mandi2
+                hide mandinga_placeholder
+                "Las últimas palabras de El Mandinga suenan lejanas mientras tus  ojos se cierran lentamente"
+                stop SFX_1 fadeout 1.0
+                stop SFX_2 fadeout 1.0
+                # Aca estaria bueno reveer el orden ya que no da lugar al fadeout
+                play SFX_1 sfx_taberna loop fadein 1.0
+               
+                show pulperia at subir_centrada with Dissolve(1.0)
+                "Poco a poco vas recuperando la conciencia"
+                "..."
+                "Te despertás completamente borracho, con la cabeza sobre una mesa de la pulpería del Tarta."
+                "Una guitarra suena; parece que eso te despertó."
+                "Un vidalero empieza a contar una vieja leyenda de tus tierras: la leyenda de La Salamanca."
+                
+                hide pulperia
 
+            return
 
 label A_dónde_hay_que_firmar:
-    # ESCENA 1.7B.4
+    # ESCENA 1.7B.4b.1
     "Aceptás vender tu alma."
     ###show mandinga_placeholder at mostrar_izquierda
     Mandinga "Perfecto, pero no terminamos todavía, hay unas pruebas que vas a tener que pasar."
