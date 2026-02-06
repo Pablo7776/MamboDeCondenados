@@ -6,6 +6,8 @@ define Mandinga = Character("Mandinga:", color="#D4AF37")
 define China = Character("China:", color="#D4AF37")
 define colorada = Character("Colorada:", color="#D4AF37")
 define Tarta = Character("Tarta:", color="#D4AF37")
+define Señora = Character("Señora:", color="#D4AF37")
+
 
 ############################################################
 

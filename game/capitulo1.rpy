@@ -402,7 +402,7 @@ label No_se_vende_el_alma:
                 
                 hide pulperia
 
-            return
+            # return
 
 label A_dónde_hay_que_firmar:
     # ESCENA 1.7B.4b.1
