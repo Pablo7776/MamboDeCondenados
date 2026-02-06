@@ -105,7 +105,11 @@ image reputacion3 = "images/reputacion/Guitarra50a74repu.png"
 image reputacion4 = "images/reputacion/Guitarra75a99repu.png"
 image reputacion5 = "images/reputacion/Guitarra100repuomas.png"
 
+############################################################
+##############  IMAGENES DE LAS ELECCIONES #################
+############################################################
 
+image hablando = "images/personajes/protagonista/elecciondedialogo.png"
 
 ############################################################
 #################  CAPITULO 1 ##############################
