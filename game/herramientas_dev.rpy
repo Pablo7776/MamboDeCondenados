@@ -60,7 +60,13 @@ init python:
             renpy.show("reputacion2", at_list=[Position(xalign=0.9, yalign=0.9)])
         else:
             renpy.show("reputacion1", at_list=[Position(xalign=0.9, yalign=0.9)])
-#**********************************
+
+
+# ---------------------------------------------------
+# Menu para debug
+# ---------------------------------------------------
+
+
 image bg base = Solid("#000")
 
 
