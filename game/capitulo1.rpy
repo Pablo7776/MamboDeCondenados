@@ -7,8 +7,8 @@ label capitulo1:
     # (SFX: canto de pájaros)
     
     # SFX
-    play SFX_1 sfx_galope loop fadein 1
-    play SFX_2 sfx_VientoYEstatica loop fadein 4 volume 0.3
+    play SFX_1 sfx_GalopeCaballo loop fadein 1
+    # play SFX_2 sfx_VientoYEstatica loop fadein 4 volume 0.3
     
     # BGM TEST
     # play BGM bgm_VidalaInicio loop fadein 1
@@ -31,7 +31,7 @@ label capitulo1:
     
     hide gauchoACaballo
     
-    stop SFX_2 fadeout 3
+    # stop SFX_2 fadeout 3
 
     # ESCENA 1.2
     # (SFX:Sonido ambiental de terror que se intensifica)
@@ -40,8 +40,8 @@ label capitulo1:
 
     # SFX
     # play SFX_1 sfx_SonidoAmbienteTerror loop fadein 2.0 
-    play SFX_1 sfx_AmbientalTerror loop fadein 1.5
-
+    # play SFX_1 sfx_AmbientalTerror loop fadein 1.5
+    play SFX_1 sfx_VientoYEstatica loop fadein 1.5 volume 0.5
 
     show salamanca at subir_centrada with Dissolve(3.0)
     
@@ -131,6 +131,7 @@ label capitulo1:
         hide caida1
         show caida2 at subir_centrada with Dissolve(4.0)
 
+        play SFX_2 sfx_Goteo loop fadein 1.0 volume 0.8
         # ESCENA 1.7
         
         "Despertás y estás en el fondo, ves sobre vos el abismo que sube en espirales de roca viva."
@@ -138,8 +139,10 @@ label capitulo1:
     
         menu:
             "Trepás por el abismo para salir":
+                stop SFX_2 fadeout 2.0
                 jump Trepar_por_el_abismo_para_salir
             "Dás un paso hacia la oscuridad":
+                stop SFX_2 fadeout 2.0
                 jump Dar_un_paso_hacia_la_oscuridad
             
     
@@ -149,6 +152,8 @@ label capitulo1:
 
         hide caida2
         show chivo at subir_centrada with Dissolve(1.0)
+
+        play SFX_2 sfx_respiracion_chivo
 
         "Luego de mucho esfuerzo y luchar contra lechuzas que te atacaban débilmente lográs llegar hasta el borde del hoyo."
         "Estás de vuelta frente a aquel chivo endemoniado que te mira colérico."
@@ -170,7 +175,7 @@ label capitulo1:
             "Pero el chivo es pesado y sus pezuñas son como hachas contra tu cuerpo."
             
             #ESCENA 1.7A.1a.2
-
+            stop SFX_2 fadeout 1.0
             hide chivo
             show muerte at subir_centrada with Dissolve(1.0)
             ###(SFX: Fade out del sonido ambiental de terror.)
@@ -188,13 +193,14 @@ label capitulo1:
             ###(SFX: Trote de cabra)
             "Das un paso y el chivo corre tan rápidamente hacia vos que no lográs evitarlo, te tira nuevamente por el hueco del que saliste." 
             "Caés y caés a lo profundo del abismo nuevamente."
+            stop SFX_2 fadeout 1.0
             jump La_caida
 
 
     label Dar_un_paso_hacia_la_oscuridad:
         # ESCENA 1.7B.1
         
-        $ quitar_filtros("SFX_2")
+        $ quitar_filtros("SFX_1")
         stop SFX_1 fadeout 1.0
         stop SFX_2 fadeout 1.0
 
@@ -202,6 +208,8 @@ label capitulo1:
         show trono at subir_centrada with Dissolve(1.0)
         
         play SFX_1 sfx_inicio_fuego
+
+        play SFX_2 sfx_CrepitarFuego fadein 1 loop
         
         "Das el primer paso hacia la oscuridad."
         "A ambos lados, cien antorchas despiertan una tras otra, y la llamarada te ciega por un instante."
@@ -322,6 +330,8 @@ label capitulo1:
                 stop SFX_2 fadeout 1.0
                 # Aca estaria bueno reveer el orden ya que no da lugar al fadeout
                 play SFX_1 sfx_taberna loop fadein 1.0
+
+                play BGM bgm_Vidala fadein 2.0
                
                 show pulperia at subir_centrada with Dissolve(1.0)
                 "Poco a poco vas recuperando la conciencia"
@@ -393,7 +403,9 @@ label No_se_vende_el_alma:
                 # Aca estaria bueno reveer el orden ya que no da lugar al fadeout
                 play SFX_1 sfx_taberna loop fadein 1.0
                
+                play BGM bgm_Vidala fadein 2
                 show pulperia at subir_centrada with Dissolve(1.0)
+                
                 "Poco a poco vas recuperando la conciencia"
                 "..."
                 "Te despertás completamente borracho, con la cabeza sobre una mesa de la pulpería del Tarta."
@@ -528,7 +540,8 @@ label A_dónde_hay_que_firmar:
         Mandinga "{size=70}{cps=10}—BIENVENIDO A MIS HUESTES, CONDENADO!{/cps}{/size}"
 
         hide mandinga_placeholder
-        play BGM musica_piedra_y_camino
+        # play BGM musica_piedra_y_camino
+        play BGM bgm_Zamba
 
         "Las brujas, los brujos y los diablillos arrancan la fiesta a tu alrededor, sentís como tu garganta arde y después se calma, entonces empezás a cantar junto a los demás."
         "Las alimañas te levantan sobre sus lomos y te pasean por toda la sala, tu voz y tu canto ahora suenan como nunca antes sonaron."
