@@ -136,15 +136,16 @@ label capitulo1:
         
         "Despertás y estás en el fondo, ves sobre vos el abismo que sube en espirales de roca viva."
         "Te levantás y no podés ver nada delante tuyo, es sólo una profunda oscuridad."  
-    
-        menu:
-            "Trepás por el abismo para salir":
-                stop SFX_2 fadeout 2.0
-                jump Trepar_por_el_abismo_para_salir
-            "Dás un paso hacia la oscuridad":
-                stop SFX_2 fadeout 2.0
-                jump Dar_un_paso_hacia_la_oscuridad
-            
+        label opciones17:
+            $ hover_opcion = None
+            $ opciones = [
+                {"texto":"Trepás por el abismo para salir", "jump":"Trepar_por_el_abismo_para_salir", "nota":opcion_mala},
+                {"texto":"Dás un paso hacia la oscuridad", "jump":"Dar_un_paso_hacia_la_oscuridad", "nota":opcion_neutral},
+            ]
+
+            call screen guitarra_choice(opciones)
+
+            return            
     
     label Trepar_por_el_abismo_para_salir:
         
@@ -158,11 +159,16 @@ label capitulo1:
         "Luego de mucho esfuerzo y luchar contra lechuzas que te atacaban débilmente lográs llegar hasta el borde del hoyo."
         "Estás de vuelta frente a aquel chivo endemoniado que te mira colérico."
         
-        menu:
-            "Lo enfrentá":
-                jump  Te_enfrentas_al_chivo
-            "Lo esquivás":
-                jump Intentas_esquivar_al_chivo
+        label opciones17A1:
+            $ hover_opcion = None
+            $ opciones = [
+                {"texto":"Lo enfrentás", "jump":"Te_enfrentas_al_chivo", "nota":opcion_mala},
+                {"texto":"Lo esquivás", "jump":"Intentas_esquivar_al_chivo", "nota":opcion_neutral},
+            ]
+
+            call screen guitarra_choice(opciones)
+
+            return
 
 
         label Te_enfrentas_al_chivo:
@@ -223,11 +229,16 @@ label capitulo1:
         "En el fondo el enorme trono, escondidas entre las columnas y detrás de él ves lechuzas, quirquinchos, perros, chanchos, culebras y sapos, también, hechiceros, brujas y diablillos."
         "Viniste a esto."
         
-        menu:
-            "Gritás “¡¿DÓNDE ESTÁ EL MANDINGA?!”":
-                jump DÓNDE_ESTÁ_EL_MANDINGA
-            "Esperás quieto y en silencio":
-                jump Esperar_en_silencio
+        label opciones17B1:
+            $ hover_opcion = None
+            $ opciones = [
+                {"texto":"{image=hablando} ¡¿DÓNDE ESTÁ EL MANDINGA?!", "jump":"DÓNDE_ESTÁ_EL_MANDINGA", "nota":opcion_muymala},
+                {"texto":"Esperás quieto y en silencio", "jump":"Esperar_en_silencio", "nota":opcion_neutral},
+            ]
+
+            call screen guitarra_choice(opciones)
+
+            return
 
         
         label Esperar_en_silencio:
@@ -260,11 +271,16 @@ label capitulo1:
             pause 1.5 
             show mandi2 at subir_centrada
 
-            menu:
-                "Te ponés a cantar tus desgracias":
-                    jump Recular
-                "Decís “¡Quiero hechizar a todo el mundo con mi canto y mi guitarra!”":
-                    jump Quiero_hechizar
+            label opiones17B1b1:
+
+                $ opciones = [
+                    {"texto":"Te ponés a cantar tus desgracias", "jump":"Recular", "nota":opcion_mala},
+                    {"texto":"{image=hablando} ¡Quiero hechizar a todo el mundo con mi canto!", "jump":"Quiero_hechizar", "nota":opcion_neutral},
+                ]
+
+                call screen guitarra_choice(opciones)
+
+                return
 
         label DÓNDE_ESTÁ_EL_MANDINGA:
             
@@ -300,12 +316,17 @@ label capitulo1:
             
             show mandi2 at subir_centrada
 
+            label opiones17B1a1:
+                
 
-            menu:
-                "Te ponés a cantar tus desgracias":
-                    jump Recular
-                "Decís “¡Mandinga!... ¡Quiero hechizar a todo el mundo con mi canto y mi guitarra!”":
-                    jump Quiero_hechizar
+                $ opciones = [
+                    {"texto":"Te ponés a cantar tus desgracias", "jump":"Recular", "nota":opcion_mala},
+                    {"texto":"{image=hablando} ¡Quiero hechizar a todo el mundo con mi canto!", "jump":"Quiero_hechizar", "nota":opcion_neutral},
+                ]
+
+                call screen guitarra_choice(opciones)
+
+                return
 
 
 
@@ -377,12 +398,17 @@ label Quiero_hechizar:
 
     pause 1.5 
     show mandi2 at subir_centrada
+    
+    label opciones17B3:
+        $ hover_opcion = None
+        $ opciones = [
+            {"texto":"{image=hablando} Preferiría que mi alma siga siendo mía", "jump":"No_se_vende_el_alma", "nota":opcion_mala},
+            {"texto":"{image=hablando} ¿A dónde hay que firmar?", "jump":"A_dónde_hay_que_firmar", "nota":opcion_neutral},
+        ]
+        call screen guitarra_choice(opciones)
 
-    menu:
-        "Pensás “¿quién le entregaría su alma a un ser así?” y titubeás":
-            jump No_se_vende_el_alma
-        "Decís “¿Dónde firmo?”":
-            jump A_dónde_hay_que_firmar
+        return
+
     
 label No_se_vende_el_alma:
                 # ESCENA 1.7B.4A.1
@@ -413,8 +439,7 @@ label No_se_vende_el_alma:
                 "Un vidalero empieza a contar una vieja leyenda de tus tierras: la leyenda de La Salamanca."
                 
                 hide pulperia
-
-            # return
+                return
 
 label A_dónde_hay_que_firmar:
     # ESCENA 1.7B.4b.1
@@ -448,12 +473,15 @@ label A_dónde_hay_que_firmar:
 
     "Abre los brazos como invitándote a su lado y luego señala el filo del cuchillo que acaba de calzar frente tuyo."
 
-    menu:
-        "Pasás decididamente":
-            jump Pasar_decididamente
+    label opciones17B5:
+        $ hover_opcion = None
+        $ opciones = [
+            {"texto":"Pasás decididamente", "jump":"Pasar_decididamente", "nota":opcion_neutral},
+            {"texto":"Pasás cautelosamente", "jump":"Pasar_cautelosamente", "nota":opcion_mala},
+        ]
+        call screen guitarra_choice(opciones)
 
-        "Pasás cautelosamente":
-            jump Pasar_cautelosamente
+        return
 
     label Pasar_decididamente:
         # ESCENA 1.7B.5A.1
@@ -472,13 +500,17 @@ label A_dónde_hay_que_firmar:
             yoffset 36
         Mandinga "—¡ESCUPILO!"
         hide mandinga_placeholder
-
         
-        menu:
-            "Escupís el crucifijo":
-                jump Escupir_el_crucifijo
-            "Decís “¡Eso es una blasfemia!“":
-                jump Pasar_cautelosamente
+        label opciones17B5A2:
+            $ hover_opcion = None
+            $ opciones = [
+                {"texto":"Escupís el crucifijo", "jump":"Escupir_el_crucifijo", "nota":opcion_neutral},
+                {"texto":"{image=hablando} ¡Eso es una blasfemia!", "jump":"Pasar_cautelosamente", "nota":opcion_mala},
+            ]
+            call screen guitarra_choice(opciones)
+
+        return
+        
 
         label Pasar_cautelosamente:
             # ESCENA 1.7B.5B.1
@@ -561,7 +593,10 @@ label A_dónde_hay_que_firmar:
         
         hide rancho with Dissolve(5.0)
 
-        menu:
-            "Al segundo capítulo":
-                jump capitulo2
+        label opciones17B5A5:
+            $ hover_opcion = None
+            $ opciones = [
+                {"texto":"Al segundo capítulo", "jump":"capitulo2", "nota":opcion_transicion_capitulo},
+            ]
+            call screen guitarra_choice(opciones)
 
