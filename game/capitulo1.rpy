@@ -136,7 +136,7 @@ label capitulo1:
         "Despertás y estás en el fondo, ves sobre vos el abismo que sube en espirales de roca viva."
         "Te levantás y no podés ver nada delante tuyo, es sólo una profunda oscuridad."  
         label opciones17:
-
+            $ hover_opcion = None
             $ opciones = [
                 {"texto":"Trepás por el abismo para salir", "jump":"Trepar_por_el_abismo_para_salir", "nota":opcion_mala},
                 {"texto":"Dás un paso hacia la oscuridad", "jump":"Dar_un_paso_hacia_la_oscuridad", "nota":opcion_neutral},
@@ -157,7 +157,7 @@ label capitulo1:
         "Estás de vuelta frente a aquel chivo endemoniado que te mira colérico."
         
         label opciones17A1:
-
+            $ hover_opcion = None
             $ opciones = [
                 {"texto":"Lo enfrentás", "jump":"Te_enfrentas_al_chivo", "nota":opcion_mala},
                 {"texto":"Lo esquivás", "jump":"Intentas_esquivar_al_chivo", "nota":opcion_neutral},
@@ -224,7 +224,7 @@ label capitulo1:
         "Viniste a esto."
         
         label opciones17B1:
-
+            $ hover_opcion = None
             $ opciones = [
                 {"texto":"{image=hablando} ¡¿DÓNDE ESTÁ EL MANDINGA?!", "jump":"DÓNDE_ESTÁ_EL_MANDINGA", "nota":opcion_muymala},
                 {"texto":"Esperás quieto y en silencio", "jump":"Esperar_en_silencio", "nota":opcion_neutral},
@@ -311,6 +311,7 @@ label capitulo1:
             show mandi2 at subir_centrada
 
             label opiones17B1a1:
+                
 
                 $ opciones = [
                     {"texto":"Te ponés a cantar tus desgracias", "jump":"Recular", "nota":opcion_mala},
@@ -391,7 +392,7 @@ label Quiero_hechizar:
     show mandi2 at subir_centrada
     
     label opciones17B3:
-
+        $ hover_opcion = None
         $ opciones = [
             {"texto":"{image=hablando} Preferiría que mi alma siga siendo mía", "jump":"No_se_vende_el_alma", "nota":opcion_mala},
             {"texto":"{image=hablando} ¿A dónde hay que firmar?", "jump":"A_dónde_hay_que_firmar", "nota":opcion_neutral},
@@ -463,7 +464,7 @@ label A_dónde_hay_que_firmar:
     "Abre los brazos como invitándote a su lado y luego señala el filo del cuchillo que acaba de calzar frente tuyo."
 
     label opciones17B5:
-
+        $ hover_opcion = None
         $ opciones = [
             {"texto":"Pasás decididamente", "jump":"Pasar_decididamente", "nota":opcion_neutral},
             {"texto":"Pasás cautelosamente", "jump":"Pasar_cautelosamente", "nota":opcion_mala},
@@ -491,12 +492,12 @@ label A_dónde_hay_que_firmar:
         hide mandinga_placeholder
         
         label opciones17B5A2:
-
-        $ opciones = [
-            {"texto":"Escupís el crucifijo", "jump":"Escupir_el_crucifijo", "nota":opcion_neutral},
-            {"texto":"{image=hablando} ¡Eso es una blasfemia!", "jump":"Pasar_cautelosamente", "nota":opcion_mala},
-        ]
-        call screen guitarra_choice(opciones)
+            $ hover_opcion = None
+            $ opciones = [
+                {"texto":"Escupís el crucifijo", "jump":"Escupir_el_crucifijo", "nota":opcion_neutral},
+                {"texto":"{image=hablando} ¡Eso es una blasfemia!", "jump":"Pasar_cautelosamente", "nota":opcion_mala},
+            ]
+            call screen guitarra_choice(opciones)
 
         return
         
@@ -582,9 +583,9 @@ label A_dónde_hay_que_firmar:
         hide rancho with Dissolve(5.0)
 
         label opciones17B5A5:
-
-        $ opciones = [
-            {"texto":"Al segundo capítulo", "jump":"capitulo2", "nota":opcion_transicion_capitulo},
-        ]
-        call screen guitarra_choice(opciones)
+            $ hover_opcion = None
+            $ opciones = [
+                {"texto":"Al segundo capítulo", "jump":"capitulo2", "nota":opcion_transicion_capitulo},
+            ]
+            call screen guitarra_choice(opciones)
 

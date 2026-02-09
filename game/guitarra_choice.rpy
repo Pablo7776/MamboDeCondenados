@@ -68,7 +68,7 @@ init python:
         renpy.sound.play(nota, channel="fx")
 
 screen guitarra_choice(opciones):
-
+    
     add "gui/Elecciones_guitarra/Mastil_fijo.png"
 
     if hover_opcion == 0:
@@ -79,11 +79,15 @@ screen guitarra_choice(opciones):
         add "cuerda3_anim"
     elif hover_opcion == 3:
         add "cuerda4_anim"
+    elif hover_opcion == None:
+        add "gui/Elecciones_guitarra/Mastil_fijo.png"
 
     vbox:
         xalign 0.5
         yalign 0.1
         spacing 14
+
+        
 
         for i, opcion in enumerate(opciones):
 
