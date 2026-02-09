@@ -44,6 +44,9 @@ label capitulo2:
     stop fx
     stop estatica
 
+    ###"HASTA ACA LA DEMO DE LA PRIMERA ETAPA"###
+    ###Ni siquiera debería entrar al menú de opciones, directamente un continuará###
+
     label opciones22:
 
         $ opciones = [
