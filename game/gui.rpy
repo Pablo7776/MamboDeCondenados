@@ -26,23 +26,23 @@ define config.check_conflicting_properties = True
 ## Los colores del texto de la interfaz
 
 ## El color enfatizado usado en la interfaz para subrayar texto.
-define gui.accent_color = '#880000'
+define gui.accent_color = '#a1370d'
 
 ## El color del botón de texto cuando no está seleccionado ni enfocado.
-define gui.idle_color = '#880000'
+define gui.idle_color = '#d3af37'
 
 ## El color 'small' se usa para el texto pequeño, que necesita destacar más.
-define gui.idle_small_color = '#aaaaaa'
+define gui.idle_small_color = '#c9a889'
 
 ## El color usado en botones y barras que ganan foco.
-define gui.hover_color = '#D4AF37'
+define gui.hover_color = '#e45012'
 
 ## El color del botón de texto seleccionado pero no enfocado. Un botón está
 ## seleccionado si indica el valor actual de la pantalla o preferencia.
 define gui.selected_color = '#ffffff'
 
 ## El color de los botones de texto que no pueden ser seleccionados.
-define gui.insensitive_color = '#8888887f'
+define gui.insensitive_color = '#3e2c2a'
 
 ## Colores de la parte vacía de las barras. No se usan directamente, sino en la
 ## regeneración de las imágenes de barra.
@@ -50,9 +50,9 @@ define gui.muted_color = '#880000'
 define gui.hover_muted_color = '#880000'
 
 ## Colores del texto del diálogo y menú.
-define gui.text_color = '#880000'
+define gui.text_color = '#d3af37'
 #define gui.interface_text_color = '#D4AF37'
-define gui.interface_text_color = '#880000'
+define gui.interface_text_color = '#d3af37'
 #define gui.interface_text_color = '#ffffff'
 
 
@@ -71,13 +71,13 @@ define gui.name_text_font = "fonts/Alkhemikal.ttf"
 define gui.interface_text_font = "fonts/SOBAD___.ttf"
 
 ## El tamaño normal del texto del diálogo.
-define gui.text_size = 55
+define gui.text_size = 56
 
 ## El tamaño de los nombres de los personajes
-define gui.name_text_size = 55
+define gui.name_text_size = 56
 
 ## El tamaño del texto en la interfaz.
-define gui.interface_text_size = 55
+define gui.interface_text_size = 56
 
 ## El tamaño de etiquetas en la interfaz.
 define gui.label_text_size = 40
@@ -86,7 +86,7 @@ define gui.label_text_size = 40
 define gui.notify_text_size = 24
 
 ## El tamaño del título del juego.
-define gui.title_text_size = 75
+define gui.title_text_size = 76
 
 
 ## Menú principal y menús del juego ############################################
@@ -198,7 +198,7 @@ define gui.confirm_button_text_xalign = 0.5
 define gui.page_button_borders = Borders(15, 6, 15, 6)
 
 define gui.quick_button_borders = Borders(15, 6, 15, 0)
-define gui.quick_button_text_size = 21
+define gui.quick_button_text_size = 20
 define gui.quick_button_text_idle_color = gui.idle_small_color
 define gui.quick_button_text_selected_color = gui.accent_color
 
@@ -210,21 +210,18 @@ define gui.quick_button_text_selected_color = gui.accent_color
 
 
 ## Botones de opción ###########################################################
-##
-## Los botones de opción se utilizan en los menús del juego.
+## Los botones de opción se utilizan en los menús del juego. - NO SE USAN, SE DEJA POR LAS DUDAS. SE ESTÁ USANDO EL MENÚ DE LA GUITARRA
 
-
-
-define gui.choice_button_width = 1185
-define gui.choice_button_height = None
-define gui.choice_button_tile = False
-define gui.choice_button_borders = Borders(150, 8, 150, 8)
-define gui.choice_button_text_font = gui.text_font
-define gui.choice_button_text_size = gui.text_size
-define gui.choice_button_text_xalign = 0.5
-define gui.choice_button_text_idle_color = '#888888'
-define gui.choice_button_text_hover_color = "#1a1d1f"
-define gui.choice_button_text_insensitive_color = '#8888887f'
+#define gui.choice_button_width = 1185
+#define gui.choice_button_height = None
+#define gui.choice_button_tile = False
+#define gui.choice_button_borders = Borders(150, 8, 150, 8)
+#define gui.choice_button_text_font = gui.text_font
+#define gui.choice_button_text_size = gui.text_size
+#define gui.choice_button_text_xalign = 0.5
+#define gui.choice_button_text_idle_color = '#888888'
+#define gui.choice_button_text_hover_color = "#1a1d1f"
+#define gui.choice_button_text_insensitive_color = '#8888887f'
 
 
 ## Botones de partidas #########################################################
@@ -237,7 +234,7 @@ define gui.choice_button_text_insensitive_color = '#8888887f'
 define gui.slot_button_width = 414
 define gui.slot_button_height = 309
 define gui.slot_button_borders = Borders(15, 15, 15, 15)
-define gui.slot_button_text_size = 21
+define gui.slot_button_text_size = 20
 define gui.slot_button_text_xalign = 0.5
 define gui.slot_button_text_idle_color = gui.idle_small_color
 define gui.slot_button_text_selected_idle_color = gui.selected_color
@@ -448,12 +445,12 @@ init python:
     def small():
 
         ## Tamaños de letra.
-        gui.text_size = 45
-        gui.name_text_size = 54
-        gui.notify_text_size = 38
-        gui.interface_text_size = 45
-        gui.button_text_size = 45
-        gui.label_text_size = 51
+        gui.text_size = 44
+        gui.name_text_size = 56
+        gui.notify_text_size = 36
+        gui.interface_text_size = 44
+        gui.button_text_size = 44
+        gui.label_text_size = 52
 
         ## Ajusta la colocación de la caja de texto.
         gui.textbox_height = 360
@@ -462,10 +459,10 @@ init python:
         gui.dialogue_width = 1650
 
         ## Cambia el tamaño y espaciado de varios elementos.
-        gui.slider_size = 54
+        gui.slider_size = 52
 
-        gui.choice_button_width = 1860
-        gui.choice_button_text_size = 45
+        #gui.choice_button_width = 1860
+        gui.choice_button_text_size = 40
 
         gui.navigation_spacing = 30
         gui.pref_button_spacing = 15
@@ -473,7 +470,7 @@ init python:
         gui.history_height = 285
         gui.history_text_width = 1035
 
-        gui.quick_button_text_size = 30
+        gui.quick_button_text_size = 32
 
         ## Distribución de botones de archivo.
         gui.file_slot_cols = 2
