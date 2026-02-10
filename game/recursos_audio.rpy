@@ -10,7 +10,7 @@ define sfx_AmbientalTerror ="audio/CAP_1/SFX/SFX_HiRes_AmbienteTerror_marcos.ogg
 # Caída por la cueva
 define sfx_CaidaCueva =""
 # Respiración del chivo
-define sfx_RespiracionChivo ="audio/CAP_1/SFX/SFX_HiRes_RespiraChivo.ogg"
+define sfx_RespiracionChivo ="audio/CAP_1/SFX/SFX_RespiracionChivo.ogg"
 # Sonido huesos rotos
 define sfx_HuesosRotos =""
 # Crepitar de fuego

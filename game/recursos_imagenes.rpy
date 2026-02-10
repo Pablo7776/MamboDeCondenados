@@ -117,13 +117,20 @@ image hablando = "images/personajes/protagonista/elecciondedialogo.png"
 
 
 image gauchoACaballo = "images/capitulo1/gauchoACaballo.jpeg"
-image salamanca = "images/capitulo1/salamanca1280.jpg"
+
+
+# image salamanca = "images/capitulo1/salamanca1280.jpg"
+image salamanca = "images/capitulo1/Nuevos MPVP/cap1_Entrada-a-la-cueva.jpg"
+
+
 image caida1 = "images/capitulo1/abismo.png"
 image cueva = "images/capitulo1/cueva.png"
 
 #################  PLACEHOLDERS IA CAP1 ####################
 
-image chivo = "images/capitulo1/ia/chivo2.png"
+# image chivo = "images/capitulo1/ia/chivo2.png"
+image chivo = "images/capitulo1/Nuevos MPVP/cap1_chivo.png"
+
 
 ### mete bug en android...
 
