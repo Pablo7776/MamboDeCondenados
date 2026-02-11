@@ -136,7 +136,7 @@ image salamanca = "images/capitulo1/Nuevos MPVP/cap1_Entrada-a-la-cueva_v2.png"
 
 
 image caida1 = "images/capitulo1/abismo.png"
-image cueva = "images/capitulo1/Nuevos MPVP/cap1_interior-de-la-cueva_v2.png"
+image cuevaFondo = "images/capitulo1/Nuevos MPVP/cap1_interior-de-la-cueva_v2.png"
 
 #################  PLACEHOLDERS IA CAP1 ####################
 
@@ -151,6 +151,9 @@ image chivo = "images/capitulo1/Nuevos MPVP/Chivo_anim/chivo_final_final_F1.png"
 #    "images/capitulo1/ia/chivo2.png", 0.01,
 #    repeat=True
 #)
+
+image mandingaMiradaCuriosa = "images/capitulo1/Nuevos MPVP/cap1_mandinga-Curiosa2.png"
+image mandingaMiradaEnojada = "images/capitulo1/Nuevos MPVP/cap1_Mandinga_MiradaEnojada.png"
 
 image caida2 = "images/capitulo1/ia/caida2.png"
 image trono = "images/capitulo1/saladeltrono.png"

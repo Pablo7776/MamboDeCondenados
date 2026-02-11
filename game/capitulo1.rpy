@@ -126,14 +126,14 @@ label capitulo1:
     label La_caida:
         
         # ESCENA 1.6
-        hide chivo
+        hide chivo_animado
         show caida1 at subir_centrada with Dissolve(4.0)
         ###(SFX: Sonido de viento al caer)        
         "El hueco es profundo, más que profundo, estás cayendo al abismo."
         "Ves pasar lechuzas negras a tu lado, seguís cayendo y de repente te desmayás."
         
         hide caida1
-        show caida2 at subir_centrada with Dissolve(4.0)
+        show cuevaFondo at subir_centrada with Dissolve(4.0)
 
         play SFX_2 sfx_Goteo loop fadein 1.0 volume 0.8
         # ESCENA 1.7
@@ -155,8 +155,8 @@ label capitulo1:
         
         # ESCENA 1.7A.1
 
-        hide caida2
-        show chivo at subir_centrada with Dissolve(1.0)
+        hide cuevaFondo
+        show chivo_animado at subir_centrada,vibrar2, flash_repeat with Dissolve(1.0)
 
         play SFX_2 sfx_respiracion_chivo
 
@@ -186,7 +186,7 @@ label capitulo1:
             
             #ESCENA 1.7A.1a.2
             stop SFX_2 fadeout 1.0
-            hide chivo
+            hide chivo_animado
             show muerte at subir_centrada with Dissolve(1.0)
             ###(SFX: Fade out del sonido ambiental de terror.)
             ###(SFX: pisotones contra un cráneo)
@@ -214,7 +214,7 @@ label capitulo1:
         stop SFX_1 fadeout 1.0
         stop SFX_2 fadeout 1.0
 
-        hide caida2
+        hide cuevaFondo
         show trono at subir_centrada with Dissolve(1.0)
         
         play SFX_1 sfx_inicio_fuego
@@ -249,7 +249,8 @@ label capitulo1:
             # ESCENA 1.7B.1b.1
             
             hide trono
-            show mandi at subir_centrada, with Dissolve(5.0)
+            # show mandi at subir_centrada, with Dissolve(5.0)
+            show mandingaMiradaCuriosa at subir_centrada, with Dissolve(5.0)
    
             play SFX_2 sfx_trueno volume 0.5
 
@@ -257,23 +258,25 @@ label capitulo1:
             "Él atraviesa las cortinas, un enorme ser, mitad serpiente, mitad humano, ES EL MANDINGA."
             "Se sienta en su trono y te mira con un gesto curioso."
             
-            hide mandi
-            show mandi2 at subir_centrada,vibrar, with Dissolve(0.5)
+            # hide mandi
+            # show mandi2 at subir_centrada,vibrar, with Dissolve(0.5)
+            hide mandingaMiradaCuriosa
+            show mandingaMiradaCuriosa at subir_centrada,vibrar, with Dissolve(0.5)
             
             play SFX_2 sfx_basilisco
 
             ### personaje ##########################
             pause 0.01
-            show mandinga_placeholder:
-                xoffset 0
-                yoffset 36
+            # show mandinga_placeholder:
+            #     xoffset 0
+            #     yoffset 36
 
             Mandinga "¿Qué es lo que deseás de mí humano?"
             ###(SFX: siseo)
 
-            hide mandinga_placeholder
+            # hide mandinga_placeholder
             pause 1.5 
-            show mandi2 at subir_centrada
+            # show mandi2 at subir_centrada
 
             label opiones17B1b1:
 
@@ -290,7 +293,7 @@ label capitulo1:
             
             # ESCENA 1.7B.1a.1
             hide trono
-            show mandi at subir_centrada, with Dissolve(5.0)
+            show mandingaMiradaEnojada at subir_centrada, with Dissolve(5.0)
    
             $ reputacion_con_el_mandinga -= 10
             $ mostrar_repu()
@@ -302,23 +305,23 @@ label capitulo1:
             "ES EL MANDINGA." ###Aplicar VFX shake sobre el texto
             "Se sienta en su trono y te mira con un gesto severo y vehemente."
             
-            hide mandi
-            show mandi2 at subir_centrada,vibrar, with Dissolve(0.5)
+            hide mandingaMiradaEnojada
+            show mandingaMiradaEnojada at subir_centrada,vibrar, with Dissolve(0.5)
             
             play SFX_2 sfx_basilisco
 
             ### personaje ##########################
             pause 0.01
-            show mandinga_placeholder at mostrar_izquierda
+            # show mandinga_placeholder at mostrar_izquierda
 
 
             Mandinga "¿Qué es lo que deseás de mí desgraciado?"
             
-            hide mandinga_placeholder
+            # hide mandinga_placeholder
 
             pause 1.5 
             
-            show mandi2 at subir_centrada
+            # show mandi2 at subir_centrada
 
             label opiones17B1a1:
                 
@@ -343,13 +346,13 @@ label capitulo1:
                 ###(SFX:Risa grave y burlona del Mandinga, con fade out)
                 ###(MÚSICA: la vidla empieza a subir de volumen)
                 "El Mandinga se empieza a reír de vos"
-                show mandinga_placeholder at mostrar_izquierda
+                # show mandinga_placeholder at mostrar_izquierda
                 ###(VFX: fundido a negro de mandi2 (o su reemplazo))
-                hide mandi2
+                # hide mandi2
                 ###(SFX: bullicio de gente en la pulpería con fade in)
                 Mandinga "Acá no se viene a eso cantorsucho de segunda"
                 ###(SFX: el siseo del Mandinga)
-                hide mandinga_placeholder
+                # hide mandinga_placeholder
                 
                 stop SFX_1 fadeout 1.0
                 stop SFX_2 fadeout 1.0
@@ -373,35 +376,35 @@ label capitulo1:
 label Quiero_hechizar:
 
     # ESCENA 1.7B.3
-    show protagonista_placeholder at mostrar_derecha
+    # show protagonista_placeholder at mostrar_derecha
 
     
     Protagonista "¡Quiero hechizar a todos con mi canto!"
     
-    hide protagonista_placeholder
+    # hide protagonista_placeholder
 
-    hide mandi2
-    show mandi2 at subir_centrada,vibrar, with Dissolve(0.5)
+    hide mandingaMiradaCuriosa
+    show mandingaMiradaCuriosa at subir_centrada,vibrar, with Dissolve(0.5)
     
     play sound sfx_basilisco
 
     pause 0.01
-    show mandinga_placeholder at mostrar_izquierda
+    # show mandinga_placeholder at mostrar_izquierda
     Mandinga "Me gusta tu pasión, pero ¿estás seguro?."
     Mandinga "Eso va a costarte caro."
     ###(SFX: siseo)
 
-    show protagonista_placeholder at mostrar_derecha  
+    # show protagonista_placeholder at mostrar_derecha  
     Protagonista "¿Cuál es el precio?"
         
-    hide protagonista_placeholder
+    # hide protagonista_placeholder
 
     Mandinga "Tu alma." ###Resaltar en rojo el texto.
     ###(SFX: siseo)
-    hide mandinga_placeholder
+    # hide mandinga_placeholder
 
     pause 1.5 
-    show mandi2 at subir_centrada
+    # show mandi2 at subir_centrada
     
     label opciones17B3:
         $ hover_opcion = None
@@ -420,13 +423,13 @@ label No_se_vende_el_alma:
                 ###(SFX:Risa grave y burlona del Mandinga, con fade out)
                 ###(MÚSICA: la vidla empieza a subir de volumen)
                 "El Mandinga se empieza a reír de vos"
-                show mandinga_placeholder at mostrar_izquierda
+                # show mandinga_placeholder at mostrar_izquierda
                 ###(SFX: bullicio de gente en la pulpería con fade in)
                 Mandinga "Que corajudo presentarme tu deseo y no estar dispuesto a darlo todo por este don sobrenatural ..."
                 ###(SFX: el siseo del Mandinga)
                 ###(VFX: fundido a negro de mandi2 (o su reemplazo))
-                hide mandi2
-                hide mandinga_placeholder
+                # hide mandi2
+                # hide mandinga_placeholder
                 "Las últimas palabras de El Mandinga suenan lejanas mientras tus  ojos se cierran lentamente"
                 stop SFX_1 fadeout 1.0
                 stop SFX_2 fadeout 1.0
