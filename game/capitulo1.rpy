@@ -240,6 +240,8 @@ label capitulo1:
             
             hide trono
             show mandi at subir_centrada, with Dissolve(5.0)
+
+            # mirada curiosa
    
             play SFX_2 sfx_trueno volume 0.5
 
@@ -281,6 +283,8 @@ label capitulo1:
             # ESCENA 1.7B.1a.1
             hide trono
             show mandi at subir_centrada, with Dissolve(5.0)
+
+            # mirada enojada
    
             $ reputacion_con_el_mandinga -= 10
             $ mostrar_repu()
@@ -370,6 +374,8 @@ label Quiero_hechizar:
 
     hide mandi2
     show mandi2 at subir_centrada,vibrar, with Dissolve(0.5)
+
+    #  mirada curiosa
     
     play sound sfx_basilisco
 
@@ -455,6 +461,8 @@ label A_dónde_hay_que_firmar:
     play sound sfx_basilisco
     
     show mandinga_placeholder at mostrar_izquierda
+
+    #  mirada curiosa
 
 
     Mandinga "Vení conmigo."
