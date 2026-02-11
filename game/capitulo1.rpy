@@ -382,7 +382,7 @@ label Quiero_hechizar:
     Protagonista "¡Quiero hechizar a todos con mi canto!"
     
     # hide protagonista_placeholder
-
+    hide mandingaMiradaEnojada
     hide mandingaMiradaCuriosa
     show mandingaMiradaCuriosa at subir_centrada,vibrar, with Dissolve(0.5)
     
@@ -460,7 +460,8 @@ label A_dónde_hay_que_firmar:
     "Una gran grieta separa la sala al medio:"
     "De un lado estás vos; del otro, el Mandinga, su trono y sus seguidores."
     
-    hide mandi2
+    hide mandingaMiradaCuriosa
+    hide mandingaMiradaEnojada
 
     # ESCENA 1.7B.5
     show cuchillo at subir_centrada,vibrar with Dissolve(1.0)
@@ -471,12 +472,12 @@ label A_dónde_hay_que_firmar:
     
     play sound sfx_basilisco
     
-    show mandinga_placeholder at mostrar_izquierda
+    # show mandinga_placeholder at mostrar_izquierda
 
 
     Mandinga "Vení conmigo."
     
-    hide mandinga_placeholder
+    # hide mandinga_placeholder
 
     "Abre los brazos como invitándote a su lado y luego señala el filo del cuchillo que acaba de calzar frente tuyo."
 
@@ -502,11 +503,11 @@ label A_dónde_hay_que_firmar:
         "Mirás hacia abajo y hay un crucifijo sobre una luz que no sabés de dónde viene."
         pause 0.01
         #play SFX_2 sfx_basilisco
-        show mandinga_placeholder:
-            xoffset 0
-            yoffset 36
+        # show mandinga_placeholder:
+        #     xoffset 0
+        #     yoffset 36
         Mandinga "—¡ESCUPILO!"
-        hide mandinga_placeholder
+        # hide mandinga_placeholder
         
         label opciones17B5A2:
             $ hover_opcion = None
@@ -561,11 +562,11 @@ label A_dónde_hay_que_firmar:
         play SFX_2 "audio/capitulo1/risaDiabolica.wav" #esto no va a funcionar pq es WAV
 
         pause 0.01
-        show protagonista_placeholder at mostrar_derecha
+        # show protagonista_placeholder at mostrar_derecha
         
         Protagonista "Mi nombre es [nombre_jugador] y te vendo mi alma, Mandinga."
         
-        hide protagonista_placeholder
+        # hide protagonista_placeholder
         stop SFX_2 fadeout 1.0
         jump Lo_lograste
             
@@ -574,11 +575,11 @@ label A_dónde_hay_que_firmar:
         pause 0.01
         play SFX_2 sfx_basilisco
         
-        show mandinga_placeholder at mostrar_izquierda
+        # show mandinga_placeholder at mostrar_izquierda
 
         Mandinga "{size=70}{cps=10}—BIENVENIDO A MIS HUESTES, CONDENADO!{/cps}{/size}"
 
-        hide mandinga_placeholder
+        # hide mandinga_placeholder
         # play BGM musica_piedra_y_camino
         play BGM bgm_Zamba
 
