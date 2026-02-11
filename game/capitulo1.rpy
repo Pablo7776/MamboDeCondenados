@@ -101,7 +101,11 @@ label capitulo1:
         "Entonces aparece ese animal grotesco del que te había contado el viejo: un chivo de pelo negro, ojos endemoniados y cuernos tan curvados como una espiral."
         
         hide placeholder_negro
-        show chivo at subir_centrada with Dissolve(1.0)
+        # show chivo at subir_centrada with Dissolve(1.0)
+        show chivo_animado at subir_centrada, vibrar2, flash_repeat with Dissolve(1.0) 
+
+
+
         "Un chivo de pelo negro, inmenso, mucho más grande que cualquier bestia del campo."
         "Tiene los cuernos retorcidos como ramas secas."
         "Sus ojos amarillos que te miran con una inteligencia burlona."

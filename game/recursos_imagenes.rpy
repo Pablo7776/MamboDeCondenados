@@ -95,6 +95,18 @@ image tarta_placeholder = Animation(
     repeat=True
 )
 
+
+image chivo_animado = Animation(
+    "images/capitulo1/Nuevos MPVP/Chivo_anim/chivo_final_final_F1.png", 0.08,
+    "images/capitulo1/Nuevos MPVP/Chivo_anim/chivo_final_final_F2.png", 0.05,
+    "images/capitulo1/Nuevos MPVP/Chivo_anim/chivo_final_final_F3.png", 0.05,
+    "images/capitulo1/Nuevos MPVP/Chivo_anim/chivo_final_final_F4.png", 0.08,
+    "images/capitulo1/Nuevos MPVP/Chivo_anim/chivo_final_final_F3.png", 0.05,
+    "images/capitulo1/Nuevos MPVP/Chivo_anim/chivo_final_final_F2.png", 0.05,
+
+    repeat=True
+)
+
 ############################################################
 #################  REPUTACIÓN ##############################
 ############################################################
@@ -120,16 +132,16 @@ image gauchoACaballo = "images/capitulo1/gauchoACaballo.jpeg"
 
 
 # image salamanca = "images/capitulo1/salamanca1280.jpg"
-image salamanca = "images/capitulo1/Nuevos MPVP/cap1_Entrada-a-la-cueva.jpg"
+image salamanca = "images/capitulo1/Nuevos MPVP/cap1_Entrada-a-la-cueva_v2.png"
 
 
 image caida1 = "images/capitulo1/abismo.png"
-image cueva = "images/capitulo1/cueva.png"
+image cueva = "images/capitulo1/Nuevos MPVP/cap1_interior-de-la-cueva_v2.png"
 
 #################  PLACEHOLDERS IA CAP1 ####################
 
 # image chivo = "images/capitulo1/ia/chivo2.png"
-image chivo = "images/capitulo1/Nuevos MPVP/cap1_chivo.png"
+image chivo = "images/capitulo1/Nuevos MPVP/Chivo_anim/chivo_final_final_F1.png"
 
 
 ### mete bug en android...
