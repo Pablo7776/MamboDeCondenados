@@ -10,7 +10,7 @@ define sfx_AmbientalTerror ="audio/CAP_1/SFX/SFX_HiRes_AmbienteTerror_marcos.ogg
 # Caída por la cueva
 define sfx_CaidaCueva =""
 # Respiración del chivo
-define sfx_RespiracionChivo ="audio/CAP_1/SFX/SFX_HiRes_RespiraChivo.ogg"
+define sfx_RespiracionChivo ="audio/CAP_1/SFX/SFX_RespiracionChivo.ogg"
 # Sonido huesos rotos
 define sfx_HuesosRotos =""
 # Crepitar de fuego
@@ -28,16 +28,17 @@ define sfx_VientoTranquilo =""
 # Chillido de puerta abriéndose
 define sfx_Puerta =""
 # Galope caballo
-define sfx_GalopeCaballo =""
+define sfx_GalopeCaballo ="audio/CAP_1/SFX/SFX_galope5.ogg"
 # Goteo
-define sfx_Goteo =""
+define sfx_Goteo ="audio/CAP_1/SFX/SFX_Goteo.ogg"
 # Estática 
 define sfx_Estatica =""
 
 # Lista BGM :
 # Capitulo 1
 # Vidala inicio
-define bgm_VidalaInicio = "/audio/CAP_1/BGM/Sintes_testvidala3.ogg"
+define bgm_Vidala = "audio/CAP_1/BGM/Master_Vidala_2.ogg"
+define bgm_Zamba = "audio/CAP_1/BGM/Master_Zamba.ogg"
 
 
 
@@ -83,3 +84,10 @@ define abucheo = "audio/cap4Colony/abucheo.ogg"
 define melo_pibe = "musica/Zamba de lozano_Cuchi Leguizamon (Version para chiptune)_ melopibe.mp3"
 define musica_piedra_y_camino = "musica/Piedra y Camino - Atahualpa Yupanqui - Chiptune.mp3"
 define chacarera = "musica/Chacarera del Zorrito – Cuchi Leguizamon Chacarera del Zorrito - 8 bit (2).mp3"
+
+######## acordes guitarra_choice ##########
+define opcion_buena="audio/audio_elecciones/C_Em.mp3"
+define opcion_mala="audio/audio_elecciones/Cm_Eb.mp3"
+define opcion_neutral="audio/audio_elecciones/C5_C5.mp3"
+define opcion_muymala="audio/audio_elecciones/Cm_Bdim_Cm.mp3"
+define opcion_transicion_capitulo="audio/audio_elecciones/Escala_C.mp3"

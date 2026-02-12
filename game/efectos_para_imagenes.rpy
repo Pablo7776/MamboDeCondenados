@@ -5,11 +5,23 @@ transform vibrar:
     linear 0.05 xoffset -2 yoffset 2
     repeat
 
+transform vibrar2:
+    linear 0.05 xoffset 3 yoffset -3
+    linear 0.05 xoffset -3 yoffset 3
+    linear 0.05 xoffset 1 yoffset -3
+    linear 0.05 xoffset -1 yoffset 1
+    repeat
+
 transform aparecer_flash:
     alpha 0.5
     linear 0.5 alpha 1.0
     linear 0.5 alpha 1.0
     repeat
+
+transform flash_repeat:
+    alpha 0.5
+    linear 0.1 alpha 1.0
+    repeat 
 
 transform flash:
     alpha 0.0

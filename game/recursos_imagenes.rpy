@@ -95,6 +95,18 @@ image tarta_placeholder = Animation(
     repeat=True
 )
 
+
+image chivo_animado = Animation(
+    "images/capitulo1/Nuevos MPVP/Chivo_anim/chivo_final_final_F1.png", 0.08,
+    "images/capitulo1/Nuevos MPVP/Chivo_anim/chivo_final_final_F2.png", 0.05,
+    "images/capitulo1/Nuevos MPVP/Chivo_anim/chivo_final_final_F3.png", 0.05,
+    "images/capitulo1/Nuevos MPVP/Chivo_anim/chivo_final_final_F4.png", 0.08,
+    "images/capitulo1/Nuevos MPVP/Chivo_anim/chivo_final_final_F3.png", 0.05,
+    "images/capitulo1/Nuevos MPVP/Chivo_anim/chivo_final_final_F2.png", 0.05,
+
+    repeat=True
+)
+
 ############################################################
 #################  REPUTACIÓN ##############################
 ############################################################
@@ -105,7 +117,11 @@ image reputacion3 = "images/reputacion/Guitarra50a74repu.png"
 image reputacion4 = "images/reputacion/Guitarra75a99repu.png"
 image reputacion5 = "images/reputacion/Guitarra100repuomas.png"
 
+############################################################
+##############  IMAGENES DE LAS ELECCIONES #################
+############################################################
 
+image hablando = "images/personajes/protagonista/elecciondedialogo.png"
 
 ############################################################
 #################  CAPITULO 1 ##############################
@@ -113,13 +129,20 @@ image reputacion5 = "images/reputacion/Guitarra100repuomas.png"
 
 
 image gauchoACaballo = "images/capitulo1/gauchoACaballo.jpeg"
-image salamanca = "images/capitulo1/salamanca1280.jpg"
+
+
+# image salamanca = "images/capitulo1/salamanca1280.jpg"
+image salamanca = "images/capitulo1/Nuevos MPVP/cap1_Entrada-a-la-cueva_v2.png"
+
+
 image caida1 = "images/capitulo1/abismo.png"
-image cueva = "images/capitulo1/cueva.png"
+image cuevaFondo = "images/capitulo1/Nuevos MPVP/cap1_interior-de-la-cueva_v2.png"
 
 #################  PLACEHOLDERS IA CAP1 ####################
 
-image chivo = "images/capitulo1/ia/chivo2.png"
+# image chivo = "images/capitulo1/ia/chivo2.png"
+image chivo = "images/capitulo1/Nuevos MPVP/Chivo_anim/chivo_final_final_F1.png"
+
 
 ### mete bug en android...
 
@@ -128,6 +151,9 @@ image chivo = "images/capitulo1/ia/chivo2.png"
 #    "images/capitulo1/ia/chivo2.png", 0.01,
 #    repeat=True
 #)
+
+image mandingaMiradaCuriosa = "images/capitulo1/Nuevos MPVP/cap1_mandinga-Curiosa2.png"
+image mandingaMiradaEnojada = "images/capitulo1/Nuevos MPVP/cap1_Mandinga_MiradaEnojada.png"
 
 image caida2 = "images/capitulo1/ia/caida2.png"
 image trono = "images/capitulo1/saladeltrono.png"

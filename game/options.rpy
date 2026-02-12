@@ -239,3 +239,7 @@ screen confirm(message, yes_action, no_action):
 
 define config.keymap['game_menu'] = []
 define config.keymap['hide_windows'] = []
+
+###### Configuración de método de escalado #####
+###Usa escalado de aproximación de vecino más cercano para evitar el desenfoque de los píxeles. ###
+define config.nearest_neighbor = True

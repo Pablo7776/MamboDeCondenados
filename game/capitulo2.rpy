@@ -2,7 +2,7 @@ default nombre_jugador = "Ramón"
 default Vida_china = False
 
 label capitulo2:
-
+    # ESCENA 2.1
     stop music fadeout 12.0
     play ambiente sfx_SonidoAmbienteTerror loop fadein 1.0
     
@@ -24,6 +24,8 @@ label capitulo2:
     play sound sfx_viento1 loop volume 0.7
 
     hide caida1
+
+    #ESCENA 2.2
     show ranchoHiguera at subir_centrada with Dissolve(1.0)
     
     play fx sfx_galope 
@@ -42,13 +44,17 @@ label capitulo2:
     stop fx
     stop estatica
 
-    menu:
-        "Entrás al campo y golpeás la puerta.":
-            jump puerta_del_rancho
-        "Pasás la noche bajo la higuera.":
-            jump noche_ante_las_estrellas
+    label opciones22:
+
+        $ opciones = [
+            {"texto":"Entrás al campo y golpeás la puerta", "jump":"puerta_del_rancho", "nota":opcion_neutral},
+            {"texto":"Pasás la noche bajo la higuera", "jump":"noche_ante_las_estrellas", "nota":opcion_muymala},
+        ]
+        call screen guitarra_choice(opciones)
+
 
 label noche_ante_las_estrellas:
+    # ESCENA 2.2A.1
     $ reputacion_con_el_mandinga -= 30
     $ mostrar_repu()
 
@@ -88,6 +94,7 @@ label noche_ante_las_estrellas:
         #    jump capitulo3
 
 label puerta_del_rancho:
+    # ESCENA 2.2B.1
     hide ranchoHiguera
     show puertaChina at subir_centrada with Dissolve(1.0)
     
@@ -100,16 +107,15 @@ label puerta_del_rancho:
     China "—¿Quién es? ¿Qué necesitás?"
    
     hide china_placeholder
+    label opciones22B1:
 
-    menu:
-        "—Soy [nombre_jugador]. Vengo viajando hace medio día, se me hizo de noche en el camino, quería saber si me podían dar techo esta noche, a cambio puedo ofrecer mi música —y mostrás tu guitarra.":
-            jump Fuiste_cordial_y_se_te_agradece_por_ello
+        $ opciones = [
+            {"texto":"{image=hablando} Disculpe señorita, soy [nombre_jugador]. Se me hizo de noche en el camino, me podrían dar techo esta noche, a cambio puedo ofrecer mi música", "jump":"Fuiste_cordial_y_se_te_agradece_por_ello", "nota":opcion_muymala},
+            {"texto":"{image=hablando} ¡¿Qué voy a necesitar?! ¡Necesito entrar!", "jump":"No_fuiste_muy_cordial", "nota":opcion_mala},
+            {"texto":"(Sacás tu guitarra y tocas un primer acorde) {image=hablando} Soy [nombre_jugador]", "jump":"Tus_primeros_hechizados", "nota":opcion_buena},
+        ]
+        call screen guitarra_choice(opciones)
 
-        "—¿Y qué voy a necesitar? ¡Necesito entrar! ¡Hace frío!":
-            jump No_fuiste_muy_cordial
-        
-        "—Soy [nombre_jugador]. — Sacás tu guitarra y tocás un primer acorde":
-            jump Tus_primeros_hechizados
 
 label Tus_primeros_hechizados:
     $ reputacion_con_el_mandinga += 10
