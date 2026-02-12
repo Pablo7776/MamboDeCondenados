@@ -46,3 +46,34 @@ transform mostrar_derecha:
 
 
 define black_transition = Fade(0.6, 0.4, 0.8, color="#000000")  # 
+
+#### Para poner dípticos horizontales con una imagen arriba y otra abajo###
+transform hdiptico_superior: 
+    xalign 0.5
+    yalign 0.14
+
+transform hdiptico_inferior: 
+    xalign 0.5
+    yalign 0.44
+
+#### Para poner dípticos verticales, una imagen a la izquierda y otra a la derecha###
+transform vdiptico_izquierda: 
+    xalign 0.34
+    yalign 0.1
+
+transform vdiptico_derecha: 
+    xalign 0.66
+    yalign 0.1
+
+### Para poner tripticos verticales###
+transform vtriptico_izquierda: 
+    xalign 0.28
+    yalign 0.1
+
+transform vtriptico_centro: 
+    xalign 0.5
+    yalign 0.1
+
+transform vtriptico_derecha: 
+    xalign 0.72
+    yalign 0.1
