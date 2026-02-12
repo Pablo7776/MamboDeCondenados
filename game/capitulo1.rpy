@@ -474,6 +474,8 @@ label A_dónde_hay_que_firmar:
     
     # show mandinga_placeholder at mostrar_izquierda
 
+    #  mirada curiosa
+
 
     Mandinga "Vení conmigo."
     
