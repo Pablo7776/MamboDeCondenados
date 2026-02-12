@@ -10,7 +10,7 @@ define sfx_AmbientalTerror ="audio/CAP_1/SFX/SFX_HiRes_AmbienteTerror_marcos.ogg
 # Caída por la cueva
 define sfx_CaidaCueva =""
 # Respiración del chivo
-define sfx_RespiracionChivo ="audio/CAP_1/SFX/SFX_HiRes_RespiraChivo.ogg"
+define sfx_RespiracionChivo ="audio/CAP_1/SFX/SFX_RespiracionChivo.ogg"
 # Sonido huesos rotos
 define sfx_HuesosRotos =""
 # Crepitar de fuego
@@ -28,16 +28,17 @@ define sfx_VientoTranquilo =""
 # Chillido de puerta abriéndose
 define sfx_Puerta =""
 # Galope caballo
-define sfx_GalopeCaballo =""
+define sfx_GalopeCaballo ="audio/CAP_1/SFX/SFX_galope5.ogg"
 # Goteo
-define sfx_Goteo =""
+define sfx_Goteo ="audio/CAP_1/SFX/SFX_Goteo.ogg"
 # Estática 
 define sfx_Estatica =""
 
 # Lista BGM :
 # Capitulo 1
 # Vidala inicio
-define bgm_VidalaInicio = "/audio/CAP_1/BGM/Sintes_testvidala3.ogg"
+define bgm_Vidala = "audio/CAP_1/BGM/Master_Vidala_2.ogg"
+define bgm_Zamba = "audio/CAP_1/BGM/Master_Zamba.ogg"
 
 
 
