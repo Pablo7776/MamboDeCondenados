@@ -271,7 +271,7 @@ label capitulo1:
             hide trono
             show mandingaMiradaCuriosa at subir_centrada, with Dissolve(5.0)
    
-            play SFX_2 sfx_EstruendoRocaReverb volume 0.5
+            play SFX_2 sfx_EstruendoRocaReverb volume 0.9
 
             "Se desmorona una de las paredes que deja un gran agujero en uno de los costados de la sala."
             "{color=#880000}Él{/color} atraviesa las cortinas."
