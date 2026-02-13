@@ -23,7 +23,14 @@ define sfx_inicio_fuego = "audio/capitulo1/inicio_fuego.mp3"
 # Crepitar de fuego
 define sfx_CrepitarFuego = "audio/CAP_1/SFX/SFX_CrepitarDeFuego.ogg"
 # Siseo del mandinga
-define sfx_SiseoMandinga =""
+define sfx_SiseoMandinga1 ="audio/CAP_1/SFX/SFX_siseo1.ogg"
+# Siseo del mandinga
+define sfx_SiseoMandinga2 ="audio/CAP_1/SFX/SFX_siseo2.ogg"
+# Siseo del mandinga
+define sfx_SiseoMandinga3 ="audio/CAP_1/SFX/SFX_siseo3.ogg"
+# Siseo del mandinga
+define sfx_SiseoMandinga4 ="audio/CAP_1/SFX/SFX_siseo4.ogg"
+
 # Estruendo - Roca
 define sfx_EstruendoRocaLimpio ="audio/CAP_1/SFX/SFX_EstruendoDry.ogg"
 # Estruendo - Roca

@@ -144,6 +144,8 @@ image cuevaFondo = "images/capitulo1/Nuevos MPVP/cap1_interior-de-la-cueva_v2.pn
 image chivo = "images/capitulo1/Nuevos MPVP/Chivo_anim/chivo_final_final_F1.png"
 
 
+image facon = "images/capitulo1/Nuevos MPVP/cap1_facon_1.png"
+
 ### mete bug en android...
 
 #image chivo = Animation(
