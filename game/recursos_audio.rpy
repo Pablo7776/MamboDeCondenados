@@ -1,10 +1,15 @@
+
+# Musica menu
+define bgm_MainMenuMusic = "audio/Master_MusicaMenu-001.ogg"
+
+
 ################  EFECTOS DE SONIDO #########################
 
 # Lista de SFX Actualizada
 # SFX:
 # Capitulo 1
 # Viento Y Estática
-define sfx_VientoYEstatica = "audio/CAP_1/SFX/SFX_VientoYEstatica.ogg"
+define sfx_VientoEstatica = "audio/CAP_1/SFX/SFX_VientoEstatica.ogg"
 # Sonido ambiental de terror (Semi musical)
 define sfx_AmbientalTerror ="audio/CAP_1/SFX/SFX_HiRes_AmbienteTerror_marcos.ogg"
 # Caída por la cueva
@@ -12,19 +17,23 @@ define sfx_CaidaCueva =""
 # Respiración del chivo
 define sfx_RespiracionChivo ="audio/CAP_1/SFX/SFX_RespiracionChivo.ogg"
 # Sonido huesos rotos
-define sfx_HuesosRotos =""
+define sfx_HuesosRotos ="audio/CAP_1/SFX/SFX_HuesosRotos.ogg"
+# Inicio de fuego
+define sfx_inicio_fuego = "audio/capitulo1/inicio_fuego.mp3"
 # Crepitar de fuego
 define sfx_CrepitarFuego = "audio/CAP_1/SFX/SFX_CrepitarDeFuego.ogg"
 # Siseo del mandinga
 define sfx_SiseoMandinga =""
 # Estruendo - Roca
-define sfx_EstruendoiRoca =""
+define sfx_EstruendoRocaLimpio ="audio/CAP_1/SFX/SFX_EstruendoDry.ogg"
+# Estruendo - Roca
+define sfx_EstruendoRocaReverb ="audio/CAP_1/SFX/SFX_EstruendoWet.ogg"
 # Cuchilla
-define sfx_Cuchilla =""
+define sfx_Cuchilla ="" 
 # Risa - Chillido diabólica
-define sfx_ChillidoDiabolico =""
+define sfx_ChillidoDiabolico ="" 
 # Viento tranquilo / Con hojas al viento
-define sfx_VientoTranquilo =""
+define sfx_VientoTranquilo ="audio/CAP_1/SFX/SFX_VientoTranquilo.ogg"
 # Chillido de puerta abriéndose
 define sfx_Puerta =""
 # Galope caballo
@@ -43,31 +52,31 @@ define bgm_Zamba = "audio/CAP_1/BGM/Master_Zamba.ogg"
 
 
 
-define sfx_viento1 = "audio/capitulo1/viento1.ogg"
-define ruidoRosa = "audio/capitulo1/ruidoRosa2.mp3"
-define sfx_galope = "audio/capitulo1/sfx_galope.ogg"
-define sfx_SonidoAmbienteTerror = "audio/capitulo1/sfx_SonidoAmbienteTerror.ogg"
-define sfx_respiracion_chivo = "audio/capitulo1/respiracion_chivo.ogg"
-define sfx_basilisco = "audio/capitulo1/siseo_corto3.ogg"
-define sfx_gritito_muerte = "audio/capitulo1/quejido_muerte.mp3" 
-define sfx_gritito_muerte2 = "audio/capitulo1/gritoDeMIedo.ogg"
-define sfx_infrasonido = "audio/capitulo1/sfx_infrasonido.ogg"
-define sfx_inicio_fuego = "audio/capitulo1/inicio_fuego.mp3"
-define sfx_hoguera_pequena = "/audio/capitulo1/fuegoconstante_pequeno.wav"
-define sfx_trueno = "audio/capitulo1/sfx_trueno.ogg"
-define crucifijo = "audio/capitulo1/acufeno.ogg"
+# define sfx_viento1 = "audio/capitulo1/viento1.ogg"
+# define ruidoRosa = "audio/capitulo1/ruidoRosa2.mp3"
+# define sfx_galope = "audio/capitulo1/sfx_galope.ogg"
+# define sfx_SonidoAmbienteTerror = "audio/capitulo1/sfx_SonidoAmbienteTerror.ogg"
+# define sfx_respiracion_chivo = "audio/capitulo1/respiracion_chivo.ogg"
+# define sfx_basilisco = "audio/capitulo1/siseo_corto3.ogg"
+# define sfx_gritito_muerte = "audio/capitulo1/quejido_muerte.mp3" 
+# define sfx_gritito_muerte2 = "audio/capitulo1/gritoDeMIedo.ogg"
+# define sfx_infrasonido = "audio/capitulo1/sfx_infrasonido.ogg"
+
+# define sfx_hoguera_pequena = "/audio/capitulo1/fuegoconstante_pequeno.wav"
+# define sfx_trueno = "audio/capitulo1/sfx_trueno.ogg"
+# define crucifijo = "audio/capitulo1/acufeno.ogg"
 
 
 
-define sfx_crujir = "audio/capitulo2/piedra_cerrandose2.mp3"
+# define sfx_crujir = "audio/capitulo2/piedra_cerrandose2.mp3"
 
 
 
-define sfx_taberna = "audio/capitulo3/genteenlapulperia.mp3"
-define sfx_aplausos = "audio/capitulo3/aplausos1.mp3"
-define sfx_noche = "audio/capitulo3/Nochedenoche.mp3"
-define sfx_pajaritos = "audio/capitulo3/pajarosdia.mp3"
-define sfx_respiracion = "audio/capitulo3/respiracion.mp3"
+# define sfx_taberna = "audio/capitulo3/genteenlapulperia.mp3"
+# define sfx_aplausos = "audio/capitulo3/aplausos1.mp3"
+# define sfx_noche = "audio/capitulo3/Nochedenoche.mp3"
+# define sfx_pajaritos = "audio/capitulo3/pajarosdia.mp3"
+# define sfx_respiracion = "audio/capitulo3/respiracion.mp3"
 
 
 ### efectos audio cap4 colony ################################################
