@@ -284,10 +284,12 @@ label capitulo1:
             #     xoffset 0
             #     yoffset 36
 
+            ###(SFX: siseo)
+            play SFX_2 sfx_SiseoMandinga1
+
             Mandinga "¿Qué es lo que deseás de mí humano?"
 
-            ###(SFX: siseo)
-            play SFX_2 sfx_SiseoMandinga
+            
 
             # hide mandinga_placeholder
             # pause 1.5 
@@ -370,10 +372,11 @@ label capitulo1:
                 # SFX Bullicio pulperia, volumen bajo, filtrado, fadein
                 # Falta asset
 
-                Mandinga "Acá no se viene a eso cantorsucho de segunda"
-
                 # SFX Siseo del mandinga
-                # Falta Asset
+                play SFX_2 sfx_SiseoMandinga2
+                
+                Mandinga "Acá no se viene a eso cantorsucho de segunda"
+                
                 
                 # SFX > Stop SFX Sonidos cueva
                 stop SFX_1 fadeout 2.0
@@ -415,21 +418,24 @@ label Quiero_hechizar:
     show mandingaMiradaCuriosa at subir_centrada,vibrar, with Dissolve(0.5)
     
 
-
+    ###(SFX: siseo)
+    play SFX_2 sfx_SiseoMandinga3
     
     Mandinga "Me gusta tu pasión, pero ¿estás seguro?."
     Mandinga "Eso va a costarte caro."
 
-    ###(SFX: siseo)
+    
 
     Protagonista "¿Cuál es el precio?"
         
     # hide protagonista_placeholder
 
+    # SFX Siseo del mandinga
+    play SFX_2 sfx_SiseoMandinga4
+
     Mandinga "Tu alma." ###Resaltar en rojo el texto.
 
-    # SFX Siseo del mandinga
-    # Falta Asset
+    
 
 
     label opciones17B3:
@@ -465,11 +471,12 @@ label No_se_vende_el_alma:
                 # SFX Bullicio pulperia, volumen bajo, filtrado, fadein
                 # Falta asset
 
+                # SFX Siseo del mandinga
+                play SFX_2 sfx_SiseoMandinga1
+
                 Mandinga "Que corajudo presentarme tu deseo y no estar dispuesto a darlo todo por este don sobrenatural ..."
 
-                # SFX Siseo del mandinga
-                # Falta Asset
-
+            
                 #  no se como se maneja el fundido segun el guion
                 ###(VFX: fundido a negro de mandi2 (o su reemplazo))  
 
@@ -503,11 +510,13 @@ label A_dónde_hay_que_firmar:
     # ESCENA 1.7B.4b.1
 
     "Aceptás vender tu alma."
-    Mandinga "Perfecto, pero no terminamos todavía, hay unas pruebas que vas a tener que pasar."
 
     # SFX Siseo del mandinga
-    # Falta Asset
+    play SFX_2 sfx_SiseoMandinga2
+
+    Mandinga "Perfecto, pero no terminamos todavía, hay unas pruebas que vas a tener que pasar."
     
+
     "El Mandinga hace un gesto con la mano y, ante vos, se abre el suelo."
     "Una gran grieta separa la sala al medio:"
     "De un lado estás vos; del otro, el Mandinga, su trono y sus seguidores."
@@ -516,11 +525,10 @@ label A_dónde_hay_que_firmar:
     hide mandingaMiradaEnojada
 
     # ESCENA 1.7B.5
-    show cuchillo at subir_centrada,vibrar with Dissolve(1.0)
+    # show cuchillo at subir_centrada,vibrar with Dissolve(1.0)
+    show facon at subir_centrada with Dissolve(1.0)
     
     "Él saca un enorme facón de su costado y lo revolea, queda sobre la fosa que se abrió en la tierra, formando un puente con el filo hacia arriba."
-
-    pause 0.01
     
 
 
@@ -576,7 +584,9 @@ label A_dónde_hay_que_firmar:
             
             "Das un paso sobre el cuchillo y dudás, el filo del facón se hunde en tu pie y no podés frenar el peso de tu cuerpo."
             "Empezás a caer sobre ese último paso, tu cuerpo se desbalancea y cae."
-            play SFX_2 sfx_gritito_muerte
+
+            play SFX_2 sfx_HuesosRotos
+
             "Yacés en dos mitades en lo profundo de la grieta del infierno."
             "Moriste, tu mambo ha terminado junto con tu vida."
             
@@ -584,7 +594,8 @@ label A_dónde_hay_que_firmar:
 
     label Escupir_el_crucifijo:
         # ESCENA 1.7B.5A.3
-        hide cuchillo
+        # hide cuchillo
+        hide facon
         show demonios at subir_centrada, aparecer_flash with Dissolve(1.0)
 
         stop SFX_1 fadeout 1.0
@@ -595,8 +606,8 @@ label A_dónde_hay_que_firmar:
         # stop audio fadeout 1.0
         # stop viento fadeout 1.0
 
-        play SFX_1 sfx_viento1 volume 0.3
-        play SFX_2 crucifijo
+        # play SFX_1 sfx_viento1 volume 0.3
+        # play SFX_2 crucifijo
          
         "Escupís el crucifijo y seguís por el filo del facón, conseguís llegar al otro lado."
         "Una bruja te recibe con un pergamino abierto, un diablillo moja una pluma en la sangre de tus pies y te la da."
@@ -608,7 +619,9 @@ label A_dónde_hay_que_firmar:
             $ nombre_jugador = "Protagonista"
         $ Protagonista = Character(nombre_jugador + ":", color="#D4AF37")
         
-        play SFX_2 "audio/capitulo1/risaDiabolica.wav" #esto no va a funcionar pq es WAV
+        # play SFX_2 "audio/capitulo1/risaDiabolica.wav" #esto no va a funcionar pq es WAV
+
+        # play SFX_2 sfx_SiseoMandinga4
 
         pause 0.01
         # show protagonista_placeholder at mostrar_derecha
@@ -621,10 +634,8 @@ label A_dónde_hay_que_firmar:
             
     label Lo_lograste:
         # ESCENA 1.7B.5A.4
-        pause 0.01
-        play SFX_2 sfx_basilisco
-        
-        # show mandinga_placeholder at mostrar_izquierda
+   
+        play SFX_2 sfx_SiseoMandinga4
 
         Mandinga "{size=70}{cps=10}—BIENVENIDO A MIS HUESTES, CONDENADO!{/cps}{/size}"
 
