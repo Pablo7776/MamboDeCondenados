@@ -74,11 +74,11 @@ init python:
 
 init python:
     # Ducking de canales
-    def volumen_bajar(delay=0.5,canal=""):
-        renpy.music.set_volume(0.4, delay, canal)
+    def volumen_bajar(canal="",volume=0.5,delay=0.5):
+        renpy.music.set_volume(volume, delay, canal)
 
-    def volumen_normalizar(delay=0.5,canal=""):
-        renpy.music.set_volume(1.0, delay, canal)
+    def volumen_normalizar(canal="",volume=1.0,delay=0.5):
+        renpy.music.set_volume(volume, delay, canal)
 
 # Registro de canales:
 init python:
