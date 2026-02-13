@@ -1,3 +1,8 @@
+
+# Musica menu
+define bgm_MainMenuMusic = "audio/Master_MusicaMenu-001.ogg"
+
+
 ################  EFECTOS DE SONIDO #########################
 
 # Lista de SFX Actualizada
