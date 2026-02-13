@@ -142,7 +142,7 @@ init python:
     )
     renpy.music.register_channel(
         name="UI_1", #(Sonidos de UI)
-        mixer="sfx",
+        mixer="voice",
         loop=False,
         tight=False,
         file_prefix="",
