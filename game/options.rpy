@@ -63,7 +63,7 @@ define config.has_voice = True
 ## en el menú principal. Este archivo seguirá sonando en el juego hasta que sea
 ## detenido o se reproduzca otro archivo.
 
-define config.main_menu_music = "audio/Master_MusicaMenu-001.ogg"
+define config.main_menu_music = "audio/Master_MusicaMenu_95bpm.ogg"
 
 ## Transiciones ################################################################
 ##
