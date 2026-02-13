@@ -60,3 +60,59 @@ init python:
             renpy.show("reputacion2", at_list=[Position(xalign=0.9, yalign=0.9)])
         else:
             renpy.show("reputacion1", at_list=[Position(xalign=0.9, yalign=0.9)])
+
+
+# ---------------------------------------------------
+# Menu para debug
+# ---------------------------------------------------
+
+
+image bg base = Solid("#000")
+
+
+init python:
+
+    config.keymap['debug_menu'] = ['u']
+
+    def clean_jump(label_name):
+
+        renpy.scene()
+        renpy.show("bg base")  # ← repone fondo negro
+
+        renpy.music.stop()
+        renpy.sound.stop()
+
+        renpy.hide_screen("debug_jump_menu")
+        renpy.jump(label_name)
+
+
+screen key_listener():
+    key "debug_menu" action Show("debug_jump_menu")
+
+
+screen debug_jump_menu():
+
+    tag menu   # bloquea interacción con el juego mientras está abierto
+
+    frame:
+        style "menu_frame"
+        xalign 0.5
+        yalign 0.5
+
+        vbox:
+            spacing 10
+
+            text "Menú de Debug — Saltar a escena"
+
+            textbutton "Ir a cap 1" action Function(clean_jump, "capitulo1")
+            textbutton "Dar un paso hacia la oscuridad" action Function(clean_jump, "Dar_un_paso_hacia_la_oscuridad")
+            textbutton "Escupir el crucifijo" action Function(clean_jump, "Escupir_el_crucifijo")
+            textbutton "Ir a cap 2" action Function(clean_jump, "capitulo2")
+            #textbutton "Ir a cap 3" action Function(clean_jump, "capitulo3")
+            #textbutton "Capítulo 4 — El pobre Pibe Farías" action Function(clean_jump, "Capítulo_4_El_pobre_Pibe_Farías")
+            #textbutton "Capítulo 4 — El viejo" action Function(clean_jump, "capitulo4_el_viejo")
+            #textbutton "Capítulo 4 — Colony Records" action Function(clean_jump, "Capítulo_4_Colony_Records")
+
+            null height 15
+
+            textbutton "Cerrar" action Hide("debug_jump_menu")

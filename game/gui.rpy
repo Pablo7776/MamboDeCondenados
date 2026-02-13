@@ -106,6 +106,7 @@ define gui.game_menu_background = gui.main_menu_background
 ## Altura de la caja de texto que contiene el diálogo.
 define gui.textbox_height = 320
 
+
 ## Colocación vertical de la caja de texto en la pantalla. 0.0 para la parte
 ## superior, 0.5 para el centro y 1.0 para la parte inferior.
 define gui.textbox_yalign = 1.0
@@ -443,51 +444,51 @@ init python:
     ## asegurar que sean fácilmente visibles en los teléfonos.
     @gui.variant
     def small():
+        pass
+        # ## Tamaños de letra.
+        # gui.text_size = 44
+        # gui.name_text_size = 56
+        # gui.notify_text_size = 36
+        # gui.interface_text_size = 44
+        # gui.button_text_size = 44
+        # gui.label_text_size = 52
 
-        ## Tamaños de letra.
-        gui.text_size = 44
-        gui.name_text_size = 56
-        gui.notify_text_size = 36
-        gui.interface_text_size = 44
-        gui.button_text_size = 44
-        gui.label_text_size = 52
+        # ## Ajusta la colocación de la caja de texto.
+        # gui.textbox_height = 320
+        # gui.name_xpos = 120
+        # gui.dialogue_xpos = 320
+        # gui.dialogue_width = 1280
 
-        ## Ajusta la colocación de la caja de texto.
-        gui.textbox_height = 360
-        gui.name_xpos = 120
-        gui.dialogue_xpos = 135
-        gui.dialogue_width = 1650
+        # ## Cambia el tamaño y espaciado de varios elementos.
+        # gui.slider_size = 52
 
-        ## Cambia el tamaño y espaciado de varios elementos.
-        gui.slider_size = 52
+        # #gui.choice_button_width = 1860
+        # gui.choice_button_text_size = 40
 
-        #gui.choice_button_width = 1860
-        gui.choice_button_text_size = 40
+        # gui.navigation_spacing = 30
+        # gui.pref_button_spacing = 15
 
-        gui.navigation_spacing = 30
-        gui.pref_button_spacing = 15
+        # gui.history_height = 285
+        # gui.history_text_width = 1035
 
-        gui.history_height = 285
-        gui.history_text_width = 1035
+        # gui.quick_button_text_size = 32
 
-        gui.quick_button_text_size = 32
+        # ## Distribución de botones de archivo.
+        # gui.file_slot_cols = 2
+        # gui.file_slot_rows = 2
 
-        ## Distribución de botones de archivo.
-        gui.file_slot_cols = 2
-        gui.file_slot_rows = 2
+        # ## Modo-NVL
+        # gui.nvl_height = 255
 
-        ## Modo-NVL
-        gui.nvl_height = 255
+        # gui.nvl_name_width = 458
+        # gui.nvl_name_xpos = 488
 
-        gui.nvl_name_width = 458
-        gui.nvl_name_xpos = 488
+        # gui.nvl_text_width = 1373
+        # gui.nvl_text_xpos = 518
+        # gui.nvl_text_ypos = 8
 
-        gui.nvl_text_width = 1373
-        gui.nvl_text_xpos = 518
-        gui.nvl_text_ypos = 8
+        # gui.nvl_thought_width = 1860
+        # gui.nvl_thought_xpos = 30
 
-        gui.nvl_thought_width = 1860
-        gui.nvl_thought_xpos = 30
-
-        gui.nvl_button_width = 1860
-        gui.nvl_button_xpos = 30
+        # gui.nvl_button_width = 1860
+        # gui.nvl_button_xpos = 30

@@ -17,6 +17,7 @@ default reputacion_con_el_mandinga = 100
 
 
 label start:
+    show screen key_listener
     # Cargar la reputación persistente o usar 100 si no existe
     # Si existe el valor persistente, cargarlo, sino usar 100
     if persistent.reputacion_con_el_mandinga is not None:
