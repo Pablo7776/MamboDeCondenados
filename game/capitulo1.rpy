@@ -6,27 +6,22 @@ label capitulo1:
     # SFX
     # Inicia SFX Galope a caballo
     play SFX_1 sfx_GalopeCaballo loop fadein 1
-
+    
 
     # ESCENA
     show gauchoACaballo at subir_centrada with black_transition
 
     $ mostrar_repu()
 
-    "¡Vos! guitarrista y cantor venido a menos,"
-    "que ahora vas al galope por el campo argentino, camino a La Salamanca."
+    "¡Vos! guitarrista y cantor venido a menos."
+    "Vos que ahora vas al galope por el campo argentino, camino a La Salamanca."
     "Arrancaste este viaje hace unos días y ya estás llegando a tu destino."
 
     # Finaliza SFX Galope a caballo
     stop SFX_1 fadeout 3
     
-
-    "El canto de los pájaros, 
-    que hasta hace poco era alegre y armonioso, 
-    ahora suena como gritos de dolor."
-    
     hide gauchoACaballo
-    
+
     # ESCENA 1.2
 
     # Inicia SFX Viento y estatica
@@ -34,14 +29,19 @@ label capitulo1:
 
     show salamanca at subir_centrada with Dissolve(3.0)
     
-    "Aparece frente a vos esa piedra roja, de la que te habló aquel viejo, el que siempre está en la pulpería de tu pueblo."
-    "Ese que te contó como en La Salamanca se puede hacer un pacto con el Mandinga para conseguir el don que uno quiera."
-    "Atás y asegurás tu guitarra a la silla de tu fiel caballo, y luego pronunciás La Palabra, la que el viejo te confesó."
-    ###(SFX: crujido de piedras arrastrándose) 
+
+    "Aparece frente a vos la piedra roja"
+    ### Agregar asset animado de la piedra roja como palpitante"
+    "Esa piedra de la que te habló aquel viejo, el que siempre está en la pulpería de tu pueblo."
+    "Ese que te contó como en La Salamanca se puede hacer un pacto con el Mandinga para conseguir el don que vos quieras."
+    "Asegurás la silla de tu fiel caballo y lo atás a una rama cercana."
+    "Luego pronunciás La Palabra, la que el viejo te confesó."
     play SFX_2 sfx_EstruendoRocaLimpio
-    "Entonces, se abre una cueva en la roca; das un paso dentro, el caballo sale corriendo despavorido hacia el campo."
- 
-    ###(sfx: relincho con fade out)
+    ###(SFX: crujido de piedras arrastrándose)
+    "Entonces, se abre una cueva en la roca; das un paso dentro."
+    "Tu caballo sale corriendo despavorido hacia el campo, rompiendo la rama seca de la que lo habías atado."
+    ###(SFX: galope de caballo alejándose con fade out)
+    ###(SFX: relincho con fade out)
 
     # Sale reproduciendo SFX_2 en loop
     jump Las_primeras_pruebas
@@ -50,27 +50,30 @@ label capitulo1:
         # ESCENA 1.3
 
 
-        hide salamanca 
+        hide salamanca
 
         # Aplico filtro al sonido de viento y estatica
         $ aplicar_lpf("SFX_1",1500)
 
         show cueva at subir_centrada, desvanecer with Dissolve(2.0)
-    
+        
         
         "En el primer pasillo de este laberinto te sacás las botas, el sombrero y el pañuelo."
         "Así debe ser."
-        "Ya sumido en la oscuridad sentís la presencia del basilisco."
-        "Menos mal que no se ve nada; porque, si no, tu cuerpo ya sería piedra."
+        "Ya sumido en la oscuridad sentís una presencia..."
+        "Es el basilisco. Pero sabés que está acá para guiarte."
+        "Igual menos mal que no se ve nada; porque, si no, tu cuerpo ya sería piedra."
         ###(SFX: siseo grave)
         "Con su siseo, el basilisco te guía para atravesar este laberinto."
         
         # ESCENA 1.4
         ###(SFX: sonido de pisadas de insectos y siseos de serpientes)
 
-        "Dejás atrás el laberinto y en un nuevo pasillo recto sentís que algo trepa tus pies descalzos, algo no, muchos pequeños pies. Son cientos, una marea de alimañas. Sentís el roce de algún reptil, una víbora quizás."
+        "Dejás atrás el laberinto y en un nuevo pasillo recto sentís que algo trepa tus pies descalzos."
+        "No, algo no, son muchos pequeños pies. Son cientos, una marea de alimañas."
+        "Sentís el roce de algún reptil, una víbora quizás."
         "Sentís el cosquilleo de unas patas y unas pinzas, son alacranes que están subiendo por tus piernas."
-        "..."
+        ". . ."
         "Pero te quedás tieso, sin moverte."
         "Sin temblequear."
         "Las alimañas siguen su camino sin hacerte daño."
@@ -84,20 +87,20 @@ label capitulo1:
         # SFX Respiracion chivo
         play SFX_2 sfx_RespiracionChivo loop
     
-        "Entonces aparece ese animal grotesco del que te había contado el viejo: un chivo de pelo negro, ojos endemoniados y cuernos tan curvados como una espiral."
+        "Entonces aparece ese animal grotesco del que te había contado el viejo . . ."
         
         hide placeholder_negro
         show chivo_animado at subir_centrada, vibrar2, flash_repeat with Dissolve(1.0) 
 
         "Un chivo de pelo negro, inmenso, mucho más grande que cualquier bestia del campo."
         "Tiene los cuernos retorcidos como ramas secas."
-        "Sus ojos amarillos que te miran con una inteligencia burlona."
+        "Sus ojos amarillos te miran con una inteligencia burlona."
         "Apesta a azufre y a sangre vieja."
 
         "Empezás a rodearlo. Te pegás a la pared de la cueva, aguantando la respiración."
         "El animal no se mueve. Te sigue con la mirada, quieto, como quien mira a una mosca."
-        "Cuando por fin llegás al otro lado, el chivo se da vuelta, corre desaforado."
-
+        "Cuando por fin llegás al otro lado. . ."
+        ". . .el chivo se da vuelta, corre desaforado."
         ###(SFX: Trote de cabra)
         # Falta Asset
 
@@ -121,7 +124,7 @@ label capitulo1:
         # SFX Detengo sonido de viento exterior con fadeout
         stop SFX_1 fadeout 5.0 # Aun conserva Filtro LPF
 
-        ###(SFX: Sonido de viento al caer)  
+        ###(SFX: Sonido de viento al caer)        
         # Falta Asset
 
         "El hueco es profundo, más que profundo, estás cayendo al abismo."
@@ -222,10 +225,10 @@ label capitulo1:
         $ quitar_filtros("SFX_1")
         stop SFX_1 fadeout 1.0
         stop SFX_2 fadeout 1.0
- 
+
         hide cuevaFondo
         show trono at subir_centrada with Dissolve(1.0)
-
+        
         # Nota para Guionistas: Aca podria ir la secuencia de imagenes de la antorcha encendiendose, 
         # Pero deberia ajustarse el guion para que suceda antes de revelarse el trono
         
@@ -241,7 +244,7 @@ label capitulo1:
         ### Se podrá agregar un VFX de brillo intenso que luego se desvanece? Debería venir de una escena en negro y recién acá aparecer el trono. 
         # O agregar unas dos o tres imágenes de antorchas en primer plano, luego brillo y luego el trono.
         
-       
+        
         
         "Lográs ver la enorme sala con sus cortinas magníficas, su piso y sus columnas de mármol."
         "En el fondo el enorme trono, escondidas entre las columnas y detrás de él ves lechuzas, quirquinchos, perros, chanchos, culebras y sapos, también, hechiceros, brujas y diablillos."
@@ -270,7 +273,9 @@ label capitulo1:
             play SFX_2 sfx_EstruendoRocaReverb volume 0.5
 
             "Se desmorona una de las paredes que deja un gran agujero en uno de los costados de la sala."
-            "Él atraviesa las cortinas, un enorme ser, mitad serpiente, mitad humano, ES EL MANDINGA."
+            "{color=#880000}Él{/color} atraviesa las cortinas."
+            "Un enorme ser, mitad humano y mitad serpiente."
+            "{color=#880000}ES EL MANDINGA{/color}."
             "Se sienta en su trono y te mira con un gesto curioso."
             
             hide mandingaMiradaCuriosa
@@ -318,14 +323,14 @@ label capitulo1:
             # SFX Estruendo de roca
             play SFX_2 sfx_EstruendoRocaReverb
 
-            "Se abre un agujero en una de las paredes y él atraviesa las cortinas."
-            "Un enorme ser, con pequeños cuernos, mitad serpiente, mitad humano."
-            "ES EL MANDINGA." ###Aplicar VFX shake sobre el texto
+            "Se abre un agujero en una de las paredes y {color=#880000}él{/color} atraviesa las cortinas."
+            "Un enorme ser, con pequeños cuernos, mitad humano y mitad serpiente."
+            "{color=#880000}ES EL MANDINGA{/color}." ###Aplicar VFX shake sobre el texto
             "Se sienta en su trono y te mira con un gesto severo y vehemente."
             
             hide mandingaMiradaEnojada
             show mandingaMiradaEnojada at subir_centrada,vibrar, with Dissolve(0.5)
-            
+
             ### personaje ##########################
             # pause 0.01
             # show mandinga_placeholder at mostrar_izquierda
@@ -384,7 +389,7 @@ label capitulo1:
 
                 # SFX > Bullicio pulperia normaliza volumen
                 # Falta el Asset, cuando este se aplica efecto
-            
+               
                 show pulperia at subir_centrada with Dissolve(1.0)
 
                 # BGM > Saco filtro a la musica
@@ -407,12 +412,6 @@ label capitulo1:
 label Quiero_hechizar:
 
     # ESCENA 1.7B.3
-    # show protagonista_placeholder at mostrar_derecha
-
-    
-    Protagonista "¡Quiero hechizar a todos con mi canto!"
-    
-    # hide protagonista_placeholder
     hide mandingaMiradaEnojada
     hide mandingaMiradaCuriosa
     show mandingaMiradaCuriosa at subir_centrada,vibrar, with Dissolve(0.5)
@@ -433,11 +432,11 @@ label Quiero_hechizar:
     # SFX Siseo del mandinga
     play SFX_2 sfx_SiseoMandinga4
 
-    Mandinga "Tu alma." ###Resaltar en rojo el texto.
+    Mandinga "{color=#880000}Tu alma{/color}." ###Resaltar en rojo el texto.
 
     
 
-
+    
     label opciones17B3:
         $ hover_opcion = None
         $ opciones = [
@@ -478,14 +477,14 @@ label No_se_vende_el_alma:
 
             
                 #  no se como se maneja el fundido segun el guion
-                ###(VFX: fundido a negro de mandi2 (o su reemplazo))  
+                ###(VFX: fundido a negro de mandi2 (o su reemplazo))
 
                 "Las últimas palabras de El Mandinga suenan lejanas mientras tus  ojos se cierran lentamente"
 
                 # SFX > Stop SFX Sonidos cueva
                 stop SFX_1 fadeout 1.0
                 stop SFX_2 fadeout 1.0
-
+               
                 # SFX > Bullicio pulperia normaliza volumen
                 # Falta el Asset, cuando este se aplica efecto
             
