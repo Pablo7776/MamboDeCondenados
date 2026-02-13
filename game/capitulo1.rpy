@@ -123,9 +123,10 @@ label capitulo1:
 
         # SFX Detengo sonido de viento exterior con fadeout
         stop SFX_1 fadeout 5.0 # Aun conserva Filtro LPF
+        # $quitar_filtros("SFX_1",0.1)
 
         ###(SFX: Sonido de viento al caer)        
-        # Falta Asset
+        play SFX_2 sfx_CaidaCueva1
 
         "El hueco es profundo, más que profundo, estás cayendo al abismo."
         "Ves pasar lechuzas negras a tu lado, seguís cayendo y de repente te desmayás."

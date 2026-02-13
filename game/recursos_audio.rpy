@@ -13,7 +13,11 @@ define sfx_VientoEstatica = "audio/CAP_1/SFX/SFX_VientoEstatica.ogg"
 # Sonido ambiental de terror (Semi musical)
 define sfx_AmbientalTerror ="audio/CAP_1/SFX/SFX_HiRes_AmbienteTerror_marcos.ogg"
 # Caída por la cueva
-define sfx_CaidaCueva =""
+define sfx_CaidaCueva1 ="audio/CAP_1/SFX/SFX_caidaLenta50.ogg"
+# Caída por la cueva
+define sfx_CaidaCueva2 ="audio/CAP_1/SFX/SFX_caidaLenta80.ogg"
+# Caída por la cueva
+define sfx_CaidaCueva3 ="audio/CAP_1/SFX/SFX_caidaNormal.ogg"
 # Respiración del chivo
 define sfx_RespiracionChivo ="audio/CAP_1/SFX/SFX_RespiracionChivo.ogg"
 # Sonido huesos rotos
