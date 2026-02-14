@@ -676,6 +676,11 @@ label A_dónde_hay_que_firmar:
         
         hide rancho with Dissolve(5.0)
 
+
+        jump continuara
+
+        return
+
         label opciones17B5A5:
             $ hover_opcion = None
             $ opciones = [
