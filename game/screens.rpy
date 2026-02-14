@@ -781,15 +781,6 @@ screen preferences():
                 style_prefix "slider"
                 box_wrap True
 
-                vbox:
-
-                    label _("Veloc. texto")
-
-                    bar value Preference("text speed")
-
-                    label _("Veloc. autoavance")
-
-                    bar value Preference("auto-forward time")
 
                 vbox:
 
@@ -801,7 +792,7 @@ screen preferences():
 
                     if config.has_sound:
 
-                        label _("Volumen sonido")
+                        label _("Volumen efectos de sonido")
 
                         hbox:
                             bar value Preference("sound volume")
@@ -811,7 +802,7 @@ screen preferences():
 
 
                     if config.has_voice:
-                        label _("Volumen voz")
+                        label _("Volumen menú elecciones")
 
                         hbox:
                             bar value Preference("voice volume")
@@ -825,6 +816,16 @@ screen preferences():
                         textbutton _("Silenciar todo"):
                             action Preference("all mute", "toggle")
                             style "mute_all_button"
+
+                vbox:
+
+                    label _("Veloc. texto")
+
+                    bar value Preference("text speed")
+
+                    # label _("Veloc. autoavance")
+
+                    # bar value Preference("auto-forward time")
 
 
 style pref_label is gui_label

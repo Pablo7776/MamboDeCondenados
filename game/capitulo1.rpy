@@ -39,6 +39,10 @@ label capitulo1:
     play SFX_2 sfx_EstruendoRocaLimpio
     ###(SFX: crujido de piedras arrastrándose)
     "Entonces, se abre una cueva en la roca; das un paso dentro."
+    # Inicia SFX Galope a caballo
+    play SFX_2 sfx_GalopeCaballo 
+    queue SFX_2 sfx_GalopeCaballo
+
     "Tu caballo sale corriendo despavorido hacia el campo, rompiendo la rama seca de la que lo habías atado."
     ###(SFX: galope de caballo alejándose con fade out)
     ###(SFX: relincho con fade out)
@@ -200,6 +204,7 @@ label capitulo1:
             stop SFX_1 fadeout 1.0
             ###(SFX: pisotones contra un cráneo)
             play SFX_2 sfx_HuesosRotos
+            queue SFX_2 sfx_HuesosRotos
 
             "Tras unos cuantos minutos de pisotones tu cuerpo yace inerte en la oscuridad de la cueva."
             "Moriste, tu mambo ha terminado junto con tu vida."
@@ -335,6 +340,9 @@ label capitulo1:
             ### personaje ##########################
             # pause 0.01
             # show mandinga_placeholder at mostrar_izquierda
+
+            play SFX_2 sfx_SiseoMandinga1
+
 
             Mandinga "¿Qué es lo que deseás de mí desgraciado?"
             
@@ -563,8 +571,13 @@ label A_dónde_hay_que_firmar:
         # show mandinga_placeholder:
         #     xoffset 0
         #     yoffset 36
+
+
+        play SFX_2 sfx_SiseoMandinga4
         Mandinga "—¡ESCUPILO!"
         # hide mandinga_placeholder
+
+        # play SFX_2 sfx_SiseoMandinga2
         
         label opciones17B5A2:
             $ hover_opcion = None
@@ -598,7 +611,7 @@ label A_dónde_hay_que_firmar:
         hide facon
         show demonios at subir_centrada, aparecer_flash with Dissolve(1.0)
 
-        stop SFX_1 fadeout 1.0
+        # stop SFX_1 fadeout 1.0
         stop SFX_2 fadeout 1.0
         # El resto de los canales no se utiliza
         # stop sound fadeout 1.0
@@ -623,12 +636,13 @@ label A_dónde_hay_que_firmar:
 
         # play SFX_2 sfx_SiseoMandinga4
 
-        pause 0.01
+        # pause 0.01
         # show protagonista_placeholder at mostrar_derecha
         
         Protagonista "Mi nombre es [nombre_jugador] y te vendo mi alma, Mandinga."
         
         # hide protagonista_placeholder
+        stop SFX_1 fadeout 1.0
         stop SFX_2 fadeout 1.0
         jump Lo_lograste
             
@@ -639,9 +653,10 @@ label A_dónde_hay_que_firmar:
 
         Mandinga "{size=70}{cps=10}—BIENVENIDO A MIS HUESTES, CONDENADO!{/cps}{/size}"
 
+        stop SFX_2 fadeout 4
         # hide mandinga_placeholder
         # play BGM musica_piedra_y_camino
-        play BGM bgm_Zamba
+        play BGM bgm_Zamba fadein 0.1
 
         "Las brujas, los brujos y los diablillos arrancan la fiesta a tu alrededor, sentís como tu garganta arde y después se calma, entonces empezás a cantar junto a los demás."
         "Las alimañas te levantan sobre sus lomos y te pasean por toda la sala, tu voz y tu canto ahora suenan como nunca antes sonaron."

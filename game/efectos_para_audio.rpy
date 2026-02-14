@@ -80,6 +80,10 @@ init python:
     def volumen_normalizar(canal="",volume=1.0,delay=0.5):
         renpy.music.set_volume(volume, delay, canal)
 
+
+default preferences.volume.voice = 0.5
+
+
 # Registro de canales:
 init python:
     # Canales de sonido y ambiente
@@ -91,6 +95,8 @@ init python:
     renpy.music.register_channel("ambiente", "sfx", False)
     renpy.music.register_channel("fx", "sfx", False)
     renpy.music.register_channel("pisadas", "sfx", False)
+
+    
 
     renpy.music.register_channel(
         name="MMM", #(MainMenuMusic)
