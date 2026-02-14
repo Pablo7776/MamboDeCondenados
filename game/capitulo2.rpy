@@ -46,9 +46,9 @@ label capitulo2:
     
     play SFX_2 sfx_GalopeCaballo loop fadein 3 volume 0.7
 
-    "Ves llegar a tu caballo, con tu guitarra aún bien atada a la silla."
+    "Ves llegar a tu caballo."
 
-    "Te ponés la guitarra en la espalda y comenzás a cabalgar. Pasan las horas y ya se te está haciendo de noche." 
+    "Te ajustás la guitarra en la espalda y comenzás a cabalgar. Pasan las horas y ya se te está haciendo de noche." 
     
     "A lo lejos ves una tranquera y al fondo del campo un pequeño rancho."
 
