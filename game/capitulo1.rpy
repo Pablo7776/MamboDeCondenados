@@ -33,7 +33,7 @@ label capitulo1:
     "Aparece frente a vos la piedra roja"
     ### Agregar asset animado de la piedra roja como palpitante"
     "Esa piedra de la que te habló aquel viejo, el que siempre está en la pulpería de tu pueblo."
-    "Ese que te contó como en La Salamanca se puede hacer un pacto con el Mandinga para conseguir el don que vos quieras."
+    "Ese que te contó como en La Salamanca se puede hacer un pacto con el Mandinga para conseguir el don que vos querés."
     "Asegurás la silla de tu fiel caballo y lo atás a una rama cercana."
     "Luego pronunciás La Palabra, la que el viejo te confesó."
     play SFX_2 sfx_EstruendoRocaLimpio
@@ -170,7 +170,7 @@ label capitulo1:
         # SFX Respiracion chivo
         play SFX_2 sfx_RespiracionChivo loop
 
-        "Luego de mucho esfuerzo y luchar contra lechuzas que te atacaban débilmente lográs llegar hasta el borde del hoyo."
+        "Luego de mucho esfuerzo y luchar contra lechuzas que te atacan débilmente lográs llegar hasta arriba."
         "Estás de vuelta frente a aquel chivo endemoniado que te mira colérico."
         
         label opciones17A1:
@@ -191,7 +191,7 @@ label capitulo1:
 
             "El chivo corre hacia vos, lográs evitar el primer golpe y le pegás una patada."
             ###(SFX: Trote de cabra)
-            "Se da vuelta y vuelve a intentar embestirte, de éste no pudiste zafar, caés al suelo y te defendes a las patadas y a las trompadas."
+            "Se da vuelta y vuelve a intentar embestirte, de éste no pudiste zafar, caés al suelo y te defendes cómo gato panza arriba."
             "Pero el chivo es pesado y sus pezuñas son como hachas contra tu cuerpo."
             
             #ESCENA 1.7A.1a.2
@@ -238,7 +238,7 @@ label capitulo1:
         # Nota para Guionistas: Aca podria ir la secuencia de imagenes de la antorcha encendiendose, 
         # Pero deberia ajustarse el guion para que suceda antes de revelarse el trono
         
-        "Das el primer paso hacia la oscuridad."
+        ". . ."
 
         # SFX Inicio fuego llamarada   
         play SFX_2 sfx_inicio_fuego 
@@ -329,7 +329,7 @@ label capitulo1:
             # SFX Estruendo de roca
             play SFX_2 sfx_EstruendoRocaReverb
 
-            "Se abre un agujero en una de las paredes y {color=#880000}él{/color} atraviesa las cortinas."
+            "Se abre un agujero en una de las paredes y {color=#880000}Él{/color} atraviesa las cortinas."
             "Un enorme ser, con pequeños cuernos, mitad humano y mitad serpiente."
             "{color=#880000}ES EL MANDINGA{/color}." ###Aplicar VFX shake sobre el texto
             "Se sienta en su trono y te mira con un gesto severo y vehemente."
@@ -373,7 +373,7 @@ label capitulo1:
                 play BGM bgm_Vidala fadein 3.0 
                 
 
-                "Cuando intentás empezar a cantar no sale nada de tu garganta"
+                "Cuando intentás empezar a cantar no sale nada de tu garganta."
 
                 # SFX Risa del mandinga
                 # Falta Asset
@@ -381,7 +381,7 @@ label capitulo1:
                 # BGM > Vidala empieza a subir el volumen
                 $ volumen_normalizar("BGM",0.7,1.0)
 
-                "El Mandinga se empieza a reír de vos"
+                "El Mandinga se empieza a reír de vos."
                 
                 # SFX Bullicio pulperia, volumen bajo, filtrado, fadein
                 # Falta asset
@@ -389,7 +389,7 @@ label capitulo1:
                 # SFX Siseo del mandinga
                 play SFX_2 sfx_SiseoMandinga2
                 
-                Mandinga "Acá no se viene a eso cantorsucho de segunda"
+                Mandinga "Acá no se viene a eso cantorsucho de segunda."
                 
                 
                 # SFX > Stop SFX Sonidos cueva
@@ -407,7 +407,7 @@ label capitulo1:
                 $ volumen_normalizar("BGM",1,2.0)
 
     
-                "Poco a poco vas recuperando la conciencia"
+                "Poco a poco vas recuperando la conciencia."
                 "..."
                 "Te despertás completamente borracho, con la cabeza sobre una mesa de la pulpería del Tarta."
                 "Una guitarra suena; parece que eso te despertó."
@@ -473,7 +473,7 @@ label No_se_vende_el_alma:
                 # BGM > Vidala empieza a subir el volumen
                 $ volumen_normalizar("BGM",0.7,1.0)
 
-                "El Mandinga se empieza a reír de vos"
+                "El Mandinga se empieza a reír de vos."
 
 
                 # SFX Bullicio pulperia, volumen bajo, filtrado, fadein
@@ -488,7 +488,7 @@ label No_se_vende_el_alma:
                 #  no se como se maneja el fundido segun el guion
                 ###(VFX: fundido a negro de mandi2 (o su reemplazo))
 
-                "Las últimas palabras de El Mandinga suenan lejanas mientras tus  ojos se cierran lentamente"
+                "Las últimas palabras de El Mandinga suenan lejanas mientras tus  ojos se cierran lentamente."
 
                 # SFX > Stop SFX Sonidos cueva
                 stop SFX_1 fadeout 1.0
@@ -504,7 +504,7 @@ label No_se_vende_el_alma:
                 # BGM > Normalizo volumen musica
                 $ volumen_normalizar("BGM",1,2.0)
                 
-                "Poco a poco vas recuperando la conciencia"
+                "Poco a poco vas recuperando la conciencia."
                 "..."
                 "Te despertás completamente borracho, con la cabeza sobre una mesa de la pulpería del Tarta."
                 "Una guitarra suena; parece que eso te despertó."
@@ -565,7 +565,7 @@ label A_dónde_hay_que_firmar:
         
         # ESCENA 1.7B.5A.2
 
-        "Mirás hacia abajo y hay un crucifijo sobre una luz que no sabés de dónde viene."
+        "Mirás hacia abajo y hay un crucifijo que resplandece en la oscuridad."
         pause 0.01
         #play SFX_2 sfx_basilisco
         # show mandinga_placeholder:
