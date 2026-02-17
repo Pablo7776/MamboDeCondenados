@@ -243,3 +243,24 @@ define config.keymap['hide_windows'] = []
 ###### Configuración de método de escalado #####
 ###Usa escalado de aproximación de vecino más cercano para evitar el desenfoque de los píxeles. ###
 define config.nearest_neighbor = True
+
+
+# -----------------------------------------------------------------------------
+# Desactiva la rueda del mouse en el diálogo normal.
+#
+# En Ren'Py 8.4.x la rueda está mapeada a:
+#   - mousedown_4 → rollback
+#   - mousedown_5 → rollforward
+#
+# -----------------------------------------------------------------------------
+init python:
+
+    # Quitar rueda hacia arriba (rollback)
+    if "mousedown_4" in config.keymap["rollback"]:
+        config.keymap["rollback"].remove("mousedown_4")
+
+    # Quitar rueda hacia abajo (rollforward)
+    if "mousedown_5" in config.keymap["rollforward"]:
+        config.keymap["rollforward"].remove("mousedown_5")
+
+    renpy.clear_keymap_cache()
