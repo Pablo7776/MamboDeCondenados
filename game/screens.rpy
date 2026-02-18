@@ -576,11 +576,19 @@ screen about():
             text _("   ")
             text _("Equipo Ctapó:")
             text _("   ")
-            text _("M. Luz Opazo: Producción, marketing, co-diseño de juego y co-guionista.")
-            text _("Lucas Arancibia: Arte conceptual y arte 2D.")
-            text _("Lucas Traverso: Guión, música y diseño de juego.")
-            text _("Gonzalo Ríos: Arte conceptual y arte 2D.")
-            text _("Pablo Durán: Programación, sfx y co-diseño de juego.")
+            text _("M. Luz Opazo: Producción y marketing.")
+            text _("Lucas Traverso: Diseño de narrativa y diseño de juego.")
+            text _("Pablo Durán: Programación y QA.")
+            text _("Marcos Vallasciani: Diseño de juego y dirección de sonido.")
+            text _("Luján Hernández: Efectos de sonido.")
+            text _("Maximiliano Ftulis y Agustín Dalto: Música y composición.")
+            text _("Valentín Rioseco: Diseño de narrativa.")
+            text _("C. Sebastián Peralta: Arte de personajes.")
+            text _("Saúl A. Arcucci: Arte de fondos.")
+            text _("Karla Rocha: Dirección de arte.")
+            text _("Dalia Pastene y Francisco Ayrolo: Programación.")
+            text _("Sofía Saraleguy: Animación.")
+            text _("Un especial agradecimiento a los antiguos condenados: Lucas Arancibia y Gonzalo Ríos.")
 
 
 style about_label is gui_label
@@ -781,15 +789,6 @@ screen preferences():
                 style_prefix "slider"
                 box_wrap True
 
-                vbox:
-
-                    label _("Veloc. texto")
-
-                    bar value Preference("text speed")
-
-                    label _("Veloc. autoavance")
-
-                    bar value Preference("auto-forward time")
 
                 vbox:
 
@@ -801,7 +800,7 @@ screen preferences():
 
                     if config.has_sound:
 
-                        label _("Volumen sonido")
+                        label _("Volumen efectos de sonido")
 
                         hbox:
                             bar value Preference("sound volume")
@@ -811,7 +810,7 @@ screen preferences():
 
 
                     if config.has_voice:
-                        label _("Volumen voz")
+                        label _("Volumen menú elecciones")
 
                         hbox:
                             bar value Preference("voice volume")
@@ -825,6 +824,16 @@ screen preferences():
                         textbutton _("Silenciar todo"):
                             action Preference("all mute", "toggle")
                             style "mute_all_button"
+
+                vbox:
+
+                    label _("Veloc. texto")
+
+                    bar value Preference("text speed")
+
+                    # label _("Veloc. autoavance")
+
+                    # bar value Preference("auto-forward time")
 
 
 style pref_label is gui_label

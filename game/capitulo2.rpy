@@ -3,9 +3,20 @@ default Vida_china = False
 
 label capitulo2:
     # ESCENA 2.1
-    stop music fadeout 12.0
-    play ambiente sfx_SonidoAmbienteTerror loop fadein 1.0
+    # stop music fadeout 12.0
+    # play ambiente sfx_SonidoAmbienteTerror loop fadein 1.0
+
+
+    # BGM Se corta la musica lentamente
+    $ aplicar_lpf("BGM", 500, 5)
+    stop BGM fadeout 10
     
+    # Sonido de viento se escucha lentamente
+    $ aplicar_lpf("SFX_1", 500)
+    play SFX_1 sfx_VientoEstatica volume 0.75 fadein 3
+
+
+
     $ mostrar_repu()
 
     show caida1 at subir_centrada with Dissolve(5.0)
@@ -20,32 +31,37 @@ label capitulo2:
 
     "Das un paso afuera y la piedra que se había abierto antes ahora se cierra suavemente."
 
-    stop ambiente
-    play sound sfx_viento1 loop volume 0.7
+    # SFX se detiene sonido de viento
+    stop SFX_1 fadeout 1
+
+    $ quitar_filtros("BGM")
+    $ quitar_filtros("SFX_1")
+
+    play SFX_1 sfx_VientoTranquilo fadein 3
 
     hide caida1
 
     #ESCENA 2.2
     show ranchoHiguera at subir_centrada with Dissolve(1.0)
     
-    play fx sfx_galope 
+    play SFX_2 sfx_GalopeCaballo loop fadein 3 volume 0.7
 
-    "Ves llegar a tu caballo, con tu guitarra aún bien atada a la silla."
+    "Ves llegar a tu caballo."
 
-    "Te ponés la guitarra en la espalda y comenzás a cabalgar. Pasan las horas y ya se te está haciendo de noche." 
+    "Te ajustás la guitarra en la espalda y comenzás a cabalgar. Pasan las horas y ya se te está haciendo de noche." 
     
     "A lo lejos ves una tranquera y al fondo del campo un pequeño rancho."
 
     "Un poco más adelante una frondosa higuera bajo la que podrías refugiarte del rocío."
     
-    stop sfx_galope
-    stop audio
-    stop viento
-    stop fx
-    stop estatica
+    stop SFX_2 fadeout 2
+    stop SFX_1 fadeout 2
+
+    ###"HASTA ACA LA DEMO DE LA PRIMERA ETAPA"###
+    ###Ni siquiera debería entrar al menú de opciones, directamente un continuará###
 
     label opciones22:
-
+        $ hover_opcion = None
         $ opciones = [
             {"texto":"Entrás al campo y golpeás la puerta", "jump":"puerta_del_rancho", "nota":opcion_neutral},
             {"texto":"Pasás la noche bajo la higuera", "jump":"noche_ante_las_estrellas", "nota":opcion_muymala},
@@ -58,14 +74,14 @@ label noche_ante_las_estrellas:
     $ reputacion_con_el_mandinga -= 30
     $ mostrar_repu()
 
-    play sound sfx_noche loop fadein 2.0
+    # play sound sfx_noche loop fadein 2.0
     
     hide ranchoHiguera
     show higuera at subir_centrada with Dissolve(3.0)
     
     "Encontrás una gran higuera a un costado del camino, atás tu caballo y te recostás debajo de aquel custodio de la pampa."
 
-    play fx ruidoRosa volume 0.5
+    # play fx ruidoRosa volume 0.5
 
     "Por la noche en tus sueños se repite la frase que dijo El Mandinga:"
     
@@ -108,7 +124,7 @@ label puerta_del_rancho:
    
     hide china_placeholder
     label opciones22B1:
-
+        $ hover_opcion = None
         $ opciones = [
             {"texto":"{image=hablando} Disculpe señorita, soy [nombre_jugador]. Se me hizo de noche en el camino, me podrían dar techo esta noche, a cambio puedo ofrecer mi música", "jump":"Fuiste_cordial_y_se_te_agradece_por_ello", "nota":opcion_muymala},
             {"texto":"{image=hablando} ¡¿Qué voy a necesitar?! ¡Necesito entrar!", "jump":"No_fuiste_muy_cordial", "nota":opcion_mala},

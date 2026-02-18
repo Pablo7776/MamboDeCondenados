@@ -63,7 +63,7 @@ define config.has_voice = True
 ## en el menú principal. Este archivo seguirá sonando en el juego hasta que sea
 ## detenido o se reproduzca otro archivo.
 
-define config.main_menu_music = "musica/zamba.mp3" 
+define config.main_menu_music = "audio/Master_MusicaMenu_95bpm.ogg"
 
 ## Transiciones ################################################################
 ##
@@ -243,6 +243,10 @@ define config.keymap['hide_windows'] = []
 ###### Configuración de método de escalado #####
 ###Usa escalado de aproximación de vecino más cercano para evitar el desenfoque de los píxeles. ###
 define config.nearest_neighbor = True
+
+init python:
+    # Establece el volumen de voz al 50% (0.5) en la primera carga
+    config.default_voice_volume = 0.5
 
 
 # -----------------------------------------------------------------------------

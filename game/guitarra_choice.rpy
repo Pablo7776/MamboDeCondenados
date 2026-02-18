@@ -65,7 +65,9 @@ image cuerda6_anim:
 init python:
 
     def tocar_nota(nota):
-        renpy.sound.play(nota, channel="fx")
+        
+        renpy.sound.play(nota, channel="UI_1")
+        
 
 screen guitarra_choice(opciones):
     
