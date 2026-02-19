@@ -46,7 +46,7 @@ transform desvanecer:
 transform subir_centrada:
     xalign 0.5      # centra horizontalmente
     yalign 0.1      # mueve hacia arriba (0.0 es arriba, 1.0 es abajo)
-    linear 1.0 alpha 1.0  # opcional, para un fade-in suave
+    #linear 1.0 alpha 1.0  # opcional, para un fade-in suave
 
 transform mostrar_izquierda:
     xoffset 0    

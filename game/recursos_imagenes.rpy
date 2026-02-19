@@ -128,12 +128,12 @@ image hablando = "images/personajes/protagonista/elecciondedialogo.png"
 ############################################################
 
 
-image gauchoACaballo = "images/capitulo1/gauchoACaballo.jpeg"
+image escena gauchoACaballo = "images/capitulo1/gauchoACaballo.jpeg"
 
 
 # image salamanca = "images/capitulo1/salamanca1280.jpg"
-image salamanca = "images/capitulo1/Nuevos MPVP/cap1_Entrada-a-la-cueva_v2.png"
-
+image escena salamanca = "images/capitulo1/Nuevos MPVP/cap1_Entrada-a-la-cueva_v2.png"
+image escena cueva  = "images/capitulo1/cueva.png"
 
 image caida1 = "images/capitulo1/abismo.png"
 image cuevaFondo = "images/capitulo1/Nuevos MPVP/cap1_interior-de-la-cueva_v2.png"

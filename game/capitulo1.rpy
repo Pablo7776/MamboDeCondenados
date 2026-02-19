@@ -9,7 +9,7 @@ label capitulo1:
     
 
     # ESCENA
-    show gauchoACaballo at subir_centrada with black_transition
+    show escena gauchoACaballo at subir_centrada with black_transition
 
     $ mostrar_repu()
 
@@ -20,14 +20,14 @@ label capitulo1:
     # Finaliza SFX Galope a caballo
     stop SFX_1 fadeout 3
     
-    hide gauchoACaballo
+    #hide gauchoACaballo
 
     # ESCENA 1.2
 
     # Inicia SFX Viento y estatica
     play SFX_1 sfx_VientoEstatica loop fadein 1.5 volume 0.5
 
-    show salamanca at subir_centrada with Dissolve(3.0)
+    show escena salamanca at subir_centrada with black_transition
     
 
     "Aparece frente a vos la piedra roja"
@@ -54,12 +54,12 @@ label capitulo1:
         # ESCENA 1.3
 
 
-        hide salamanca
+        #hide salamanca
 
         # Aplico filtro al sonido de viento y estatica
         $ aplicar_lpf("SFX_1",1500)
 
-        show cueva at subir_centrada, desvanecer with Dissolve(2.0)
+        show escena cueva at subir_centrada, desvanecer with Dissolve(2.0)
         
         
         "En el primer pasillo de este laberinto te sacás las botas, el sombrero y el pañuelo."
