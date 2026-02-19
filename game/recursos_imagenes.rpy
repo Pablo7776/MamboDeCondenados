@@ -96,7 +96,7 @@ image tarta_placeholder = Animation(
 )
 
 
-image chivo_animado = Animation(
+image escena chivo_animado = Animation(
     "images/capitulo1/Nuevos MPVP/Chivo_anim/chivo_final_final_F1.png", 0.08,
     "images/capitulo1/Nuevos MPVP/Chivo_anim/chivo_final_final_F2.png", 0.05,
     "images/capitulo1/Nuevos MPVP/Chivo_anim/chivo_final_final_F3.png", 0.05,
@@ -135,8 +135,8 @@ image escena gauchoACaballo = "images/capitulo1/gauchoACaballo.jpeg"
 image escena salamanca = "images/capitulo1/Nuevos MPVP/cap1_Entrada-a-la-cueva_v2.png"
 image escena cueva  = "images/capitulo1/cueva.png"
 
-image caida1 = "images/capitulo1/abismo.png"
-image cuevaFondo = "images/capitulo1/Nuevos MPVP/cap1_interior-de-la-cueva_v2.png"
+image escena caida1 = "images/capitulo1/abismo.png"
+image escena cuevaFondo = "images/capitulo1/Nuevos MPVP/cap1_interior-de-la-cueva_v2.png"
 
 #################  PLACEHOLDERS IA CAP1 ####################
 

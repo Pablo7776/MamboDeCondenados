@@ -85,16 +85,16 @@ label capitulo1:
         "“Cuando la patota de bichos se te acerque quedate tieso, no muevas ni un pelo y van a pasar embaladas sin darte bola”."
 
         
-        hide cueva
-        show placeholder_negro at subir_centrada with Dissolve(1.0)
+        #hide cueva
+        #show placeholder_negro at subir_centrada with Dissolve(1.0)
 
         # SFX Respiracion chivo
         play SFX_2 sfx_RespiracionChivo loop
     
         "Entonces aparece ese animal grotesco del que te había contado el viejo . . ."
         
-        hide placeholder_negro
-        show chivo_animado at subir_centrada, vibrar2, flash_repeat with Dissolve(1.0) 
+        #hide placeholder_negro
+        show escena chivo_animado at subir_centrada, vibrar2, flash_repeat with black_transition#with Dissolve(1.0) 
 
         "Un chivo de pelo negro, inmenso, mucho más grande que cualquier bestia del campo."
         "Tiene los cuernos retorcidos como ramas secas."
@@ -122,8 +122,8 @@ label capitulo1:
         
         # ESCENA 1.6
 
-        hide chivo_animado
-        show caida1 at subir_centrada with Dissolve(4.0)
+        #hide chivo_animado
+        show escena caida1 at subir_centrada with black_transition #with Dissolve(4.0)
 
         # SFX Detengo sonido de viento exterior con fadeout
         stop SFX_1 fadeout 5.0 # Aun conserva Filtro LPF
@@ -135,10 +135,10 @@ label capitulo1:
         "El hueco es profundo, más que profundo, estás cayendo al abismo."
         "Ves pasar lechuzas negras a tu lado, seguís cayendo y de repente te desmayás."
         
-        hide caida1
-        show cuevaFondo at subir_centrada with Dissolve(4.0)
+        #hide caida1
+        show escena cuevaFondo at subir_centrada with Dissolve(4.0)
 
-        
+
         # SFX Goteo fondo de la cueva
         play SFX_2 sfx_Goteo loop fadein 1.0 volume 0.8
 
