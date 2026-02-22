@@ -144,7 +144,7 @@ image escena cuevaFondo = "images/capitulo1/Nuevos MPVP/cap1_interior-de-la-cuev
 image chivo = "images/capitulo1/Nuevos MPVP/Chivo_anim/chivo_final_final_F1.png"
 
 
-image facon = "images/capitulo1/Nuevos MPVP/cap1_facon_1.png"
+image escena facon = "images/capitulo1/Nuevos MPVP/cap1_facon_1.png"
 
 ### mete bug en android...
 
@@ -154,17 +154,17 @@ image facon = "images/capitulo1/Nuevos MPVP/cap1_facon_1.png"
 #    repeat=True
 #)
 
-image mandingaMiradaCuriosa = "images/capitulo1/Nuevos MPVP/cap1_mandinga-Curiosa2.png"
-image mandingaMiradaEnojada = "images/capitulo1/Nuevos MPVP/cap1_Mandinga_MiradaEnojada.png"
+image escena mandingaMiradaCuriosa = "images/capitulo1/Nuevos MPVP/cap1_mandinga-Curiosa2.png"
+image escena mandingaMiradaEnojada = "images/capitulo1/Nuevos MPVP/cap1_Mandinga_MiradaEnojada.png"
 
 image caida2 = "images/capitulo1/ia/caida2.png"
-image trono = "images/capitulo1/saladeltrono.png"
+image escena trono = "images/capitulo1/saladeltrono.png"
 image mandi = "images/capitulo1/ia/mandingacueva4.png"
 image mandi2 = "images/capitulo1/ia/mandingacueva5.png"
 image cuchillo = "images/capitulo1/ia/cuchilloEscalado2.png"
-image demonios = "images/capitulo1/ia/risasDemonios2.png"
-image rancho = "images/capitulo1/ia/rancho2.png"
-image muerte = "images/capitulo1/ia/muerteDifusa.png"
+image escena demonios = "images/capitulo1/ia/risasDemonios2.png"
+image escena rancho = "images/capitulo1/ia/rancho2.png"
+image escena muerte = "images/capitulo1/ia/muerteDifusa.png"
 
 ############################################################
 #################  CAPITULO 2 ##############################
@@ -187,7 +187,7 @@ image naturaleza = "images/capitulo 3/naturaleza2.png"
 #################  PLACEHOLDERS IA CAP3 ####################
 ############################################################
 
-image pulperia = "images/capitulo 3/pulperia1.png"
+image escena pulperia = "images/capitulo 3/pulperia1.png"
 image barraPulperia = "images/capitulo 3/barrapulperia1.png"
 image pulperiaAplaudiendo = "images/capitulo 3/pulperiaaplaudiendo1.png"
 image mesa = "images/capitulo 3/charlaconcolorada1.png"

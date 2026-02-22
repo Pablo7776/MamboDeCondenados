@@ -20,7 +20,6 @@ label capitulo1:
     # Finaliza SFX Galope a caballo
     stop SFX_1 fadeout 3
     
-    #hide gauchoACaballo
 
     # ESCENA 1.2
 
@@ -54,8 +53,6 @@ label capitulo1:
         # ESCENA 1.3
 
 
-        #hide salamanca
-
         # Aplico filtro al sonido de viento y estatica
         $ aplicar_lpf("SFX_1",1500)
 
@@ -85,7 +82,6 @@ label capitulo1:
         "“Cuando la patota de bichos se te acerque quedate tieso, no muevas ni un pelo y van a pasar embaladas sin darte bola”."
 
         
-        #hide cueva
         #show placeholder_negro at subir_centrada with Dissolve(1.0)
 
         # SFX Respiracion chivo
@@ -93,7 +89,6 @@ label capitulo1:
     
         "Entonces aparece ese animal grotesco del que te había contado el viejo . . ."
         
-        #hide placeholder_negro
         show escena chivo_animado at subir_centrada, vibrar2, flash_repeat with black_transition#with Dissolve(1.0) 
 
         "Un chivo de pelo negro, inmenso, mucho más grande que cualquier bestia del campo."
@@ -122,7 +117,6 @@ label capitulo1:
         
         # ESCENA 1.6
 
-        #hide chivo_animado
         show escena caida1 at subir_centrada with black_transition #with Dissolve(4.0)
 
         # SFX Detengo sonido de viento exterior con fadeout
@@ -135,7 +129,6 @@ label capitulo1:
         "El hueco es profundo, más que profundo, estás cayendo al abismo."
         "Ves pasar lechuzas negras a tu lado, seguís cayendo y de repente te desmayás."
         
-        #hide caida1
         show escena cuevaFondo at subir_centrada with Dissolve(4.0)
 
 
@@ -161,8 +154,7 @@ label capitulo1:
         
         # ESCENA 1.7A.1
 
-        hide cuevaFondo
-        show chivo_animado at subir_centrada,vibrar2, flash_repeat with Dissolve(1.0)
+        show escena chivo_animado at subir_centrada,vibrar2, flash_repeat with Dissolve(1.0)
 
         # SFX Sonido de viento exterior
         play SFX_1 sfx_VientoEstatica fadein 1.0
@@ -197,8 +189,7 @@ label capitulo1:
             #ESCENA 1.7A.1a.2
             stop SFX_2 fadeout 1.0
 
-            hide chivo_animado
-            show muerte at subir_centrada with Dissolve(1.0)
+            show escena muerte at subir_centrada with Dissolve(1.0)
     
             ###(SFX: Fade out del sonido ambiental de terror.)
             stop SFX_1 fadeout 1.0
@@ -232,8 +223,7 @@ label capitulo1:
         stop SFX_1 fadeout 1.0
         stop SFX_2 fadeout 1.0
 
-        hide cuevaFondo
-        show trono at subir_centrada with Dissolve(1.0)
+        show escena trono at subir_centrada with Dissolve(1.0)
         
         # Nota para Guionistas: Aca podria ir la secuencia de imagenes de la antorcha encendiendose, 
         # Pero deberia ajustarse el guion para que suceda antes de revelarse el trono
@@ -271,10 +261,9 @@ label capitulo1:
         label Esperar_en_silencio:
             # ESCENA 1.7B.1b.1
             
-
             # FONDO : Mandinga mirada curiosa
-            hide trono
-            show mandingaMiradaCuriosa at subir_centrada, with Dissolve(5.0)
+
+            show escena mandingaMiradaCuriosa at subir_centrada, with Dissolve(5.0)
    
             play SFX_2 sfx_EstruendoRocaReverb volume 0.9
 
@@ -284,8 +273,7 @@ label capitulo1:
             "{color=#880000}ES EL MANDINGA{/color}."
             "Se sienta en su trono y te mira con un gesto curioso."
             
-            hide mandingaMiradaCuriosa
-            show mandingaMiradaCuriosa at subir_centrada,vibrar, with Dissolve(0.5)
+            show escena mandingaMiradaCuriosa at subir_centrada,vibrar, with Dissolve(0.5)
             
             # play SFX_2 sfx_basilisco
 
@@ -299,12 +287,6 @@ label capitulo1:
             play SFX_2 sfx_SiseoMandinga1
 
             Mandinga "¿Qué es lo que deseás de mí humano?"
-
-            
-
-            # hide mandinga_placeholder
-            # pause 1.5 
-            # show mandi2 at subir_centrada
 
             label opiones17B1b1:
 
@@ -320,8 +302,8 @@ label capitulo1:
         label DÓNDE_ESTÁ_EL_MANDINGA:
             
             # ESCENA 1.7B.1a.1
-            hide trono
-            show mandingaMiradaEnojada at subir_centrada, with Dissolve(5.0)
+
+            show escena mandingaMiradaEnojada at subir_centrada, with Dissolve(5.0)
    
             $ reputacion_con_el_mandinga -= 10
             $ mostrar_repu()
@@ -334,8 +316,7 @@ label capitulo1:
             "{color=#880000}ES EL MANDINGA{/color}." ###Aplicar VFX shake sobre el texto
             "Se sienta en su trono y te mira con un gesto severo y vehemente."
             
-            hide mandingaMiradaEnojada
-            show mandingaMiradaEnojada at subir_centrada,vibrar, with Dissolve(0.5)
+            show escena mandingaMiradaEnojada at subir_centrada,vibrar, with Dissolve(0.5)
 
             ### personaje ##########################
             # pause 0.01
@@ -346,9 +327,6 @@ label capitulo1:
 
             Mandinga "¿Qué es lo que deseás de mí desgraciado?"
             
-            # hide mandinga_placeholder
-            # pause 1.5 
-            # show mandi2 at subir_centrada
 
             label opiones17B1a1:
 
@@ -399,7 +377,7 @@ label capitulo1:
                 # SFX > Bullicio pulperia normaliza volumen
                 # Falta el Asset, cuando este se aplica efecto
                
-                show pulperia at subir_centrada with Dissolve(1.0)
+                show escena pulperia at subir_centrada with Dissolve(1.0)
 
                 # BGM > Saco filtro a la musica
                 $ quitar_filtros("BGM", 2.0)
@@ -413,7 +391,6 @@ label capitulo1:
                 "Una guitarra suena; parece que eso te despertó."
                 "Un vidalero empieza a contar una vieja leyenda de tus tierras: la leyenda de La Salamanca."
                 
-                hide pulperia
 
             return
 
@@ -421,9 +398,8 @@ label capitulo1:
 label Quiero_hechizar:
 
     # ESCENA 1.7B.3
-    hide mandingaMiradaEnojada
-    hide mandingaMiradaCuriosa
-    show mandingaMiradaCuriosa at subir_centrada,vibrar, with Dissolve(0.5)
+
+    show escena mandingaMiradaCuriosa at subir_centrada,vibrar, with Dissolve(0.5)
     
 
     ###(SFX: siseo)
@@ -436,7 +412,6 @@ label Quiero_hechizar:
 
     Protagonista "¿Cuál es el precio?"
         
-    # hide protagonista_placeholder
 
     # SFX Siseo del mandinga
     play SFX_2 sfx_SiseoMandinga4
@@ -497,7 +472,7 @@ label No_se_vende_el_alma:
                 # SFX > Bullicio pulperia normaliza volumen
                 # Falta el Asset, cuando este se aplica efecto
             
-                show pulperia at subir_centrada with Dissolve(1.0)
+                show escena pulperia at subir_centrada with Dissolve(1.0)
 
                 # BGM > Saco filtro a la musica
                 $ quitar_filtros("BGM", 2.0)
@@ -510,7 +485,6 @@ label No_se_vende_el_alma:
                 "Una guitarra suena; parece que eso te despertó."
                 "Un vidalero empieza a contar una vieja leyenda de tus tierras: la leyenda de La Salamanca."
                 
-                hide pulperia
                 return
 
 label A_dónde_hay_que_firmar:
@@ -529,20 +503,16 @@ label A_dónde_hay_que_firmar:
     "Una gran grieta separa la sala al medio:"
     "De un lado estás vos; del otro, el Mandinga, su trono y sus seguidores."
     
-    hide mandingaMiradaCuriosa
-    hide mandingaMiradaEnojada
 
     # ESCENA 1.7B.5
     # show cuchillo at subir_centrada,vibrar with Dissolve(1.0)
-    show facon at subir_centrada with Dissolve(1.0)
+    show escena facon at subir_centrada with Dissolve(1.0)
     
     "Él saca un enorme facón de su costado y lo revolea, queda sobre la fosa que se abrió en la tierra, formando un puente con el filo hacia arriba."
     
 
-
     Mandinga "Vení conmigo."
     
-    # hide mandinga_placeholder
 
     "Abre los brazos como invitándote a su lado y luego señala el filo del cuchillo que acaba de calzar frente tuyo."
 
@@ -575,7 +545,6 @@ label A_dónde_hay_que_firmar:
 
         play SFX_2 sfx_SiseoMandinga4
         Mandinga "—¡ESCUPILO!"
-        # hide mandinga_placeholder
 
         # play SFX_2 sfx_SiseoMandinga2
         
@@ -592,8 +561,8 @@ label A_dónde_hay_que_firmar:
 
         label Pasar_cautelosamente:
             # ESCENA 1.7B.5B.1
-            hide cuchillo
-            show muerte at subir_centrada with Dissolve(1.0)
+
+            show escena muerte at subir_centrada with Dissolve(1.0)
             
             "Das un paso sobre el cuchillo y dudás, el filo del facón se hunde en tu pie y no podés frenar el peso de tu cuerpo."
             "Empezás a caer sobre ese último paso, tu cuerpo se desbalancea y cae."
@@ -607,20 +576,11 @@ label A_dónde_hay_que_firmar:
 
     label Escupir_el_crucifijo:
         # ESCENA 1.7B.5A.3
-        # hide cuchillo
-        hide facon
-        show demonios at subir_centrada, aparecer_flash with Dissolve(1.0)
+
+        show escena demonios at subir_centrada, aparecer_flash with Dissolve(1.0)
 
         # stop SFX_1 fadeout 1.0
         stop SFX_2 fadeout 1.0
-        # El resto de los canales no se utiliza
-        # stop sound fadeout 1.0
-        # stop fx fadeout 1.0
-        # stop audio fadeout 1.0
-        # stop viento fadeout 1.0
-
-        # play SFX_1 sfx_viento1 volume 0.3
-        # play SFX_2 crucifijo
          
         "Escupís el crucifijo y seguís por el filo del facón, conseguís llegar al otro lado."
         "Una bruja te recibe con un pergamino abierto, un diablillo moja una pluma en la sangre de tus pies y te la da."
@@ -632,16 +592,9 @@ label A_dónde_hay_que_firmar:
             $ nombre_jugador = "Protagonista"
         $ Protagonista = Character(nombre_jugador + ":", color="#D4AF37")
         
-        # play SFX_2 "audio/capitulo1/risaDiabolica.wav" #esto no va a funcionar pq es WAV
-
-        # play SFX_2 sfx_SiseoMandinga4
-
-        # pause 0.01
-        # show protagonista_placeholder at mostrar_derecha
         
         Protagonista "Mi nombre es [nombre_jugador] y te vendo mi alma, Mandinga."
         
-        # hide protagonista_placeholder
         stop SFX_1 fadeout 1.0
         stop SFX_2 fadeout 1.0
         jump Lo_lograste
@@ -654,15 +607,15 @@ label A_dónde_hay_que_firmar:
         Mandinga "{size=70}{cps=10}—BIENVENIDO A MIS HUESTES, CONDENADO!{/cps}{/size}"
 
         stop SFX_2 fadeout 4
-        # hide mandinga_placeholder
+
         # play BGM musica_piedra_y_camino
         play BGM bgm_Zamba fadein 0.1
 
         "Las brujas, los brujos y los diablillos arrancan la fiesta a tu alrededor, sentís como tu garganta arde y después se calma, entonces empezás a cantar junto a los demás."
         "Las alimañas te levantan sobre sus lomos y te pasean por toda la sala, tu voz y tu canto ahora suenan como nunca antes sonaron."
         
-        hide demonios ###(VFX: fundido a negro lento que no se pueda pasar)
-        show rancho at subir_centrada with Dissolve(3.0)
+        #hide demonios ###(VFX: fundido a negro lento que no se pueda pasar)
+        show escena rancho at subir_centrada with Dissolve(3.0)
         jump En_un_rancho_cercano
 
     label En_un_rancho_cercano:
@@ -673,8 +626,6 @@ label A_dónde_hay_que_firmar:
         "A pocos kilómetros una señora se despierta asustada por el alboroto y empieza a rezar..."
         
         Señora "¡Dios nos salve, que hoy hay baile en La Salamanca!"
-        
-        hide rancho with Dissolve(5.0)
 
 
         jump continuara
