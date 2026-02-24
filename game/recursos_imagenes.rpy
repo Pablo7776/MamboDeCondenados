@@ -46,7 +46,7 @@ image protagonista_placeholder = Animation(
     repeat=True
 )
 
-image china_placeholder = Animation(
+image personaje china_placeholder = Animation(
     "images/personajes/china/frame1.png", 0.2,
     "images/personajes/china/frame2.png", 0.2,
     "images/personajes/china/frame3.png", 0.2,
@@ -170,15 +170,15 @@ image escena muerte = "images/capitulo1/ia/muerteDifusa.png"
 #################  CAPITULO 2 ##############################
 ############################################################
 
-image puertaChina = "images/capitulo2/puertaCasaChina.png"
+image escena puertaChina = "images/capitulo2/puertaCasaChina.png"
 
 #################  PLACEHOLDERS IA CAP2 ####################
 ############################################################
 
-image ranchoHiguera = "images/capitulo2/ranchoHigueraEscalado.png"
-image higuera = "images/capitulo2/higueraEscalado.png"
-image casa = "images/capitulo2/casaEscalado.png"
-image casaInterior = "images/capitulo2/casaInteriorEscalado.png"
+image escena ranchoHiguera = "images/capitulo2/ranchoHigueraEscalado.png"
+image escena higuera = "images/capitulo2/higueraEscalado.png"
+image escena casa = "images/capitulo2/casaEscalado.png"
+image escena casaInterior = "images/capitulo2/casaInteriorEscalado.png"
 image naturaleza = "images/capitulo 3/naturaleza2.png"
 
 

@@ -15,11 +15,11 @@ label capitulo2:
     $ aplicar_lpf("SFX_1", 500)
     play SFX_1 sfx_VientoEstatica volume 0.75 fadein 3
 
-
-
     $ mostrar_repu()
 
-    show caida1 at subir_centrada with Dissolve(5.0)
+
+    show escena caida1 at subir_centrada with Dissolve(5.0)
+
 
     "[nombre_jugador], trepás nuevamente por el abismo en espiral por el que caíste."
 
@@ -39,11 +39,10 @@ label capitulo2:
 
     play SFX_1 sfx_VientoTranquilo fadein 3
 
-    hide caida1
-
     #ESCENA 2.2
-    show ranchoHiguera at subir_centrada with Dissolve(1.0)
+    show escena ranchoHiguera at subir_centrada with Dissolve(1.0)
     
+
     play SFX_2 sfx_GalopeCaballo loop fadein 3 volume 0.7
 
     "Ves llegar a tu caballo."
@@ -76,9 +75,10 @@ label noche_ante_las_estrellas:
 
     # play sound sfx_noche loop fadein 2.0
     
-    hide ranchoHiguera
-    show higuera at subir_centrada with Dissolve(3.0)
+
+    show escena higuera at subir_centrada with Dissolve(3.0)
     
+
     "Encontrás una gran higuera a un costado del camino, atás tu caballo y te recostás debajo de aquel custodio de la pampa."
 
     # play fx ruidoRosa volume 0.5
@@ -101,7 +101,6 @@ label noche_ante_las_estrellas:
 
     "Cabalgás pensativo rumbo a la pulpería del Tarta, en tu pueblo."
     
-    hide higuera with Dissolve(4.0)
 
     jump continuara
     #menu:
@@ -111,18 +110,19 @@ label noche_ante_las_estrellas:
 
 label puerta_del_rancho:
     # ESCENA 2.2B.1
-    hide ranchoHiguera
-    show puertaChina at subir_centrada with Dissolve(1.0)
+
+
+    show escena puertaChina at subir_centrada with Dissolve(1.0)
     
+
     "Una china joven te abre la puerta. Un poco asustada, te pregunta con voz temblorosa:"
     
     ### personaje ##########################
-    pause 0.01
-    show china_placeholder at mostrar_izquierda
+    show personaje china_placeholder at mostrar_izquierda
 
     China "—¿Quién es? ¿Qué necesitás?"
    
-    hide china_placeholder
+    hide personaje china_placeholder
     label opciones22B1:
         $ hover_opcion = None
         $ opciones = [
@@ -137,14 +137,15 @@ label Tus_primeros_hechizados:
     $ reputacion_con_el_mandinga += 10
     $ mostrar_repu()
 
-    hide puertaChina
 
     $ renpy.music.set_volume(1.0, channel= "fx")
     play fx sfx_hoguera_pequena
     play music musica_piedra_y_camino volume 0.7
 
-    show casaInterior at subir_centrada with Dissolve(1.0)
+
+    show escena casaInterior at subir_centrada with Dissolve(1.0)
     
+
     "Empezás a rasguear la guitarra y cuando te das cuenta ya estás improvisando versos junto a toda la familia."
 
     "Los padres de la joven lloran y sus hermanos miran sin poder quitar la vista de tus cuerdas."
@@ -155,25 +156,27 @@ label Tus_primeros_hechizados:
 
     "Te muestran una habitación en la que podés dormir, es la habitación de los padres de la familia, ellos van a dormir en el comedor para dejarte la mejor cama de la casa."
     
-    hide casaInterior
-    show muerte at subir_centrada with Dissolve(5.0)
+
+    show escena muerte at subir_centrada with Dissolve(5.0)
     
+
     $ renpy.music.set_volume(0.5, delay=2.0, channel="music")
     
     "Te dormís y empezás a soñar"
 
     "Es la voz de El Mandinga ... \"CONDENA...\" !" # efecto texto
 
-    hide muerte with Dissolve(5.0)
-    show casaInterior at subir_centrada with Dissolve(1.0)
+
+    show escena casaInterior at subir_centrada with Dissolve(1.0)
+
 
     "Te despierta una voz dulce y alguien que te sacude suavemente, es la china que te abrió la puerta."
 
-    show china_placeholder at mostrar_izquierda
+    show personaje china_placeholder at mostrar_izquierda
 
     China "Disculpe, ¿puedo... estar con usted esta noche?" #efecto
     
-    hide china_placeholder
+    hide personaje china_placeholder
 
     menu:
         "Aceptás la propuesta":
@@ -197,7 +200,6 @@ label La_noche_de_pasión:
     
     stop sound
 
-    hide casaInterior with Dissolve(4.0)
 
     jump continuara
     #menu:
@@ -210,9 +212,10 @@ label Una_mañana_incómoda:
     
     stop music
     
-    hide casaInterior
-    show muerte at subir_centrada with Dissolve(5.0)
+
+    show escena muerte at subir_centrada with Dissolve(5.0)
     
+
     "Esa noche la rechazás, ella sale llorando de la habitación a viva voz."
 
     "Te volvés a dormir y volvés a soñar:"
@@ -229,15 +232,16 @@ label Una_mañana_incómoda:
 
     stop fx fadeout 2.0
 
-    hide muerte with Dissolve(5.0)
-    show casa at subir_centrada with Dissolve(1.0)
+
+    show escena casa at subir_centrada with Dissolve(1.0)
     
+
     "Salís corriendo al salón pero esa mañana todos te miran mal y prácticamente te echan de su rancho casi sin hablarte."
 
     stop sound
 
     "Te subís a tu caballo y galopás hacia tu pueblo y hacia la Pulpería del Tarta"
-    hide casa with Dissolve(4.0)
+
 
     #jump capitulo3
     jump continuara
@@ -249,14 +253,15 @@ label Fuiste_cordial_y_se_te_agradece_por_ello:
     $ reputacion_con_el_mandinga -= 15
     $ mostrar_repu()
 
-    hide puertaChina
 
     stop sound
 
     $ renpy.music.set_volume(1.0, channel="sound")
     play sound sfx_hoguera_pequena loop fadein 1.0
 
-    show casaInterior at subir_centrada with Dissolve(1.0)
+
+    show escena casaInterior at subir_centrada with Dissolve(1.0)
+
 
     "Te abre la puerta, aún un poco temerosa, pero viene su padre del fondo del salón y te recibe con un apretón de manos."
 
@@ -272,8 +277,9 @@ label Fuiste_cordial_y_se_te_agradece_por_ello:
 
     "Dormís cálidamente y por la noche soñás:"
 
-    hide casaInterior
-    show muerte at subir_centrada with Dissolve(5.0)
+
+    show escena muerte at subir_centrada with Dissolve(5.0)
+
 
     play fx ruidoRosa volume 0.5
 
@@ -289,8 +295,9 @@ label Fuiste_cordial_y_se_te_agradece_por_ello:
 
     stop fx fadeout 2.0
 
-    hide muerte with Dissolve(5.0)
-    show casaInterior at subir_centrada with Dissolve(1.0)
+
+    show escena casaInterior at subir_centrada with Dissolve(1.0)
+
 
     "Ella te acaricia tiernamente la espalda y empieza a cantarte una nana."
 
@@ -306,9 +313,10 @@ label Fuiste_cordial_y_se_te_agradece_por_ello:
 label No_fuiste_muy_cordial:
     $ reputacion_con_el_mandinga -= 20
     $ mostrar_repu()
-    
-    hide puertaChina
-    show casa at subir_centrada with Dissolve(1.0)
+
+
+    show escena casa at subir_centrada with Dissolve(1.0)
+
 
     "Asustás a la joven y cierra rápidamente, te quedás ahí frente a la puerta."
 
@@ -316,8 +324,9 @@ label No_fuiste_muy_cordial:
 
     "Te echan a rebencazos de su campo, montás de nuevo tu caballo y seguís cabalgando toda la noche."
 
-    hide casa
-    show muerte at subir_centrada with Dissolve(5.0)
+
+    show escena muerte at subir_centrada with Dissolve(5.0)
+
 
     "Te dormís sobre la silla de montar y empezás a soñar."
 
@@ -339,7 +348,7 @@ label No_fuiste_muy_cordial:
 
     "Tomás las riendas y seguís cabalgando pensativo rumbo a la pulpería del Tarta."
     
-    hide muerte with Dissolve(4.0)
+
     #show naturaleza at subir_centrada with Dissolve(1.0)
     jump continuara
     #jump capitulo3
