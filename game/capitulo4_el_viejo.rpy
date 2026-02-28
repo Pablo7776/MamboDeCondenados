@@ -9,9 +9,11 @@ label capitulo4_el_viejo:
 
     show talar at subir_centrada with Dissolve(3.0)
 
-    "Camino a la casa del viejo, se va haciendo cada vez más de noche."
+    "Camino a la casa del viejo, la noche se vuelve cada vez más oscura."
     
-    "El camino es largo, tenés que ir a campo traviesa, pero ya ves el límite del talar en el que está su rancho."
+    "El camino es largo, tenés que ir a campo traviesa."
+    
+    "El límite del talar en el que está su rancho ya no está muy lejos."
 
     hide talar
     show luz_mala at subir_centrada with Dissolve(3.0)
@@ -23,9 +25,9 @@ label capitulo4_el_viejo:
     menu:
         "Das la vuelta y volvés al pueblo":
             jump Un_camino_de_alimanas
-        "Te ocultás entre los pastos y esperas":
+        "Te escondés entre los pastos y esperás":
             jump La_luz_mala
-        "Empezás a tocar la guitarra, seguro El Mandinga te proteje":
+        "Empezás a tocar la guitarra, seguro hasta esa luz caerá ante tu canto":
             jump El_canto_de_la_luz
 
     label Un_camino_de_alimanas:
