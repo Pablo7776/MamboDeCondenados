@@ -11,6 +11,7 @@ label capitulo1:
     # ESCENA
     show escena gauchoACaballo at subir_centrada with black_transition
 
+
     $ mostrar_repu()
 
     "¡Vos! guitarrista y cantor venido a menos."

@@ -108,6 +108,7 @@ screen debug_jump_menu():
             textbutton "Dar un paso hacia la oscuridad" action Function(clean_jump, "Dar_un_paso_hacia_la_oscuridad")
             textbutton "Escupir el crucifijo" action Function(clean_jump, "Escupir_el_crucifijo")
             textbutton "Ir a cap 2" action Function(clean_jump, "capitulo2")
+            textbutton "Ir a ejemplos" action Function(clean_jump, "ejemplo_triptico")
             #textbutton "Ir a cap 3" action Function(clean_jump, "capitulo3")
             #textbutton "Capítulo 4 — El pobre Pibe Farías" action Function(clean_jump, "Capítulo_4_El_pobre_Pibe_Farías")
             #textbutton "Capítulo 4 — El viejo" action Function(clean_jump, "capitulo4_el_viejo")

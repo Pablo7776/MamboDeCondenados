@@ -17,6 +17,11 @@ image placeholder2m = "images/placeholders/m/Unnamed2.png"
 image placeholder3m = "images/placeholders/m/Unnamed3.png"
 image placeholder6m = "images/placeholders/m/Unnamed6.png"
 
+################### PLACEHOLDERS triptico vertical 400 x 720 ###########################
+
+image escena1 placeholder_v = "images/placeholders/placeholder_vertical.png"
+image escena1 placeholder_v = "images/placeholders/placeholder_vertical.png"
+image escena1 placeholder_v = "images/placeholders/placeholder_vertical.png"
 
 ################### PLACEHOLDERS personajes 200 x 200 ##################
 
@@ -154,7 +159,7 @@ image escena facon = "images/capitulo1/Nuevos MPVP/cap1_facon_1.png"
 #    repeat=True
 #)
 
-image escena mandingaMiradaCuriosa = "images/capitulo1/Nuevos MPVP/cap1_mandinga-Curiosa2.png"
+image escena mandingaMiradaCuriosa = "images/capitulo1/Nuevos MPVP/cap1_mandinga-Curiosa2.png" # tamaño: 1280 * 320
 image escena mandingaMiradaEnojada = "images/capitulo1/Nuevos MPVP/cap1_Mandinga_MiradaEnojada.png"
 
 image caida2 = "images/capitulo1/ia/caida2.png"

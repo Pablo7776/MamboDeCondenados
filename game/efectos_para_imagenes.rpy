@@ -77,9 +77,12 @@ transform vdiptico_derecha:
     xalign 0.66
     yalign 0.1
 
-### Para poner tripticos verticales###
+
+# ============================================================
+#  TRÍPTICOS VERTICALES
+# ============================================================
 transform vtriptico_izquierda: 
-    xalign 0.28
+    xalign 0.21
     yalign 0.1
 
 transform vtriptico_centro: 
@@ -87,5 +90,35 @@ transform vtriptico_centro:
     yalign 0.1
 
 transform vtriptico_derecha: 
-    xalign 0.72
+    xalign 0.79
     yalign 0.1
+
+# ------------------------------------------------------------
+# MOSTRAR TRÍPTICO
+# ------------------------------------------------------------
+label mostrar_triptico_vertical(img_izq, img_centro, img_der):
+
+    show expression img_izq as trip_izq at vtriptico_izquierda
+    with Dissolve(1.0)
+
+    pause 0.3
+
+    show expression img_centro as trip_centro at vtriptico_centro
+    with Dissolve(1.0)
+
+    pause 0.3
+
+    show expression img_der as trip_der at vtriptico_derecha
+    with Dissolve(1.0)
+
+    return
+# ------------------------------------------------------------
+# OCULTAR TRÍPTICO
+# ------------------------------------------------------------
+label ocultar_triptico_vertical:
+
+    hide trip_izq
+    hide trip_centro
+    hide trip_der
+
+    return
