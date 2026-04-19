@@ -145,7 +145,8 @@ image chivo = "images/capitulo1/Nuevos MPVP/Chivo_anim/chivo_final_final_F1.png"
 
 
 image facon = "images/capitulo1/Nuevos MPVP/cap1_facon_1.png"
-
+image caminaFacon = "images/capitulo1/Nuevos MPVP/cap1_caminando_por_el_facon.png"
+image dedo_cercenado = "images/capitulo1/Nuevos MPVP/cap1_dedo_cercenado.png"
 ### mete bug en android...
 
 #image chivo = Animation(

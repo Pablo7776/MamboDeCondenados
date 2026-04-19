@@ -552,6 +552,8 @@ label A_dónde_hay_que_firmar:
         # ESCENA 1.7B.5A.1
         
         "Arrancás a caminar decidido sobre el filo del facón."
+        hide facon
+        show caminaFacon at subir_centrada with Dissolve(1.0)
         "Paso tras paso, tus pies sangran, pero no sentís dolor."
         "Cuando llegás a la mitad ves una luz dorada bajo tus pies."
         
@@ -579,12 +581,11 @@ label A_dónde_hay_que_firmar:
 
         label Pasar_cautelosamente:
             # ESCENA 1.7B.5B.1
-            hide cuchillo
-            show muerte at subir_centrada with Dissolve(1.0)
             
             "Das un paso sobre el cuchillo y dudás, el filo del facón se hunde en tu pie y no podés frenar el peso de tu cuerpo."
+            hide caminaFacon
             "Empezás a caer sobre ese último paso, tu cuerpo se desbalancea y cae."
-
+            show dedo_cercenado at subir_centrada with Dissolve(1.0)
             play SFX_2 sfx_HuesosRotos
 
             "Yacés en dos mitades en lo profundo de la grieta del infierno."
