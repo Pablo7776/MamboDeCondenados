@@ -20,12 +20,13 @@
 - Personajes del folklore argentino adaptados
 
 ## Equipo Ctapo Studios
-- **Programación**: Pablo A. Durán
-- **Arte y Sonido**: Gonzalo Ríos  
-- **Diseño y Guión**: Lucas Traverso
-- **Arte Conceptual**: Lucas Arancibia
-- **Producción**: M. Luz Opazo
+- **Programación**: Pablo A. Durán y Francisco Ayrolo.
+- **Diseño de juego**: Marcos Vallasciani y Lucas Traverso.
+- **Música y Sonido**: Marcos Vallasciani, Maximiliano Ftulis, Luján Hernandez y Agustín Dalto.
+- **Narrativa y Guión**: Valentin Rioseco y Lucas Traverso.
+- **Arte Visual**: Saúl Arcucci, Sebastián Peralta y Lucio V. Oliva (ex miembros: Gonzalo Ríos y Lucas Arancibia).
+- **Producción**: M. Luz Opazo.
 
-*Proyecto educativo desarrollado como trabajo integrador de tecnicatura.*
+<!--*Proyecto educativo desarrollado como trabajo integrador de tecnicatura.*
 ---
-![upso](https://github.com/user-attachments/assets/746e51c7-af41-483a-83ed-0cc5b25329e3)
+![upso](https://github.com/user-attachments/assets/746e51c7-af41-483a-83ed-0cc5b25329e3)-->
