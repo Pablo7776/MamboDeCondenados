@@ -2,7 +2,7 @@
 
 ![upso23](https://github.com/user-attachments/assets/76eec1a7-fe74-4c73-9b56-6440011b3611)
 
-[![web presentacion](https://img.shields.io/badge/web-%20presentacion-brightgreen)](https://mambo-de-condenados-web.vercel.app/)
+[![web presentacion](https://img.shields.io/badge/web-%20presentacion-brightgreen)]((https://webmambo.vercel.app/))
 [![Itch.io](https://img.shields.io/badge/Itch.io-Jugar%20Demo-orange)](https://pabloz.itch.io/mambo-de-condenados)
 
 **Repositorio principal** del desarrollo en Ren'Py para "Mambo de Condenados", una novela visual de suspenso folklórico argentino.
